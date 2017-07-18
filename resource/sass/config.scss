@@ -2,8 +2,9 @@
 
 // Creat : Madive 손상만
 // Creat Date : 2017-07-10
-// Last Update :2017-07-17
-// Ver : 1.0
+// * Last Update :2017-07-18
+// * Modify : Madive 손상만
+// * Ver : 1.01
 
 // Img Path
 $img-common : "/resource/img/";
@@ -44,8 +45,6 @@ $img-common : "/resource/img/";
 @function data($value){
 	@return ceil($value / 4);
 };
-
-
 
 // Color
 $color0 : #666;
