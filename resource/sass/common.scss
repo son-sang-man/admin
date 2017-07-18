@@ -998,58 +998,72 @@ body{
 	}
 }
 
+/* table */
+table{
+	tr{
+		.necessory{
+			position:relative;
+			&:before{
+				content:"*";
+				display:inline-block;
+				color:#df3232;
+			}
+		}
+	}
+}
 .tableTy1 {
 	width:1140px;
 	margin:auto;
 	table {
 		width:100%;
 		table-layout:fixed;
-		tr{
-			th {
-				padding:13px 10px;
-				font-size:14px;
-				color:#fff;
-				text-align:left;
-			}
-			td {
-				padding:13px 10px;
-				font-family: 'Malgun Gothic' ,"맑은 고딕";
-				font-size:13px;
-				color:#777;
-				text-align:left;
-				background:#f2f5f8;
-				border-bottom:1px solid #d5d5d5;
-			}
+	}
+	tr{
+		th {
+			padding:13px 10px;
+			font-size:14px;
+			color:#fff;
+			text-align:left;
 		}
-		thead{
-			tr{
-				th{
-					background:#7c8c9b;
-					text-align:center;
-				}
-			}
+		td {
+			padding:13px 10px;
+			font-family: 'Malgun Gothic' ,"맑은 고딕";
+			font-size:13px;
+			color:#777;
+			text-align:left;
+			background:#f2f5f8;
+			border-bottom:1px solid #d5d5d5;
 		}
-		tbody{
-			th{
-				border-top:1px solid #bcc5d4;
-				border-left:1px solid #bcc5d4;
-			}
-			td{
-				border-top:1px solid #bcc5d4;
-				font-family: 'Malgun Gothic' ,"맑은 고딕";
-				font-size:13px;
-			}
-			tr{
-				&:first-child{
-					th,
-					td{
-						border-top:0;
-					}
-				}
-			}
-		}
-}
 
+	}
+	thead{
+		tr{
+			th{
+				background:#7c8c9b;
+				text-align:center;
+			}
+		}
+	}
+	tbody{
+		th{
+			border-top:1px solid #bcc5d4;
+			border-left:1px solid #bcc5d4;
+		}
+		td{
+			border-top:1px solid #bcc5d4;
+			font-family: 'Malgun Gothic' ,"맑은 고딕";
+			font-size:13px;
+		}
+		tr{
+			&:first-child{
+				th,
+				td{
+					border-top:0;
+				}
+			}
+		}
+	}
+}
 .tableTy2 {
 	width:1140px;
 	margin:auto;
