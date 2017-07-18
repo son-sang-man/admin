@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
+	<title>버튼 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/ildong/web/asset/css/common/common.css" />
+	<script src="/ildong/web/asset/js/common/jquery.js"></script>
+	<script src="/ildong/web/asset/js/common/common.js"></script>
+</head>
+	<style>
+		.fc_white {background-color:#000;}
+	</style>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">BUTTON Guide</h1>
+	<dl class="notice">
+		<dt>참고사항</dt>
+		<dd>
+			<ol>
+				<li>버튼 기능에 따라사 a태그 혹은 button태그로 마크업 변경 가능 class는 유지</li>
+				<li>Disabled 기능 버튼은 disabled추가</li>
+			</ol>
+		</dd>
+	</dl>
+
+	<h2 class="h2_guide">01. BASIC BUTTON(Width:152px/height:40px/고정)</h2>
+	<div class="guide_wrap">
+		<a href="#" class="btn btnTy1">구매가능약국</a>
+		<a href="#" class="btn btnTy2">브랜드스토리</a>
+		<a href="#" class="btn btnTy2">브랜드홈페이지</a>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<a href="#" class="btn btnTy1">구매가능약국</a>
+<a href="#" class="btn btnTy2">브랜드스토리</a>
+<a href="#" class="btn btnTy2">브랜드홈페이지</a>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">02. Big BUTTON(Width:160px/height:50px/고정)</h2>
+	<div class="guide_wrap">
+		<a href="#" class="btn btnTy1 type2">제품상세</a>
+		<a href="#" class="btn btnTy2 type2">약국찾기</a>
+		<a href="#" class="btn btnTy2 type2">일동몰 구입하기</a>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<a href="#" class="btn btnTy1 type2">제품상세</a>
+<a href="#" class="btn btnTy2 type2">약국찾기</a>
+<a href="#" class="btn btnTy2 type2">일동몰 구입하기</a>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">03. BUTTON(Min-Width:80px/height:40px/가변)</h2>
+	<div class="guide_wrap">
+		<a href="#" class="btn btnTy5">목록</a>
+		<button class="btn btnTy5 type2">취소</button>
+		<button class="btn btnTy5 type3">등록</button>
+		<button class="btn btnTy5" disabled="disabled">취소</button>
+		<button class="btn btnTy5" disabled="disabled">등록</button>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<a href="#" class="btn btnTy5">목록</a>
+<button class="btn btnTy5 type2">취소</button>
+<button class="btn btnTy5 type3">등록</button>
+<button class="btn btnTy5" disabled="disabled">취소</button>
+<button class="btn btnTy5" disabled="disabled">등록</button>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">04. 테이블 내 버튼</h2>
+	<div class="guide_wrap">
+		<button class="btn btnTy5 type2 btnSearch">찾아보기</button>
+		<button class="btn btnAdd">리스트 추가</button>
+		<button class="btn btnDel">리스트 삭제</button>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<button class="btn btnTy5 type2 btnSearch">찾아보기</button>
+<button class="btn btnAdd">리스트 추가</button>
+<button class="btn btnDel">리스트 삭제</button>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">05. MINI BUTTON</h2>
+	<div class="guide_wrap">
+		<a href="#" class="btn btnTy4"><span class="download">다운로드</span></a>
+		<a href="#" class="btn btnTy4"><span class="download">제품안내 PDF 다운로드</span></a>
+		<a href="#" class="btn btnTy4"><span class="print">인쇄</span></a>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<a href="#" class="btn btnTy4"><span class="download">다운로드</span></a>
+<a href="#" class="btn btnTy4"><span class="download">제품안내 PDF 다운로드</span></a>
+<a href="#" class="btn btnTy4"><span class="print">인쇄</span></a>
+</xmp>
+<!-- // code -->
+</div>
+
+	<h2 class="h2_guide">05. More BUTTON(Width:156px/height:40px/고정)</h2>
+	<div class="guide_wrap">
+		<a href="#" class="btn btnTy2 btnMore">MORE</a>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<a href="#" class="btn btnTy2 btnMore">MORE</a>
+</xmp>
+<!-- // code -->
+</div>
+
+	<h2 class="h2_guide">07. 검색</h2>
+	<div class="guide_wrap">
+		<div class="fullSearchBox">
+			<input type="text" title="검색어 입력" />
+			<button><i>검색</i></button>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<div class="fullSearchBox">
+	<input type="text" title="검색어 입력" />
+	<button><i>검색</i></button>
+</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">07. 검색 Type2</h2>
+	<div class="guide_wrap">
+		<span class="searchBox">
+			<input type="text" title="검색어 입력">
+			<button><i>검색</i></button>
+		</span>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<span class="searchBox">
+	<input type="text" title="검색어 입력">
+	<button><i>검색</i></button>
+</span>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">08. 아이콘 버튼</h2>
+	<div class="guide_wrap">
+		<ul class="iconBtnList">
+			<li class="print"><button>프린트</button></li>
+			<li class="facebook"><a href="#" title="새 창 열림">페이스북 바로가기</a></li>
+			<li class="twitter"><a href="#" title="새 창 열림">트위터 바로가기</a></li>
+		</ul>
+		<ul class="iconBtnList2">
+			<li class="facebook"><a href="#" title="새 창 열림">페이스북 바로가기</a></li>
+			<li class="youtube"><a href="#" title="새 창 열림">유튜브 바로가기</a></li>
+			<li class="naverBlog"><a href="#" title="새 창 열림">네이버 블로그 바로가기</a></li>
+			<li class="naverTv"><a href="#" title="새 창 열림">네이버 티비 바로가기</a></li>
+		</ul>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<div class="rdoBox1">
+	<ul class="iconBtnList">
+		<li class="print"><button>프린트</button></li>
+		<li class="facebook"><a href="#" title="새 창 열림">페이스북 바로가기</a></li>
+		<li class="twitter"><a href="#" title="새 창 열림">트위터 바로가기</a></li>
+	</ul>
+	<ul class="iconBtnList2">
+		<li class="facebook"><a href="#" title="새 창 열림">페이스북 바로가기</a></li>
+		<li class="youtube"><a href="#" title="새 창 열림">유튜브 바로가기</a></li>
+		<li class="naverBlog"><a href="#" title="새 창 열림">네이버 블로그 바로가기</a></li>
+		<li class="naverTv"><a href="#" title="새 창 열림">네이버 티비 바로가기</a></li>
+	</ul>
+</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">09. 버튼 정렬</h2>
+	<div class="guide_wrap">
+		<div class="btnArea">
+			<a href="#" class="btn btnTy2 btnMore">MORE</a>
+		</div>
+		<div class="btnArea2">
+			<a href="#" class="btn btnTy2 btnMore">MORE</a>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<div class="btnArea">
+	<a href="#" class="btn btnTy2 btnMore">MORE</a>
+</div>
+<div class="btnArea2">
+	<a href="#" class="btn btnTy2 btnMore">MORE</a>
+</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+
+
+<script type="text/javascript" src="../coding_list/js/pretty.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+// Creat : Madive 손상만
+// Creat Date : 2017-07-10
+// Last Update :2017-07-17
+// Ver : 1.0
+
+// Img Path
+$img-common : "/resource/img/";
+// mixins
+
+// Font Family
+
+// 한줄 말줄임
+@mixin ell($value, $display){
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	display:$display;
+	width:$value;
+}
+
+// 여러줄 말줄임
+@mixin lineEll($line){
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:$line;
+	-webkit-box-orient:vertical;
+	word-wrap:break-word;
+}
+
+@mixin weight($value){
+	@if $value == "N" {
+		font-weight:normal;
+	} @else if $value == "M" {
+		font-weight:600;
+	} @else if $value == "B" {
+		font-weight:700;
+	}
+}
+
+// function
+@function data($value){
+	@return ceil($value / 4);
+};
+
+
+
+// Color
+$color0 : #666;
+$color1 : #718fac; //진한 파랑
+$color2 : #7c9dbc; //연한 파랑
+$color3 : #ff903b; //주황
+$color4 : #ee1c23; //빨강

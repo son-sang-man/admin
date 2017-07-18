@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>KSSN 한국표준정보망 관리자</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="js/dtree.js"></script>
+	<style>
+		body{padding:20px 10px;}
+		ol {list-style-position: inside; padding-left:2px}
+		li {padding:2px}
+		li span {}
+		.t_ing {color:#999}
+		.t_js {color:brown}
+		.t_app {color:#0042ff}
+		.t_app_js {color:#7395d9}
+		.t_confirm {color:#9600ff}
+		.t_confirm_js {color:#40724b}
+		.t_melon {color:#000}
+		.t_modify {color:#ff0000}
+		img{vertical-align:middle}
+	</style>
+</head>
+<body>
+
+<h1 class="c_left">KSSN 관리자 코딩진행표</h1>
+<h2 class="c_left">프로세스</h2>
+<ol>
+	<li><span class="t_ing">작업진행중</span></li>
+	<li><span class="t_app">검수요청</span></li> <!-- 상태메세지 : 검수요청 -->
+	<li><span class="t_js">스크립트작업진행중</span></li> <!-- 상태메세지 : 스크립트 -->
+	<li><span class="t_confirm_js">검수요청 (스크립트적용)</span></li> <!-- 상태메세지 : 스크립트검수 -->
+	<li><span class="t_melon"> 검수완료(개발가능)</span></li> <!-- 상태메세지 : 완료 -->
+	<li><span class="t_modify"> 개발전달후수정</span></li> <!-- 상태메세지 : 수정 -->
+</ol>
+
+<div class="dtree">
+	<p><a href="javascript: p.openAll();"><img src="img/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: p.closeAll();"><img src="img/btn_collapse.gif" alt="Collapse All" /></a></p>
+	<script type="text/javascript">
+		var tree1 = {
+			"WSG" : {
+				// "기본결정사항" : {
+				// 	"프로젝트사전협의사항" : ["/ildong/web/guide/with_back_dev.html", "기본", "mainFrame"],
+				// 	"작업 상세규칙" : ["/ildong/web/guide/checklist_front.html", "기본", "mainFrame"],
+				// },
+				// "Guide" : {
+				// 	"폰트" : ["/ildong/web/guide/guide_font.html", "기본", "mainFrame"],
+				// 	"Button" : ["/ildong/web/guide/guide_button.html", "기본", "mainFrame"],
+				// 	"Table" : ["/ildong/web/guide/guide_table.html", "기본", "mainFrame"],
+				// 	"Tab" : ["/ildong/web/guide/guide_tab.html", "기본", "mainFrame"],
+				// 	"Bullet List" : ["/ildong/web/guide/guide_list.html", "기본", "mainFrame"],
+				// 	"Form" : ["/ildong/web/guide/guide_form.html", "기본", "mainFrame"],
+				// 	"Page" : ["/ildong/web/guide/guide_page.html", "기본", "mainFrame"],
+				// },
+				"Layout" : ["/inc/layout.html", "기본", "mainFrame"],
+				"스크립트" : {
+					"Form" : ["/guide/guide_form_script.html", "기본", "mainFrame"],
+					// "Tab" : ["/ildong/web/guide/guide_form_script.html", "기본", "mainFrame"],
+				}
+			}
+		};
+		var p = new dTree('p', tree1);
+		document.write(p);
+	</script>
+
+
+	<p><a href="javascript: d.openAll();"><img src="img/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: d.closeAll();"><img src="img/btn_collapse.gif" alt="Collapse All" /></a></p>
+	<script type="text/javascript">
+		var tree = {
+			"관리자" : {
+				"Main" : ["/ildong/web/html/holdings/kor/main/index.html", "완료", "mainFrame"],
+			}
+		}
+		var d = new dTree("d", tree);
+		document.write(d);
+	</script>
+
+</div>
+
+</body>
+</html>
+

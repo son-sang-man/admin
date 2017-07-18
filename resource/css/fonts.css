@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*Noto*/
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: normal;
+	font-style: normal;
+	src: url('/fonts/NotoSansKR-Regular.eot'); /* IE9 Compat Modes */
+	src:
+	url('/fonts/NotoSansKR-Regular.otf') format('opentype'),
+	url('/fonts/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 600;
+	font-style: normal;
+	src: url('/fonts/NotoSansKR-Medium.eot'); /* IE9 Compat Modes */
+	src:
+	url('/fonts/NotoSansKR-Medium.otf') format('opentype'),
+	url('/fonts/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/NotoSansKR-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 700;
+	font-style: normal;
+	src: url('/fonts/NotoSansKR-Bold.eot'); /* IE9 Compat Modes */
+	src:
+	url('/fonts/NotoSansKR-Bold.otf') format('opentype'),
+	url('/fonts/NotoSansKR-Bold.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/NotoSansKR-Bold.woff') format('woff');
+}

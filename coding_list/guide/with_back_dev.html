@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
+	<title>프로젝트 사전 협의 사항</title>
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/ildong/web/asset/css/common/common.css" />
+	<script src="/ildong/web/asset/js/common/jquery.js"></script>
+	<script src="/ildong/web/asset/js/common/common.js"></script>
+</head>
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">일동제약 사이트 구축 프로젝트 사전 협의 사항</h1>
+
+	<h2 class="h2_guide">환경협의</h2>
+
+	<h3 class="h3_guide">1. 웹서버 및 개발 언어 종류</h3>
+	<div class="d_desc">JAVA (JSP)</div>
+	<h3 class="h3_guide">2. 웹표준 준수 여부 (DTD 종류 등)</h3>
+	<div class="d_desc">
+		&lt;!DOCTYPE html&gt;
+	</div>
+	<h3 class="h3_guide">3. 웹사이트 인코딩 방식</h3>
+	<div class="d_desc">utf-8</div>
+	<h3 class="h3_guide">4. 크로스브라우징 정책</h3>
+	<div class="d_desc">IE(9,10,11), 크롬, 사파리(Mac OS), 파이어 폭스 최신 버전</div>
+	<h3 class="h3_guide">6. 웹접근성</h3>
+	<div class="d_desc">
+		- Kwah 90%
+	</div>
+
+
+	<h2 class="h2_guide">업무협의</h2>
+
+	<h3 class="h3_guide">1. 디렉토리구조</h3>
+	<div class="d_desc">
+		<table class="guide_table">
+			<caption>일동제약 디렉토리 구조</caption>
+			<colgroup>
+				<col style="width:15%">
+				<col style="width:15%">
+				<col style="width:15%">
+				<col style="width:15%">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">1depth</th>
+					<th scope="col">2depth</th>
+					<th scope="col">3depth</th>
+					<th scope="col">4depth</th>
+					<th scope="col">설명</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row" rowspan="11">front</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>사용자 화면</td>
+				</tr>
+				<tr>
+					<td rowspan="3">/css</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>css 폴더</td>
+				</tr>
+				<tr>
+					<td>base.css</td>
+					<td>&nbsp;</td>
+					<td>공통 css</td>
+				</tr>
+				<tr>
+					<td>메뉴명.css</td>
+					<td>&nbsp;</td>
+					<td>각 메뉴 css</td>
+				</tr>
+
+				<tr>
+					<td rowspan="4">/images</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>이미지 폴더</td>
+				</tr>
+				<tr>
+					<td>/common</td>
+					<td>&nbsp;</td>
+					<td>공통 이미지 파일</td>
+				</tr>
+				<tr>
+					<td>/메뉴명(main 등)</td>
+					<td>&nbsp;</td>
+					<td>각 메뉴 별 이미지 파일</td>
+				</tr>
+				<tr>
+					<td>/sample</td>
+					<td>&nbsp;</td>
+					<td>노출되는 데이터를 위한 임시 이미지 파일</td>
+				</tr>
+
+				<tr>
+					<td>/js</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>js 파일</td>
+				</tr>
+				<tr>
+					<td rowspan="2">/메뉴명(main 등)</td>
+					<td>국문</td>
+					<td>&nbsp;</td>
+					<td rowspan="2">각 메뉴 별 html파일</td>
+				</tr>
+				<tr>
+					<td>국문</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
+	<title퍼블리싱 체크리스트</title>
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/ildong/web/asset/css/common/common.css" />
+	<script src="/ildong/web/asset/js/common/jquery.js"></script>
+	<script src="/ildong/web/asset/js/common/common.js"></script>
+</head>
+
+<body>
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">퍼블리싱 체크리스트</h1>
+
+	<h2 class="h2_guide">기본 사항</h2>
+
+	<h3 class="h3_guide">1. 이미지 저장</h3>
+	<div class="d_desc">
+		<p class="t_point">Photoshop 저장시</p>
+		기본 .png(PNG-8)로 저장하되 반투명값이 포함될 경우 .png(PNG-24)로 저장합니다.<br>
+		jpg - 이미지 중요도에따라 opacity 40 ~ 60 차등적용하여 저장.<br>
+		그 외 .png(PNG-24)의 경우 무손실 압축이므로 원본이미지를 그대로 유지하므로 중요한 잡티현상 없이 저장해야할 경우 jpg와 선택적 사용.
+	</div>
+
+	<h3 class="h3_guide">2. html 페이지 명</h3>
+	<div class="d_desc">
+		각각의 html산출물에는 각각의 페이지 명을 적용합니다.(페이지 명은 화면명세서 참조)<br>
+		(예시 : 협의 필요)
+	</div>
+
+	<h3 class="h3_guide">3. Dom구조</h3>
+	<!--
+	<div class="d_desc">
+		<ol class="num_list">
+			<li>
+				Dom구조는 .cont_area의 자식으로 해당 화면에 대한 고유의 dom및 그에 맞는 class를 지정합니다.<br>
+				예 :
+				&lt;div class="cont_area"&gt;
+					<strong>&lt;div class="stamp_wrap">스탬프 내용&lt;/div&gt;</strong>
+				&lt;/div&gt;
+			</li>
+			<li>레이어 팝업은 실제 컨텐츠 영역의 시작과 끝에 대해서 아래와 같이 주석을 기본으로 합니다.
+				<p><strong>주석</strong></p>
+				<ul>
+					<li>시작 주석 : &lt;!-- 레이어 팝업 내용 --&gt; </li>
+					<li>끝 주석 : &lt;!-- //레이어 팝업 내용 --&gt; </li>
+				<ul>
+			</li>
+			<li>1024(768)에 대한 디자인 산출물은 제작하지 않음을 기본으로 진행합니다. 다만, 퍼블리싱 진행 시 필요에 따라 기획/디자인 파트에 확인 및 요청을 합니다.</li>
+		</ol>
+	</div>
+	-->
+	<h3 class="h3_guide">4. Validation체크</h3>
+	<div class="d_desc">
+		필수적으로 체크하여 전달하여, 최고의 산출물을 유지 합니다.
+	</div>
+
+	<h3 class="h3_guide">5. Browser 체크</h3>
+	<div class="d_desc">
+		Browser 체크는 설치되어 있는 각각의 최신 브라우저를 체크하시고 IE의 경우 브라우저 호환성으로 체크<br>
+	</div>
+
+	<h3 class="h3_guide">6. CSS 기법 및 문법</h3>
+	<div class="d_desc">
+		<ol>
+			<li>z-index는 9999를 넘지 않으며, 증가간격은 10단뒤로 합니다. 다만, 주변 obj보다 위로 표현이 되어야 할 경우에는 2부터 시작합니다.</li>
+			<li>css파일 내 적용된 모든 이미지 경로는 각 개발자분께서 변경을 해야 합니다.</li>
+		</ol>
+	</div>
+
+	<h3 class="h3_guide">7. 가이드(WSG) 추가 및 수정</h3>
+	<div class="d_desc">
+		어떠한 경우라도 가이드가 추가 및 수정이 이루어질 경우 해당 단위에 대해서 <strong>세부적인 내용을 메일로 공유</strong>한다.
+	</div>
+
+</div>
+
+</body>
+</html>
