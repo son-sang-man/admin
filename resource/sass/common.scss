@@ -5,8 +5,9 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-12
-* Ver : 1.0
+* Last Update :2017-07-18
+* Modify : Madive 손상만
+* Ver : 1.01
 */
 
 body,
@@ -360,7 +361,7 @@ body{
 				height:40px;
 				line-height:40px;
 				border-top:1px solid #ccc;
-				
+
 				&:hover,
 				&:focus{
 					color:#7c9dbc;
@@ -506,7 +507,7 @@ body{
 						height:40px;
 						line-height:40px;
 						border-top:1px solid #6a9ed0;
-						
+
 						&:hover,
 						&:focus{
 							background:#6a9fd1;
@@ -646,14 +647,14 @@ body{
 			clear:both;
 		}
 	&.fR{
-		
+
 	}
 	.btnArea{
 		display:inline-block;
 		margin-top:0;
 	}
 	.tablePaging{
-		
+
 		display:inline-block;
 		font-family:Dotum,"돋움";
 		font-size:12px;
@@ -907,7 +908,7 @@ body{
 
 	}
 
-} 
+}
 .ui-datepicker-trigger{
 	display:inline-block;
 	width:19px;
@@ -975,7 +976,7 @@ body{
 			}
 			&.tab{
 				> ul{
-					li{ 
+					li{
 						a{
 							&:hover,
 							&:focus{
@@ -992,7 +993,7 @@ body{
 		> div{
 			display:none;
 			&.on{
-				display:block; 
+				display:block;
 			}
 		}
 	}
@@ -1151,7 +1152,7 @@ table{
 		&:hover {
 			background:url(#{$img-common}bg_radio_over.png) no-repeat 0 5px;
 		}
-	
+
 	}
 	&.blind_lab{
 		width:13px;
@@ -1275,14 +1276,14 @@ table{
 				transition:all 0.3s;
 			}
 		}
-	} 
+	}
 	.first{
 		background:#fff url(#{$img-common}bg_page_first.png) no-repeat center;
 		&:hover,
 		&:focus{
 			background:#fff url(#{$img-common}img/bg_page_first_over.png) no-repeat center;
 		}
-		
+
 	}
 	.previous{
 		background:#fff url(#{$img-common}bg_page_previous.png) no-repeat center;
@@ -1330,7 +1331,7 @@ table{
 	}
 
 }
-.btn{ 
+.btn{
 	display:inline-block;
 	padding:0 19px;
 	height:34px;
