@@ -1,8 +1,9 @@
 @charset "UTF-8";
+@import url("fonts.css");
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-18
+* Last Update :2017-07-12
 * Ver : 1.0
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
@@ -91,7 +92,7 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 
 .selectBox { display: inline-block; }
 .selectBox .designSelect { position: relative; background: #fff; }
-.selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 30px 0 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right top; line-height: 38px; width: 100%; box-sizing: border-box; text-align: left; font-size: 16px; color: #666; padding-right: 47px; }
+.selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 30px 0 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat 95% center; line-height: 38px; width: 100%; box-sizing: border-box; text-align: left; font-size: 16px; color: #666; padding-right: 47px; }
 .selectBox ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; box-sizing: border-box; width: 100%; z-index: 1; }
 .selectBox ul li:first-child > a { border-top: none; }
 .selectBox ul li a { display: block; margin: 0 20px; font-size: 16px; color: #666; height: 40px; line-height: 40px; border-top: 1px solid #ccc; }
@@ -139,9 +140,9 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #container .location > ul > li { float: left; height: 40px; min-width: 250px; padding-left: 20px; line-height: 40px; box-sizing: border-box; background: url(/resource/img/bg_select.png) no-repeat 95% center; border-right: 1px solid #ccc; }
 #container .location > ul > li > a { display: block; height: 40px; }
 #container .location > ul > li > ul { display: none; }
-#container .location > ul .home { width: 56px; min-width: 56px; background: #7c9dbc url(/images/bg_home.png) no-repeat center center; }
+#container .location > ul .home { width: 56px; min-width: 56px; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat center center; }
 #container .location > ul .home > a { display: block; position: absolute; width: 0; height: 0; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
-#container .location > ul .home:hover, #container .location > ul .home:focus, #container .location > ul .home:active { background: #ff904b url(/images/bg_home.png) no-repeat center center; }
+#container .location > ul .home:hover, #container .location > ul .home:focus, #container .location > ul .home:active { background: #ff904b url(/resource/img/bg_home.png) no-repeat center center; }
 #container .location > ul .home.last > a { color: #7c9dbc; }
 
 .contentsTop { background: #fff; }
@@ -216,75 +217,62 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 .tab .tabContent > div.on { display: block; }
 
 /* table */
-table tr { font-size: 13px; }
+table { /* radio */ /* checkbox */ /* paging */ /* button */ }
 table tr .necessory { position: relative; }
 table tr .necessory:before { content: "*"; display: inline-block; color: #df3232; }
-table tr td { font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; }
-table tr .tc { text-align: center !important; }
-table tr .tl { text-align: left !important; }
-table tr .tr { text-align: right !important; }
-
-.tableTy1 { width: 1140px; margin: auto; }
-.tableTy1 table { width: 100%; table-layout: fixed; }
-.tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; }
-.tableTy1 tr td { padding: 13px 10px; font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; color: #777; text-align: left; background: #f2f5f8; border-bottom: 1px solid #d5d5d5; }
-.tableTy1 thead tr th { background: #7c8c9b; text-align: center; }
-.tableTy1 tbody th { border-top: 1px solid #bcc5d4; border-left: 1px solid #bcc5d4; }
-.tableTy1 tbody td { border-top: 1px solid #bcc5d4; font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; }
-.tableTy1 tbody tr:first-child th, .tableTy1 tbody tr:first-child td { border-top: 0; }
-
-.tableTy2 { width: 1140px; margin: auto; border-top: 2px solid #333; border-bottom: 1px solid #666; }
-.tableTy2 table { width: 100%; table-layout: fixed; }
-.tableTy2 table tr th { padding: 10px 25px; font-size: 13px; color: #666; font-weight: 700; text-align: left; border-left: 1px solid #bcc5d4; background: #eaeef2; border-top: 1px solid #bcc5d4; }
-.tableTy2 table tr th:first-child { border-left: 0; }
-.tableTy2 table tr td { height: 40px; padding: 10px 20px; border-top: 1px solid #bcc5d4; font-size: 14px; color: #666; text-align: left; border-left: 1px solid #bcc5d4; }
-.tableTy2 table tr:first-child th, .tableTy2 table tr:first-child td { border-top: 0; }
-
-/* radio */
-.radioBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
-.radioBox:first-child { margin-left: 0; }
-.radioBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
-.radioBox input[type="radio"]:checked + label { background: url(/resource/img/bg_radio_on.png) no-repeat 0 5px; }
-.radioBox input[type="radio"]:disabled + label { background: url(/resource/img/bg_radio_disable.png) no-repeat 0 5px; }
-.radioBox input[type="radio"]:disabled:checked + label { background: url(/resource/img/bg_radio_disable_on.png) no-repeat 0 5px; }
-.radioBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_radio.png) no-repeat 0 5px; cursor: pointer; }
-.radioBox label:hover { background: url(/resource/img/bg_radio_over.png) no-repeat 0 5px; }
-.radioBox.blind_lab { width: 13px; }
-.radioBox.blind_lab label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
-
-/* checkbox */
-.checkBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
-.checkBox:first-child { margin-left: 0; }
-.checkBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
-.checkBox input[type="checkbox"]:checked + label { background: url(/resource/img/bg_check_on.png) no-repeat 0 5px; }
-.checkBox input[type="checkbox"]:disabled + label { background: url(/resource/img/bg_check_disable.png) no-repeat 0 5px; }
-.checkBox input[type="checkbox"]:disabled:checked + label { background: url(/resource/img/bg_check_disable_on.png) no-repeat 0 5px; }
-.checkBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; }
-.checkBox label:hover { background: url(/resource/img/bg_check_over.png) no-repeat 0 5px; }
-.checkBox.blind_lab { width: 13px; }
-.checkBox.blind_lab label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
-
-/* paging */
-.paging { height: 34px; line-height: 34px; text-align: center; margin-top: 30px; }
-.paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 36px; height: 36px; border: 1px solid #bcc5d4; box-sizing: border-box; }
-.paging > span { display: inline-block; height: 36px; margin: 0 15px; vertical-align: top; }
-.paging > span > a { display: inline-block; background: #fff; padding: 0 8px; min-width: 36px; padding: 0px 6px 0 2px; height: 36px; line-height: 36px; border: 1px solid #e7e7e7; font-size: 18px; color: #666; text-align: center; box-sizing: border-box; }
-.paging > span strong { display: inline-block; background: #fff; padding: 0 8px; min-width: 36px; padding: 0px 6px 0 2px; height: 36px; line-height: 36px; border: 1px solid #e7e7e7; font-size: 18px; color: #666; text-align: center; box-sizing: border-box; font-weight: normal; }
-.paging > span strong.on, .paging > span strong:hover, .paging > span strong:focus { color: #7c9dbc; transition: all 0.3s; }
-.paging .first { background: #fff url(/images/bg_page_first.png) no-repeat center; }
-.paging .first:hover, .paging .first:focus { background: #fff url(/images/bg_page_first_over.png) no-repeat center; }
-.paging .previous { background: #fff url(/images/bg_page_previous.png) no-repeat center; margin-left: -3px; }
-.paging .previous:hover, .paging .previous:focus { background: #fff url(/images/bg_page_previous_over.png) no-repeat center; }
-.paging .next { background: #fff url(/images/bg_page_next.png) no-repeat center; }
-.paging .next:hover, .paging .next:focus { background: #fff url(/images/bg_page_next_over.png) no-repeat center; }
-.paging .end { background: #fff url(/images/bg_page_end.png) no-repeat center; margin-left: -3px; }
-.paging .end:hover, .paging .end:focus { background: #fff url(/images/bg_page_end_over.png) no-repeat center; }
-
-/* button */
-.btnArea { margin-top: 30px; }
-.btnArea > div.fR > * { margin-left: 4px; }
-.btnArea .btn, .btnArea .btnSmall { margin-left: 4px; }
-.btnArea .btn:first-child, .btnArea .btnSmall:first-child { margin-left: 0; }
+table tr .necessory td { font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; }
+table .tableTy1 { width: 1140px; margin: auto; }
+table .tableTy1 table { width: 100%; table-layout: fixed; }
+table .tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; }
+table .tableTy1 tr td { padding: 13px 10px; font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; color: #777; text-align: left; background: #f2f5f8; border-bottom: 1px solid #d5d5d5; }
+table .tableTy1 thead tr th { background: #7c8c9b; text-align: center; }
+table .tableTy1 tbody th { border-top: 1px solid #bcc5d4; border-left: 1px solid #bcc5d4; }
+table .tableTy1 tbody td { border-top: 1px solid #bcc5d4; font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; }
+table .tableTy1 tbody tr:first-child th, table .tableTy1 tbody tr:first-child td { border-top: 0; }
+table .tableTy2 { width: 1140px; margin: auto; border-top: 2px solid #333; border-bottom: 1px solid #666; }
+table .tableTy2 table { width: 100%; table-layout: fixed; }
+table .tableTy2 table tr th { padding: 10px 25px; font-size: 13px; color: #666; font-weight: 700; text-align: left; border-left: 1px solid #bcc5d4; background: #eaeef2; border-top: 1px solid #bcc5d4; }
+table .tableTy2 table tr th:first-child { border-left: 0; }
+table .tableTy2 table tr td { height: 40px; padding: 10px 20px; border-top: 1px solid #bcc5d4; font-size: 14px; color: #666; text-align: left; border-left: 1px solid #bcc5d4; }
+table .tableTy2 table tr:first-child th, table .tableTy2 table tr:first-child td { border-top: 0; }
+table .radioBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
+table .radioBox:first-child { margin-left: 0; }
+table .radioBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
+table .radioBox input[type="radio"]:checked + label { background: url(/resource/img/bg_radio_on.png) no-repeat 0 5px; }
+table .radioBox input[type="radio"]:disabled + label { background: url(/resource/img/bg_radio_disable.png) no-repeat 0 5px; }
+table .radioBox input[type="radio"]:disabled:checked + label { background: url(/resource/img/bg_radio_disable_on.png) no-repeat 0 5px; }
+table .radioBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_radio.png) no-repeat 0 5px; cursor: pointer; }
+table .radioBox label:hover { background: url(/resource/img/bg_radio_over.png) no-repeat 0 5px; }
+table .radioBox.blind_lab { width: 13px; }
+table .radioBox.blind_lab label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
+table .checkBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
+table .checkBox:first-child { margin-left: 0; }
+table .checkBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
+table .checkBox input[type="checkbox"]:checked + label { background: url(/resource/img/bg_check_on.png) no-repeat 0 5px; }
+table .checkBox input[type="checkbox"]:disabled + label { background: url(/resource/img/bg_check_disable.png) no-repeat 0 5px; }
+table .checkBox input[type="checkbox"]:disabled:checked + label { background: url(/resource/img/bg_check_disable_on.png) no-repeat 0 5px; }
+table .checkBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; }
+table .checkBox label:hover { background: url(/resource/img/bg_check_over.png) no-repeat 0 5px; }
+table .checkBox.blind_lab { width: 13px; }
+table .checkBox.blind_lab label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
+table .paging { height: 34px; line-height: 34px; text-align: center; margin-top: 30px; }
+table .paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 36px; height: 36px; border: 1px solid #bcc5d4; box-sizing: border-box; }
+table .paging > span { display: inline-block; height: 36px; margin: 0 15px; vertical-align: top; }
+table .paging > span > a { display: inline-block; background: #fff; padding: 0 8px; min-width: 36px; padding: 0px 6px 0 2px; height: 36px; line-height: 36px; border: 1px solid #e7e7e7; font-size: 18px; color: #666; text-align: center; box-sizing: border-box; }
+table .paging > span strong { display: inline-block; background: #fff; padding: 0 8px; min-width: 36px; padding: 0px 6px 0 2px; height: 36px; line-height: 36px; border: 1px solid #e7e7e7; font-size: 18px; color: #666; text-align: center; box-sizing: border-box; font-weight: normal; }
+table .paging > span strong.on, table .paging > span strong:hover, table .paging > span strong:focus { color: #7c9dbc; transition: all 0.3s; }
+table .paging .first { background: #fff url(/resource/img/bg_page_first.png) no-repeat center; }
+table .paging .first:hover, table .paging .first:focus { background: #fff url(/resource/img/bg_page_first_over.png) no-repeat center; }
+table .paging .previous { background: #fff url(/resource/img/bg_page_previous.png) no-repeat center; margin-left: -3px; }
+table .paging .previous:hover, table .paging .previous:focus { background: #fff url(/resource/img/bg_page_previous_over.png) no-repeat center; }
+table .paging .next { background: #fff url(/resource/img/bg_page_next.png) no-repeat center; }
+table .paging .next:hover, table .paging .next:focus { background: #fff url(/resource/img/bg_page_next_over.png) no-repeat center; }
+table .paging .end { background: #fff url(/resource/img/bg_page_end.png) no-repeat center; margin-left: -3px; }
+table .paging .end:hover, table .paging .end:focus { background: #fff url(/resource/img/bg_page_end_over.png) no-repeat center; }
+table .btnArea { margin-top: 30px; }
+table .btnArea > div.fR > * { margin-left: 4px; }
+table .btn, table .btnSmall { margin-left: 4px; }
+table .btn:first-child, table .btnSmall:first-child { margin-left: 0; }
 
 .btn { display: inline-block; padding: 0 19px; height: 34px; font-size: 15px; font-weight: 700; color: #fff; line-height: 34px; box-sizing: border-box; }
 
