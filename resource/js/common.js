@@ -23,7 +23,7 @@ function datepicker(){
 		currentText: 'TODAY',
 		showOn: "both",
 		showButtonPanel: true,
-		buttonImage: "/../images/ico_datapicker.png",
+		buttonImage: "/resource/img/ico_datapicker.png",
 		buttonImageOnly: true,
 		buttonText: "날짜 선택",
 		changeMonth: true,
