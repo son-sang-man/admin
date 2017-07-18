@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
+	<title>리스트 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/ildong/web/asset/css/common/common.css" />
+	<script src="/ildong/web/asset/js/common/jquery.js"></script>
+	<script src="/ildong/web/asset/js/common/common.js"></script>
+</head>
+	<style>
+		.fc_white {background-color:#000;}
+	</style>
+<body>
+
+<div id="wrap" class="coding_guide">
+<h1 class="h1_guide">Form Guide</h1>
+	<dl class="notice">
+		<dt>참고사항</dt>
+		<dd>
+			<ol>
+				<li>Design Selsect 태그 생성 : html상에 select 태그가 존재하면 ul,li,a(Design Selsect) 태그는 자동으로 동적 생성 합니다.</li>
+				<li>Design Selsect 클릭시 값 전달받기 : Design Selsect에서 옵션 선택시 화면에 보이지않는 select 태그 option에 자동으로 selected가 삽입됩니다.</li>
+			</ol>
+		</dd>
+		<dd>
+			<ol>
+				<li>Input text 또는 password의 경우 title 필수 입력 / id for로 연결 하지 않음</li>
+			</ol>
+		</dd>
+		<dd>
+			<ol>
+				<li>checkbox 또는 Radio버튼은 input id와 label for로 필수 연결</li>
+			</ol>
+		</dd>
+	</dl>
+	<h2 class="h2_guide">01. Select Box</h2>
+	<div class="guide_wrap">
+		<select title="검색어 분류">
+			<option>전체</option>
+			<option>제목</option>
+			<option>내용</option>
+		</select>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<div class="listTy1">
+	<select title="검색어 분류">
+		<option>전체</option>
+		<option>제목</option>
+		<option>내용</option>
+	</select>
+</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">02. Input Box</h2>
+	<div class="guide_wrap">
+		<input type="text" placeholder="검색어를 입력해 주세요" />
+		<input type="text" disabled="disabled" />
+		<input type="password" />
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<input type="text" placeholder="검색어를 입력해 주세요" title="검색어 입력" />
+<input type="text" placeholder="검색어를 입력해 주세요" title="검색어 입력" disabled="disabled" />
+<input type="password" title="비밀번호 입력" />
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">03. CheckBox Box</h2>
+	<div class="guide_wrap">
+		<span class="checkBox">
+			<input type="checkbox" id="forChk1" />
+			<label for="forChk1">이메일</label>
+		</span>
+		<span class="checkBox">
+			<input type="checkbox" id="forChk2" checked="checked" />
+			<label for="forChk2">SMS</label>
+		</span>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<span class="checkBox">
+	<input type="checkbox" id="forChk1" />
+	<label for="forChk1">이메일</label>
+</span>
+<span class="checkBox">
+	<input type="checkbox" id="forChk2" checked="checked" />
+	<label for="forChk2">SMS</label>
+</span>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">04. CheckBox Box</h2>
+	<div class="guide_wrap">
+		<span class="radioButton">
+			<input type="radio" id="forRadio1" name="type1" />
+			<label for="forRadio1">이메일 정보 수신</label>
+		</span>
+		<span class="radioButton">
+			<input type="radio" id="forRadio2" name="type1" checked="checked" />
+			<label for="forRadio2">SMS 정보 수신</label>
+		</span>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<span class="radioButton">
+	<input type="radio" id="forRadio1" name="type1" />
+	<label for="forRadio1">이메일 정보 수신</label>
+</span>
+<span class="radioButton">
+	<input type="radio" id="forRadio2" name="type1" checked="checked" />
+	<label for="forRadio2">SMS 정보 수신</label>
+</span>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">04. CheckBox Box</h2>
+	<div class="guide_wrap">
+		<textarea title="메세지 입력">블라블라블라블라</textarea>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<textarea title="메세지 입력">블라블라블라블라</textarea>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">04. 첨부파일</h2>
+	<div class="guide_wrap">
+		<div class="fileSearch">
+			<input type="text" disabled="disabled" title="첨부파일 명" />
+			<input type="file" id="forFile"/ >
+			<label for="forFile" class="btn btnTy5 type2 btnSearch">찾아보기</label>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<div class="fileSearch">
+	<input type="text" disabled="disabled" title="첨부파일 명" />
+	<input type="file" id="forFile"/ >
+	<label for="forFile" class="btn btnTy5 type2 btnSearch">찾아보기</label>
+</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+
+
+	
+</div>
+
+
+
+
+<script type="text/javascript" src="../coding_list/js/pretty.js"></script>
+</body>
+</html>

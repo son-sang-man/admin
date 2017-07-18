@@ -4,986 +4,186 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
-	<title>테이블 가이드</title>
-	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/ildong/web/coding_list/css/pretty.css">
-	<link type="text/css" rel="stylesheet" href="/ildong/web/asset/css/common/common.css" />
-	<script src="/ildong/web/asset/js/common/jquery.js"></script>
-	<script src="/ildong/web/asset/js/common/common.js"></script>
+	<title>Table 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
 </head>
-	<style>
-		.fc_white {background-color:#000;}
-	</style>
 <body>
 
 <div id="wrap" class="coding_guide">
-
-	<dl class="notice">
-		<dt>참고사항</dt>
-		<dd>
-			<ol>
-				<li>Caption 규칙 : 이 표는 블라블라 목록을 나타내는 표로 블라블라, 블라블라, 블라블라로 구성되어 있습니다.</li>
-			</ol>
-		</dd>
-	</dl>
-
-	<h2 class="h2_guide">01. Table 기본</h2>
+<h1 class="h1_guide">Table Guide</h1>
+	<h2 class="h2_guide">01. 가로형 테이블</h2>
 	<div class="guide_wrap">
-		<div class="dataTable">
+		<!-- table_ty01 -->
+		<div class="tableTy1">
 			<table>
-				<caption>이 표는 주식분포 상황 목록을 나타내는 표로 구분, 주주명, 주식의 종류, 소유주식수, 비율(%), 비고로 구성되어 있습니다.</caption>
+				<caption></caption>
 				<colgroup>
-					<col style="width:12%" />
-					<col style="width:20%" />
-					<col style="width:17%" />
-					<col style="width:19%" />
-					<col style="width:19%" />
-					<col />
+					<col style="width:10%;" />
+					<col style="width:25%;" />
+					<col style="width:35%;" />
+					<col style="width:30%;" />
 				</colgroup>
 				<thead>
-				<tr>
-					<th scope="col">구분</th>
-					<th scope="col">주주명</th>
-					<th scope="col">주식의 종류</th>
-					<th scope="col">소유주식수</th>
-					<th scope="col">비율(%)</th>
-					<th scope="col">비고</th>
-				</tr>
+					<tr>
+						<th scope="col">번호</td>
+						<th scope="col">이름</td>
+						<th scope="col">작성자</td>
+						<th scope="col">진행상태</td>
+					</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<th scope="row">최대주주</th>
-					<td>씨엠제이㈜ 외 17인</td>
-					<td>보통주</td>
-					<td class="tR">2,291,078</td>
-					<td class="tR">31.72%</td>
-					<td></td>
-				</tr>
-				<tr>
-					<th scope="row">주요주주</th>
-					<td>썬라이즈홀딩스 유한회사</td>
-					<td>보통주</td>
-					<td class="tR">1,444,562</td>
-					<td class="tR">20.00%</td>
-					<td></td>
-				</tr>
-				<tr>
-					<th scope="row" colspan="2">우리사주조합</th>
-					<td>보통주</td>
-					<td class="tR">2,052</td>
-					<td class="tR">0.03%</td>
-					<td></td>
-				</tr>
+					<tr>
+						<td class="tC">
+							<span class="radioBox blind_lab">
+								<input type="radio" id="cell1" />
+								<label for="cell1">선택</label>
+							</span>
+						</td>
+						<td>홍길동</td>
+						<td>홍길동</td>
+						<td>진행</td>
+					</tr>
+					<tr>
+						<td class="tC">
+							<span class="checkBox blind_lab">
+								<input type="checkbox" id="cell2" />
+								<label for="cell2">선택</label>
+							</span>
+						</td>
+						<td>홍길동</td>
+						<td>홍길동</td>
+						<td>진행</td>
+					</tr>
+					<tr>
+						<td class="tC">1</td>
+						<td>홍길동</td>
+						<td>홍길동</td>
+						<td>진행</td>
+					</tr>
 				</tbody>
 			</table>
-			<p class="comment">2017년 3월 17일 기준</p>
 		</div>
+		<!-- //table_ty01 -->
+		<!-- paging -->
+		<div class="paging">
+			<a href="#" class="first">맨 처음</a>
+			<a href="#" class="previous">이전</a>
+			<span>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+			</span>
+			<a href="#" class="next">다음</a>
+			<a href="#" class="end">맨 끝</a>
+		</div>
+		<!-- //paging -->
 	</div>
 	<div class="d_desc code">
 <!-- code -->
 <xmp class="prettyprint linenums javascript">
-<div class="dataTable">
+<!-- table_ty01 -->
+<div class="tableTy1">
 	<table>
-		<caption>이 표는 주식분포 상황을 나타내는 표로 구분, 주주명, 주식의 종류, 소유주식수, 비율(%), 비고로 구성되어 있습니다.</caption>
+		<caption></caption>
 		<colgroup>
-			<col style="width:12%" />
-			<col style="width:20%" />
-			<col style="width:17%" />
-			<col style="width:19%" />
-			<col style="width:19%" />
-			<col />
+			<col style="width:10%;" />
+			<col style="width:25%;" />
+			<col style="width:35%;" />
+			<col style="width:30%;" />
 		</colgroup>
 		<thead>
-		<tr>
-			<th scope="col">구분</th>
-			<th scope="col">주주명</th>
-			<th scope="col">주식의 종류</th>
-			<th scope="col">소유주식수</th>
-			<th scope="col">비율(%)</th>
-			<th scope="col">비고</th>
-		</tr>
+			<tr>
+				<th scope="col">번호</td>
+				<th scope="col">이름</td>
+				<th scope="col">작성자</td>
+				<th scope="col">진행상태</td>
+			</tr>
 		</thead>
 		<tbody>
-		<tr>
-			<th scope="row">최대주주</th>
-			<td>씨엠제이㈜ 외 17인</td>
-			<td>보통주</td>
-			<td class="tR">2,291,078</td>
-			<td class="tR">31.72%</td>
-			<td></td>
-		</tr>
-		<tr>
-			<th scope="row">주요주주</th>
-			<td>썬라이즈홀딩스 유한회사</td>
-			<td>보통주</td>
-			<td class="tR">1,444,562</td>
-			<td class="tR">20.00%</td>
-			<td></td>
-		</tr>
-		<tr>
-			<th scope="row" colspan="2">우리사주조합</th>
-			<td>보통주</td>
-			<td class="tR">2,052</td>
-			<td class="tR">0.03%</td>
-			<td></td>
-		</tr>
-		</tbody>
-	</table>
-	<p class="comment">2017년 3월 17일 기준</p>
-</div>
-</xmp>
-<!-- // code -->
-	</div>
-
-<h2 class="h2_guide">01. Table 기본 세로형</h2>
-	<div class="guide_wrap">
-		<div class="dataTable type2">
-			<table>
-				<caption>이 표는 지배구조 회사 소개 목록을 나타내는 표로 회사명, 설립일, 자본금, 대표이사, 상장일, 임직원수, 주요사업으로 구성되어 있습니다.</caption>
-				<colgroup>
-					<col style="width:33%">
-					<col style="width:*">
-				</colgroup>
-				<tbody>
-				<tr>
-					<th scope="row">회사명</th>
-					<td>일동홀딩스㈜</td>
-				</tr>
-				<tr>
-					<th scope="row">설립일</th>
-					<td>1941년 3월 14일</td>
-				</tr>
-				<tr>
-					<th scope="row">자본금</th>
-					<td>7,223백만원</td>
-				</tr>
-				<tr>
-					<th scope="row">대표이사</th>
-					<td>이정치</td>
-				</tr>
-				<tr>
-					<th scope="row">상장일</th>
-					<td>1975년 6월 23일(유가증권 상장)</td>
-				</tr>
-				<tr>
-					<th scope="row">임직원수</th>
-					<td>76명(2016년 9월 30일)</td>
-				</tr>
-				<tr>
-					<th scope="row">주요사업</th>
-					<td>계열사 관리 및 투자사업</td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="dataTable type2">
-	<table>
-		<caption>이 표는 지배구조 회사 소개 목록을 나타내는 표로 회사명, 설립일, 자본금, 대표이사, 상장일, 임직원수, 주요사업으로 구성되어 있습니다.</caption>
-		<colgroup>
-			<col style="width:33%">
-			<col style="width:*">
-		</colgroup>
-		<tbody>
-		<tr>
-			<th scope="row">회사명</th>
-			<td>일동홀딩스㈜</td>
-		</tr>
-		<tr>
-			<th scope="row">설립일</th>
-			<td>1941년 3월 14일</td>
-		</tr>
-		<tr>
-			<th scope="row">자본금</th>
-			<td>7,223백만원</td>
-		</tr>
-		<tr>
-			<th scope="row">대표이사</th>
-			<td>이정치</td>
-		</tr>
-		<tr>
-			<th scope="row">상장일</th>
-			<td>1975년 6월 23일(유가증권 상장)</td>
-		</tr>
-		<tr>
-			<th scope="row">임직원수</th>
-			<td>76명(2016년 9월 30일)</td>
-		</tr>
-		<tr>
-			<th scope="row">주요사업</th>
-			<td>계열사 관리 및 투자사업</td>
-		</tr>
+			<tr>
+				<td class="tC">
+					<span class="radioBox blind_lab">
+						<input type="radio" id="cell1" />
+						<label for="cell1">선택</label>
+					</span>
+				</td>
+				<td>홍길동</td>
+				<td>홍길동</td>
+				<td>진행</td>
+			</tr>
+			<tr>
+				<td class="tC">
+					<span class="checkBox blind_lab">
+						<input type="checkbox" id="cell2" />
+						<label for="cell2">선택</label>
+					</span>
+				</td>
+				<td>홍길동</td>
+				<td>홍길동</td>
+				<td>진행</td>
+			</tr>
+			<tr>
+				<td class="tC">1</td>
+				<td>홍길동</td>
+				<td>홍길동</td>
+				<td>진행</td>
+			</tr>
 		</tbody>
 	</table>
 </div>
-</xmp>
-<!-- // code -->
-	</div>
-
-	<h2 class="h2_guide">02. 게시판 테이블_01</h2>
-	<div class="guide_wrap">
-		<div class="bbsTable">
-			<table>
-				<caption>이 표는 전자공고 목록을 나타내는 표로 NO, 제목, 등록일, 조회수로 구성되어 있습니다.</caption>
-				<colgroup>
-					<col style="width:8%" />
-					<col />
-					<col style="width:16%" />
-					<col style="width:14%" />
-				</colgroup>
-				<thead>
-				<tr>
-					<th scope="col">NO</th>
-					<th scope="col">제목</th>
-					<th scope="col">등록일</th>
-					<th scope="col">조회수</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td class="fNumRe tC">10</td>
-					<td><a class="title" href="#">우리의 손길이 필요한 곳은 생각보다 많습니다.</a></td>
-					<td class="fNumRe tC">2016.12.21</td>
-					<td class="tC">
-						<a href="#" class="btn btnTy4"><span class="download">다운로드</span></a>
-					</td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="bbsTable">
-	<table>
-		<caption>이 표는 전자공고 목록을 나타내는 표로 NO, 제목, 등록일, 조회수로 구성되어 있습니다.</caption>
-		<colgroup>
-			<col style="width:8%" />
-			<col />
-			<col style="width:16%" />
-			<col style="width:14%" />
-		</colgroup>
-		<thead>
-		<tr>
-			<th scope="col">NO</th>
-			<th scope="col">제목</th>
-			<th scope="col">등록일</th>
-			<th scope="col">조회수</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td class="fNumRe tC">10</td>
-			<td><a class="title" href="#">우리의 손길이 필요한 곳은 생각보다 많습니다.</a></td>
-			<td class="fNumRe tC">2016.12.21</td>
-			<td class="tC">
-				<a href="#" class="btn btnTy4"><span class="download">다운로드</span></a>
-			</td>
-		</tr>
-		</tbody>
-	</table>
-</div>
-</xmp>
-<!-- // code -->
-	</div>
-
-	<h2 class="h2_guide">02. 게시판 테이블_02</h2>
-	<div class="guide_wrap">
-		<div class="bbsTable type2">
-			<table>
-				<caption>이 표는 전자공고 목록을 나타내는 표로 NO, 제목, 등록일, 조회수로 구성되어 있습니다.</caption>
-				<colgroup>
-					<col style="width:8%" />
-					<col />
-					<col style="width:16%" />
-					<col style="width:14%" />
-				</colgroup>
-				<thead>
-				<tr>
-					<th scope="col">NO</th>
-					<th scope="col">제목</th>
-					<th scope="col">등록일</th>
-					<th scope="col">조회수</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td class="fNumRe tC">10</td>
-					<td><a class="title" href="#">우리의 손길이 필요한 곳은 생각보다 많습니다.</a></td>
-					<td class="fNumRe tC">2016.12.21</td>
-					<td class="tC">
-						<a href="#" class="btn btnTy4"><span class="download">다운로드</span></a>
-					</td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="bbsTable type2">
-	<table>
-		<caption>이 표는 전자공고 목록을 나타내는 표로 NO, 제목, 등록일, 조회수로 구성되어 있습니다.</caption>
-		<colgroup>
-			<col style="width:8%" />
-			<col />
-			<col style="width:16%" />
-			<col style="width:14%" />
-		</colgroup>
-		<thead>
-		<tr>
-			<th scope="col">NO</th>
-			<th scope="col">제목</th>
-			<th scope="col">등록일</th>
-			<th scope="col">조회수</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td class="fNumRe tC">10</td>
-			<td><a class="title" href="#">우리의 손길이 필요한 곳은 생각보다 많습니다.</a></td>
-			<td class="fNumRe tC">2016.12.21</td>
-			<td class="tC">
-				<a href="#" class="btn btnTy4"><span class="download">다운로드</span></a>
-			</td>
-		</tr>
-		</tbody>
-	</table>
-</div>
-</xmp>
-<!-- // code -->
-	</div>
-
-	<h2 class="h2_guide">02. 게시판 테이블(데이터 없음)</h2>
-	<div class="guide_wrap">
-		<div class="bbsTable">
-			<table>
-				<caption>이 표는 전자공고 목록을 나타내는 표로 NO, 제목, 등록일, 조회수로 구성되어 있습니다.</caption>
-				<colgroup>
-					<col style="width:8%" />
-					<col />
-					<col style="width:16%" />
-					<col style="width:14%" />
-				</colgroup>
-				<thead>
-				<tr>
-					<th scope="col">NO</th>
-					<th scope="col">제목</th>
-					<th scope="col">등록일</th>
-					<th scope="col">조회수</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr class="noData">
-					<td colspan="4">등록된 게시물이 없습니다.</td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="bbsTable">
-	<table>
-		<caption>이 표는 전자공고 목록을 나타내는 표로 NO, 제목, 등록일, 조회수로 구성되어 있습니다.</caption>
-		<colgroup>
-			<col style="width:8%" />
-			<col />
-			<col style="width:16%" />
-			<col style="width:14%" />
-		</colgroup>
-		<thead>
-		<tr>
-			<th scope="col">NO</th>
-			<th scope="col">제목</th>
-			<th scope="col">등록일</th>
-			<th scope="col">조회수</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr class="noData">
-			<td colspan="4">등록된 게시물이 없습니다.</td>
-		</tr>
-		</tbody>
-	</table>
-</div>
-</xmp>
-<!-- // code -->
-	</div>
-
-	<h2 class="h2_guide">02. 게시판 테이블 상세</h2>
-	<div class="guide_wrap">
-		<div class="bbsTable">
-			<table>
-				<caption>이 표는 사회공헌 소식 상세 목록을 나타내는 표로 제목, 작성일, 조회수, 내용으로 구성되어 있습니다.</caption>
-				<colgroup>
-					<col style="width:33%" />
-					<col />
-					<col style="width:33%" />
-				</colgroup>
-				<thead>
-				<tr>
-					<th class="viewTitle" scope="row" colspan="3">[일동제약] 2016 3Q R자료실자료</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr class="data">
-					<td>
-						<strong>작성일</strong>
-						<span class="fNumRe">2016.12.21</span>
-					</td>
-					<td class="tC">
-						<strong>조회수</strong>
-						<span class="fNumRe">233</span>
-					</td>
-					<td class="tR">
-						<strong>첨부파일</strong>
-						<span>첨부파일.jpg</span>
-					</td>
-				</tr>
-				<tr class="editor">
-					<td colspan="3">
-						<p style="text-align:center"><img src="../img/sample/sample_tbview.jpg" alt="" /></p>
-						<br />
-						<p style="font-size:15px; color:#7c5327;">일동제약, 쪽방촌 어르신 한가위 나눔 실천 1,600만 원 상당 건강기능식품 기증</p>
-						<br />
-						<p>[일동제약] 2016 3Q IR자료실자료 상세내용입니다. [일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다. [일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.</p>
-					</td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="bbsTable">
-	<table>
-		<caption>이 표는 사회공헌 소식 상세 목록을 나타내는 표로 제목, 작성일, 조회수, 내용으로 구성되어 있습니다.</caption>
-		<colgroup>
-			<col style="width:33%" />
-			<col />
-			<col style="width:33%" />
-		</colgroup>
-		<thead>
-		<tr>
-			<th class="viewTitle" scope="row" colspan="3">[일동제약] 2016 3Q R자료실자료</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr class="data">
-			<td>
-				<strong>작성일</strong>
-				<span class="fNumRe">2016.12.21</span>
-			</td>
-			<td class="tC">
-				<strong>조회수</strong>
-				<span class="fNumRe">233</span>
-			</td>
-			<td class="tR">
-				<strong>첨부파일</strong>
-				<span>첨부파일.jpg</span>
-			</td>
-		</tr>
-		<tr class="editor">
-			<td colspan="3">
-				<p style="text-align:center"><img src="../img/sample/sample_tbview.jpg" alt="" /></p>
-				<br />
-				<p style="font-size:15px; color:#7c5327;">일동제약, 쪽방촌 어르신 한가위 나눔 실천 1,600만 원 상당 건강기능식품 기증</p>
-				<br />
-				<p>[일동제약] 2016 3Q IR자료실자료 상세내용입니다. [일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다. [일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.
-[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.[일동제약] 2016 3Q IR자료실자료 상세내용입니다.</p>
-			</td>
-		</tr>
-		</tbody>
-	</table>
-</div>
-</xmp>
-<!-- // code -->
-	</div>
-
-	<h2 class="h2_guide">03. 게시판 검색영역</h2>
-	<div class="guide_wrap">
-		<div class="bbsSearch">
-			<div class="count">등록 수 총 <em>2333</em>건</div>
-			<div class="push">
-				<select title="검색어 분류">
-					<option>전체</option>
-					<option>제목</option>
-					<option>내용</option>
-				</select>
-				<span class="searchBox">
-					<input type="text" title="검색어 입력" />
-					<button><i>검색</i></button>
-				</span>
-			</div>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="bbsSearch">
-	<div class="count">등록 수 총 <em>2333</em>건</div>
-	<div class="push">
-		<select title="검색어 분류">
-			<option>전체</option>
-			<option>제목</option>
-			<option>내용</option>
-		</select>
-		<span class="searchBox">
-			<input type="text" title="검색어 입력" />
-			<button><i>검색</i></button>
-		</span>
-	</div>
-</div>
-</xmp>
-<!-- // code -->
-	</div>
-
-	<h2 class="h2_guide">04. 페이징 리스트</h2>
-	<div class="paging">
-		<a href="#" class="first">처음페이지</a>
-		<a href="#" class="prev">이전페이지</a>
-		<span>
-			<strong class="num" title="현재 페이지">1</strong>
-			<a href="#" class="num">2</a>
-			<a href="#" class="num">3</a>
-			<a href="#" class="num">4</a>
-			<a href="#" class="num">5</a>
-		</span>
-		<a href="#" class="next">다음페이지</a>
-		<a href="#" class="last">마지막페이지</a>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
+<!-- //table_ty01 -->
+<!-- paging -->
 <div class="paging">
-	<a href="#" class="first">처음페이지</a>
-	<a href="#" class="prev">이전페이지</a>
+	<a href="#" class="first">맨 처음</a>
+	<a href="#" class="previous">이전</a>
 	<span>
-		<strong class="num" title="현재 페이지">1</strong>
-		<a href="#" class="num">2</a>
-		<a href="#" class="num">3</a>
-		<a href="#" class="num">4</a>
-		<a href="#" class="num">5</a>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+		<a href="#">5</a>
+		<a href="#">6</a>
+		<a href="#">7</a>
+		<a href="#">8</a>
+		<a href="#">9</a>
+		<a href="#">10</a>
 	</span>
-	<a href="#" class="next">다음페이지</a>
-	<a href="#" class="last">마지막페이지</a>
+	<a href="#" class="next">다음</a>
+	<a href="#" class="end">맨 끝</a>
 </div>
 </xmp>
 <!-- // code -->
 	</div>
 
-	<h2 class="h2_guide">04. 페이징 게시판 상세</h2>
-	<div class="viewPaging">
-		<div class="prev">
-			<span>이전글</span>
-			<a href="#"><span>[일동제약] 2016년 3분기 실적발표</span></a>
-		</div>
-		<div class="next">
-			<span>다음글</span>
-			<a href="#"><span>애널리스트간담회(20160922) 자료</span></a>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="viewPaging">
-	<div class="prev">
-		<span>이전글</span>
-		<a href="#"><span>[일동제약] 2016년 3분기 실적발표</span></a>
-	</div>
-	<div class="next">
-		<span>다음글</span>
-		<a href="#"><span>애널리스트간담회(20160922) 자료</span></a>
-	</div>
-</div>
-</xmp>
-<!-- // code -->
-	</div>
-
-
-	<h2 class="h2_guide">05. Table 쓰기</h2>
+	<h2 class="h2_guide">02. 달력</h2>
 	<div class="guide_wrap">
-		<div class="dataTable type2">
-			<table>
-				<caption>이 표는 제보하기 입력을 나타내는 표로 제보분류, 이름, 연락처, 이메일, 제목, 제보대상, 언제, 어디서, 내용, 첨부파일로 구성되어 있습니다.
-				<colgroup>
-					<col style="width:16%" />
-					<col />
-				</colgroup>
-				<tbody>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">제보분류</span></th>
-					<td>
-						<select id="select1" title="제보 분류">
-							<option>부정비리</option>
-							<option>불공정 거래행위</option>
-							<option>관련법규 위반행위</option>
-							<option>내부고발</option>
-							<option>기타(비윤리적 행위)</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">이름</span></th>
-					<td>
-						<input type="text" title="이름 입력" style="width:233px" />
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="th">연락처</span></th>
-					<td>
-						<select id="select2" title="연락처 분류">
-							<option>핸드폰</option>
-							<option>일반전화</option>
-						</select>
-						<select id="select3" title="연락처 앞번호 분류">
-							<option>010</option>
-							<option>011</option>
-							<option>016</option>
-							<option>017</option>
-							<option>019</option>
-						</select>
-						<input type="text" title="연락처 가운데번호 입력" style="width:77px" />
-						<span class="bt">-</span>
-						<input type="text" title="연락처 마지막번호 입력" style="width:77px" />
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">이메일</span></th>
-					<td>
-						<div>
-							<input type="text" title="이메일 아이디 입력" style="width:233px" />
-							<span class="bt">@</span>
-							<input type="text" title="이메일 도메인 입력" style="width:233px" />
-							<select id="select4" title="이메일 분류">
-								<option>직접입력</option>
-								<option>naver.com</option>
-								<option>hanamil.net</option>
-							</select>
-						</div>
-						<p class="comment">입력하신 이메일로 인증번호가 발송됩니다. 이메일 및 연락처 입력시 보다 신속한 처리가 가능합니다.</p>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">제목</span></th>
-					<td>
-						<input type="text" title="제목 입력" style="width:733px" />
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">제보대상</span></th>
-					<td>
-						<div>
-							<input type="text" title="제보대상 입력" placeholder="관련자가 다수일 경우 모두 적어주십시오." style="width:733px" />
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">언제</span></th>
-					<td>
-						<div>
-							<input type="text" title="언제 입력" placeholder="발생일을 구체적으로 적어주십시오." style="width:733px" />
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">어디서</span></th>
-					<td>
-						<div>
-							<input type="text" title="어디서 입력" placeholder="장소를 특정하기 어려운 경우는 주로 일어나는 장소나, 업무처리 과정을 적어주십시오." style="width:733px" />
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="blind">필수 입력</span><span class="th import">내용</span></th>
-					<td>
-						<textarea title="내용 입력" style="height:188px"></textarea>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row"><span class="th import">첨부파일</span></th>
-					<td>
-						<div class="fileBox">
-							<div class="fileList"><input type="text" readonly="readonly" title="첨부된 파일경로"></div>
-							<button class="btn btnTy5 type2 btnSearch">찾아보기</button>
-							<button class="btn btnAdd">리스트 추가</button>
-							<button class="btn btnDel">리스트 삭제</button>
-						</div>
-						<p class="comment">파일사이즈 20Mb 이하만 첨부 가능합니다. 최대 3개</p>
-					</td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
+		
 	</div>
 	<div class="d_desc code">
 <!-- code -->
 <xmp class="prettyprint linenums javascript">
-<div class="dataTable type2">
-	<table>
-		<caption>이 표는 제보하기 입력을 나타내는 표로 제보분류, 이름, 연락처, 이메일, 제목, 제보대상, 언제, 어디서, 내용, 첨부파일로 구성되어 있습니다.
-		<colgroup>
-			<col style="width:16%" />
-			<col />
-		</colgroup>
-		<tbody>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">제보분류</span></th>
-			<td>
-				<select id="select1" title="제보 분류">
-					<option>부정비리</option>
-					<option>불공정 거래행위</option>
-					<option>관련법규 위반행위</option>
-					<option>내부고발</option>
-					<option>기타(비윤리적 행위)</option>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">이름</span></th>
-			<td>
-				<input type="text" title="이름 입력" style="width:233px" />
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="th">연락처</span></th>
-			<td>
-				<select id="select2" title="연락처 분류">
-					<option>핸드폰</option>
-					<option>일반전화</option>
-				</select>
-				<select id="select3" title="연락처 앞번호 분류">
-					<option>010</option>
-					<option>011</option>
-					<option>016</option>
-					<option>017</option>
-					<option>019</option>
-				</select>
-				<input type="text" title="연락처 가운데번호 입력" style="width:77px" />
-				<span class="bt">-</span>
-				<input type="text" title="연락처 마지막번호 입력" style="width:77px" />
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">이메일</span></th>
-			<td>
-				<div>
-					<input type="text" title="이메일 아이디 입력" style="width:233px" />
-					<span class="bt">@</span>
-					<input type="text" title="이메일 도메인 입력" style="width:233px" />
-					<select id="select4" title="이메일 분류">
-						<option>직접입력</option>
-						<option>naver.com</option>
-						<option>hanamil.net</option>
-					</select>
-				</div>
-				<p class="comment">입력하신 이메일로 인증번호가 발송됩니다. 이메일 및 연락처 입력시 보다 신속한 처리가 가능합니다.</p>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">제목</span></th>
-			<td>
-				<input type="text" title="제목 입력" style="width:733px" />
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">제보대상</span></th>
-			<td>
-				<div>
-					<input type="text" title="제보대상 입력" placeholder="관련자가 다수일 경우 모두 적어주십시오." style="width:733px" />
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">언제</span></th>
-			<td>
-				<div>
-					<input type="text" title="언제 입력" placeholder="발생일을 구체적으로 적어주십시오." style="width:733px" />
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">어디서</span></th>
-			<td>
-				<div>
-					<input type="text" title="어디서 입력" placeholder="장소를 특정하기 어려운 경우는 주로 일어나는 장소나, 업무처리 과정을 적어주십시오." style="width:733px" />
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="blind">필수 입력</span><span class="th import">내용</span></th>
-			<td>
-				<textarea title="내용 입력" style="height:188px"></textarea>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><span class="th import">첨부파일</span></th>
-			<td>
-				<div class="fileBox">
-					<div class="fileList"><input type="text" readonly="readonly" title="첨부된 파일경로"></div>
-					<button class="btn btnTy5 type2 btnSearch">찾아보기</button>
-					<button class="btn btnAdd">리스트 추가</button>
-					<button class="btn btnDel">리스트 삭제</button>
-				</div>
-				<p class="comment">파일사이즈 20Mb 이하만 첨부 가능합니다. 최대 3개</p>
-			</td>
-		</tr>
-		</tbody>
-	</table>
-</div>
+
+
 </xmp>
-<!-- // code -->
 	</div>
 
-	<h2 class="h2_guide">06. Drop Down</h2>
-	<div class="guide_wrap">
-		<div class="bbsTable dropDown">
-			<table>
-				<caption>이 표는 FAQ 목록을 나타내는 표로 NO, 질문/답변으로 구성되어 있습니다.</caption>
-				<colgroup>
-					<col style="width:8%">
-					<col style="width:22%">
-					<col>
-				</colgroup>
-				<thead>
-				<tr>
-					<th scope="col">NO</th>
-					<th scope="col">카테고리</th>
-					<th scope="col">제목</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td class="fNumRe tC">10</td>
-					<td class="tC">제품</td>
-					<td><a class="title" href="#"><span>약을 우유, 주스와 먹어도 되나요?(Do not take your medication with milk or juice)</span></a></td> <!-- 활성화 class="active" -->
-				</tr>
-				<tr class="answerFaq">
-					<td colspan="3">
-						우유, 주스와 먹으면 안돼요.<br>
-						먹는 약은 물과 함께 드시는 것이 가장 좋습니다.<br>
-						약을 주스와 함께 복용하면, 주스의 산성 성질로 인해 원하지 않는 효과가 나타날 수 있는 약물들이 있습니다.<br>
-						제산제로 흔히 사용되는 수산화 알루미늄겔(Aluminum Hydroxide Gel)을 오렌지 주스와 함께 복용하면 제산제의 알루미늄 성분이 체내의 흡수될 수 있고<br>
-						위 산도도 높이므로 함께 복용하지 않는 것이 좋습니다.
-					</td>
-				</tr>
-				<tr>
-					<td class="fNumRe tC">9</td>
-					<td class="tC">제품</td>
-					<td><a class="title" href="#"><span>약을 우유, 주스와 먹어도 되나요?(Do not take your medication with milk or juice)</span></a></td>
-				</tr>
-				<tr class="answerFaq">
-					<td colspan="3">
-						우유, 주스와 먹으면 안돼요.<br>
-						먹는 약은 물과 함께 드시는 것이 가장 좋습니다.<br>
-						약을 주스와 함께 복용하면, 주스의 산성 성질로 인해 원하지 않는 효과가 나타날 수 있는 약물들이 있습니다.<br>
-						제산제로 흔히 사용되는 수산화 알루미늄겔(Aluminum Hydroxide Gel)을 오렌지 주스와 함께 복용하면 제산제의 알루미늄 성분이 체내의 흡수될 수 있고<br>
-						위 산도도 높이므로 함께 복용하지 않는 것이 좋습니다.
-					</td>
-				</tr>
-				<tr>
-					<td class="fNumRe tC">8</td>
-					<td class="tC">제품</td>
-					<td><a class="title" href="#"><span>약을 우유, 주스와 먹어도 되나요?(Do not take your medication with milk or juice)</span></a></td>
-				</tr>
-				<tr class="answerFaq">
-					<td colspan="3">
-						우유, 주스와 먹으면 안돼요.<br>
-						먹는 약은 물과 함께 드시는 것이 가장 좋습니다.<br>
-						약을 주스와 함께 복용하면, 주스의 산성 성질로 인해 원하지 않는 효과가 나타날 수 있는 약물들이 있습니다.<br>
-						제산제로 흔히 사용되는 수산화 알루미늄겔(Aluminum Hydroxide Gel)을 오렌지 주스와 함께 복용하면 제산제의 알루미늄 성분이 체내의 흡수될 수 있고<br>
-						위 산도도 높이므로 함께 복용하지 않는 것이 좋습니다.
-					</td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="d_desc code">
-<!-- code -->
-<xmp class="prettyprint linenums javascript">
-<div class="bbsTable dropDown">
-	<table>
-		<caption>이 표는 FAQ 목록을 나타내는 표로 NO, 질문/답변으로 구성되어 있습니다.</caption>
-		<colgroup>
-			<col style="width:8%">
-			<col style="width:22%">
-			<col>
-		</colgroup>
-		<thead>
-		<tr>
-			<th scope="col">NO</th>
-			<th scope="col">카테고리</th>
-			<th scope="col">제목</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td class="fNumRe tC">10</td>
-			<td class="tC">제품</td>
-			<td><a class="title" href="#"><span>약을 우유, 주스와 먹어도 되나요?(Do not take your medication with milk or juice)</span></a></td> <!-- 활성화 class="active" -->
-		</tr>
-		<tr class="answerFaq">
-			<td colspan="3">
-				우유, 주스와 먹으면 안돼요.<br>
-				먹는 약은 물과 함께 드시는 것이 가장 좋습니다.<br>
-				약을 주스와 함께 복용하면, 주스의 산성 성질로 인해 원하지 않는 효과가 나타날 수 있는 약물들이 있습니다.<br>
-				제산제로 흔히 사용되는 수산화 알루미늄겔(Aluminum Hydroxide Gel)을 오렌지 주스와 함께 복용하면 제산제의 알루미늄 성분이 체내의 흡수될 수 있고<br>
-				위 산도도 높이므로 함께 복용하지 않는 것이 좋습니다.
-			</td>
-		</tr>
-		<tr>
-			<td class="fNumRe tC">9</td>
-			<td class="tC">제품</td>
-			<td><a class="title" href="#"><span>약을 우유, 주스와 먹어도 되나요?(Do not take your medication with milk or juice)</span></a></td>
-		</tr>
-		<tr class="answerFaq">
-			<td colspan="3">
-				우유, 주스와 먹으면 안돼요.<br>
-				먹는 약은 물과 함께 드시는 것이 가장 좋습니다.<br>
-				약을 주스와 함께 복용하면, 주스의 산성 성질로 인해 원하지 않는 효과가 나타날 수 있는 약물들이 있습니다.<br>
-				제산제로 흔히 사용되는 수산화 알루미늄겔(Aluminum Hydroxide Gel)을 오렌지 주스와 함께 복용하면 제산제의 알루미늄 성분이 체내의 흡수될 수 있고<br>
-				위 산도도 높이므로 함께 복용하지 않는 것이 좋습니다.
-			</td>
-		</tr>
-		<tr>
-			<td class="fNumRe tC">8</td>
-			<td class="tC">제품</td>
-			<td><a class="title" href="#"><span>약을 우유, 주스와 먹어도 되나요?(Do not take your medication with milk or juice)</span></a></td>
-		</tr>
-		<tr class="answerFaq">
-			<td colspan="3">
-				우유, 주스와 먹으면 안돼요.<br>
-				먹는 약은 물과 함께 드시는 것이 가장 좋습니다.<br>
-				약을 주스와 함께 복용하면, 주스의 산성 성질로 인해 원하지 않는 효과가 나타날 수 있는 약물들이 있습니다.<br>
-				제산제로 흔히 사용되는 수산화 알루미늄겔(Aluminum Hydroxide Gel)을 오렌지 주스와 함께 복용하면 제산제의 알루미늄 성분이 체내의 흡수될 수 있고<br>
-				위 산도도 높이므로 함께 복용하지 않는 것이 좋습니다.
-			</td>
-		</tr>
-		</tbody>
-	</table>
-</div>
-</xmp>
-
 </div>
 
-<script type="text/javascript" src="../coding_list/js/pretty.js"></script>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+<script>
+	ui.selectBox.init();
+</script>
 </body>
 </html>
