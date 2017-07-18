@@ -67,8 +67,15 @@
 	<p><a href="javascript: d.openAll();"><img src="img/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: d.closeAll();"><img src="img/btn_collapse.gif" alt="Collapse All" /></a></p>
 	<script type="text/javascript">
 		var tree = {
-			"관리자" : {
-				"Main" : ["/ildong/web/html/holdings/kor/main/index.html", "완료", "mainFrame"],
+			"SYS" : {
+				"로그인" : ["/html/.html", "완료", "mainFrame"],
+				"상세/수정" : ["/html/.html", "완료", "mainFrame"],
+				"메인대시보드" : ["/html/.html", "완료", "mainFrame"],
+				"시스템관리" : {
+					"권환관리" : {
+						"검색/목록" : ["/html/.html", "완료", "mainFrame"],
+					}
+				}
 			}
 		}
 		var d = new dTree("d", tree);
