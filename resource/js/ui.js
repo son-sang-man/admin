@@ -5,6 +5,7 @@
 * Ver : 1.01
 */
 
+// UI Module
 var ui = {
 	selectBox : {
 		selectOpen : false,
@@ -136,6 +137,22 @@ var ui = {
 	}
 }
 
+// Jquery function
 $.fn.update = function(){
 	ui.selectBox.update(this);
+}
+
+winPopup = function(url){
+	var winW = $(window).width();
+	var winH = $(window).height();
+	var	popW = 200;
+	var	popH = 200;
+	var	top = Math.round((winH / 2) - (popH / 2));
+	var	left = Math.round((winW / 2) - (popW / 2));
+	var toolbar  = "no"
+	var status = "'toolbar=" + toolbar + ", width=" + popW + ", height=" + popH + ", top=" + top + ", left=" + left + "'";
+
+	window.open(url,"",status)
+
+	// window.open
 }
