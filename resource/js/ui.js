@@ -1,7 +1,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-17
+* Last Update :2017-07-19
 * Ver : 1.0
 */
 
@@ -98,6 +98,33 @@ var ui = {
 		}
 		// 디자인 셀렉트 리셋
 	},
+	datePicker : {
+		event : function(){
+			$( ".datePicker" ).datepicker({
+				closeText: '닫기 x',
+				prevText: '이전달',
+				nextText: '다음달',
+				currentText: 'TODAY',
+				showOn: "both",
+				showButtonPanel: true,
+				// buttonImage: "/resource/img/ico_datapicker.png",
+				buttonImageOnly: false,
+				buttonText: "날짜 선택",
+				// buttonImageOnly: true,
+				// buttonText: "날짜 선택",
+				changeMonth: true,
+				changeYear: true,
+				monthNamesShort: ['1월','2월','3월','4월','5월','6월', '7월','8월','9월','10월','11월','12월'],
+				dayNamesShort: ['일','월','화','수','목','금','토'],
+				dayNamesMin: ['일','월','화','수','목','금','토'],
+				dateFormat : "yy-mm-dd"
+			});
+		}
+	},
+	init : function(){
+		ui.selectBox.init();
+		ui.datePicker.event();
+	}
 }
 
 $.fn.update = function(){
