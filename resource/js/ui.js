@@ -1,5 +1,5 @@
 /*
-* Creat : Madive 손상만 yrdy
+* Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-19
 * Ver : 1.01
