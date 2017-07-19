@@ -7,7 +7,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-19
 * Modify : 김미나
-* Ver : 1.01
+* Ver : 1.02
 */
 
 body,
@@ -323,7 +323,7 @@ body{
 			border:1px solid #bcc5d4;
 			padding:0 30px 0 20px;
 			height:40px;
-			background:url(#{$img-common}bg_select.png) no-repeat 95% center;
+			background:url(#{$img-common}bg_select.png) no-repeat right center;
 			line-height:38px;
 			width:100%;
 			box-sizing:border-box;
@@ -361,7 +361,7 @@ body{
 				height:40px;
 				line-height:40px;
 				border-top:1px solid #ccc;
-
+				
 				&:hover,
 				&:focus{
 					color:#7c9dbc;
@@ -454,67 +454,120 @@ body{
 				}
 			}
 		}
-
 	}
-	#gnb{
+}
+#gnb{
+	position:relative;
+	padding:0 30px;
+	> li{
+		display:inline-block;
 		position:relative;
-		padding:0 30px;
-		> li{
-			display:inline-block;
-			margin-left:28px;
-			&:first-child{
-				margin-left:0;
-			}
-			&.on{
+		margin-left:28px;
+		&:first-child{
+			margin-left:0;
+		}
+		&.on{
+			a{
 				color:#96c7f4;
-				> ul {
-					display:block;
-				}
+			
 			}
-			> a{
-				display:inline-block;
-				font-size:18px;
-				color:#c8ceda;
-				&:hover,
-				&:focus{
-				}
-			}
-			> ul{
-				display:none;
-				width:195px;
-				margin-top:12px;
+			> ul {
+				display:block;
+				min-width:195px;
+				margin-top:14px;
 				background:#fff;
 				border:1px solid #6a9fd1;
 				position:absolute;
 				left:0;
 				box-sizing:border-box;
+				z-index:1;
 				> li{
+					position:relative;
 					&:first-child{
 						> a{
 							border-top:none;
 						}
 					}
-					&.on
-						> a{
-							background:#6a9fd1 url(#{$img-common}bg_gnb_arrow.png) no-repeat 95% center;
-							color:#fff;
-						}
-					a{
+					> a{
 						display:block;
-						padding:0 10px;
+						padding:0 28px 0 10px;
 						font-size:16px;
 						color:#666;
 						height:40px;
 						line-height:40px;
 						border-top:1px solid #6a9ed0;
-
+					
 						&:hover,
 						&:focus{
-							background:#6a9fd1;
-							color:#fff;
+							color:#96c7f4;
+						}
+					}
+					&.depth{
+						> a{
+							background:#fff url(#{$img-common}bg_gnb_arrow.png) no-repeat right center;
+							&:hover,
+							&:focus{
+								background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;							color:#fff;
+							}
+						}
+						> ul {
+								display:none;
+							}
+						&.on{
+							> ul {
+								display:block;
+							}
+							> a{
+								color:#fff;
+								background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;
+							}
+						}
+						&.colum2{
+							> ul{
+								width:195px;
+								li{
+									width:95px !important;
+									display:inline-block;
+								}
+							}
+						}
+					}
+					> ul{
+						background:#fff;
+						min-width:195px;
+						padding:10px 0;
+						border:1px solid #6a9fd1;
+						position:absolute;
+						right:-197px;
+						top:0;
+						z-index:2;
+						>li{
+							> a{
+								display:block;
+								padding:0 10px;
+								font-size:14px;
+								color:#666;
+								height:24px;
+								line-height:24px;
+								box-sizing:border-box;
+								&:hover,
+								&:focus{
+									color:#699fd0;
+								}
+							}
 						}
 					}
 				}
+			}
+		}
+
+		> a{
+			display:inline-block;
+			font-size:18px;
+			color:#c8ceda;
+			height:24px;
+			&:hover,
+			&:focus{
 			}
 		}
 	}
@@ -563,10 +616,11 @@ body{
 				float:left;
 				height:40px;
 				min-width:250px;
+				padding-right:50px;
 				padding-left:20px;
 				line-height:40px;
 				box-sizing:border-box;
-				background:url(#{$img-common}bg_select.png) no-repeat 95% center;
+				background:url(#{$img-common}bg_select.png) no-repeat right center;
 				border-right:1px solid #ccc;
 				> a{
 					display:block;
@@ -621,12 +675,13 @@ body{
 	margin:auto;
 	padding:0 30px 50px;
 	box-sizing:border-box;
+	min-height:400px;
 }
 .pageTitle{
 	font-size:30px;
 	color:#444;
 	background:#fff;
-
+	
 }
 .pageTitleSmall{
 	font-size:22px;
@@ -649,14 +704,14 @@ body{
 			clear:both;
 		}
 	&.fR{
-
+		
 	}
 	.btnArea{
 		display:inline-block;
 		margin-top:0;
 	}
 	.tablePaging{
-
+		
 		display:inline-block;
 		font-family:Dotum,"돋움";
 		font-size:12px;
@@ -747,31 +802,14 @@ body{
 }
 
 /* datepicker */
-.dateBox{
+.dataBox{
 	position:relative;
 	display:inline-block;
 	border:1px solid #bcc5d4;
 	background:#fff;
-	padding-right:40px;
-	input{
+	input {
+		// width:75%;
 		border:none;
-	}
-	.ui-datepicker-trigger{
-		display:inline-block;
-		width:40px;
-		height:40px;
-		position:absolute;
-		top:0px;
-		right:0px;
-		text-align:center;
-		span{
-			display:inline-block;
-			vertical-align:middle;
-			width:19px;
-			height:18px;
-			background:url(#{$img-common}ico_datapicker.png) no-repeat;
-			font-size:0;
-		}
 	}
 }
 .ui-datepicker{
@@ -925,7 +963,18 @@ body{
 				background:#eff1f2;
 			}
 		}
+
 	}
+
+} 
+.ui-datepicker-trigger{
+	display:inline-block;
+	width:19px;
+	height:18px;
+	line-height:30px;
+	vertical-align:middle;
+	padding:5px 10px 6px;
+	cursor:pointer;
 }
 
 /* tab */
@@ -985,7 +1034,7 @@ body{
 			}
 			&.tab{
 				> ul{
-					li{
+					li{ 
 						a{
 							&:hover,
 							&:focus{
@@ -1002,7 +1051,7 @@ body{
 		> div{
 			display:none;
 			&.on{
-				display:block;
+				display:block; 
 			}
 		}
 	}
@@ -1156,7 +1205,7 @@ table{
 		&:hover {
 			background:url(#{$img-common}bg_radio_over.png) no-repeat 0 5px;
 		}
-
+	
 	}
 	&.blindLable{
 		width:13px;
@@ -1285,7 +1334,7 @@ table{
 		&:focus{
 			background:#fff url(#{$img-common}bg_page_first_over.png) no-repeat center;
 		}
-
+		
 	}
 	.previous{
 		background:#fff url(#{$img-common}bg_page_previous.png) no-repeat center;
@@ -1331,7 +1380,7 @@ table{
 		}
 	}
 }
-.btn{
+.btn{ 
 	display:inline-block;
 	padding:0 19px;
 	height:32px;

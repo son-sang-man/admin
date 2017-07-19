@@ -27,12 +27,71 @@
 					</ul>
 				</div>
 				<ul id="gnb">
-					<li class="on"><a href="#" title="현재메뉴">KS고시발간</a></li>
+					<li class="on"><a href="#" title="현재메뉴">KS고시발간</a>
+						<ul>
+							<!--  하위메뉴가 있을 경우 class="depth" 추가 -->
+							<!--  현재 활성화 된 메뉴 class="on" 추가 -->
+							<li class="depth on"><a href="#">COSD 서식편집지원</a>
+								<ul>
+									<li><a href="#">COSD 서식편집</a></li> 
+									<li><a href="#">COSD 계정</a></li>
+									<li><a href="#">COSD 공지사항</a></li>
+								</ul>
+							</li>
+							<li class="depth"><a href="#">예고고시</a>
+								<ul>
+									<li><a href="#">예고고시</a></li> 
+									<li><a href="#">예고고시</a></li>
+									<li><a href="#">예고고시</a></li>
+									<li><a href="#">예고고시</a></li>
+								</ul>
+							</li>
+							<li><a href="#">일관성검토</a></li>
+							<li><a href="#">KS 판매등록</a></li>
+							<li><a href="#">KS 서식편집정산</a></li>
+							<li><a href="#">KS 심사기준</a></li>
+							<li><a href="#">KS 통계관리</a></li>
+							<li><a href="#">신규개발제안</a></li>
+							<li><a href="#">KS 개발 주체 등록</a></li>
+						</ul>
+					</li>
 					<li><a href="#">상품관리</a></li>
 					<li><a href="#">판매내역</a></li>
 					<li><a href="#">재고관리</a></li>
 					<li><a href="#">온라인구독</a></li>
-					<li><a href="#">영업활동</a></li>
+					<li class="on"><a href="#">영업활동</a>
+						<ul>
+							<li><a href="#">영업활동 조회</a></li> 
+							<li><a href="#">견적자 확인 요청</a></li>
+							<li><a href="#">고정거래업체 관리</a></li>
+							<!-- 하위메뉴 2단일 경우 class="colum2" 추가 -->
+							<li class="depth on colum2"><a href="#">영업활동 통계</a>
+								<ul>
+									<li><a href="#">ISO          </a></li> 
+									<li><a href="#">ANSI</a></li>
+									<li><a href="#">IEC</a></li>
+									<li><a href="#">ASME</a></li>
+									<li><a href="#">IEEE</a></li>
+									<li><a href="#">ASTM</a></li>
+									<li><a href="#">AS</a></li>
+									<li><a href="#">JASO</a></li>
+									<li><a href="#">BS</a></li>
+									<li><a href="#">JWWA</a></li>
+									<li><a href="#">CSA</a></li>
+									<li><a href="#">JEC</a></li>
+									<li><a href="#">DIN</a></li>
+									<li><a href="#">JEM</a></li>
+									<li><a href="#">GB</a></li>
+									<li><a href="#">JEM</a></li>
+									<li><a href="#">GOST</a></li>
+									<li><a href="#">TCVN</a></li>
+									<li><a href="#">JIS</a></li>
+									<li><a href="#">VDE</a></li>
+									<li><a href="#">NF</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 					<li><a href="#">고객관리</a></li>
 					<li><a href="#">사이트관리</a></li>
 					<li><a href="#">시스템관리</a></li>
@@ -62,7 +121,7 @@
 								<li><a href="#">하위메뉴</a></li>
 							</ul>
 						</li>
-						<li class="last"><a href="#">메뉴</a><!--  최종depth일 경우 class="last" 추가 -->
+						<li class="last"><a href="#">메뉴</a><!--  최종 로케이션일 경우 class="last" 추가 -->
 							<ul>
 								<li><a href="#">하위메뉴</a></li>
 								<li><a href="#">하위메뉴</a></li>
