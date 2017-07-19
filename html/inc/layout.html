@@ -7,9 +7,12 @@
 	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/resource/js/ui.js"></script>
-	<script type="text/javascript" src="/resource/js/common.js"></script>
+	<script type="text/javascript" src="/resource/js/common.js"></script> 
 </head>
 <body>
+	<div id="skipNavi">
+		<a href="#container">본문 이동</a>
+	</div>
 	<div id="wrap">
 		<!-- header -->
 		<div id="header">
@@ -23,17 +26,17 @@
 						<li><a href="#">Logout</a></li>
 					</ul>
 				</div>
-				<div id="gnb">
-					<a href="#" class="on" title="현재메뉴">KS고시발간</a>
-					<a href="#">상품관리</a>
-					<a href="#">판매내역</a>
-					<a href="#">재고관리</a>
-					<a href="#">온라인구독</a>
-					<a href="#">영업활동</a>
-					<a href="#">고객관리</a>
-					<a href="#">사이트관리</a>
-					<a href="#">시스템관리</a>
-				</div>
+				<ul id="gnb">
+					<li class="on"><a href="#" title="현재메뉴">KS고시발간</a></li>
+					<li><a href="#">상품관리</a></li>
+					<li><a href="#">판매내역</a></li>
+					<li><a href="#">재고관리</a></li>
+					<li><a href="#">온라인구독</a></li>
+					<li><a href="#">영업활동</a></li>
+					<li><a href="#">고객관리</a></li>
+					<li><a href="#">사이트관리</a></li>
+					<li><a href="#">시스템관리</a></li>
+				</ul>
 			</div>
 		</div>
 		<!-- //header -->
@@ -42,7 +45,7 @@
 		<div id="container">
 			<!-- contentsTop-->
 			<div class="contentsTop">
-				<div class="location">
+				<div class="location"> 
 					<ul>
 						<li class="home"><a href="#">홈</a></li>
 						<li><a href="#">메뉴1</a>
@@ -59,7 +62,7 @@
 								<li><a href="#">하위메뉴</a></li>
 							</ul>
 						</li>
-						<li class="depth3"><a href="#">메뉴</a>
+						<li class="last"><a href="#">메뉴</a><!--  최종depth일 경우 class="last" 추가 -->
 							<ul>
 								<li><a href="#">하위메뉴</a></li>
 								<li><a href="#">하위메뉴</a></li>
@@ -71,22 +74,23 @@
 				<h2 class="pageTitle"> 대 타이틀 : 견적 의뢰 정보</h2>
 			</div>
 			<!-- //contentsTop-->
-
+			
 			<!-- contents -->
-			<div class="contents" style="height:450px;">
-				<h3 class="pageTitleSmall"> 소 타이틀 :기본 정보</h3>
+			<div class="contents">
+				
+				<h3 class="pageTitleSmall">소 타이틀 기본정보</h3>
+
 			</div>
 			<!-- //contents -->
-
 		</div>
 		<!-- //container -->
-
+		
 		<!-- footer -->
 		<div id="footer">
 			<div>
 				<img class="logoKsa" src="/resource/img/logo_ksa.png" alt="KSA 한국표준협회" />
 				<div class="info">
-					<ul>
+					<ul>	
 						<li>한국표준협회 대표자 : 백수현</li>
 						<li>사업자등록번호 : 119-82-06809</li>
 						<li>통신판매업 신고번호 : 제2009-서울금천-0594호</li>
