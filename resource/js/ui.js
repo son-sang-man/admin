@@ -109,7 +109,7 @@ var ui = {
 				showButtonPanel: true,
 				// buttonImage: "/resource/img/ico_datapicker.png",
 				buttonImageOnly: false,
-				buttonText: "날짜 선택",
+				buttonText: "<span>날짜 선택</span>",
 				// buttonImageOnly: true,
 				// buttonText: "날짜 선택",
 				changeMonth: true,
