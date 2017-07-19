@@ -5,7 +5,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-19
 * Modify : 김미나
-* Ver : 1.01
+* Ver : 1.02
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -93,7 +93,7 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 
 .selectBox { display: inline-block; }
 .selectBox .designSelect { position: relative; background: #fff; }
-.selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 30px 0 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat 95% center; line-height: 38px; width: 100%; box-sizing: border-box; text-align: left; font-size: 16px; color: #666; padding-right: 47px; }
+.selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 30px 0 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 38px; width: 100%; box-sizing: border-box; text-align: left; font-size: 16px; color: #666; padding-right: 47px; }
 .selectBox ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; box-sizing: border-box; width: 100%; z-index: 1; }
 .selectBox ul li:first-child > a { border-top: none; }
 .selectBox ul li a { display: block; margin: 0 20px; font-size: 16px; color: #666; height: 40px; line-height: 40px; border-top: 1px solid #ccc; }
@@ -119,17 +119,27 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #header .utill > ul > li a:hover, #header .utill > ul > li a:focus { color: #96c7f4; }
 #header .utill > ul > li:before { content: ""; display: inline-block; width: 1px; height: 11px; background: #c8ceda; margin: 0 11px; }
 #header .utill > ul > li:first-child:before { display: none; }
-#header #gnb { position: relative; padding: 0 30px; }
-#header #gnb > li { display: inline-block; margin-left: 28px; }
-#header #gnb > li:first-child { margin-left: 0; }
-#header #gnb > li.on { color: #96c7f4; }
-#header #gnb > li.on > ul { display: block; }
-#header #gnb > li > a { display: inline-block; font-size: 18px; color: #c8ceda; }
-#header #gnb > li > ul { display: none; width: 195px; margin-top: 12px; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; box-sizing: border-box; }
-#header #gnb > li > ul > li:first-child > a { border-top: none; }
-#header #gnb > li > ul > li.on > a { background: #6a9fd1 url(/resource/img/bg_gnb_arrow.png) no-repeat 95% center; color: #fff; }
-#header #gnb > li > ul > li a { display: block; padding: 0 10px; font-size: 16px; color: #666; height: 40px; line-height: 40px; border-top: 1px solid #6a9ed0; }
-#header #gnb > li > ul > li a:hover, #header #gnb > li > ul > li a:focus { background: #6a9fd1; color: #fff; }
+
+#gnb { position: relative; padding: 0 30px; }
+#gnb > li { display: inline-block; position: relative; margin-left: 28px; }
+#gnb > li:first-child { margin-left: 0; }
+#gnb > li.on a { color: #96c7f4; }
+#gnb > li.on > ul { display: block; min-width: 195px; margin-top: 14px; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; box-sizing: border-box; z-index: 1; }
+#gnb > li.on > ul > li { position: relative; }
+#gnb > li.on > ul > li:first-child > a { border-top: none; }
+#gnb > li.on > ul > li > a { display: block; padding: 0 28px 0 10px; font-size: 16px; color: #666; height: 40px; line-height: 40px; border-top: 1px solid #6a9ed0; }
+#gnb > li.on > ul > li > a:hover, #gnb > li.on > ul > li > a:focus { color: #96c7f4; }
+#gnb > li.on > ul > li.depth > a { background: #fff url(/resource/img/bg_gnb_arrow.png) no-repeat right center; }
+#gnb > li.on > ul > li.depth > a:hover, #gnb > li.on > ul > li.depth > a:focus { background: #6a9fd1 url(/resource/img/bg_gnb_arrow_over.png) no-repeat right center; color: #fff; }
+#gnb > li.on > ul > li.depth > ul { display: none; }
+#gnb > li.on > ul > li.depth.on > ul { display: block; }
+#gnb > li.on > ul > li.depth.on > a { color: #fff; background: #6a9fd1 url(/resource/img/bg_gnb_arrow_over.png) no-repeat right center; }
+#gnb > li.on > ul > li.depth.colum2 > ul { width: 195px; }
+#gnb > li.on > ul > li.depth.colum2 > ul li { width: 95px !important; display: inline-block; }
+#gnb > li.on > ul > li > ul { background: #fff; min-width: 195px; padding: 10px 0; border: 1px solid #6a9fd1; position: absolute; right: -197px; top: 0; z-index: 2; }
+#gnb > li.on > ul > li > ul > li > a { display: block; padding: 0 10px; font-size: 14px; color: #666; height: 24px; line-height: 24px; box-sizing: border-box; }
+#gnb > li.on > ul > li > ul > li > a:hover, #gnb > li.on > ul > li > ul > li > a:focus { color: #699fd0; }
+#gnb > li > a { display: inline-block; font-size: 18px; color: #c8ceda; height: 24px; }
 
 #skipNavi { position: relative; z-index: 9999; }
 #skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
@@ -138,7 +148,7 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #container { background: #f2f5f8; }
 #container .location { padding: 0 70px; border-bottom: 1px solid #ccc; background: #f9f9f9; }
 #container .location > ul { width: 1200px; height: 40px; margin: auto; }
-#container .location > ul > li { float: left; height: 40px; min-width: 250px; padding-left: 20px; line-height: 40px; box-sizing: border-box; background: url(/resource/img/bg_select.png) no-repeat 95% center; border-right: 1px solid #ccc; }
+#container .location > ul > li { float: left; height: 40px; min-width: 250px; padding-right: 50px; padding-left: 20px; line-height: 40px; box-sizing: border-box; background: url(/resource/img/bg_select.png) no-repeat right center; border-right: 1px solid #ccc; }
 #container .location > ul > li > a { display: block; height: 40px; }
 #container .location > ul > li > ul { display: none; }
 #container .location > ul .home { width: 56px; min-width: 56px; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat center center; }
@@ -149,7 +159,7 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 .contentsTop { background: #fff; }
 .contentsTop h2 { padding: 35px 30px 0; height: 100px; box-sizing: border-box; width: 1200px; margin: auto; }
 
-.contents { width: 1200px; margin: auto; padding: 0 30px 50px; box-sizing: border-box; }
+.contents { width: 1200px; margin: auto; padding: 0 30px 50px; box-sizing: border-box; min-height: 400px; }
 
 .pageTitle { font-size: 30px; color: #444; background: #fff; }
 
