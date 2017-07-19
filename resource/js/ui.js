@@ -2,7 +2,7 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-19
-* Ver : 1.0
+* Ver : 1.01
 */
 
 var ui = {
@@ -10,6 +10,7 @@ var ui = {
 		selectOpen : false,
 		creat : function(target){
 			var _this = target;
+			var disabled = _this.find("select").is(":disabled");
 			if(_this.find(".designSelect").length == 0){
 				_this.find("select").hide();
 				var listW = _this.find("select").width();
@@ -27,6 +28,14 @@ var ui = {
 				}
 			} else {
 				$wrap = _this.find(".designSelect li").remove();
+			}
+			if(disabled){
+				_this.find("button").attr({
+					"disabled" : "disabled",
+					"title" : "비활성화"
+				})
+			} else {
+				_this.find("button").removeAttr("disabled");
 			}
 			_this.find("select option").each(function(){
 				var value = $(this).val();
@@ -109,7 +118,7 @@ var ui = {
 				showButtonPanel: true,
 				// buttonImage: "/resource/img/ico_datapicker.png",
 				buttonImageOnly: false,
-				buttonText: "날짜 선택",
+				buttonText: "<span>날짜 선택</span>",
 				// buttonImageOnly: true,
 				// buttonText: "날짜 선택",
 				changeMonth: true,

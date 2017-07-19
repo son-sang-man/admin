@@ -204,11 +204,35 @@
 <!-- // code -->
 	</div>
 
+	<h2 class="h2_guide">05. Select Box 비활성화</h2>
+	<div class="guide_wrap">
+		<div class="selectBox" data-form="selectBox">
+			<select title="검색어 분류" id="select0" disabled="disabled">
+				<option>전체</option>
+				<option>제목</option>
+				<option>내용</option>
+			</select>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+	<div class="selectBox" data-form="selectBox"> // class="selectBox" / data-form="selectBox" 필요
+		<select title="검색어 분류" id="select0" disabled="disabled">
+			<option>전체</option>
+			<option>제목</option>
+			<option>내용</option>
+		</select>
+	</div>
+</xmp>
+<!-- // code -->
+	</div>
+
 </div>
 
 <script type="text/javascript" src="/coding_list/js/pretty.js"></script>
 <script>
-	ui.selectBox.init();
+	ui.init();
 </script>
 </body>
 </html>

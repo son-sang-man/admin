@@ -104,16 +104,16 @@
 
 	<h2 class="h2_guide">03. datepicker</h2>
 	<div class="guide_wrap">
-		<span class="dataBox"><input type="text" id="dateStar" title="날짜선택"></span>
-		<span class="bar">~</span>
-		<span class="dataBox"><input type="text" id="dateClose" title="날짜선택"></span>
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+		~
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
 	</div>
 	<div class="d_desc code">
 <!-- code -->
 <xmp class="prettyprint linenums javascript">
-<span class="dataBox"><input type="text" id="dateStar" title="날짜선택"></span>
-<span class="bar">~</span>
-<span class="dataBox"><input type="text" id="dateClose" title="날짜선택"></span>
+<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+~
+<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
 </xmp>
 	</div>
 
@@ -121,7 +121,7 @@
 
 <script type="text/javascript" src="/coding_list/js/pretty.js"></script>
 <script>
-	ui.selectBox.init();
+	ui.init();
 </script>
 </body>
 </html>

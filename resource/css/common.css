@@ -186,8 +186,10 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #footer > div .contact:hover, #footer > div .contact:focus { background: url(/resource/img/bg_contact_over.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; color: #ff903b; }
 
 /* datepicker */
-.dataBox { position: relative; display: inline-block; border: 1px solid #bcc5d4; background: #fff; }
-.dataBox input { border: none; }
+.dateBox { position: relative; display: inline-block; border: 1px solid #bcc5d4; background: #fff; padding-right: 40px; }
+.dateBox input { border: none; }
+.dateBox .ui-datepicker-trigger { display: inline-block; width: 40px; height: 40px; position: absolute; top: 0px; right: 0px; text-align: center; }
+.dateBox .ui-datepicker-trigger span { display: inline-block; vertical-align: middle; width: 19px; height: 18px; background: url(/resource/img/ico_datapicker.png) no-repeat; font-size: 0; }
 
 .ui-datepicker { width: 222px; padding: 20px 15px 15px; display: none; }
 .ui-datepicker .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
@@ -211,8 +213,6 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 .ui-datepicker .ui-datepicker-buttonpane button { float: right; overflow: visible; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close { font-size: 11px; color: #666; background: #fff; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float: left; width: 48px; height: 19px; line-height: 19px; font-size: 10px; font-weight: 700; color: #767676; border: 1px solid #acacac; background: #eff1f2; }
-
-.ui-datepicker-trigger { display: inline-block; width: 19px; height: 18px; line-height: 30px; vertical-align: middle; padding: 5px 10px 6px; cursor: pointer; }
 
 /* tab */
 .tab { position: relative; }
