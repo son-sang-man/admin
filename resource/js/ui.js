@@ -2,13 +2,18 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-19
-* Ver : 1.01
+* Ver : 1.02
 */
 
 // UI Module
 var ui = {
 	selectBox : {
 		selectOpen : false,
+		/**
+		 * @function 디자인 select box 새엉 및 재셋팅 시
+		 * @param {String} target - 디자인 셀렉트 셀렉터
+		 *
+		**/
 		creat : function(target){
 			var _this = target;
 			var disabled = _this.find("select").is(":disabled");
@@ -45,6 +50,9 @@ var ui = {
 				_this.find("ul").append("<li><a href='#" + value + "'>" +  text + "</a></li>");
 			});
 		},
+		/**
+		 * @function 디자인 select box 페이지 로드시 셋팅
+		**/
 		setting : function(){
 			var $obj = $("[data-form='selectBox']");
 			// 로드 시 디자인 셀렉트 생성
@@ -53,12 +61,19 @@ var ui = {
 				ui.selectBox.creat($(this));
 			})
 		},
+		/**
+		 * @function 디자인 select box 업데이트 및 동적 생성일 경우
+		 * @param {String} target - 디자인 셀렉트 셀렉터
+		 *
+		**/
 		update : function(target){
 			var $obj = $(target).parent(".selectBox");
 			ui.selectBox.creat($obj);
 		},
+		/**
+		 * @function 디자인 select box 이벤트
+		**/
 		event : function(){
-			// 리스트 열림
 			$(document).on({
 				click: function(){
 					if($(this).next("ul").css("display") == "none"){
@@ -73,10 +88,8 @@ var ui = {
 						$(this).closest(".designSelect").find("button").attr("title","열림");
 						ui.selectBox.selectOpen = false;
 					}
-
 				},
 			}, "[data-form='selectBox'] button");
-			// 셀렉트 박스 선택
 			$(document).on({
 				click: function(e){
 					e.preventDefault();
@@ -90,7 +103,6 @@ var ui = {
 					ui.selectBox.selectOpen = false;
 				}
 			}, "[data-form='selectBox'] ul a");
-			// 바닥 클릭 닫기
 			$(document).on({
 				mouseup: function(e){
 					var $obj =  $("[data-form='selectBox']");
@@ -102,6 +114,9 @@ var ui = {
 				}
 			});
 		},
+		/**
+		 * @function 디자인 select box initializer
+		**/
 		init : function(){
 			ui.selectBox.setting();
 			ui.selectBox.event();
@@ -109,6 +124,10 @@ var ui = {
 		// 디자인 셀렉트 리셋
 	},
 	datePicker : {
+		/**
+		 * @function Date Picker 셋팅
+		 * jQuery Ui 참조
+		**/
 		event : function(){
 			$( ".datePicker" ).datepicker({
 				closeText: '닫기 x',
@@ -131,28 +150,40 @@ var ui = {
 			});
 		}
 	},
+	/**
+	 * @function UI initializer
+	**/
 	init : function(){
 		ui.selectBox.init();
 		ui.datePicker.event();
 	}
 }
 
-// Jquery function
+/*******************
+ * jQuery function *
+********************/
+
+/**
+ * @function 디자인 select box update jQuery function
+**/
 $.fn.update = function(){
 	ui.selectBox.update(this);
 }
 
+/**
+ * @function Window Popup
+ * @param {String} url - 로드할 html
+ *
+**/
 winPopup = function(url){
-	var winW = $(window).width();
-	var winH = $(window).height();
-	var	popW = 200;
-	var	popH = 200;
-	var	top = Math.round((winH / 2) - (popH / 2));
-	var	left = Math.round((winW / 2) - (popW / 2));
+	var winW = document.body.clientWidth;
+	var winH = screen.availHeight;
+	var	popW = 800;
+	var	popH = 600;
+	var	top =(winH / 2) - (popH / 2);
+	var	left = (winW / 2) - (popW / 2);
+		left += window.screenLeft;
 	var toolbar  = "no"
 	var status = "'toolbar=" + toolbar + ", width=" + popW + ", height=" + popH + ", top=" + top + ", left=" + left + "'";
-
 	window.open(url,"",status)
-
-	// window.open
 }
