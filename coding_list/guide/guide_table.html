@@ -16,9 +16,8 @@
 
 <div id="wrap" class="coding_guide">
 <h1 class="h1_guide">Table Guide</h1>
-	<h2 class="h2_guide">01. 가로형 테이블</h2>
+	<h2 class="h2_guide">01. 테이블헤더영역</h2>
 	<div class="guide_wrap">
-		<!-- tableHeader -->
 		<div class="tableHeader">
 			<div class="fR">
 				<span class="tablePaging">
@@ -31,8 +30,28 @@
 				</div>
 			</div>
 		</div>
-		<!-- //tableHeader -->
+	</div>
+<!-- code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="tableHeader">
+	<div class="fR">
+		<span class="tablePaging">
+			<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+		</span>
+		<div class="btnArea">
+			<a href="#" class="btnSmall btnBlue">조회</a>
+			<a href="#" class="btnSmall btnWhite">조회</a>
+			<a href="#" class="btnSmall btnGray">신청취소</a>
+		</div>
+	</div>
+</div>
+</xmp>
+</div>
+<!-- //code -->
 
+	<h2 class="h2_guide">02. 가로형 테이블</h2>
+	<div class="guide_wrap">
 		<!-- table_ty01 -->
 		<div class="tableTy1">
 			<table>
@@ -45,10 +64,10 @@
 				</colgroup>
 				<thead>
 					<tr>
-						<th scope="col">번호</td>
-						<th scope="col">이름</td>
-						<th scope="col">작성자</td>
-						<th scope="col">진행상태</td>
+						<th scope="col">번호</th>
+						<th scope="col">이름</th>
+						<th scope="col">작성자</th>
+						<th scope="col">진행상태</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -84,40 +103,10 @@
 			</table>
 		</div>
 		<!-- //table_ty01 -->
-		<!-- paging -->
-		<div class="paging">
-			<a href="#" class="first">맨 처음</a>
-			<a href="#" class="previous">이전</a>
-			<span>
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
-				<a href="#">5</a>
-			</span>
-			<a href="#" class="next">다음</a>
-			<a href="#" class="end">맨 끝</a>
-		</div>
-		<!-- //paging -->
 	</div>
-	<div class="d_desc code">
 <!-- code -->
+<div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
-<!-- tableHeader -->
-<div class="tableHeader">
-	<div class="fR">
-		<span class="tablePaging">
-			<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
-		</span>
-		<div class="btnArea">
-			<a href="#" class="btnSmall btnBlue">조회</a>
-			<a href="#" class="btnSmall btnWhite">조회</a>
-			<a href="#" class="btnSmall btnGray">신청취소</a>
-		</div>
-	</div>
-</div>
-<!-- //tableHeader -->
-<!-- table_ty01 -->
 <div class="tableTy1">
 	<table>
 		<caption></caption>
@@ -129,10 +118,10 @@
 		</colgroup>
 		<thead>
 			<tr>
-				<th scope="col">번호</td>
-				<th scope="col">이름</td>
-				<th scope="col">작성자</td>
-				<th scope="col">진행상태</td>
+				<th scope="col">번호</th>
+				<th scope="col">이름</th>
+				<th scope="col">작성자</th>
+				<th scope="col">진행상태</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -167,8 +156,30 @@
 		</tbody>
 	</table>
 </div>
-<!-- //table_ty01 -->
-<!-- paging -->
+</xmp>
+</div>
+<!-- //code -->
+
+	<h2 class="h2_guide">03. 페이지네비게이션</h2>
+	<div class="guide_wrap">
+		<!-- paging -->
+		<div class="paging">
+			<a href="#" class="first">맨 처음</a>
+			<a href="#" class="previous">이전</a>
+			<span>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+				<a href="#">5</a>
+			</span>
+			<a href="#" class="next">다음</a>
+			<a href="#" class="end">맨 끝</a>
+		</div>
+		<!-- //paging -->
+	</div>
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
 <div class="paging">
 	<a href="#" class="first">맨 처음</a>
 	<a href="#" class="previous">이전</a>
@@ -187,8 +198,8 @@
 	<a href="#" class="next">다음</a>
 	<a href="#" class="end">맨 끝</a>
 </div>
-<!-- //paging -->
 </xmp>
+</div>
 <!-- // code -->
 	</div>
 
