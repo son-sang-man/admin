@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>KSSN 한국정보통신망</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<script type="text/javascript" src="/resource/js/common.js"></script> 
+</head>
+<body>
+	<div id="skipNavi">
+		<a href="#container">본문 이동</a>
+	</div>
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<div>
+				<div class="utill">
+					<h1>
+						<a href="#"><img src="/resource/img/log_top.png" alt="KSSN 한국표준정보망" /></a>
+					</h1>
+					<ul>
+						<li class="user">Admin</li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+				<ul id="gnb">
+					<li class="on"><a href="#" title="현재메뉴">KS고시발간</a>
+						<ul>
+							<li class="on"><a href="#">COSD 서식편집지원</a>
+								<ul>
+									<li><a href="#">COSD 서식편집</a></li> 
+									<li><a href="#">COSD 계정</a></li>
+									<li><a href="#">COSD 공지사항</a></li>
+								</ul>
+							</li>
+							<li><a href="#">예고고시</a></li>
+							<li><a href="#">일관성검토</a></li>
+							<li><a href="#">KS 판매등록</a></li>
+							<li><a href="#">KS 서식편집정산</a></li>
+							<li><a href="#">KS 심사기준</a></li>
+							<li><a href="#">KS 통계관리</a></li>
+							<li><a href="#">신규개발제안</a></li>
+							<li><a href="#">KS 개발 주체 등록</a></li>
+						</ul>
+					</li>
+					<li><a href="#">상품관리</a></li>
+					<li><a href="#">판매내역</a></li>
+					<li><a href="#">재고관리</a></li>
+					<li><a href="#">온라인구독</a></li>
+					<li><a href="#">영업활동</a></li>
+					<li><a href="#">고객관리</a></li>
+					<li><a href="#">사이트관리</a></li>
+					<li><a href="#">시스템관리</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contentsTop-->
+			<div class="contentsTop">
+				<div class="location"> 
+					<ul>
+						<li class="home"><a href="#">홈</a></li>
+						<li><a href="#">메뉴1</a>
+							<ul>
+								<li><a href="#">하위메뉴</a></li>
+								<li><a href="#">하위메뉴</a></li>
+								<li><a href="#">하위메뉴</a></li>
+							</ul>
+						</li>
+						<li><a href="#">메뉴2</a>
+							<ul>
+								<li><a href="#">하위메뉴</a></li>
+								<li><a href="#">하위메뉴</a></li>
+								<li><a href="#">하위메뉴</a></li>
+							</ul>
+						</li>
+						<li class="last"><a href="#">메뉴</a><!--  최종depth일 경우 class="last" 추가 -->
+							<ul>
+								<li><a href="#">하위메뉴</a></li>
+								<li><a href="#">하위메뉴</a></li>
+								<li><a href="#">하위메뉴</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<h2 class="pageTitle"> 대 타이틀 : 견적 의뢰 정보</h2>
+			</div>
+			<!-- //contentsTop-->
+			
+			<!-- contents -->
+			<div class="contents">
+				<!-- <h3 class="pageTitleSmall">소 타이틀: 기본정보
+					<span class="tablePaging">
+						<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+					</span>
+				</h3> -->
+
+				<h3 class="pageTitleSmall">소 타이틀 기본정보</h3>
+				<div class="tableHeader">
+					<div class="fR">
+						<span class="tablePaging">
+							<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+						</span>
+						<div class="btnArea">
+							<a href="#" class="btnSmall btnBlue">조회</a>
+							<a href="#" class="btnSmall btnWhite">조회</a>
+							<a href="#" class="btnSmall btnGray">신청취소</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- table_ty01 -->
+				<div class="tableTy1">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col span="4" style="width:25%;" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</td>
+								<th scope="col">이름</td>
+								<th scope="col">작성자</td>
+								<th scope="col">진행상태</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tc">
+									<span class="radioBox blind_lab">
+										<input type="radio" id="cell1" />
+										<label for="cell1">선택</label>
+									</span>
+								</td>
+								<td>홍길동</td>
+								<td>홍길동</td>
+								<td>진행</td>
+							</tr>
+							<tr>
+								<td class="tc">
+									<span class="checkBox blind_lab">
+										<input type="checkbox" id="cell2" />
+										<label for="cell2">선택</label>
+									</span>
+								</td>
+								<td>홍길동</td>
+								<td>홍길동</td>
+								<td>진행</td>
+							</tr>
+							<tr>
+								<td class="tc">1</td>
+								<td>홍길동</td>
+								<td>홍길동</td>
+								<td>진행</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //table_ty01 -->
+				
+				<!-- paging -->
+				<div class="paging">
+					<a href="#" class="first">맨 처음</a>
+					<a href="#" class="previous">이전</a>
+					<span>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+					</span>
+					<a href="#" class="next">다음</a>
+					<a href="#" class="end">맨 끝</a>
+				</div>
+				<!-- //paging -->
+
+				<h2 class="guideTitle">복합테이블</h2>
+				<h3 class="pageTitleSmall">핸다북 카테고리 목록
+					<div class="btnArea fR">
+						<a href="#" class="btnSmall btnBlue">조회</a>
+						<a href="#" class="btnSmall btnWhite">조회</a>
+						<a href="#" class="btnSmall btnGray">신청취소</a>
+					</div>
+				</h3>
+				
+				<!-- table_ty01 -->
+				<div class="tableTy1">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col span="4" style="width:25%;" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" colspan="2">번호</td>
+								<th scope="col">작성자</td>
+								<th scope="col">진행상태</td>
+							</tr>
+							<tr>
+								<th scope="col">번호</td>
+								<th scope="col">번호</td>
+								<th scope="col">작성자</td>
+								<th scope="col">진행상태</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tc">1</td>
+								<td>홍길동</td>
+								<td colspan="2">홍길동</td>
+							</tr>
+							<tr>
+								<td class="tc">1</td>
+								<td>홍길동</td>
+								<td>홍길동</td>
+								<td>진행</td>
+							</tr>
+							<tr>
+								<td class="tc">1</td>
+								<td>홍길동</td>
+								<td  rowspan="3">홍길동</td>
+								<td>진행</td>
+							</tr>
+							<tr>
+								<td class="tc">1</td>
+								<td>홍길동</td>
+								<td>진행</td>
+							</tr>
+							<tr>
+								<td class="tc">1</td>
+								<td>홍길동</td>
+								<td>진행</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //table_ty01 -->
+
+				<h2 class="guideTitle">데이터 table</h2>
+				<!-- table_ty02 -->
+				<div class="tableTy2">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:12%;" />
+							<col style="width:38%;" />
+							<col style="width:12%;" />
+							<col style="width:38%;" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><span class="necessory" title="필수항목">이름</span></th>
+								<td>
+									<input type="text" class="input_txt widAll" title="이름 입력" />
+								</td>
+								<th scope="row">ID</th>
+								<td>
+									<input type="text" title="이름 입력" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="necessory" title="필수항목">업체명</span></th>
+								<td>
+									<span class="radioBox">
+										<input type="radio" id="radio1_1" name="radio1"/>
+										<label for="radio1_1">normal</label>
+									</span>
+									<span class="radioBox">
+										<input type="radio" id="radio1_2" name="radio1"/>
+										<label for="radio1_2">over</label>
+									</span>
+									<span class="radioBox">
+										<input type="radio" id="radio1_3" name="radio1" disabled="disabled" />
+										<label for="radio1_3">Normal Disable</label>
+									</span>
+								</td>
+								<th scope="row">업체명</th>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //table_ty02 -->
+				<!-- //table -->
+
+				
+				
+				<!-- button -->
+				<h2 class="guideTitle">button</h2>
+				<h3 class="guideTitleSmall">button_기본</h3>
+				<div class="btnArea">
+					<a href="#" class="btn btnBlue">조회</a>
+					<a href="#" class="btn btnWhite">조회</a>
+				</div>
+
+				<div class="btnArea">
+					<a href="#" class="btn btnBlue">조회1</a>
+					<a href="#" class="btn btnBlue">조회2</a>
+					<div class="fR">
+						<a href="#" class="btn btnWhite">조회2</a>
+						<a href="#" class="btn btnWhite">조회3</a>
+					</div>
+				</div>
+
+				<div class="btnArea tC">
+					<a href="#" class="btn btnBlue">조회</a>
+					<a href="#" class="btn btnWhite">조회</a>
+				</div>
+
+				<h3 class="guideTitleSmall">button_size:small</h3>
+				<div class="btnArea">
+					<a href="#" class="btnSmall btnBlue">조회</a>
+					<a href="#" class="btnSmall btnWhite">조회</a>
+					<a href="#" class="btnSmall btnGray">신청취소</a>
+				</div>
+				<!-- //button -->
+
+				<h2 class="guideTitle">selectBox</h2>
+				<button class="add btnWhite">셀렉트 박스 추가</button>
+				<div class="wrap" style="padding:50px">
+					<div class="selectBox" data-form="selectBox">
+						<!-- <div class="designSelect">
+							<button>테스트테스트0</button>
+							<ul>
+								<li><a href="#test0">테스트테스트0</a></li>
+								<li><a href="#test1">테스트테스트1</a></li>
+								<li><a href="#test2">테스트테스트2</a></li>
+								<li><a href="#test3">테스트테스트3</a></li>
+								<li><a href="#test4">테스트테스트4</a></li>
+							</ul>
+						</div> -->
+						<select id="test">
+							<option value="test0">테스트테스트테스트0</option>
+							<option value="test1">테스트테스트테스트1</option>
+							<option value="test2">테스트테스트테스트2</option>
+							<option value="test3">테스트테스트테스트3</option>
+							<option value="test4">테스트테스트테스트4</option>
+							<option value="test4">테스트테스트테스트5</option>
+							<option value="test4">테스트테스트테스트6</option>
+							<option value="test4">테스트테스트테스트7</option>
+							<option value="test4">테스트테스트테스트8</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="wrap2" style="padding:50px">
+					<div class="selectBox" data-form="selectBox">
+						<select id="test3">
+							<option>서울</option>
+							<option>경기도</option>
+							<option>강원도</option>
+							<option>경상북도</option>
+						</select>
+					</div>
+					<div class="selectBox" data-form="selectBox">
+						<select id="test4">
+							<option>강남구</option>
+							<option>서대문구</option>
+							<option>마포구</option>
+							<option>동대문구</option>
+							<option>관악구</option>
+						</select>
+					</div>
+				</div>
+				<!-- //selectBox -->
+
+
+				<h2 class="guideTitle">datepicker</h2>
+				<span class="dataBox"><input type="text" id="dateStar" title="날짜선택"></span>
+				<span class="bar">~</span>
+				<span class="dataBox"><input type="text" id="dateClose" title="날짜선택"></span>
+
+				<h2 class="guideTitle">checkbox</h2>
+				<span class="checkBox">
+					<input type="checkbox" id="check01" />
+					<label for="check01">normal</label>
+				</span>
+				<span class="checkBox">
+					<input type="checkbox" id="check02" />
+					<label for="check02">over</label>
+				</span>
+				<span class="checkBox">
+					<input type="checkbox" id="check03" disabled="disabled" />
+					<label for="check03">Normal Disable</label>
+				</span>
+				<span class="checkBox">
+					<input type="checkbox" id="check04" checked />
+					<label for="check04">Press</label>
+				</span>
+				<span class="checkBox">
+					<input type="checkbox" id="check05" disabled="disabled" checked="checked" />
+					<label for="check05">Disable</label>
+				</span>
+
+				<h2 class="guideTitle">radio button</h2>
+				<span class="radioBox">
+					<input type="radio" id="radio1" name="radiogroup" />
+					<label for="radio1">normal</label>
+				</span>
+				<span class="radioBox">
+					<input type="radio" id="radio2" name="radiogroup" />
+					<label for="radio2">over</label>
+				</span>
+				<span class="radioBox">
+					<input type="radio" id="radio3" name="radiogroup" disabled="disabled" />
+					<label for="radio3">Normal Disable</label>
+				</span>
+				<span class="radioBox">
+					<input type="radio" id="radio4" checked="checked" />
+					<label for="radio4">Press</label>
+				</span>
+				<span class="radioBox">
+					<input type="radio" id="radio5" disabled="disabled" checked="checked"  />
+					<label for="radio5">Disable</label>
+				</span>
+				
+
+				<!-- tab
+				<div class="tab">
+					<ul>
+						<li class="on"><a href="#" title="활성화">이체출금111111</a></li>
+						<li><a href="#">이체출금222</a></li>
+						<li><a href="#">이체출금3</a></li>
+						<li><a href="#">이체출금4</a></li>
+					</ul>
+					<div class="tabContent">
+						<div class="on"> 
+							이체출금 컨텐츠
+						</div>
+						<div>
+							이체출금 컨텐츠2
+						</div>
+						<div>
+							이체출금 컨텐츠3
+						</div>
+						<div>
+							이체출금 컨텐츠4
+						</div>
+					</div>
+				</div>
+				//tab -->
+
+			</div>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+		
+		<!-- footer -->
+		<div id="footer">
+			<div>
+				<img class="logoKsa" src="/resource/img/logo_ksa.png" alt="KSA 한국표준협회" />
+				<div class="info">
+					<ul>	
+						<li>한국표준협회 대표자 : 백수현</li>
+						<li>사업자등록번호 : 119-82-06809</li>
+						<li>통신판매업 신고번호 : 제2009-서울금천-0594호</li>
+					</ul>
+					<address>(우153-787) 서울특별시 금천구 가산디지털1로 145 (가산동 371-50) 에이스하이엔드타워 3차 </address>
+					Copyright (C) 2017 KSA. All rights reserved
+				</div>
+				<a href="#" class="btn btnWhite contact">담당자별 연락처보기</a>
+			</div>
+		</div>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>
