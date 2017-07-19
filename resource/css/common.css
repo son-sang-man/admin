@@ -5,7 +5,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-19
 * Modify : 김미나
-* Ver : 1.02
+* Ver : 1.03
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -108,8 +108,8 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #wrap { width: 100%; min-width: 1280px; margin: auto; }
 
 #header { height: 99px; background: #404652; border-bottom: 2px solid #d75605; }
-#header > div { width: 1200px; margin: auto; }
-#header .utill { position: relative; padding: 15px 30px; }
+#header > div { width: 1200px; margin: auto; height: 100%; }
+#header .utill { position: relative; padding: 15px 0; }
 #header .utill > h1 { width: 226px; height: 32px; }
 #header .utill > h1 > a { display: block; height: 32px; }
 #header .utill > ul { position: absolute; right: 0; top: 20px; }
@@ -120,7 +120,7 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #header .utill > ul > li:before { content: ""; display: inline-block; width: 1px; height: 11px; background: #c8ceda; margin: 0 11px; }
 #header .utill > ul > li:first-child:before { display: none; }
 
-#gnb { position: relative; padding: 0 30px; z-index: 2; }
+#gnb { position: relative; z-index: 2; }
 #gnb > li { display: inline-block; position: relative; margin-left: 28px; }
 #gnb > li:first-child { margin-left: 0; }
 #gnb > li.on a { color: #96c7f4; }
@@ -147,8 +147,8 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #skipNavi > a:focus, #skipNavi > a:active { height: auto; width: 100%; padding: 5px; margin-bottom: 10px; position: absolute; left: 0; top: 0; }
 
 #container { background: #f2f5f8; }
-#container .location { padding: 0 70px; border-bottom: 1px solid #ccc; background: #f9f9f9; }
-#container .location > ul { width: 1200px; height: 40px; margin: auto; }
+#container .location { height: 40px; border-bottom: 1px solid #ccc; background: #f9f9f9; }
+#container .location > ul { width: 1200px; margin: auto; }
 #container .location > ul > li { position: relative; float: left; height: 40px; min-width: 250px; padding-right: 50px; padding-left: 20px; line-height: 40px; box-sizing: border-box; background: url(/resource/img/bg_select.png) no-repeat right center; border-right: 1px solid #ccc; }
 #container .location > ul > li > a { display: block; height: 40px; }
 #container .location > ul > li.on > ul { display: block; }
