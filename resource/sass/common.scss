@@ -459,6 +459,7 @@ body{
 #gnb{
 	position:relative;
 	padding:0 30px;
+	z-index:2;
 	> li{
 		display:inline-block;
 		position:relative;
@@ -469,11 +470,9 @@ body{
 		&.on{
 			a{
 				color:#96c7f4;
-			
 			}
 			> ul {
 				display:block;
-				min-width:195px;
 				margin-top:14px;
 				background:#fff;
 				border:1px solid #6a9fd1;
@@ -490,13 +489,14 @@ body{
 					}
 					> a{
 						display:block;
-						padding:0 28px 0 10px;
+						min-width:195px;
+						padding:8px 28px 8px 10px;
 						font-size:16px;
 						color:#666;
-						height:40px;
-						line-height:40px;
+						// height:40px;
+						line-height:24px;
+						box-sizing:border-box;
 						border-top:1px solid #6a9ed0;
-					
 						&:hover,
 						&:focus{
 							color:#96c7f4;
@@ -534,20 +534,20 @@ body{
 					}
 					> ul{
 						background:#fff;
-						min-width:195px;
 						padding:10px 0;
 						border:1px solid #6a9fd1;
 						position:absolute;
-						right:-197px;
+						left:0;
 						top:0;
+						margin-left:195px;
 						z-index:2;
 						>li{
 							> a{
+								min-width:195px;
 								display:block;
 								padding:0 10px;
 								font-size:14px;
 								color:#666;
-								height:24px;
 								line-height:24px;
 								box-sizing:border-box;
 								&:hover,
@@ -559,6 +559,9 @@ body{
 					}
 				}
 			}
+		}
+		> ul{
+			display:none;
 		}
 
 		> a{
@@ -613,6 +616,7 @@ body{
 			height:40px;
 			margin:auto;
 			> li{
+				position:relative;
 				float:left;
 				height:40px;
 				min-width:250px;
@@ -626,14 +630,53 @@ body{
 					display:block;
 					height:40px;
 				}
+			&.on{
+				> ul{
+					display:block;
+				}
+			}
 				> ul {
 					display:none;
+					border:none;
+					background:#fff;
+					border:1px solid #ccc;
+					position:absolute;
+					left:0;
+					width:100%;
+					z-index:1;
+					margin-left:-1px;
+					li{
+						&:first-child{
+							> a{
+								border-top:none;
+							}
+						}
+						a{
+							display:block;
+							margin:0 20px;
+							font-size:16px;
+							color:#666;
+							height:40px;
+							line-height:40px;
+							border-top:1px solid #ccc;
+							
+							&:hover,
+							&:focus{
+								color:#7c9dbc;
+							}
+						}
 					}
 				}
+			}
 			.home{
 				width:56px;
 				min-width:56px;
 				background:#7c9dbc url(#{$img-common}bg_home.png) no-repeat center center;
+				&:hover,
+				&:focus,
+				&:active{
+					background:#ff904b url(#{$img-common}bg_home.png) no-repeat center center;
+				}
 				> a{
 					display:block;
 					position:absolute;
@@ -645,15 +688,10 @@ body{
 					line-height:0;
 					white-space:nowrap;
 				}
-				&:hover,
-				&:focus,
-				&:active{
-					background:#ff904b url(#{$img-common}bg_home.png) no-repeat center center;
-				}
-			&.last{
+			}
+			.last{
 				> a{
 					color:$color2;
-					}
 				}
 			}
 		}
