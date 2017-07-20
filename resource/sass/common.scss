@@ -5,8 +5,8 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
-* Modify : 손상만
-* Ver : 1.02
+* Modify : 김미나
+* Ver : 1.03
 */
 
 body,
@@ -190,22 +190,22 @@ input{
 	font-size:inherit;
 	color:$color0;
 	line-height:17px;
-	vertical-align:middle;
+	vertical-align:top;
 	-webkit-border-radius:0;
 	&[type="text"],
 	&[type="password"],
 	&[type="tel"]
 	{
-		height:40px;
-		line-height:40px;
+		height:34px;
+		line-height:34px;
 		box-sizing:border-box;
-		padding-left:15px;
-		border:1px solid #bcc5d4;
+		padding-left:10px;
+		border:none;
 		-webkit-appearance:none;
 		&:focus{
-			border-color:#333;
+			border: 2px solid #7c9dbc;
 		}
-		&:disabled{
+		&:disabled{ //미정
 			background-color:#f2f2f2;
 			color:#999;
 		}
@@ -309,7 +309,12 @@ body{
 /* 폼요소 너비 */
 .widAll{
 	width:100%;
-
+}
+.wid50{
+	width:50px;
+}
+.wid510{
+	width:510px;
 }
 
 // 셀렉트 박스
@@ -399,7 +404,7 @@ body{
 	}
 	.utill{
 		position:relative;
-		padding:15px 0;
+		padding-top:15px;
 		> h1{
 			width:226px;
 			height:32px;
@@ -458,16 +463,29 @@ body{
 	> li{
 		position:relative;
 		float:left;
-		padding:7px 32px 8px;
 		&:first-child{
-			padding-left:0;
+			> a{
+				padding-left:0;
+			}
 		}
 		&:last-child{
-			padding-right:0;
+			> a{
+				padding-right:0;
+			}
 		}
 		&.on{
 			> a{
 				color:#96c7f4;
+			}
+		}
+		> a{
+			display:inline-block;
+			padding:15px;
+			font-size:18px;
+			color:#c8ceda;
+			height:24px;
+			&:hover,
+			&:focus{
 			}
 		}
 		> ul {
@@ -554,16 +572,6 @@ body{
 						}
 					}
 				}
-			}
-		}
-		> a{
-
-			display:inline-block;
-			font-size:18px;
-			color:#c8ceda;
-			height:24px;
-			&:hover,
-			&:focus{
 			}
 		}
 	}
@@ -701,6 +709,19 @@ body{
 	padding:0 30px 50px;
 	box-sizing:border-box;
 	min-height:400px;
+	.viewColum2{
+		> li{
+			box-sizing:border-box;
+			float:left;
+			width:50%;
+			box-sizing:border-box;
+			padding-left:15px;
+			&:first-child{
+				padding-right:15px;
+				padding-left:0;
+			}
+		}
+	}
 }
 .pageTitle{
 	font-size:30px;
@@ -1147,53 +1168,39 @@ table{
 
 }
 .tableTy2 {
-	margin:auto;
+	border:1px solid #bcc8d4;
 	table {
 		width:100%;
 		table-layout:fixed;
 	}
-	tr{
+	tr {
 		th {
-			padding:13px 10px;
+			padding:12px 15px 12px 20px;
 			font-size:14px;
-			color:#fff;
+			color:$color0;
+			background:#d0dce7;
 			text-align:left;
 		}
 		td {
-			padding:13px 10px;
-			font-size:13px;
-			color:#777;
-			text-align:left;
-			background:#f2f5f8;
-			border-bottom:1px solid #d5d5d5;
-		}
-	}
-	thead{
-		tr{
-			th{
-				background:#7c8c9b;
-				text-align:center;
+			padding:12px 20px 12px 0;
+			font-size:14px;
+			background:#d0dce7;
+			input{
+					&:first-child{
+						margin-left:0;
+					}
 			}
 		}
 	}
-	tbody{
-		th{
-			border-top:1px solid #bcc5d4;
-			border-left:1px solid #bcc5d4;
-		}
-		td{
-			border-top:1px solid #bcc5d4;
-			font-size:13px;
-		}
-		tr{
-			&:first-child{
-				th,
-				td{
-					border-top:0;
-				}
-			}
-		}
-	}
+}
+.dot{
+	display:inline-block;
+	width:1px;
+	height:2px;
+	background:#666;
+	text-align:center;
+	margin:0 2px
+
 }
 
 /* radio */
@@ -1420,6 +1427,7 @@ table{
 	@include weight('B');
 	color:#fff;
 	line-height:32px;
+	margin-left:4px;
 }
 .btnSmall{
 	display:inline-block;
