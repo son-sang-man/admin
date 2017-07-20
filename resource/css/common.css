@@ -171,6 +171,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .contentsArea > div:first-child { padding-right: 15px; padding-left: 0; }
 .contentsArea.col2 > div { width: 50%; }
 .contentsArea.col3 > div { width: 33%; }
+.contentsArea.col3 > div:nth-of-type(2) { width: 34%; padding-right: 15px; }
 
 .title1 { font-size: 22px; color: #444; }
 
