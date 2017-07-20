@@ -5,8 +5,8 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
-* Modify : 김미나
-* Ver : 1.05
+* Modify : 손상만
+* Ver : 1.06
 */
 
 body,
@@ -309,6 +309,23 @@ body{
 }
 .vN{
 	vertical-align:0 !important
+}
+
+/* 포인트 컬러 */
+.fontColor1{
+	color:$color0;
+}
+.fontColor2{
+	color:$color1;
+}
+.fontColor3{
+	color:$color2;
+}
+.fontColor4{
+	color:$color3;
+}
+.fontColor5{
+	color:$color4;
 }
 
 

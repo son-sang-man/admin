@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>KSSN 한국정보통신망</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<script>
+		// 인크루드용 개발적용시 삭제
+		$(function(){
+			$("#header").load("/html/inc/layout.html #header > div");
+			$("#footer").load("/html/inc/layout.html #footer > div");
+		})
+	</script>
+</head>
+<body>
+	<div id="skipNavi">
+		<a href="#container">본문 이동</a>
+	</div>
+	<div id="wrap">
+		<!-- header -->
+		<header id="header">
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- contentsTop-->
+			<div class="contentsTop">
+				<div class="location">
+					<ul>
+						<li class="home"><a href="#">홈</a></li>
+						<li><a href="#">메뉴1</a> <!-- 하위메뉴 활성화 class="on" 추가 -->
+							<ul>
+								<li><a href="#">하위메뉴1</a></li>
+								<li><a href="#">하위메뉴1</a></li>
+								<li><a href="#">하위메뉴1</a></li>
+							</ul>
+						</li>
+						<li><a href="#">메뉴2</a>
+							<ul>
+								<li><a href="#">하위메뉴2</a></li>
+								<li><a href="#">하위메뉴2</a></li>
+								<li><a href="#">하위메뉴2</a></li>
+							</ul>
+						</li>
+						<li class="last"><a href="#" T>메뉴3</a><!--  최종 로케이션일 경우 class="last" 추가 -->
+							<ul>
+								<li><a href="#">하위메뉴3</a></li>
+								<li><a href="#">하위메뉴3</a></li>
+								<li><a href="#">하위메뉴3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- //contentsTop-->
+
+			<!-- contents -->
+			<section id="contents">
+				<h2 class="title1">핸드북 카테고리 관리</h2>
+				<h3 class="title2">핸드북 카테고리 검색</h3>
+				<div class="tableTy2">
+					<table>
+						<colgroup>
+						<col style="width:104px" />
+						<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">카테고리명</th>
+							<td>
+								<input type="text" />
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnArea">
+					<button class="btn btnBlue">조회</button>
+				</div>
+				<h3 class="title2">핸드북 카테고리 목록</h3>
+				<div class="tableHeader">
+					<div class="fR">
+						<span class="tablePaging">
+							<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+						</span>
+					</div>
+				</div>
+				<div class="tableTy1">
+					<table>
+						<colgroup>
+						<col style="width:10%" />
+						<col />
+						<col style="width:10%" />
+						<col style="width:10%" />
+						</colgroup>
+						<thead>
+						<tr>
+							<th scope="col">글번호</th>
+							<th scope="col">카테고리명</th>
+							<th scope="col">상태</th>
+							<th scope="col">관리</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC">사용</td>
+							<td class="tC"><span class="btnSmall btnRed">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC fontColor5">미사용</td> <!-- 미사용일 경우 class="fontCOlor5" -->
+							<td class="tC"><span class="btnSmall btnWhite">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC">사용</td>
+							<td class="tC"><span class="btnSmall btnRed">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC fontColor5">미사용</td> <!-- 미사용일 경우 class="fontCOlor5" -->
+							<td class="tC"><span class="btnSmall btnWhite">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC">사용</td>
+							<td class="tC"><span class="btnSmall btnRed">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC fontColor5">미사용</td> <!-- 미사용일 경우 class="fontCOlor5" -->
+							<td class="tC"><span class="btnSmall btnWhite">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC">사용</td>
+							<td class="tC"><span class="btnSmall btnRed">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC fontColor5">미사용</td> <!-- 미사용일 경우 class="fontCOlor5" -->
+							<td class="tC"><span class="btnSmall btnWhite">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC">사용</td>
+							<td class="tC"><span class="btnSmall btnRed">관리</span></td>
+						</tr>
+						<tr>
+							<td class="tC">10</td>
+							<td>비철</td>
+							<td class="tC fontColor5">미사용</td> <!-- 미사용일 경우 class="fontCOlor5" -->
+							<td class="tC"><span class="btnSmall btnWhite">관리</span></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnArea tR">
+					<button class="btn btnBlue">카테고리 생성</button>
+				</div>
+				<div class="paging">
+					<a href="#" class="first">맨 처음</a>
+					<a href="#" class="previous">이전</a>
+					<span>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+					</span>
+					<a href="#" class="next">다음</a>
+					<a href="#" class="end">맨 끝</a>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 페이지 내 스크립트 영역 -->
+	<script>
+		ui.init(); // 퍼블리싱 UI적용 스크립트
+	</script>
+	<!-- // 페이지 내 스크립트 영역 -->
+</body>
+</html>
