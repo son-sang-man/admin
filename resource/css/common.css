@@ -1,11 +1,10 @@
 @charset "UTF-8";
-@import url("fonts.css");
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-19
+* Last Update :2017-07-20
 * Modify : 김미나
-* Ver : 1.03
+* Ver : 1.04
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -31,7 +30,7 @@ caption, figcaption { overflow: hidden; width: 100%; height: 1px; font-size: 0; 
 
 legend { display: block; position: absolute; left: -9999px; text-indent: 9999px; width: 0; height: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
 
-button { padding: 0; border: 0; cursor: pointer; background: none; vertical-align: middle; appearance: none; moz-appearance: none; font-family: 'NotoSansKR',sans-serif; color: #666; letter-spacing: -1px; }
+button { padding: 0; border: 0; cursor: pointer; background: none; vertical-align: middle; appearance: none; moz-appearance: none; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; color: #666; letter-spacing: -1px; }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
 
@@ -51,7 +50,7 @@ input [type="radio"], input [type="checkbox"] { width: 13px; height: 13px; verti
 
 textarea { -webkit-appearance: none; -webkit-border-radius: 0; border: 1px solid #ccc; color: #666; background: #fff; padding: 15px; font-size: 15px; width: 100%; box-sizing: border-box; }
 
-body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif; color: #666; background: #fff; letter-spacing: -1.0px; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-style: normal; font-size: 13px; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; color: #666; background: #fff; letter-spacing: -1.0px; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /* 요소 숨김 */
 .blind { display: block; position: absolute; width: 0; height: 0; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
@@ -105,22 +104,22 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 .guideTitleSmall { font-size: 14px; margin: 30px 0 20px; }
 
 /* layout */
-#wrap { width: 100%; min-width: 1280px; margin: auto; }
+#wrap { width: 100%; min-width: 1600px; margin: auto; }
 
 #header { height: 99px; background: #404652; border-bottom: 2px solid #d75605; }
-#header > div { width: 1280px; margin: auto; height: 100%; }
-#header .utill { position: relative; padding: 15px 40px; }
+#header > div { width: 1600px; margin: auto; height: 100%; }
+#header .utill { position: relative; padding: 15px 0; }
 #header .utill > h1 { width: 226px; height: 32px; }
 #header .utill > h1 > a { display: block; height: 32px; }
-#header .utill > ul { position: absolute; right: 40px; top: 20px; }
+#header .utill > ul { position: absolute; right: 0; top: 20px; }
 #header .utill > ul .user { padding-left: 35px; background: url(/resource/img/bg_user.png) no-repeat left center; color: #c8ceda; }
-#header .utill > ul > li { display: inline-block; height: 27px; font-family: Dotum,"돋움"; font-size: 12px; color: #c8ceda; line-height: 27px; }
-#header .utill > ul > li a { position: relative; display: inline-block; font-family: Dotum,"돋움"; font-size: 12px; color: #c8ceda; }
+#header .utill > ul > li { display: inline-block; height: 27px; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 12px; color: #c8ceda; line-height: 27px; }
+#header .utill > ul > li a { position: relative; display: inline-block; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 12px; color: #c8ceda; }
 #header .utill > ul > li a:hover, #header .utill > ul > li a:focus { color: #96c7f4; }
 #header .utill > ul > li:before { content: ""; display: inline-block; width: 1px; height: 11px; background: #c8ceda; margin: 0 11px; }
 #header .utill > ul > li:first-child:before { display: none; }
 
-#gnb { position: relative; display: inline-block; vertical-align: top; z-index: 2; padding-left: 40px; }
+#gnb { position: relative; display: inline-block; vertical-align: top; z-index: 2; }
 #gnb > li { position: relative; float: left; padding: 7px 32px 8px; }
 #gnb > li:first-child { padding-left: 0; }
 #gnb > li:last-child { padding-right: 0; }
@@ -147,7 +146,7 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 
 #container { background: #f2f5f8; }
 #container .location { height: 40px; border-bottom: 1px solid #ccc; background: #f9f9f9; }
-#container .location > ul { width: 1200px; margin: auto; }
+#container .location > ul { width: 1600px; margin: auto; }
 #container .location > ul > li { position: relative; float: left; height: 40px; line-height: 40px; box-sizing: border-box; border-right: 1px solid #ccc; }
 #container .location > ul > li > a { display: block; min-width: 250px; padding-right: 50px; padding-left: 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; box-sizing: border-box; }
 #container .location > ul > li > ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; width: 100%; z-index: 1; margin-left: -1px; }
@@ -160,9 +159,9 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 #container .location > ul .last > a { color: #7c9dbc; }
 
 .contentsTop { background: #fff; }
-.contentsTop h2 { padding: 35px 30px 0; height: 100px; box-sizing: border-box; width: 1200px; margin: auto; }
+.contentsTop h2 { padding: 35px 30px 0; height: 100px; box-sizing: border-box; width: 1600px; margin: auto; }
 
-.contents { width: 1200px; margin: auto; padding: 0 30px 50px; box-sizing: border-box; min-height: 400px; }
+.contents { width: 1600px; margin: auto; padding: 0 30px 50px; box-sizing: border-box; min-height: 400px; }
 
 .pageTitle { font-size: 30px; color: #444; background: #fff; }
 
@@ -172,20 +171,20 @@ body { font-style: normal; font-size: 13px; font-family: 'NotoSansKR',sans-serif
 .tableHeader { margin-bottom: 15px; }
 .tableHeader:after { content: ""; display: block; clear: both; }
 .tableHeader .btnArea { display: inline-block; margin-top: 0; }
-.tableHeader .tablePaging { display: inline-block; font-family: Dotum,"돋움"; font-size: 12px; color: #666; }
+.tableHeader .tablePaging { display: inline-block; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 12px; color: #666; }
 .tableHeader .tablePaging > strong { font-weight: normal; }
 .tableHeader .tablePaging > strong:after { content: "/"; padding: 0 5px; display: inline-block; color: #666; font-weight: normal; }
 .tableHeader .tablePaging > em { font-weight: normal; }
 .tableHeader .tablePaging > em:after { content: "page"; padding-left: 5px; display: inline-block; color: #666; font-weight: normal; }
 
 #footer { border-top: 2px solid #ccc; border-bottom: 3px solid #f2f5f8; }
-#footer > div { position: relative; width: 1200px; padding: 20px 0; margin: auto; }
+#footer > div { position: relative; width: 1600px; padding: 20px 0; margin: auto; }
 #footer > div .logoKsa { display: inline-block; width: 156px; height: 47px; margin-top: 10px; }
 #footer > div .info { margin-left: 20px; display: inline-block; }
 #footer > div .info > ul > li { display: inline-block; padding-right: 5px; padding-left: 5px; margin-left: 5px; border-left: 1px solid #666; height: 11px; line-height: 11px; font-size: 12px; color: #666; }
 #footer > div .info > ul > li:first-child { padding: 0; margin: 0; border: 0; }
 #footer > div .info address { display: block; font-style: normal; }
-#footer > div .contact { position: absolute; right: 0; top: 30px; padding-left: 45px; background: url(/resource/img/bg_contact.png) no-repeat 20px 10px; font-family: Dotum,"돋움"; font-size: 12px; color: #7b8b99; height: 40px; line-height: 40px; }
+#footer > div .contact { position: absolute; right: 0; top: 30px; padding-left: 45px; background: url(/resource/img/bg_contact.png) no-repeat 20px 10px; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 12px; color: #7b8b99; height: 40px; line-height: 40px; }
 #footer > div .contact:hover, #footer > div .contact:focus { background: url(/resource/img/bg_contact_over.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; color: #ff903b; }
 
 /* datepicker */
@@ -238,18 +237,20 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy1 { margin: auto; }
 .tableTy1 table { width: 100%; table-layout: fixed; }
 .tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; }
-.tableTy1 tr td { padding: 13px 10px; font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; color: #777; text-align: left; background: #f2f5f8; border-bottom: 1px solid #d5d5d5; }
+.tableTy1 tr td { padding: 13px 10px; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 13px; color: #777; text-align: left; background: #f2f5f8; border-bottom: 1px solid #d5d5d5; }
 .tableTy1 thead tr th { background: #7c8c9b; text-align: center; }
 .tableTy1 tbody th { border-top: 1px solid #bcc5d4; border-left: 1px solid #bcc5d4; }
-.tableTy1 tbody td { border-top: 1px solid #bcc5d4; font-family: 'Malgun Gothic' ,"맑은 고딕"; font-size: 13px; }
+.tableTy1 tbody td { border-top: 1px solid #bcc5d4; font-size: 13px; }
 .tableTy1 tbody tr:first-child th, .tableTy1 tbody tr:first-child td { border-top: 0; }
 
-.tableTy2 { width: 1140px; margin: auto; border-top: 2px solid #333; border-bottom: 1px solid #666; }
+.tableTy2 { margin: auto; }
 .tableTy2 table { width: 100%; table-layout: fixed; }
-.tableTy2 table tr th { padding: 10px 25px; font-size: 13px; color: #666; font-weight: 700; text-align: left; border-left: 1px solid #bcc5d4; background: #eaeef2; border-top: 1px solid #bcc5d4; }
-.tableTy2 table tr th:first-child { border-left: 0; }
-.tableTy2 table tr td { height: 40px; padding: 10px 20px; border-top: 1px solid #bcc5d4; font-size: 14px; color: #666; text-align: left; border-left: 1px solid #bcc5d4; }
-.tableTy2 table tr:first-child th, .tableTy2 table tr:first-child td { border-top: 0; }
+.tableTy2 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; }
+.tableTy2 tr td { padding: 13px 10px; font-size: 13px; color: #777; text-align: left; background: #f2f5f8; border-bottom: 1px solid #d5d5d5; }
+.tableTy2 thead tr th { background: #7c8c9b; text-align: center; }
+.tableTy2 tbody th { border-top: 1px solid #bcc5d4; border-left: 1px solid #bcc5d4; }
+.tableTy2 tbody td { border-top: 1px solid #bcc5d4; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 13px; }
+.tableTy2 tbody tr:first-child th, .tableTy2 tbody tr:first-child td { border-top: 0; }
 
 /* radio */
 .radioBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }

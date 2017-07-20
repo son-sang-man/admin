@@ -1,13 +1,12 @@
 @charset "UTF-8";
-@import url("fonts.css");
 @import "config.scss";
 
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-19
+* Last Update :2017-07-20
 * Modify : 김미나
-* Ver : 1.03
+* Ver : 1.04
 */
 
 body,
@@ -141,7 +140,7 @@ button{
 	vertical-align:middle;
 	appearance:none;
 	moz-appearance:none;
-	font-family: 'NotoSansKR',sans-serif;
+	font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 	color:$color0;
 	letter-spacing:-1.0px
 }
@@ -235,7 +234,7 @@ textarea{
 body{
 	font-style:normal;
 	font-size:13px;
-	font-family: 'NotoSansKR',sans-serif;
+	font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 	color:$color0;
 	background:#fff;
 	letter-spacing:-1.0px;
@@ -390,7 +389,7 @@ body{
 /* layout */
 #wrap{
 	width:100%;
-	min-width:1280px;
+	min-width:1600px;
 	margin:auto;
 }
 #header{
@@ -398,13 +397,13 @@ body{
 	background:#404652;
 	border-bottom:2px solid #d75605;
 	> div{
-		width:1280px;
+		width:1600px;
 		margin:auto;
 		height:100%;
 	}
 	.utill{
 		position:relative;
-		padding:15px 40px;
+		padding:15px 0;
 		> h1{
 			width:226px;
 			height:32px;
@@ -415,7 +414,7 @@ body{
 		}
 		> ul{
 			position:absolute;
-			right:40px;
+			right:0;
 			top:20px;
 			.user{
 				padding-left:35px;
@@ -425,14 +424,14 @@ body{
 			> li{
 				display:inline-block;
 				height:27px;
-				font-family:Dotum,"돋움";
+				font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 				font-size:12px;
 				color:#c8ceda;
 				line-height:27px;
 				a{
 					position:relative;
 					display:inline-block;
-					font-family:Dotum,"돋움";
+					font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 					font-size:12px;
 					color:#c8ceda;
 					&:hover,
@@ -462,7 +461,6 @@ body{
 	display:inline-block;
 	vertical-align:top;
 	z-index:2;
-	padding-left:40px;
 	> li{
 		position:relative;
 		float:left;
@@ -617,7 +615,7 @@ body{
 		border-bottom:1px solid #ccc;
 		background:#f9f9f9;
 		> ul{
-			width:1200px;
+			width:1600px;
 			margin:auto;
 			> li{
 				position:relative;
@@ -711,12 +709,12 @@ body{
 		padding:35px 30px 0;
 		height:100px;
 		box-sizing:border-box;
-		width:1200px;
+		width:1600px;
 		margin:auto;
 	}
 }
 .contents{
-	width:1200px;
+	width:1600px;
 	margin:auto;
 	padding:0 30px 50px;
 	box-sizing:border-box;
@@ -758,7 +756,7 @@ body{
 	.tablePaging{
 		
 		display:inline-block;
-		font-family:Dotum,"돋움";
+		font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 		font-size:12px;
 		color:#666;
 		> strong{
@@ -789,7 +787,7 @@ body{
 	border-bottom:3px solid #f2f5f8;
 	> div{
 		position:relative;
-		width:1200px;
+		width:1600px;
 		padding:20px 0;
 		margin:auto;
 		.logoKsa{
@@ -830,7 +828,7 @@ body{
 			top:30px;
 			padding-left:45px;
 			background:url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
-			font-family:Dotum,"돋움";
+			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 			font-size:12px;
 			color:#7b8b99;
 			height:40px;
@@ -1130,7 +1128,7 @@ table{
 		}
 		td {
 			padding:13px 10px;
-			font-family: 'Malgun Gothic' ,"맑은 고딕";
+			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 			font-size:13px;
 			color:#777;
 			text-align:left;
@@ -1154,7 +1152,6 @@ table{
 		}
 		td{
 			border-top:1px solid #bcc5d4;
-			font-family: 'Malgun Gothic' ,"맑은 고딕";
 			font-size:13px;
 		}
 		tr{
@@ -1168,37 +1165,48 @@ table{
 	}
 }
 .tableTy2 {
-	width:1140px;
 	margin:auto;
-	border-top:2px solid #333;
-	border-bottom:1px solid #666;
 	table {
 		width:100%;
 		table-layout:fixed;
+	}
+	tr{
+		th {
+			padding:13px 10px;
+			font-size:14px;
+			color:#fff;
+			text-align:left;
+		}
+		td {
+			padding:13px 10px;
+			font-size:13px;
+			color:#777;
+			text-align:left;
+			background:#f2f5f8;
+			border-bottom:1px solid #d5d5d5;
+		}
+
+	}
+	thead{
 		tr{
 			th{
-				padding:10px 25px;
-				font-size:13px;
-				color:$color0;
-				@include weight("B");;
-				text-align:left;
-				border-left:1px solid #bcc5d4;
-				background:#eaeef2;
-				border-top:1px solid #bcc5d4;
-				&:first-child{
-					border-left:0;
-				}
+				background:#7c8c9b;
+				text-align:center;
 			}
-			td{
-				height:40px;
-				padding:10px 20px;
-				border-top:1px solid #bcc5d4;
-				font-size:14px;
-				color:#666;
-				text-align:left;
-				border-left:1px solid #bcc5d4;
-			}
-			&:first-child {
+		}
+	}
+	tbody{
+		th{
+			border-top:1px solid #bcc5d4;
+			border-left:1px solid #bcc5d4;
+		}
+		td{
+			border-top:1px solid #bcc5d4;
+			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
+			font-size:13px;
+		}
+		tr{
+			&:first-child{
 				th,
 				td{
 					border-top:0;
