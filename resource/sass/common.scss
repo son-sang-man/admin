@@ -608,7 +608,6 @@ body{
 }
 
 #container{
-	background:#f2f5f8;
 	.location{
 		height:40px;
 		border-bottom:1px solid #ccc;
@@ -696,9 +695,10 @@ body{
 
 .contentsTop{
 	background:#fff;
+	border:1px solid #ccc;
 	h2{
-		padding:35px 30px 0;
-		height:100px;
+		padding-top:20px;
+		height:62px;
 		box-sizing:border-box;
 		width:1600px;
 		margin:auto;
@@ -707,14 +707,15 @@ body{
 .contents{
 	width:1600px;
 	margin:auto;
-	padding:0 30px 50px;
 	box-sizing:border-box;
 	min-height:400px;
-	.viewColum2{
-		> li{
+	.contentsArea{
+		width:100%;
+		display:inline-block;
+		vertical-align:top;
+		> div{
 			box-sizing:border-box;
 			float:left;
-			width:50%;
 			box-sizing:border-box;
 			padding-left:15px;
 			&:first-child{
@@ -722,26 +723,37 @@ body{
 				padding-left:0;
 			}
 		}
+		&.col2{
+			> div {
+				width:50%;
+			}
+
+		}
+		&.col3{
+			> div {
+				width:33%;
+			}
+
+		}
 	}
 }
-.pageTitle{
-	font-size:30px;
-	color:#444;
-	background:#fff;
 
-}
-.pageTitleSmall{
+.title1{
 	font-size:22px;
+	color:#444;
+}
+.title2{
+	font-size:18px;
 	padding:20px 0 15px;
 	position:relative;
 	color:#444;
-	@include weight("M");
+	@include weight("N");
 	overflow:hidden;
-	.btnArea{
-		&.fR{
-			margin-top:0;
-		}
-	}
+	// .btnArea{
+	// 	&.fR{
+	// 		margin-top:0;
+	// 	}
+	// }
 }
 .tableHeader{
 	margin-bottom:15px;

@@ -148,7 +148,6 @@ body { font-style: normal; font-size: 13px; font-family: 'Malgun Gothic', 'ë§‘ì
 #skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
 #skipNavi > a:focus, #skipNavi > a:active { height: auto; width: 100%; padding: 5px; margin-bottom: 10px; position: absolute; left: 0; top: 0; }
 
-#container { background: #f2f5f8; }
 #container .location { height: 40px; border-bottom: 1px solid #ccc; background: #f9f9f9; }
 #container .location > ul { width: 1600px; margin: auto; }
 #container .location > ul > li { position: relative; float: left; height: 40px; line-height: 40px; box-sizing: border-box; border-right: 1px solid #ccc; }
@@ -162,17 +161,19 @@ body { font-style: normal; font-size: 13px; font-family: 'Malgun Gothic', 'ë§‘ì
 #container .location > ul .home > a { display: block; position: absolute; width: 0; height: 0; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
 #container .location > ul .last > a { color: #7c9dbc; }
 
-.contentsTop { background: #fff; }
-.contentsTop h2 { padding: 35px 30px 0; height: 100px; box-sizing: border-box; width: 1600px; margin: auto; }
+.contentsTop { background: #fff; border: 1px solid #ccc; }
+.contentsTop h2 { padding-top: 20px; height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
 
-.contents { width: 1600px; margin: auto; padding: 0 30px 50px; box-sizing: border-box; min-height: 400px; }
-.contents .viewColum2 > li { box-sizing: border-box; float: left; width: 50%; box-sizing: border-box; padding-left: 15px; }
-.contents .viewColum2 > li:first-child { padding-right: 15px; padding-left: 0; }
+.contents { width: 1600px; margin: auto; box-sizing: border-box; min-height: 400px; }
+.contents .contentsArea { width: 100%; display: inline-block; vertical-align: top; }
+.contents .contentsArea > div { box-sizing: border-box; float: left; box-sizing: border-box; padding-left: 15px; }
+.contents .contentsArea > div:first-child { padding-right: 15px; padding-left: 0; }
+.contents .contentsArea.col2 > div { width: 50%; }
+.contents .contentsArea.col3 > div { width: 33%; }
 
-.pageTitle { font-size: 30px; color: #444; background: #fff; }
+.title1 { font-size: 22px; color: #444; }
 
-.pageTitleSmall { font-size: 22px; padding: 20px 0 15px; position: relative; color: #444; font-weight: 600; overflow: hidden; }
-.pageTitleSmall .btnArea.fR { margin-top: 0; }
+.title2 { font-size: 18px; padding: 20px 0 15px; position: relative; color: #444; font-weight: normal; overflow: hidden; }
 
 .tableHeader { margin-bottom: 15px; }
 .tableHeader:after { content: ""; display: block; clear: both; }
