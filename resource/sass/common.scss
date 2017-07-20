@@ -456,118 +456,118 @@ body{
 	}
 }
 #gnb{
-	position:relative;
-	display:inline-block;
-	vertical-align:top;
-	z-index:2;
-	> li{
-		position:relative;
-		float:left;
-		&:first-child{
-			> a{
-				padding-left:0;
-			}
-		}
-		&:last-child{
-			> a{
-				padding-right:0;
-			}
-		}
-		&.on{
-			> a{
-				color:#96c7f4;
-			}
-		}
-		> a{
-			display:inline-block;
-			padding:15px;
-			font-size:18px;
-			color:#c8ceda;
-			height:24px;
-			&:hover,
-			&:focus{
-			}
-		}
-		> ul {
-			display:none;
-			background:#fff;
-			border:1px solid #6a9fd1;
-			position:absolute;
-			left:0;
-			top:38px;
-			box-sizing:border-box;
-			z-index:1;
-			> li{
-				position:relative;
-				&:first-child{
-					> a{
-						border-top:none;
-					}
-				}
+	> ul{
+		display:inline-block;
+		vertical-align:top;
+		> li{
+			position:relative;
+			float:left;
+			&:first-child{
 				> a{
-					display:block;
-					min-width:195px;
-					padding:8px 28px 8px 10px;
-					font-size:16px;
-					color:#666;
-					line-height:24px;
-					box-sizing:border-box;
-					border-top:1px solid #6a9ed0;
-					&:hover,
-					&:focus{
-						color:#96c7f4;
-					}
+					padding-left:0;
 				}
-				&.depth{
+			}
+			&:last-child{
+				> a{
+					padding-right:0;
+				}
+			}
+			&.on{
+				> a{
+					color:#96c7f4;
+				}
+			}
+			> a{
+				display:inline-block;
+				padding:15px;
+				font-size:18px;
+				color:#c8ceda;
+				height:24px;
+				&:hover,
+				&:focus{
+				}
+			}
+			> ul {
+				display:none;
+				background:#fff;
+				border:1px solid #6a9fd1;
+				position:absolute;
+				left:0;
+				top:38px;
+				box-sizing:border-box;
+				z-index:1;
+				> li{
+					position:relative;
+					&:first-child{
+						> a{
+							border-top:none;
+						}
+					}
 					> a{
-						background:#fff url(#{$img-common}bg_gnb_arrow.png) no-repeat right center;
+						display:block;
+						min-width:195px;
+						padding:8px 28px 8px 10px;
+						font-size:16px;
+						color:#666;
+						line-height:24px;
+						box-sizing:border-box;
+						border-top:1px solid #6a9ed0;
 						&:hover,
 						&:focus{
-							background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;
-							color:#fff;
+							color:#96c7f4;
 						}
 					}
-					&.on{
-						> ul {
-							display:block;
-						}
+					&.depth{
 						> a{
-							color:#fff;
-							background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;
+							background:#fff url(#{$img-common}bg_gnb_arrow.png) no-repeat right center;
+							&:hover,
+							&:focus{
+								background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;
+								color:#fff;
+							}
 						}
-					}
-					&.colum2{
-						> ul{
-							width:195px;
-							li{
-								width:95px !important;
-								display:inline-block;
+						&.on{
+							> ul {
+								display:block;
+							}
+							> a{
+								color:#fff;
+								background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;
+							}
+						}
+						&.colum2{
+							> ul{
+								width:195px;
+								li{
+									width:95px !important;
+									display:inline-block;
+								}
 							}
 						}
 					}
-				}
-				> ul{
-					display:none;
-					background:#fff;
-					padding:10px 0;
-					border:1px solid #6a9fd1;
-					position:absolute;
-					left:0;
-					top:0;
-					margin-left:195px;
-					z-index:2;
-					>li{
-						> a{
-							min-width:195px;
-							display:block;
-							padding:0 10px;
-							font-size:14px;
-							color:#666;
-							line-height:24px;
-							box-sizing:border-box;
-							&:hover,
-							&:focus{
-								color:#699fd0;
+					> ul{
+						display:none;
+						background:#fff;
+						padding:10px 0;
+						border:1px solid #6a9fd1;
+						position:absolute;
+						left:0;
+						top:0;
+						margin-left:195px;
+						z-index:2;
+						>li{
+							> a{
+								min-width:195px;
+								display:block;
+								padding:0 10px;
+								font-size:14px;
+								color:#666;
+								line-height:24px;
+								box-sizing:border-box;
+								&:hover,
+								&:focus{
+									color:#699fd0;
+								}
 							}
 						}
 					}
@@ -575,6 +575,7 @@ body{
 			}
 		}
 	}
+
 }
 
 #skipNavi{

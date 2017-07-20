@@ -7,7 +7,6 @@
 	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/resource/js/ui.js"></script>
-	<script type="text/javascript" src="/resource/js/common.js"></script> 
 </head>
 <body>
 	<div id="skipNavi">
@@ -15,7 +14,7 @@
 	</div>
 	<div id="wrap">
 		<!-- header -->
-		<div id="header">
+		<header id="header">
 			<div>
 				<div class="utill">
 					<h1>
@@ -26,85 +25,87 @@
 						<li><a href="#">Logout</a></li>
 					</ul>
 				</div>
-				<ul id="gnb">
-					<li><a href="#">KS고시발간</a>
-						<ul>
-							<!--  하위메뉴가 있을 경우 class="depth" 추가 -->
-							<!--  현재 활성화 된 메뉴 class="on" 추가 -->
-							<li class="depth"><a href="#">COSD 서식편집지원</a>
-								<ul>
-									<li><a href="#">COSD 서식편집</a></li> 
-									<li><a href="#">COSD 계정</a></li>
-									<li><a href="#">COSD 공지사항</a></li>
-								</ul>
-							</li>
-							<li class="depth"><a href="#">예고고시</a>
-								<ul>
-									<li><a href="#">예고고시</a></li> 
-									<li><a href="#">예고고시</a></li>
-									<li><a href="#">예고고시</a></li>
-									<li><a href="#">예고고시</a></li>
-								</ul>
-							</li>
-							<li><a href="#">일관성검토</a></li>
-							<li><a href="#">KS 판매등록</a></li>
-							<li><a href="#">KS 서식편집정산</a></li>
-							<li><a href="#">KS 심사기준</a></li>
-							<li><a href="#">KS 통계관리</a></li>
-							<li><a href="#">신규개발제안</a></li>
-							<li><a href="#">KS 개발 주체 등록</a></li>
-						</ul>
-					</li>
-					<li><a href="#">상품관리</a></li>
-					<li><a href="#">판매내역</a></li>
-					<li><a href="#">재고관리</a></li>
-					<li><a href="#">온라인구독</a></li>
-					<li><a href="#">영업활동</a>
-						<ul>
-							<li><a href="#">영업활동 조회</a></li> 
-							<li><a href="#">견적자 확인 요청</a></li>
-							<li><a href="#">고정거래업체 관리</a></li>
-							<!-- 하위메뉴 2단일 경우 class="colum2" 추가 -->
-							<li class="depth colum2"><a href="#">영업활동 통계</a>
-								<ul>
-									<li><a href="#">ISO</a></li> 
-									<li><a href="#">ANSI</a></li>
-									<li><a href="#">IEC</a></li>
-									<li><a href="#">ASME</a></li>
-									<li><a href="#">IEEE</a></li>
-									<li><a href="#">ASTM</a></li>
-									<li><a href="#">AS</a></li>
-									<li><a href="#">JASO</a></li>
-									<li><a href="#">BS</a></li>
-									<li><a href="#">JWWA</a></li>
-									<li><a href="#">CSA</a></li>
-									<li><a href="#">JEC</a></li>
-									<li><a href="#">DIN</a></li>
-									<li><a href="#">JEM</a></li>
-									<li><a href="#">GB</a></li>
-									<li><a href="#">JEM</a></li>
-									<li><a href="#">GOST</a></li>
-									<li><a href="#">TCVN</a></li>
-									<li><a href="#">JIS</a></li>
-									<li><a href="#">VDE</a></li>
-									<li><a href="#">NF</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">고객관리</a></li>
-					<li><a href="#">사이트관리</a></li>
-					<li><a href="#">시스템관리</a></li>
-				</ul>
+				<nav id="gnb">
+					<ul>
+						<li><a href="#">KS고시발간</a>
+							<ul>
+								<!--  하위메뉴가 있을 경우 class="depth" 추가 -->
+								<!--  현재 활성화 된 메뉴 class="on" 추가 -->
+								<li class="depth"><a href="#">COSD 서식편집지원</a>
+									<ul>
+										<li><a href="#">COSD 서식편집</a></li>
+										<li><a href="#">COSD 계정</a></li>
+										<li><a href="#">COSD 공지사항</a></li>
+									</ul>
+								</li>
+								<li class="depth"><a href="#">예고고시</a>
+									<ul>
+										<li><a href="#">예고고시</a></li>
+										<li><a href="#">예고고시</a></li>
+										<li><a href="#">예고고시</a></li>
+										<li><a href="#">예고고시</a></li>
+									</ul>
+								</li>
+								<li><a href="#">일관성검토</a></li>
+								<li><a href="#">KS 판매등록</a></li>
+								<li><a href="#">KS 서식편집정산</a></li>
+								<li><a href="#">KS 심사기준</a></li>
+								<li><a href="#">KS 통계관리</a></li>
+								<li><a href="#">신규개발제안</a></li>
+								<li><a href="#">KS 개발 주체 등록</a></li>
+							</ul>
+						</li>
+						<li><a href="#">상품관리</a></li>
+						<li><a href="#">판매내역</a></li>
+						<li><a href="#">재고관리</a></li>
+						<li><a href="#">온라인구독</a></li>
+						<li><a href="#">영업활동</a>
+							<ul>
+								<li><a href="#">영업활동 조회</a></li>
+								<li><a href="#">견적자 확인 요청</a></li>
+								<li><a href="#">고정거래업체 관리</a></li>
+								<!-- 하위메뉴 2단일 경우 class="colum2" 추가 -->
+								<li class="depth colum2"><a href="#">영업활동 통계</a>
+									<ul>
+										<li><a href="#">ISO</a></li>
+										<li><a href="#">ANSI</a></li>
+										<li><a href="#">IEC</a></li>
+										<li><a href="#">ASME</a></li>
+										<li><a href="#">IEEE</a></li>
+										<li><a href="#">ASTM</a></li>
+										<li><a href="#">AS</a></li>
+										<li><a href="#">JASO</a></li>
+										<li><a href="#">BS</a></li>
+										<li><a href="#">JWWA</a></li>
+										<li><a href="#">CSA</a></li>
+										<li><a href="#">JEC</a></li>
+										<li><a href="#">DIN</a></li>
+										<li><a href="#">JEM</a></li>
+										<li><a href="#">GB</a></li>
+										<li><a href="#">JEM</a></li>
+										<li><a href="#">GOST</a></li>
+										<li><a href="#">TCVN</a></li>
+										<li><a href="#">JIS</a></li>
+										<li><a href="#">VDE</a></li>
+										<li><a href="#">NF</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">고객관리</a></li>
+						<li><a href="#">사이트관리</a></li>
+						<li><a href="#">시스템관리</a></li>
+					</ul>
+				</nav>
 			</div>
-		</div>
+		</header>
 		<!-- //header -->
 
 		<!-- container -->
 		<div id="container">
 			<!-- contentsTop-->
 			<div class="contentsTop">
-				<div class="location"> 
+				<div class="location">
 					<ul>
 						<li class="home"><a href="#">홈</a></li>
 						<li><a href="#">메뉴1</a> <!-- 하위메뉴 활성화 class="on" 추가 -->
@@ -133,11 +134,11 @@
 				<h2 class="pageTitle"> 대 타이틀 : 견적 의뢰 정보</h2>
 			</div>
 			<!-- //contentsTop-->
-			
+
 			<!-- contents 레이아웃 1단-->
 			<div class="contents">
 				<h3 class="pageTitleSmall">레이아웃 1단</h3>
-				
+
 				<!-- tableTy2 -->
 				<div class="tableTy2">
 					<table>
@@ -212,18 +213,18 @@
 						</div>
 						<!-- //table_ty2 -->
 					</li>
-				</div>
+				</ul>
 			</div>
 			<!-- //contents -->
 		</div>
 		<!-- //container -->
-		
+
 		<!-- footer -->
-		<div id="footer">
+		<footer id="footer">
 			<div>
 				<img class="logoKsa" src="/resource/img/logo_ksa.png" alt="KSA 한국표준협회" />
 				<div class="info">
-					<ul>	
+					<ul>
 						<li>한국표준협회 대표자 : 백수현</li>
 						<li>사업자등록번호 : 119-82-06809</li>
 						<li>통신판매업 신고번호 : 제2009-서울금천-0594호</li>
@@ -233,10 +234,13 @@
 				</div>
 				<a href="#" class="btn btnWhite contact">담당자별 연락처보기</a>
 			</div>
-		</div>
+		</footer>
 		<!-- //footer -->
 
 	</div>
 	<!-- //wrap -->
+	<script>
+		ui.init();
+	</script>
 </body>
 </html>
