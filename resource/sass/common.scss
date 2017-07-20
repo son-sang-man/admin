@@ -5,8 +5,8 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
-* Modify : 김미나
-* Ver : 1.04
+* Modify : 손상만
+* Ver : 1.01
 */
 
 body,
@@ -330,10 +330,6 @@ body{
 			font-size:16px;
 			color:#666;
 			padding-right:47px;
-			// &:hover,
-			// &:focus{
-			// 	background:url(#{$img-common}bg_select_over.png) no-repeat right top;
-			// }
 		}
 	}
 	ul{
@@ -360,7 +356,7 @@ body{
 				height:40px;
 				line-height:40px;
 				border-top:1px solid #ccc;
-				
+
 				&:hover,
 				&:focus{
 					color:#7c9dbc;
@@ -424,14 +420,12 @@ body{
 			> li{
 				display:inline-block;
 				height:27px;
-				font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 				font-size:12px;
 				color:#c8ceda;
 				line-height:27px;
 				a{
 					position:relative;
 					display:inline-block;
-					font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 					font-size:12px;
 					color:#c8ceda;
 					&:hover,
@@ -511,7 +505,8 @@ body{
 						background:#fff url(#{$img-common}bg_gnb_arrow.png) no-repeat right center;
 						&:hover,
 						&:focus{
-							background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;							color:#fff;
+							background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;
+							color:#fff;
 						}
 					}
 					&.on{
@@ -561,17 +556,12 @@ body{
 				}
 			}
 		}
-		// > ul{
-		// 	display:none;
-		// }
-
 		> a{
-			
+
 			display:inline-block;
 			font-size:18px;
 			color:#c8ceda;
 			height:24px;
-			
 			&:hover,
 			&:focus{
 			}
@@ -591,7 +581,7 @@ body{
 		overflow:hidden;
 		font-size:16px;
 		color:#fff;
-		@include weight("B");;
+		@include weight("B");
 		background:$color2;
 		white-space:nowrap;
 		text-align:center;
@@ -621,10 +611,8 @@ body{
 				position:relative;
 				float:left;
 				height:40px;
-				
 				line-height:40px;
 				box-sizing:border-box;
-				
 				border-right:1px solid #ccc;
 				> a{
 					display:block;
@@ -635,11 +623,6 @@ body{
 					background:url(#{$img-common}bg_select.png) no-repeat right center;
 					box-sizing:border-box;
 				}
-			&.on{
-				// > ul{
-				// 	display:block;
-				// }
-			}
 				> ul {
 					display:none;
 					border:none;
@@ -664,7 +647,6 @@ body{
 							height:40px;
 							line-height:40px;
 							border-top:1px solid #ccc;
-							
 							&:hover,
 							&:focus{
 								color:#7c9dbc;
@@ -724,7 +706,7 @@ body{
 	font-size:30px;
 	color:#444;
 	background:#fff;
-	
+
 }
 .pageTitleSmall{
 	font-size:22px;
@@ -747,16 +729,14 @@ body{
 			clear:both;
 		}
 	&.fR{
-		
+
 	}
 	.btnArea{
 		display:inline-block;
 		margin-top:0;
 	}
 	.tablePaging{
-		
 		display:inline-block;
-		font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 		font-size:12px;
 		color:#666;
 		> strong{
@@ -828,7 +808,6 @@ body{
 			top:30px;
 			padding-left:45px;
 			background:url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
-			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 			font-size:12px;
 			color:#7b8b99;
 			height:40px;
@@ -851,7 +830,6 @@ body{
 	border:1px solid #bcc5d4;
 	background:#fff;
 	input {
-		// width:75%;
 		border:none;
 	}
 }
@@ -1000,7 +978,7 @@ body{
 				height:19px;
 				line-height:19px;
 				font-size:10px;
-				@include weight("B");;
+				@include weight("B");
 				color:#767676;
 				border:1px solid #acacac;
 				background:#eff1f2;
@@ -1009,7 +987,7 @@ body{
 
 	}
 
-} 
+}
 .ui-datepicker-trigger{
 	display:inline-block;
 	width:19px;
@@ -1061,7 +1039,7 @@ body{
 			 	a{
 			 		font-size:16px;
 			 		color:$color1;
-			 		@include weight("B");;
+			 		@include weight("B");
 			 		&:after{
 			 			content:"";
 			 			position:absolute;
@@ -1077,7 +1055,7 @@ body{
 			}
 			&.tab{
 				> ul{
-					li{ 
+					li{
 						a{
 							&:hover,
 							&:focus{
@@ -1094,7 +1072,7 @@ body{
 		> div{
 			display:none;
 			&.on{
-				display:block; 
+				display:block;
 			}
 		}
 	}
@@ -1114,10 +1092,8 @@ table{
 	}
 }
 .tableTy1 {
-	margin:auto;
 	table {
 		width:100%;
-		table-layout:fixed;
 	}
 	tr{
 		th {
@@ -1128,14 +1104,12 @@ table{
 		}
 		td {
 			padding:13px 10px;
-			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 			font-size:13px;
 			color:#777;
 			text-align:left;
 			background:#f2f5f8;
 			border-bottom:1px solid #d5d5d5;
 		}
-
 	}
 	thead{
 		tr{
@@ -1185,7 +1159,6 @@ table{
 			background:#f2f5f8;
 			border-bottom:1px solid #d5d5d5;
 		}
-
 	}
 	thead{
 		tr{
@@ -1202,7 +1175,6 @@ table{
 		}
 		td{
 			border-top:1px solid #bcc5d4;
-			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 			font-size:13px;
 		}
 		tr{
@@ -1258,7 +1230,7 @@ table{
 		&:hover {
 			background:url(#{$img-common}bg_radio_over.png) no-repeat 0 5px;
 		}
-	
+
 	}
 	&.blindLable{
 		width:13px;
@@ -1385,23 +1357,23 @@ table{
 		background:#fff url(#{$img-common}bg_page_first.png) no-repeat center;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_first_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_first_over.png);
 		}
-		
+
 	}
 	.previous{
 		background:#fff url(#{$img-common}bg_page_previous.png) no-repeat center;
 		margin-left:-5px;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_previous_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_previous_over.png);
 		}
 	}
 	.next{
 		background:#fff url(#{$img-common}bg_page_next.png) no-repeat center;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_next_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_next_over.png);
 		}
 	}
 	.end{
@@ -1409,10 +1381,9 @@ table{
 		margin-left:-5px;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_end_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_end_over.png);
 		}
 	}
-
 }
 
 /* button */
@@ -1433,7 +1404,7 @@ table{
 		}
 	}
 }
-.btn{ 
+.btn{
 	display:inline-block;
 	padding:0 19px;
 	height:32px;
