@@ -196,6 +196,7 @@ input{
 	&[type="password"],
 	&[type="tel"]
 	{
+		width:350px;
 		height:34px;
 		line-height:34px;
 		box-sizing:border-box;
@@ -210,7 +211,12 @@ input{
 			color:#999;
 		}
 	}
-	&[type="radio"],
+	&[type="radio"]
+	{
+		width:17px;
+		height:17px;
+		vertical-align:-1px
+	}
 	&[type="checkbox"]
 	{
 		width:13px;
@@ -313,9 +319,16 @@ body{
 .wid50{
 	width:50px;
 }
+.wid600{
+	width:600px;
+}
 .wid510{
 	width:510px;
 }
+// .wid390{
+// 	width:390px;
+// }
+
 
 // 셀렉트 박스
 .selectBox{
@@ -325,16 +338,15 @@ body{
 		background:#fff;
 		button{
 			border:1px solid #bcc5d4;
-			padding:0 30px 0 20px;
-			height:40px;
-			background:url(#{$img-common}bg_select.png) no-repeat right center;
-			line-height:38px;
+			padding:0 47px 0 20px;
 			width:100%;
+			height:34px;
+			background:url(#{$img-common}bg_select.png) no-repeat right center;
+			line-height:34px;
 			box-sizing:border-box;
 			text-align:left;
-			font-size:16px;
-			color:#666;
-			padding-right:47px;
+			font-size:14px;
+			color:$color0;
 		}
 	}
 	ul{
@@ -610,8 +622,8 @@ body{
 #container{
 	.location{
 		height:40px;
-		border-bottom:1px solid #ccc;
 		background:#f9f9f9;
+		border-bottom:1px solid #ccc;
 		> ul{
 			width:1600px;
 			margin:auto;
@@ -697,8 +709,7 @@ body{
 	background:#fff;
 	border:1px solid #ccc;
 	h2{
-		padding-top:20px;
-		height:62px;
+		line-height:62px;
 		box-sizing:border-box;
 		width:1600px;
 		margin:auto;
@@ -753,11 +764,6 @@ body{
 	color:#444;
 	@include weight("N");
 	overflow:hidden;
-	// .btnArea{
-	// 	&.fR{
-	// 		margin-top:0;
-	// 	}
-	// }
 }
 .tableHeader{
 	margin-bottom:15px;
@@ -771,6 +777,7 @@ body{
 	}
 	.btnArea{
 		display:inline-block;
+		text-align:center;
 		margin-top:0;
 	}
 	.tablePaging{
@@ -803,6 +810,7 @@ body{
 #footer{
 	border-top:2px solid #ccc;
 	border-bottom:3px solid #f2f5f8;
+	background:#e5e5e5;
 	> div{
 		position:relative;
 		width:1600px;
@@ -847,7 +855,6 @@ body{
 			padding-left:45px;
 			background:url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
 			font-size:12px;
-			color:#7b8b99;
 			height:40px;
 			line-height:40px;
 			&:hover,
@@ -855,7 +862,6 @@ body{
 				background:url(#{$img-common}bg_contact_over.png) no-repeat 20px 10px;
 				transition:all 0.3s;
 				border:1px solid #ff904b;
-				color:$color3;
 			}
 		}
 	}
@@ -1139,39 +1145,38 @@ table{
 			font-size:14px;
 			color:#fff;
 			text-align:left;
+			border-left:1px solid #d5d5d5;
+			background:#7c8b9a;
 		}
 		td {
 			padding:13px 10px;
 			font-size:13px;
 			color:#777;
 			text-align:left;
-			background:#f2f5f8;
+			background:#fff;
 			border-bottom:1px solid #d5d5d5;
+			border-left:1px solid #d5d5d5;
 		}
 	}
 	thead{
-		tr{
-			th{
-				background:#7c8c9b;
-				text-align:center;
+		th{
+			text-align:center;
+			&:first-child{
+				border-left:0;
 			}
+			
 		}
 	}
 	tbody{
 		th{
-			border-top:1px solid #bcc5d4;
-			border-left:1px solid #bcc5d4;
+			border-top:1px solid #d5d5d5;
+			border-left:1px solid #d5d5d5;
+			
 		}
 		td{
-			border-top:1px solid #bcc5d4;
-			font-size:13px;
-		}
-		tr{
+			border-top:1px solid #d5d5d5;
 			&:first-child{
-				th,
-				td{
-					border-top:0;
-				}
+				border-left:0;
 			}
 		}
 	}
@@ -1186,20 +1191,23 @@ table{
 }
 .tableTy2 {
 	border:1px solid #bcc8d4;
+	padding-bottom:12px;
+	background:#d0dce7;
+
 	table {
 		width:100%;
 		table-layout:fixed;
 	}
 	tr {
 		th {
-			padding:12px 15px 12px 20px;
+			padding:12px 15px 0 20px;
 			font-size:14px;
 			color:$color0;
 			background:#d0dce7;
 			text-align:left;
 		}
 		td {
-			padding:12px 20px 12px 0;
+			padding:12px 20px 0 0;
 			font-size:14px;
 			background:#d0dce7;
 			input{
@@ -1227,7 +1235,7 @@ table{
 	margin-left:20px;
 	line-height:22px;
 	vertical-align:middle;
-	&:first-child {
+	&:input-child {
 		margin-left:0;
 	}
 	input{
@@ -1259,13 +1267,14 @@ table{
 		font-size:14px;
 		color:#4c4c4c;
 		background:url(#{$img-common}bg_radio.png) no-repeat 0 5px;cursor:pointer;
-		&:hover {
-			background:url(#{$img-common}bg_radio_over.png) no-repeat 0 5px;
-		}
+		// &:hover {
+		// 	background:url(#{$img-common}bg_radio_over.png) no-repeat 0 5px;
+		// }
 
 	}
 	&.blindLable{
-		width:13px;
+		width:18px;
+		margin-left:0;
 		label{
 			padding-left:15px !important;
 			text-indent:-9999px;
@@ -1281,7 +1290,7 @@ table{
 	margin-left:20px;
 	line-height:22px;
 	vertical-align:middle;
-	&:first-child {
+	&:input-child {
 		margin-left:0;
 	}
 	input{
@@ -1314,12 +1323,13 @@ table{
 		color:#4c4c4c;
 		background:url(#{$img-common}bg_check.png) no-repeat 0 5px;
 		cursor:pointer;
- 		&:hover{
- 			background:url(#{$img-common}bg_check_over.png) no-repeat 0 5px;
- 		}
+ 		// &:hover{
+ 		// 	background:url(#{$img-common}bg_check_over.png) no-repeat 0 5px;
+ 		// }
 	}
-	&.blind_lab{
-		width:13px;
+	&.blindLable{
+		width:17px;
+		margin-left:0;
 		label{
 			padding-left:15px !important;
 			text-indent:-9999px;
@@ -1330,8 +1340,8 @@ table{
 
 /* paging */
 .paging{
-	height:36px;
-	line-height:34px;
+	height:38px;
+	line-height:38px;
 	text-align:center;
 	margin-top:30px;
 	> a{
@@ -1341,25 +1351,25 @@ table{
 		line-height:0;
 		white-space:nowrap;
 		background:#fff;
-		width:36px;
-		height:36px;
-		border:1px solid #bcc5d4;
+		width:38px;
+		height:38px;
+		border:1px solid #e7e7e7;
 		box-sizing:border-box;
 	}
 	> span{
 		display:inline-block;
-		height:36px;
+		height:38px;
 		margin:0 15px;
 		vertical-align:top;
 		> a{
 			display:inline-block;
 			background:#fff;
-			min-width:36px;
+			min-width:38px;
 			padding:0px 6px 0 2px;
-			height:36px;
-			line-height:34px;
+			height:38px;
+			line-height:38px;
 			border:1px solid #e7e7e7;
-			font-size:18px;
+			font-size:13px;
 			color:$color0;
 			text-align:center;
 			box-sizing:border-box;
@@ -1367,12 +1377,12 @@ table{
 		strong{
 			display:inline-block;
 			background:#fff;
-			min-width:36px;
+			min-width:38px;
 			padding:0px 6px 0 2px;
-			height:36px;
-			line-height:34px;
+			height:38px;
+			line-height:38px;
 			border:1px solid #e7e7e7;
-			font-size:18px;
+			font-size:13px;
 			color:$color0;
 			text-align:center;
 			box-sizing:border-box;

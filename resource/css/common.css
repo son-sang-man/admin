@@ -43,10 +43,11 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; colo
 select:disabled { background-color: #f2f2f2; color: #999; }
 
 input { margin: 0; padding: 0; font-size: inherit; color: #666; line-height: 17px; vertical-align: top; -webkit-border-radius: 0; }
-input[type="text"], input[type="password"], input[type="tel"] { height: 34px; line-height: 34px; box-sizing: border-box; padding-left: 10px; border: none; -webkit-appearance: none; }
+input[type="text"], input[type="password"], input[type="tel"] { width: 350px; height: 34px; line-height: 34px; box-sizing: border-box; padding-left: 10px; border: none; -webkit-appearance: none; }
 input[type="text"]:focus, input[type="password"]:focus, input[type="tel"]:focus { border: 2px solid #7c9dbc; }
 input[type="text"]:disabled, input[type="password"]:disabled, input[type="tel"]:disabled { background-color: #f2f2f2; color: #999; }
-input[type="radio"], input[type="checkbox"] { width: 13px; height: 13px; vertical-align: -1px; }
+input[type="radio"] { width: 17px; height: 17px; vertical-align: -1px; }
+input[type="checkbox"] { width: 13px; height: 13px; vertical-align: -1px; }
 
 textarea { -webkit-appearance: none; -webkit-border-radius: 0; border: 1px solid #ccc; color: #666; background: #fff; padding: 15px; font-size: 15px; width: 100%; box-sizing: border-box; }
 
@@ -92,11 +93,13 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 
 .wid50 { width: 50px; }
 
+.wid600 { width: 600px; }
+
 .wid510 { width: 510px; }
 
 .selectBox { display: inline-block; }
 .selectBox .designSelect { position: relative; background: #fff; }
-.selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 30px 0 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 38px; width: 100%; box-sizing: border-box; text-align: left; font-size: 16px; color: #666; padding-right: 47px; }
+.selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 47px 0 20px; width: 100%; height: 34px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 34px; box-sizing: border-box; text-align: left; font-size: 14px; color: #666; }
 .selectBox ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; box-sizing: border-box; width: 100%; z-index: 1; }
 .selectBox ul li:first-child > a { border-top: none; }
 .selectBox ul li a { display: block; margin: 0 20px; font-size: 16px; color: #666; height: 40px; line-height: 40px; border-top: 1px solid #ccc; }
@@ -148,7 +151,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
 #skipNavi > a:focus, #skipNavi > a:active { height: auto; width: 100%; padding: 5px; margin-bottom: 10px; position: absolute; left: 0; top: 0; }
 
-#container .location { height: 40px; border-bottom: 1px solid #ccc; background: #f9f9f9; }
+#container .location { height: 40px; background: #f9f9f9; border-bottom: 1px solid #ccc; }
 #container .location > ul { width: 1600px; margin: auto; }
 #container .location > ul > li { position: relative; float: left; height: 40px; line-height: 40px; box-sizing: border-box; border-right: 1px solid #ccc; }
 #container .location > ul > li > a { display: block; min-width: 250px; padding-right: 50px; padding-left: 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; box-sizing: border-box; }
@@ -162,7 +165,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #container .location > ul .last > a { color: #7c9dbc; }
 
 .contentsTop { background: #fff; border: 1px solid #ccc; }
-.contentsTop h2 { padding-top: 20px; height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
+.contentsTop h2 { line-height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
 
 #contents { width: 1600px; margin: auto; box-sizing: border-box; min-height: 400px; }
 
@@ -179,22 +182,22 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 
 .tableHeader { margin-bottom: 15px; }
 .tableHeader:after { content: ""; display: block; clear: both; }
-.tableHeader .btnArea { display: inline-block; margin-top: 0; }
+.tableHeader .btnArea { display: inline-block; text-align: center; margin-top: 0; }
 .tableHeader .tablePaging { display: inline-block; font-size: 12px; color: #666; }
 .tableHeader .tablePaging > strong { font-weight: normal; }
 .tableHeader .tablePaging > strong:after { content: "/"; padding: 0 5px; display: inline-block; color: #666; font-weight: normal; }
 .tableHeader .tablePaging > em { font-weight: normal; }
 .tableHeader .tablePaging > em:after { content: "page"; padding-left: 5px; display: inline-block; color: #666; font-weight: normal; }
 
-#footer { border-top: 2px solid #ccc; border-bottom: 3px solid #f2f5f8; }
+#footer { border-top: 2px solid #ccc; border-bottom: 3px solid #f2f5f8; background: #e5e5e5; }
 #footer > div { position: relative; width: 1600px; padding: 20px 0; margin: auto; }
 #footer > div .logoKsa { display: inline-block; width: 156px; height: 47px; margin-top: 10px; }
 #footer > div .info { margin-left: 20px; display: inline-block; }
 #footer > div .info > ul > li { display: inline-block; padding-right: 5px; padding-left: 5px; margin-left: 5px; border-left: 1px solid #666; height: 11px; line-height: 11px; font-size: 12px; color: #666; }
 #footer > div .info > ul > li:first-child { padding: 0; margin: 0; border: 0; }
 #footer > div .info address { display: block; font-style: normal; }
-#footer > div .contact { position: absolute; right: 0; top: 30px; padding-left: 45px; background: url(/resource/img/bg_contact.png) no-repeat 20px 10px; font-size: 12px; color: #7b8b99; height: 40px; line-height: 40px; }
-#footer > div .contact:hover, #footer > div .contact:focus { background: url(/resource/img/bg_contact_over.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; color: #ff903b; }
+#footer > div .contact { position: absolute; right: 0; top: 30px; padding-left: 45px; background: url(/resource/img/bg_contact.png) no-repeat 20px 10px; font-size: 12px; height: 40px; line-height: 40px; }
+#footer > div .contact:hover, #footer > div .contact:focus { background: url(/resource/img/bg_contact_over.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; }
 
 /* datepicker */
 .dataBox { position: relative; display: inline-block; border: 1px solid #bcc5d4; background: #fff; }
@@ -244,52 +247,51 @@ table tr .necessory { position: relative; }
 table tr .necessory:before { content: "*"; display: inline-block; color: #df3232; }
 
 .tableTy1 table { width: 100%; }
-.tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; }
-.tableTy1 tr td { padding: 13px 10px; font-size: 13px; color: #777; text-align: left; background: #f2f5f8; border-bottom: 1px solid #d5d5d5; }
-.tableTy1 thead tr th { background: #7c8c9b; text-align: center; }
-.tableTy1 tbody th { border-top: 1px solid #bcc5d4; border-left: 1px solid #bcc5d4; }
-.tableTy1 tbody td { border-top: 1px solid #bcc5d4; font-size: 13px; }
-.tableTy1 tbody tr:first-child th, .tableTy1 tbody tr:first-child td { border-top: 0; }
+.tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
+.tableTy1 tr td { padding: 13px 10px; font-size: 13px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
+.tableTy1 thead th { text-align: center; }
+.tableTy1 thead th:first-child { border-left: 0; }
+.tableTy1 tbody th { border-top: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
+.tableTy1 tbody td { border-top: 1px solid #d5d5d5; }
+.tableTy1 tbody td:first-child { border-left: 0; }
 .tableTy1.scrollY .body { height: 200px; overflow-y: auto; }
 
-.tableTy2 { border: 1px solid #bcc8d4; }
+.tableTy2 { border: 1px solid #bcc8d4; padding-bottom: 12px; background: #d0dce7; }
 .tableTy2 table { width: 100%; table-layout: fixed; }
-.tableTy2 tr th { padding: 12px 15px 12px 20px; font-size: 14px; color: #666; background: #d0dce7; text-align: left; }
-.tableTy2 tr td { padding: 12px 20px 12px 0; font-size: 14px; background: #d0dce7; }
+.tableTy2 tr th { padding: 12px 15px 0 20px; font-size: 14px; color: #666; background: #d0dce7; text-align: left; }
+.tableTy2 tr td { padding: 12px 20px 0 0; font-size: 14px; background: #d0dce7; }
 .tableTy2 tr td input:first-child { margin-left: 0; }
 
 .dot { display: inline-block; width: 1px; height: 2px; background: #666; text-align: center; margin: 0 2px; }
 
 /* radio */
 .radioBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
-.radioBox:first-child { margin-left: 0; }
+.radioBox:input-child { margin-left: 0; }
 .radioBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
 .radioBox input[type="radio"]:checked + label { background: url(/resource/img/bg_radio_on.png) no-repeat 0 5px; }
 .radioBox input[type="radio"]:disabled + label { background: url(/resource/img/bg_radio_disable.png) no-repeat 0 5px; }
 .radioBox input[type="radio"]:disabled:checked + label { background: url(/resource/img/bg_radio_disable_on.png) no-repeat 0 5px; }
 .radioBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_radio.png) no-repeat 0 5px; cursor: pointer; }
-.radioBox label:hover { background: url(/resource/img/bg_radio_over.png) no-repeat 0 5px; }
-.radioBox.blindLable { width: 13px; }
+.radioBox.blindLable { width: 18px; margin-left: 0; }
 .radioBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 
 /* checkbox */
 .checkBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
-.checkBox:first-child { margin-left: 0; }
+.checkBox:input-child { margin-left: 0; }
 .checkBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
 .checkBox input[type="checkbox"]:checked + label { background: url(/resource/img/bg_check_on.png) no-repeat 0 5px; }
 .checkBox input[type="checkbox"]:disabled + label { background: url(/resource/img/bg_check_disable.png) no-repeat 0 5px; }
 .checkBox input[type="checkbox"]:disabled:checked + label { background: url(/resource/img/bg_check_disable_on.png) no-repeat 0 5px; }
 .checkBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; }
-.checkBox label:hover { background: url(/resource/img/bg_check_over.png) no-repeat 0 5px; }
-.checkBox.blind_lab { width: 13px; }
-.checkBox.blind_lab label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
+.checkBox.blindLable { width: 17px; margin-left: 0; }
+.checkBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 
 /* paging */
-.paging { height: 36px; line-height: 34px; text-align: center; margin-top: 30px; }
-.paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 36px; height: 36px; border: 1px solid #bcc5d4; box-sizing: border-box; }
-.paging > span { display: inline-block; height: 36px; margin: 0 15px; vertical-align: top; }
-.paging > span > a { display: inline-block; background: #fff; min-width: 36px; padding: 0px 6px 0 2px; height: 36px; line-height: 34px; border: 1px solid #e7e7e7; font-size: 18px; color: #666; text-align: center; box-sizing: border-box; }
-.paging > span strong { display: inline-block; background: #fff; min-width: 36px; padding: 0px 6px 0 2px; height: 36px; line-height: 34px; border: 1px solid #e7e7e7; font-size: 18px; color: #666; text-align: center; box-sizing: border-box; font-weight: normal; }
+.paging { height: 38px; line-height: 38px; text-align: center; margin-top: 30px; }
+.paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 38px; height: 38px; border: 1px solid #e7e7e7; box-sizing: border-box; }
+.paging > span { display: inline-block; height: 38px; margin: 0 15px; vertical-align: top; }
+.paging > span > a { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; }
+.paging > span strong { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; font-weight: normal; }
 .paging > span strong.on, .paging > span strong:hover, .paging > span strong:focus { color: #7c9dbc; transition: all 0.3s; }
 .paging .first { background: #fff url(/resource/img/bg_page_first.png) no-repeat center; }
 .paging .first:hover, .paging .first:focus { background-image: url(/resource/img/bg_page_first_over.png); }
