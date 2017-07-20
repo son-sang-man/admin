@@ -6,7 +6,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
 * Modify : 손상만
-* Ver : 1.01
+* Ver : 1.02
 */
 
 body,
@@ -1137,6 +1137,14 @@ table{
 			}
 		}
 	}
+	// Y Scroll
+	&.scrollY{
+		.body{
+			height:200px; // 임시
+			overflow-y:auto;
+		}
+	}
+
 }
 .tableTy2 {
 	margin:auto;

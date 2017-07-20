@@ -160,6 +160,168 @@
 </div>
 <!-- //code -->
 
+	<h2 class="h2_guide">03. 가로형 테이블 tbody영역 스크롤</h2>
+	<div class="guide_wrap">
+		<!-- table_ty01 -->
+		<div class="tableTy1 scrollY">
+			<div class="header">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col /> <!-- 처음 셀은 100%의 나머지 값 -->
+						<col style="width:25%;" />
+						<col style="width:35%;" />
+						<col style="width:30%;" />
+						<col style="width:13px;" /> <!-- tbody 세로 스크롤 사이즈 -->
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">이름</th>
+							<th scope="col">작성자</th>
+							<th scope="col" colspan="2">진행상태</th> <!-- tbody 세롤 스크롤시 -->
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="body">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:10%;" />
+						<col style="width:25%;" />
+						<col style="width:35%;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="tC">
+								<span class="radioBox blindLable">
+									<input type="radio" id="cell1" />
+									<label for="cell1">선택</label>
+								</span>
+							</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">
+								<span class="checkBox blind_lab">
+									<input type="checkbox" id="cell2" />
+									<label for="cell2">선택</label>
+								</span>
+							</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">1</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">1</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">1</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //table_ty01 -->
+	</div>
+<!-- code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="tableTy1 scrollY">
+	<div class="header">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col /> <!-- 처음 셀은 100%의 나머지 값 -->
+				<col style="width:25%;" />
+				<col style="width:35%;" />
+				<col style="width:30%;" />
+				<col style="width:13px;" /> <!-- tbody 세로 스크롤 사이즈 -->
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">번호</th>
+					<th scope="col">이름</th>
+					<th scope="col">작성자</th>
+					<th scope="col" colspan="2">진행상태</th> <!-- tbody 세롤 스크롤시 -->
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="body">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:10%;" />
+				<col style="width:25%;" />
+				<col style="width:35%;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td class="tC">
+						<span class="radioBox blindLable">
+							<input type="radio" id="cell1" />
+							<label for="cell1">선택</label>
+						</span>
+					</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">
+						<span class="checkBox blind_lab">
+							<input type="checkbox" id="cell2" />
+							<label for="cell2">선택</label>
+						</span>
+					</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">1</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">1</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">1</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+
 	<h2 class="h2_guide">03. 페이지네비게이션</h2>
 	<div class="guide_wrap">
 		<!-- paging -->

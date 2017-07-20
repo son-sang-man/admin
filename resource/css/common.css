@@ -4,7 +4,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
 * Modify : 손상만
-* Ver : 1.01
+* Ver : 1.02
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -241,6 +241,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy1 tbody th { border-top: 1px solid #bcc5d4; border-left: 1px solid #bcc5d4; }
 .tableTy1 tbody td { border-top: 1px solid #bcc5d4; font-size: 13px; }
 .tableTy1 tbody tr:first-child th, .tableTy1 tbody tr:first-child td { border-top: 0; }
+.tableTy1.scrollY .body { height: 200px; overflow-y: auto; }
 
 .tableTy2 { margin: auto; }
 .tableTy2 table { width: 100%; table-layout: fixed; }
