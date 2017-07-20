@@ -5,8 +5,8 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
-* Modify : 김미나
-* Ver : 1.04
+* Modify : 손상만
+* Ver : 1.02
 */
 
 body,
@@ -190,22 +190,22 @@ input{
 	font-size:inherit;
 	color:$color0;
 	line-height:17px;
-	vertical-align:top;
+	vertical-align:middle;
 	-webkit-border-radius:0;
 	&[type="text"],
 	&[type="password"],
 	&[type="tel"]
 	{
-		height:34px;
-		line-height:34px;
+		height:40px;
+		line-height:40px;
 		box-sizing:border-box;
-		padding-left:10px;
-		border:none;
+		padding-left:15px;
+		border:1px solid #bcc5d4;
 		-webkit-appearance:none;
 		&:focus{
-			border: 2px solid #7c9dbc;
+			border-color:#333;
 		}
-		&:disabled{ //미정
+		&:disabled{
 			background-color:#f2f2f2;
 			color:#999;
 		}
@@ -309,14 +309,8 @@ body{
 /* 폼요소 너비 */
 .widAll{
 	width:100%;
-}
-.wid50{
-	width:50px;
-}
-.wid540{
-	width:540px;
-}
 
+}
 
 // 셀렉트 박스
 .selectBox{
@@ -336,10 +330,6 @@ body{
 			font-size:16px;
 			color:#666;
 			padding-right:47px;
-			// &:hover,
-			// &:focus{
-			// 	background:url(#{$img-common}bg_select_over.png) no-repeat right top;
-			// }
 		}
 	}
 	ul{
@@ -366,7 +356,7 @@ body{
 				height:40px;
 				line-height:40px;
 				border-top:1px solid #ccc;
-				
+
 				&:hover,
 				&:focus{
 					color:#7c9dbc;
@@ -409,7 +399,7 @@ body{
 	}
 	.utill{
 		position:relative;
-		padding-top:15px;
+		padding:15px 0;
 		> h1{
 			width:226px;
 			height:32px;
@@ -430,14 +420,12 @@ body{
 			> li{
 				display:inline-block;
 				height:27px;
-				font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 				font-size:12px;
 				color:#c8ceda;
 				line-height:27px;
 				a{
 					position:relative;
 					display:inline-block;
-					font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 					font-size:12px;
 					color:#c8ceda;
 					&:hover,
@@ -470,29 +458,16 @@ body{
 	> li{
 		position:relative;
 		float:left;
+		padding:7px 32px 8px;
 		&:first-child{
-			> a{
-				padding-left:0;
-			}
+			padding-left:0;
 		}
 		&:last-child{
-			> a{
-				padding-right:0;
-			}
+			padding-right:0;
 		}
 		&.on{
 			> a{
 				color:#96c7f4;
-			}
-		}
-		> a{
-			display:inline-block;
-			padding:15px;
-			font-size:18px;
-			color:#c8ceda;
-			height:24px;
-			&:hover,
-			&:focus{
 			}
 		}
 		> ul {
@@ -530,7 +505,8 @@ body{
 						background:#fff url(#{$img-common}bg_gnb_arrow.png) no-repeat right center;
 						&:hover,
 						&:focus{
-							background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;							color:#fff;
+							background:#6a9fd1 url(#{$img-common}bg_gnb_arrow_over.png) no-repeat right center;
+							color:#fff;
 						}
 					}
 					&.on{
@@ -580,11 +556,16 @@ body{
 				}
 			}
 		}
-		// > ul{
-		// 	display:none;
-		// }
+		> a{
 
-
+			display:inline-block;
+			font-size:18px;
+			color:#c8ceda;
+			height:24px;
+			&:hover,
+			&:focus{
+			}
+		}
 	}
 }
 
@@ -600,7 +581,7 @@ body{
 		overflow:hidden;
 		font-size:16px;
 		color:#fff;
-		@include weight("B");;
+		@include weight("B");
 		background:$color2;
 		white-space:nowrap;
 		text-align:center;
@@ -618,6 +599,7 @@ body{
 }
 
 #container{
+	background:#f2f5f8;
 	.location{
 		height:40px;
 		border-bottom:1px solid #ccc;
@@ -629,10 +611,8 @@ body{
 				position:relative;
 				float:left;
 				height:40px;
-				
 				line-height:40px;
 				box-sizing:border-box;
-				
 				border-right:1px solid #ccc;
 				> a{
 					display:block;
@@ -643,11 +623,6 @@ body{
 					background:url(#{$img-common}bg_select.png) no-repeat right center;
 					box-sizing:border-box;
 				}
-			&.on{
-				// > ul{
-				// 	display:block;
-				// }
-			}
 				> ul {
 					display:none;
 					border:none;
@@ -672,7 +647,6 @@ body{
 							height:40px;
 							line-height:40px;
 							border-top:1px solid #ccc;
-							
 							&:hover,
 							&:focus{
 								color:#7c9dbc;
@@ -712,6 +686,7 @@ body{
 }
 
 .contentsTop{
+	background:#fff;
 	h2{
 		padding:35px 30px 0;
 		height:100px;
@@ -723,27 +698,15 @@ body{
 .contents{
 	width:1600px;
 	margin:auto;
+	padding:0 30px 50px;
 	box-sizing:border-box;
 	min-height:400px;
-	.viewColum2{
-		> li{
-			box-sizing:border-box;
-			float:left;
-			width:50%;
-			box-sizing:border-box;
-			padding-left:15px;
-			&:first-child{
-				padding-right:15px;
-				padding-left:0;
-			}
-		}
-	}
 }
 .pageTitle{
 	font-size:30px;
 	color:#444;
 	background:#fff;
-	
+
 }
 .pageTitleSmall{
 	font-size:22px;
@@ -766,16 +729,14 @@ body{
 			clear:both;
 		}
 	&.fR{
-		
+
 	}
 	.btnArea{
 		display:inline-block;
 		margin-top:0;
 	}
 	.tablePaging{
-		
 		display:inline-block;
-		font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 		font-size:12px;
 		color:#666;
 		> strong{
@@ -847,7 +808,6 @@ body{
 			top:30px;
 			padding-left:45px;
 			background:url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
-			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 			font-size:12px;
 			color:#7b8b99;
 			height:40px;
@@ -870,7 +830,6 @@ body{
 	border:1px solid #bcc5d4;
 	background:#fff;
 	input {
-		// width:75%;
 		border:none;
 	}
 }
@@ -1019,7 +978,7 @@ body{
 				height:19px;
 				line-height:19px;
 				font-size:10px;
-				@include weight("B");;
+				@include weight("B");
 				color:#767676;
 				border:1px solid #acacac;
 				background:#eff1f2;
@@ -1028,7 +987,7 @@ body{
 
 	}
 
-} 
+}
 .ui-datepicker-trigger{
 	display:inline-block;
 	width:19px;
@@ -1080,7 +1039,7 @@ body{
 			 	a{
 			 		font-size:16px;
 			 		color:$color1;
-			 		@include weight("B");;
+			 		@include weight("B");
 			 		&:after{
 			 			content:"";
 			 			position:absolute;
@@ -1096,7 +1055,7 @@ body{
 			}
 			&.tab{
 				> ul{
-					li{ 
+					li{
 						a{
 							&:hover,
 							&:focus{
@@ -1113,7 +1072,7 @@ body{
 		> div{
 			display:none;
 			&.on{
-				display:block; 
+				display:block;
 			}
 		}
 	}
@@ -1130,15 +1089,11 @@ table{
 				color:#df3232;
 			}
 		}
-		.blind{
-
-		}
 	}
 }
 .tableTy1 {
 	table {
 		width:100%;
-		table-layout:fixed;
 	}
 	tr{
 		th {
@@ -1149,14 +1104,12 @@ table{
 		}
 		td {
 			padding:13px 10px;
-			font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
 			font-size:13px;
 			color:#777;
 			text-align:left;
 			background:#f2f5f8;
 			border-bottom:1px solid #d5d5d5;
 		}
-
 	}
 	thead{
 		tr{
@@ -1184,41 +1137,63 @@ table{
 			}
 		}
 	}
+	// Y Scroll
+	&.scrollY{
+		.body{
+			height:200px; // 임시
+			overflow-y:auto;
+		}
+	}
+
 }
 .tableTy2 {
-	border:1px solid #bcc8d4;
+	margin:auto;
 	table {
 		width:100%;
 		table-layout:fixed;
 	}
-	tr {
+	tr{
 		th {
-			padding:12px 15px 12px 20px;
+			padding:13px 10px;
 			font-size:14px;
-			color:$color0;
-			background:#d0dce7;
+			color:#fff;
 			text-align:left;
 		}
 		td {
-			padding:12px 20px 12px 0;
-			font-size:14px;
-			background:#d0dce7;
-			input{
-					&:first-child{
-						margin-left:0;
-					}
+			padding:13px 10px;
+			font-size:13px;
+			color:#777;
+			text-align:left;
+			background:#f2f5f8;
+			border-bottom:1px solid #d5d5d5;
+		}
+	}
+	thead{
+		tr{
+			th{
+				background:#7c8c9b;
+				text-align:center;
 			}
 		}
 	}
-}
-.dot{
-	display:inline-block;
-	width:1px;
-	height:2px;
-	background:#666;
-	text-align:center;
-	margin:0 2px
-
+	tbody{
+		th{
+			border-top:1px solid #bcc5d4;
+			border-left:1px solid #bcc5d4;
+		}
+		td{
+			border-top:1px solid #bcc5d4;
+			font-size:13px;
+		}
+		tr{
+			&:first-child{
+				th,
+				td{
+					border-top:0;
+				}
+			}
+		}
+	}
 }
 
 /* radio */
@@ -1263,7 +1238,7 @@ table{
 		&:hover {
 			background:url(#{$img-common}bg_radio_over.png) no-repeat 0 5px;
 		}
-	
+
 	}
 	&.blindLable{
 		width:13px;
@@ -1390,23 +1365,23 @@ table{
 		background:#fff url(#{$img-common}bg_page_first.png) no-repeat center;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_first_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_first_over.png);
 		}
-		
+
 	}
 	.previous{
 		background:#fff url(#{$img-common}bg_page_previous.png) no-repeat center;
 		margin-left:-5px;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_previous_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_previous_over.png);
 		}
 	}
 	.next{
 		background:#fff url(#{$img-common}bg_page_next.png) no-repeat center;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_next_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_next_over.png);
 		}
 	}
 	.end{
@@ -1414,10 +1389,9 @@ table{
 		margin-left:-5px;
 		&:hover,
 		&:focus{
-			background:#fff url(#{$img-common}bg_page_end_over.png) no-repeat center;
+			background-image:url(#{$img-common}bg_page_end_over.png);
 		}
 	}
-
 }
 
 /* button */
@@ -1438,7 +1412,7 @@ table{
 		}
 	}
 }
-.btn{ 
+.btn{
 	display:inline-block;
 	padding:0 19px;
 	height:32px;
@@ -1446,7 +1420,6 @@ table{
 	@include weight('B');
 	color:#fff;
 	line-height:32px;
-	margin-left:4px;
 }
 .btnSmall{
 	display:inline-block;
