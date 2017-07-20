@@ -1,36 +1,69 @@
 $(document).ready(function(){
-	commonTab();
-	datepicker();
+	// 클릭 이벤트
 
-	ui.selectBox.init();
-});
-
-function commonTab(){
-	$(".tab > ul > li > a").click(function(event){
-		event.preventDefault();
-		var idx = $(this).parent().index();
-		$(this).parent().addClass("on").siblings().removeClass("on");
-		$(this).attr("title","활성화").parent().siblings().children("a").removeAttr("title");
-		$(".tabContent").find("> div").eq(idx).show().siblings().hide();
+/*	
+	$(document).on("click mouseover", "#gnb > li > a", function(e){
+		e.preventDefault();
+		$(this).attr("title", "현재메뉴").parent().addClass("on").children("ul").show().parent().siblings().removeClass("on").children("ul").hide().prev().removeAttr("title");
 	});
-};
+*/
 
-function datepicker(){
-	$( "#dateStar, #dateClose" ).datepicker({
-		closeText: '닫기 x',
-		prevText: '이전달',
-		nextText: '다음달',
-		currentText: 'TODAY',
-		showOn: "both",
-		showButtonPanel: true,
-		buttonImage: "/resource/img/ico_datapicker.png",
-		buttonImageOnly: true,
-		buttonText: "날짜 선택",
-		changeMonth: true,
-		changeYear: true,
-		monthNamesShort: ['1월','2월','3월','4월','5월','6월', '7월','8월','9월','10월','11월','12월'],
-		dayNamesShort: ['일','월','화','수','목','금','토'],
-		dayNamesMin: ['일','월','화','수','목','금','토'],
-		dateFomat : "YYYY-MM-DD"
-    });
-};
+	$(document).on({
+		click : function(e){
+			//$(this).attr("title", "현재메뉴").parent().addClass("on").children("ul").show().parent().siblings().removeClass("on").children("ul").hide().prev().removeAttr("title");
+			$(this).children("ul").stop().slideDown();
+		}, 
+		mouseleave: function(){
+			$(this).children("ul").slideUp();
+		}
+	}, "#gnb > li");
+
+
+/*
+	$("#gnb > li > a").click(function(e){
+		e.preventDefault();
+		// 컬러체인지, 타이틀 추가, 하위메뉴 레이어
+		$(this).attr("title", "현재메뉴").parent().addClass("on").children("ul").show().parent().siblings().removeClass("on").children("ul").hide().prev().removeAttr("title");
+	})
+*/
+	//2depth 클릭 시 컬러체인지, 타이틀 추가, 하위메뉴 레이어
+	$("#gnb > li > ul > li > a").click(function(e){
+		e.preventDefault();
+		$(this).parent().addClass("on").children("ul").show();
+		$(this).attr("title", "현재메뉴");
+
+		// 한개만 보이게 하기
+		$(this).parent().siblings().removeClass("on").children("ul").hide();
+		$(this).parent().siblings().find(" > a").removeAttr("title");
+	});
+
+
+
+	//location 
+	$(document).on({
+		click : function(){
+			//$(this).attr("title", "현재위치").next("ul").slideDown().parent().siblings().children("ul").slideUp().removeAttr("title");
+			$(this).next("ul").slideDown().parent().siblings().children("ul").slideUp();
+
+			//하위메뉴 클릭 시 닫히기
+		//	$(this).next("ul").children(" > li > a").click(alert("1"));
+			
+
+		}
+	}, ".location > ul > li > a");
+
+
+
+	//location 
+	$(document).on({
+		click : function(){
+			//하위메뉴 클릭 시 닫히기
+			$(this).parent().parent("ul").slideUp();
+			
+		}
+	}, ".location > ul > li > ul > li > a");
+
+
+
+
+});
