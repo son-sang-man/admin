@@ -19,45 +19,116 @@
 	
 	<h2 class="h2_guide">01. 검색테이블</h2>
 	<div class="guide_wrap">
-		<!-- tableTy2 -->
+		<article class="contentsArea col2">
+			<div>
+				<!-- tableTy2 -->
+				<div class="tableTy2">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:100%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<td class="tR">
+									<input type="text" title="ICS 코드 첫번째 입력" style="width:50px;" />
+									<span class="dot"></span>
+									<input type="text" title="ICS 코드 두번째 입력" style="width:50px;" />
+									<span class="dot"></span>
+									<input type="text" title="ICS 코드 나머지 입력" style="width:50px;" />
+									<a href="#" class="btn btnBlue">검색</a>
+									<a href="#" class="btn btnBlue">선택적용</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //table_ty2 -->
+			</div>
+			<div>
+				<!-- table_ty2 -->
+				<div class="tableTy2">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:14%" />
+							<col style="width:86%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">카테고리명</th>
+								<td class="tR">
+									<input type="text" title="카테고리명 입력" />
+									<a href="#" class="btn btnBlue">선택삭제</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //table_ty2 -->
+			</div>
+		</article>
+		<!-- contentsArea -->
+	</div>
+<!-- code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+
+<!-- contentsArea -->
+</xmp>
+</div>
+<!-- //code -->
+
+	<h2 class="h2_guide">01. 검색 복합 테이블</h2>
+	<div class="guide_wrap">
+		<!-- table_ty2 -->
 		<div class="tableTy2">
 			<table>
 				<caption></caption>
 				<colgroup>
-					<col style="width:10%" />
-					<col style="width:90%" />
+					<col style="width:12%" />
+					<col style="width:38%" />
+					<col style="width:12%" />
+					<col style="width:38%" />
 				</colgroup>
 				<tbody>
 					<tr>
 						<th scope="row">카테고리명</th>
 						<td>
-							<input type="text" class="widAll" title="카테고리명 입력" />
+							<input type="text" title="카테고리명 입력" />
 						</td>
-					</tr>
-					<tr>
-						<th scope="row blind">검색</th>
-						<td class="tR">
-							<input type="text" title="ICS 코드 첫번째 입력" />
-							<input type="text" title="ICS 코드 두번째 입력" />
-							<input type="text" title="ICS 코드 나머지 입력" />
-							<a href="#" class="btn btnBlue">검색</a>
-							<a href="#" class="btn btnBlue">선택적용</a>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">카테고리명</th>
+						<th scope="row">상품ID</th>
 						<td>
-							<input type="text" title="ICS 코드 첫번째 입력" />
-							<input type="text" title="ICS 코드 두번째 입력" />
-							<input type="text" title="ICS 코드 나머지 입력" />
-							<a href="#" class="btn btnBlue">검색</a>
-							<a href="#" class="btn btnBlue">선택적용</a>
+							<input type="text" title="상품ID 입력" />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">분야</th>
+						<td>
+							<div class="selectBox" data-form="selectBox">
+								<select title="검색어 분류" id="select0">
+									<option>전체</option>
+									<option>핸드북</option>
+									<option>핸드북</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row">판매상태</th>
+						<td>
+							<div class="selectBox" data-form="selectBox">
+								<select title="검색어 분류" id="select1">
+									<option>전체</option>
+									<option>정상판매</option>
+									<option>정상판매</option>
+								</select>
+							</div>	
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 		<!-- //table_ty2 -->
+				
 	</div>
 <!-- code -->
 <div class="d_desc code">
@@ -66,7 +137,7 @@
 </xmp>
 </div>
 <!-- //code -->
-
+	
 
 
 	<h2 class="h2_guide">01. 테이블헤더영역</h2>
@@ -137,7 +208,7 @@
 					</tr>
 					<tr>
 						<td class="tC">
-							<span class="checkBox blind_lab">
+							<span class="checkBox blindLable">
 								<input type="checkbox" id="cell2" />
 								<label for="cell2">선택</label>
 							</span>
@@ -208,6 +279,209 @@
 			</tr>
 		</tbody>
 	</table>
+</div>
+</xmp>
+</div>
+<!-- //code -->
+
+<h2 class="h2_guide">02. 세로형 테이블</h2>
+	<div class="guide_wrap">
+		<!-- table_ty01 -->
+		<div class="tableTy1">
+			<table>
+				<caption></caption>
+				<colgroup>
+					<col style="width:15%;" />
+					<col style="width:75%;" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">번호</th>
+						<td class="tC">
+							<span class="radioBox blindLable">
+								<input type="radio" id="cell1" />
+								<label for="cell1">선택</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">번호</th>
+						<td>
+							<span class="checkBox blindLable">
+								<input type="checkbox" id="cell2" />
+								<label for="cell2">선택</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">파일첨부</th>
+						<td>
+							<input type="file" title="파일첨부" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //table_ty01 -->
+	</div>
+
+	<h2 class="h2_guide">03. 가로형 테이블 tbody영역 스크롤</h2>
+	<div class="guide_wrap">
+		<!-- table_ty01 -->
+		<div class="tableTy1 scrollY">
+			<div class="header">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col /> <!-- 처음 셀은 100%의 나머지 값 -->
+						<col style="width:25%;" />
+						<col style="width:35%;" />
+						<col style="width:30%;" />
+						<col style="width:13px;" /> <!-- tbody 세로 스크롤 사이즈 -->
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">이름</th>
+							<th scope="col">작성자</th>
+							<th scope="col" colspan="2">진행상태</th> <!-- tbody 세롤 스크롤시 -->
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="body">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:10%;" />
+						<col style="width:25%;" />
+						<col style="width:35%;" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="tC">
+								<span class="radioBox blindLable">
+									<input type="radio" id="cell1" />
+									<label for="cell1">선택</label>
+								</span>
+							</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">
+								<span class="checkBox blind_lab">
+									<input type="checkbox" id="cell2" />
+									<label for="cell2">선택</label>
+								</span>
+							</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">1</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">1</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">1</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //table_ty01 -->
+	</div>
+<!-- code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="tableTy1 scrollY">
+	<div class="header">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col /> <!-- 처음 셀은 100%의 나머지 값 -->
+				<col style="width:25%;" />
+				<col style="width:35%;" />
+				<col style="width:30%;" />
+				<col style="width:13px;" /> <!-- tbody 세로 스크롤 사이즈 -->
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">번호</th>
+					<th scope="col">이름</th>
+					<th scope="col">작성자</th>
+					<th scope="col" colspan="2">진행상태</th> <!-- tbody 세롤 스크롤시 -->
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="body">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col style="width:10%;" />
+				<col style="width:25%;" />
+				<col style="width:35%;" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td class="tC">
+						<span class="radioBox blindLable">
+							<input type="radio" id="cell1" />
+							<label for="cell1">선택</label>
+						</span>
+					</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">
+						<span class="checkBox blind_lab">
+							<input type="checkbox" id="cell2" />
+							<label for="cell2">선택</label>
+						</span>
+					</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">1</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">1</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+				<tr>
+					<td class="tC">1</td>
+					<td>홍길동</td>
+					<td>홍길동</td>
+					<td>진행</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 </xmp>
 </div>
