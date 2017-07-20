@@ -4,9 +4,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-20
-* Modify : 손상만
-* Ver : 1.06
+* Last Update : 2017-07-20
 */
 
 body,
@@ -313,19 +311,19 @@ body{
 
 /* 포인트 컬러 */
 .fontColor1{
-	color:$color0;
+	color:$color0 !important;
 }
 .fontColor2{
-	color:$color1;
+	color:$color1 !important;
 }
 .fontColor3{
-	color:$color2;
+	color:$color2 !important;
 }
 .fontColor4{
-	color:$color3;
+	color:$color3 !important;
 }
 .fontColor5{
-	color:$color4;
+	color:$color4 !important;
 }
 
 
@@ -734,12 +732,14 @@ body{
 }
 #contents{
 	width:1600px;
+	padding-bottom:60px;
 	margin:auto;
 	box-sizing:border-box;
 	min-height:400px;
 }
 .contentsArea{
 	width:100%;
+	padding-bottom:60px;
 	display:inline-block;
 	vertical-align:top;
 	> div{
@@ -868,15 +868,17 @@ body{
 			right:0;
 			top:30px;
 			padding-left:45px;
-			background:url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
+			background:#7c9dbc url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
 			font-size:12px;
 			height:40px;
 			line-height:40px;
+			color:#fff;
 			&:hover,
 			&:focus{
-				background:url(#{$img-common}bg_contact_over.png) no-repeat 20px 10px;
+				background:#ff903b url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
 				transition:all 0.3s;
 				border:1px solid #ff904b;
+				color:#fff;
 			}
 		}
 	}
@@ -1203,12 +1205,18 @@ table{
 			overflow-y:auto;
 		}
 	}
+	+ .btnArea{
+		margin-top:10px;
+	}
 
 }
 .tableTy2 {
 	border:1px solid #bcc8d4;
-	padding-bottom:12px;
 	background:#d0dce7;
+	padding-bottom:12px;
+	+ .btnArea{
+		margin-top:10px;
+	}
 
 	table {
 		width:100%;
@@ -1359,7 +1367,7 @@ table{
 	height:38px;
 	line-height:38px;
 	text-align:center;
-	margin-top:30px;
+	margin-top:22px;
 	> a{
 		display:inline-block;
 		overflow:hidden;
@@ -1446,14 +1454,14 @@ table{
 
 /* button */
 .btnArea{
-	margin-top:30px;
-	> div{
-		&.fR{
-			> * {
-				margin-left:4px;
-			}
-		}
-	}
+	text-align:center;
+	// > div{
+	// 	&.fR{
+	// 		> * {
+	// 			margin-left:4px;
+	// 		}
+	// 	}
+	// }
 	.btn,
 	.btnSmall{
 		margin-left:4px;
@@ -1501,8 +1509,15 @@ table{
 		transition:all 0.3s;
 	}
 }
+.btnRed{
+	background:#ffbfbf;
+	border:1px solid #f2151a;
+	color:#f2151a;
+}
+	
 .btnGray{
 	background:#f2f2f2;
 	border:1px solid #bfbfbf;
 	color:#999;
 }
+

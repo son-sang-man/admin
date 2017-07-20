@@ -3,8 +3,6 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
-* Modify : 손상만
-* Ver : 1.06
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -89,15 +87,15 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .vN { vertical-align: 0 !important; }
 
 /* 포인트 컬러 */
-.fontColor1 { color: #666; }
+.fontColor1 { color: #666 !important; }
 
-.fontColor2 { color: #718fac; }
+.fontColor2 { color: #718fac !important; }
 
-.fontColor3 { color: #7c9dbc; }
+.fontColor3 { color: #7c9dbc !important; }
 
-.fontColor4 { color: #ff903b; }
+.fontColor4 { color: #ff903b !important; }
 
-.fontColor5 { color: #ee1c23; }
+.fontColor5 { color: #ee1c23 !important; }
 
 /* 폼요소 너비 */
 .widAll { width: 100%; }
@@ -178,9 +176,9 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .contentsTop { background: #fff; border: 1px solid #ccc; }
 .contentsTop h2 { line-height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
 
-#contents { width: 1600px; margin: auto; box-sizing: border-box; min-height: 400px; }
+#contents { width: 1600px; padding-bottom: 60px; margin: auto; box-sizing: border-box; min-height: 400px; }
 
-.contentsArea { width: 100%; display: inline-block; vertical-align: top; }
+.contentsArea { width: 100%; padding-bottom: 60px; display: inline-block; vertical-align: top; }
 .contentsArea > div { box-sizing: border-box; float: left; box-sizing: border-box; padding-left: 15px; }
 .contentsArea > div:first-child { padding-right: 15px; padding-left: 0; }
 .contentsArea.col2 > div { width: 50%; }
@@ -207,8 +205,8 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #footer > div .info > ul > li { display: inline-block; padding-right: 5px; padding-left: 5px; margin-left: 5px; border-left: 1px solid #666; height: 11px; line-height: 11px; font-size: 12px; color: #666; }
 #footer > div .info > ul > li:first-child { padding: 0; margin: 0; border: 0; }
 #footer > div .info address { display: block; font-style: normal; }
-#footer > div .contact { position: absolute; right: 0; top: 30px; padding-left: 45px; background: url(/resource/img/bg_contact.png) no-repeat 20px 10px; font-size: 12px; height: 40px; line-height: 40px; }
-#footer > div .contact:hover, #footer > div .contact:focus { background: url(/resource/img/bg_contact_over.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; }
+#footer > div .contact { position: absolute; right: 0; top: 30px; padding-left: 45px; background: #7c9dbc url(/resource/img/bg_contact.png) no-repeat 20px 10px; font-size: 12px; height: 40px; line-height: 40px; color: #fff; }
+#footer > div .contact:hover, #footer > div .contact:focus { background: #ff903b url(/resource/img/bg_contact.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; color: #fff; }
 
 /* datepicker */
 .dataBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; background: #087ea5; }
@@ -266,8 +264,10 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy1 tbody td { border-top: 1px solid #d5d5d5; }
 .tableTy1 tbody td:first-child { border-left: 0; }
 .tableTy1.scrollY .body { height: 200px; overflow-y: auto; }
+.tableTy1 + .btnArea { margin-top: 10px; }
 
-.tableTy2 { border: 1px solid #bcc8d4; padding-bottom: 12px; background: #d0dce7; }
+.tableTy2 { border: 1px solid #bcc8d4; background: #d0dce7; padding-bottom: 12px; }
+.tableTy2 + .btnArea { margin-top: 10px; }
 .tableTy2 table { width: 100%; table-layout: fixed; }
 .tableTy2 tr th { padding: 12px 15px 0 20px; font-size: 14px; color: #666; background: #d0dce7; text-align: left; }
 .tableTy2 tr td { padding: 12px 20px 0 0; font-size: 14px; background: #d0dce7; }
@@ -298,7 +298,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .checkBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 
 /* paging */
-.paging { height: 38px; line-height: 38px; text-align: center; margin-top: 30px; }
+.paging { height: 38px; line-height: 38px; text-align: center; margin-top: 22px; }
 .paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 38px; height: 38px; border: 1px solid #e7e7e7; box-sizing: border-box; }
 .paging > span { display: inline-block; height: 38px; margin: 0 15px; vertical-align: top; }
 .paging > span > a { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; }
@@ -314,8 +314,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .paging .end:hover, .paging .end:focus { background-image: url(/resource/img/bg_page_end_over.png); }
 
 /* button */
-.btnArea { margin-top: 30px; }
-.btnArea > div.fR > * { margin-left: 4px; }
+.btnArea { text-align: center; }
 .btnArea .btn, .btnArea .btnSmall { margin-left: 4px; }
 .btnArea .btn:first-child, .btnArea .btnSmall:first-child { margin-left: 0; }
 
@@ -328,5 +327,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 
 .btnWhite { background: #fff; border: 1px solid #7f8f9e; color: #666; }
 .btnWhite:hover, .btnWhite:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
+
+.btnRed { background: #ffbfbf; border: 1px solid #f2151a; color: #f2151a; }
 
 .btnGray { background: #f2f2f2; border: 1px solid #bfbfbf; color: #999; }
