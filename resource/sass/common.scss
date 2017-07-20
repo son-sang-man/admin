@@ -6,7 +6,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
 * Modify : 김미나
-* Ver : 1.04
+* Ver : 1.05
 */
 
 body,
@@ -140,7 +140,7 @@ button{
 	vertical-align:middle;
 	appearance:none;
 	moz-appearance:none;
-	font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-family:$font;
 	color:$color0;
 	letter-spacing:-1.0px
 }
@@ -210,8 +210,8 @@ input{
 			color:#999;
 		}
 	}
-	[type="radio"],
-	[type="checkbox"]
+	&[type="radio"],
+	&[type="checkbox"]
 	{
 		width:13px;
 		height:13px;
@@ -234,7 +234,7 @@ textarea{
 body{
 	font-style:normal;
 	font-size:13px;
-	font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-family:$font;
 	color:$color0;
 	background:#fff;
 	letter-spacing:-1.0px;
@@ -704,7 +704,7 @@ body{
 		margin:auto;
 	}
 }
-.contents{
+#contents{
 	width:1600px;
 	margin:auto;
 	box-sizing:border-box;
