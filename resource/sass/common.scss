@@ -6,7 +6,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
 * Modify : 김미나
-* Ver : 1.03
+* Ver : 1.04
 */
 
 body,
@@ -709,32 +709,32 @@ body{
 	margin:auto;
 	box-sizing:border-box;
 	min-height:400px;
-	.contentsArea{
-		width:100%;
-		display:inline-block;
-		vertical-align:top;
-		> div{
-			box-sizing:border-box;
-			float:left;
-			box-sizing:border-box;
-			padding-left:15px;
-			&:first-child{
-				padding-right:15px;
-				padding-left:0;
-			}
+}
+.contentsArea{
+	width:100%;
+	display:inline-block;
+	vertical-align:top;
+	> div{
+		box-sizing:border-box;
+		float:left;
+		box-sizing:border-box;
+		padding-left:15px;
+		&:first-child{
+			padding-right:15px;
+			padding-left:0;
 		}
-		&.col2{
-			> div {
-				width:50%;
-			}
+	}
+	&.col2{
+		> div {
+			width:50%;
+		}
 
+	}
+	&.col3{
+		> div {
+			width:33%;
 		}
-		&.col3{
-			> div {
-				width:33%;
-			}
 
-		}
 	}
 }
 

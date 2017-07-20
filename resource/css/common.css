@@ -4,7 +4,7 @@
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
 * Modify : 김미나
-* Ver : 1.03
+* Ver : 1.04
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -165,11 +165,12 @@ body { font-style: normal; font-size: 13px; font-family: 'Malgun Gothic', '맑�
 .contentsTop h2 { padding-top: 20px; height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
 
 .contents { width: 1600px; margin: auto; box-sizing: border-box; min-height: 400px; }
-.contents .contentsArea { width: 100%; display: inline-block; vertical-align: top; }
-.contents .contentsArea > div { box-sizing: border-box; float: left; box-sizing: border-box; padding-left: 15px; }
-.contents .contentsArea > div:first-child { padding-right: 15px; padding-left: 0; }
-.contents .contentsArea.col2 > div { width: 50%; }
-.contents .contentsArea.col3 > div { width: 33%; }
+
+.contentsArea { width: 100%; display: inline-block; vertical-align: top; }
+.contentsArea > div { box-sizing: border-box; float: left; box-sizing: border-box; padding-left: 15px; }
+.contentsArea > div:first-child { padding-right: 15px; padding-left: 0; }
+.contentsArea.col2 > div { width: 50%; }
+.contentsArea.col3 > div { width: 33%; }
 
 .title1 { font-size: 22px; color: #444; }
 
