@@ -784,14 +784,12 @@ body{
 }
 .tableHeader{
 	margin-bottom:15px;
+	text-align:right;
 	&:after{
 			content:"";
 			display:block;
 			clear:both;
 		}
-	&.fR{
-
-	}
 	.btnArea{
 		display:inline-block;
 		text-align:center;
@@ -888,15 +886,14 @@ body{
 .dataBox{
 	position:relative;
 	display:inline-block;
-	border:1px solid #bcc5d4;
-	background:#fff;
+	border:1px solid #d5d5d5;
+	background:#087ea5;
 	input {
 		border:none;
 	}
 }
 .ui-datepicker{
 	width:222px;
-	padding:20px 15px 15px;
 	display:none;
 	.ui-icon {
 		display:block;
@@ -905,11 +902,13 @@ body{
 		background-repeat:no-repeat;
 	}
 	&.ui-widget-content{
-		border:2px solid #000;
 		background:#fff;
 	}
 	.ui-datepicker-header{
 		position:relative;
+		height:40px;
+		background:#087ea5;
+		line-height:40px;
 	}
 	.ui-datepicker-prev{
 		position:absolute;

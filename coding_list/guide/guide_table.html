@@ -19,6 +19,7 @@
 	
 	<h2 class="h2_guide">01. 검색테이블</h2>
 	<div class="guide_wrap">
+		<!-- contentsArea -->
 		<article class="contentsArea col2">
 			<div>
 				<!-- tableTy2 -->
@@ -68,18 +69,67 @@
 				<!-- //table_ty2 -->
 			</div>
 		</article>
-		<!-- contentsArea -->
+		<!-- //contentsArea -->
 	</div>
 <!-- code -->
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
-
 <!-- contentsArea -->
+<article class="contentsArea col2">
+	<div>
+		<!-- tableTy2 -->
+		<div class="tableTy2">
+			<table>
+				<caption></caption>
+				<colgroup>
+					<col style="width:100%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td class="tR">
+							<input type="text" title="ICS 코드 첫번째 입력" style="width:50px;" />
+							<span class="dot"></span>
+							<input type="text" title="ICS 코드 두번째 입력" style="width:50px;" />
+							<span class="dot"></span>
+							<input type="text" title="ICS 코드 나머지 입력" style="width:50px;" />
+							<a href="#" class="btn btnBlue">검색</a>
+							<a href="#" class="btn btnBlue">선택적용</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //table_ty2 -->
+	</div>
+	<div>
+		<!-- table_ty2 -->
+		<div class="tableTy2">
+			<table>
+				<caption></caption>
+				<colgroup>
+					<col style="width:14%" />
+					<col style="width:86%" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">카테고리명</th>
+						<td class="tR">
+							<input type="text" title="카테고리명 입력" />
+							<a href="#" class="btn btnBlue">선택삭제</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //table_ty2 -->
+	</div>
+</article>
+<!-- //contentsArea -->
 </xmp>
 </div>
 <!-- //code -->
 
-	<h2 class="h2_guide">01. 검색 복합 테이블</h2>
+	<h2 class="h2_guide">02. 검색 복합 테이블</h2>
 	<div class="guide_wrap">
 		<!-- table_ty2 -->
 		<div class="tableTy2">
@@ -128,29 +178,71 @@
 			</table>
 		</div>
 		<!-- //table_ty2 -->
-				
 	</div>
 <!-- code -->
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
-
+<!-- table_ty2 -->
+<div class="tableTy2">
+	<table>
+		<colgroup>
+			<col style="width:12%" />
+			<col style="width:38%" />
+			<col style="width:12%" />
+			<col style="width:38%" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">카테고리명</th>
+				<td>
+					<input type="text" title="카테고리명 입력" />
+				</td>
+				<th scope="row">상품ID</th>
+				<td>
+					<input type="text" title="상품ID 입력" />
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">분야</th>
+				<td>
+					<div class="selectBox" data-form="selectBox">
+						<select title="검색어 분류" id="select0">
+							<option>전체</option>
+							<option>핸드북</option>
+							<option>핸드북</option>
+						</select>
+					</div>
+				</td>
+				<th scope="row">판매상태</th>
+				<td>
+					<div class="selectBox" data-form="selectBox">
+						<select title="검색어 분류" id="select1">
+							<option>전체</option>
+							<option>정상판매</option>
+							<option>정상판매</option>
+						</select>
+					</div>	
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //table_ty2 -->			
 </xmp>
 </div>
 <!-- //code -->
 	
-
-
-	<h2 class="h2_guide">01. 테이블헤더영역</h2>
+	<h2 class="h2_guide">03. 테이블헤더영역</h2>
 	<div class="guide_wrap">
 		<div class="tableHeader">
-			<div class="fR">
+			<div>
 				<span class="tablePaging">
 					<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
 				</span>
 				<div class="btnArea">
-					<a href="#" class="btnSmall btnBlue">조회</a>
-					<a href="#" class="btnSmall btnWhite">조회</a>
-					<a href="#" class="btnSmall btnGray">신청취소</a>
+					<a href="#" class="btn btnBlue">조회</a>
+					<a href="#" class="btn btnWhite">조회</a>
+					<a href="#" class="btn btnGray">신청취소</a>
 				</div>
 			</div>
 		</div>
@@ -158,15 +250,15 @@
 <!-- code -->
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
-<div class="tableHeader">
-	<div class="fR">
+<<div class="tableHeader">
+	<div>
 		<span class="tablePaging">
 			<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
 		</span>
 		<div class="btnArea">
-			<a href="#" class="btnSmall btnBlue">조회</a>
-			<a href="#" class="btnSmall btnWhite">조회</a>
-			<a href="#" class="btnSmall btnGray">신청취소</a>
+			<a href="#" class="btn btnBlue">조회</a>
+			<a href="#" class="btn btnWhite">조회</a>
+			<a href="#" class="btn btnGray">신청취소</a>
 		</div>
 	</div>
 </div>
@@ -174,12 +266,11 @@
 </div>
 <!-- //code -->
 
-	<h2 class="h2_guide">02. 가로형 테이블</h2>
+	<h2 class="h2_guide">04. 가로형 테이블</h2>
 	<div class="guide_wrap">
 		<!-- table_ty01 -->
 		<div class="tableTy1">
 			<table>
-				<caption></caption>
 				<colgroup>
 					<col style="width:10%;" />
 					<col style="width:25%;" />
@@ -231,9 +322,9 @@
 <!-- code -->
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
+<!-- table_ty01 -->
 <div class="tableTy1">
 	<table>
-		<caption></caption>
 		<colgroup>
 			<col style="width:10%;" />
 			<col style="width:25%;" />
@@ -251,7 +342,7 @@
 		<tbody>
 			<tr>
 				<td class="tC">
-					<span class="radioBox blind_lab">
+					<span class="radioBox blindLable">
 						<input type="radio" id="cell1" />
 						<label for="cell1">선택</label>
 					</span>
@@ -262,7 +353,7 @@
 			</tr>
 			<tr>
 				<td class="tC">
-					<span class="checkBox blind_lab">
+					<span class="checkBox blindLable">
 						<input type="checkbox" id="cell2" />
 						<label for="cell2">선택</label>
 					</span>
@@ -280,24 +371,24 @@
 		</tbody>
 	</table>
 </div>
+<!-- //table_ty01 -->
 </xmp>
 </div>
 <!-- //code -->
 
-<h2 class="h2_guide">02. 세로형 테이블</h2>
+<h2 class="h2_guide">05. 세로형 테이블</h2>
 	<div class="guide_wrap">
 		<!-- table_ty01 -->
 		<div class="tableTy1">
 			<table>
-				<caption></caption>
 				<colgroup>
-					<col style="width:15%;" />
-					<col style="width:75%;" />
+					<col style="width:10%;" />
+					<col style="width:90%;" />
 				</colgroup>
 				<tbody>
 					<tr>
 						<th scope="row">번호</th>
-						<td class="tC">
+						<td>
 							<span class="radioBox blindLable">
 								<input type="radio" id="cell1" />
 								<label for="cell1">선택</label>
@@ -324,6 +415,47 @@
 		</div>
 		<!-- //table_ty01 -->
 	</div>
+<!-- code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<!-- table_ty01 -->
+<div class="tableTy1">
+	<table>
+		<colgroup>
+			<col style="width:10%;" />
+			<col style="width:90%;" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">번호</th>
+				<td>
+					<span class="radioBox blindLable">
+						<input type="radio" id="cell1" />
+						<label for="cell1">선택</label>
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">번호</th>
+				<td>
+					<span class="checkBox blindLable">
+						<input type="checkbox" id="cell2" />
+						<label for="cell2">선택</label>
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">파일첨부</th>
+				<td>
+					<input type="file" title="파일첨부" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //table_ty01 -->
+</xmp>
+</div>
 
 	<h2 class="h2_guide">03. 가로형 테이블 tbody영역 스크롤</h2>
 	<div class="guide_wrap">
@@ -372,7 +504,7 @@
 						</tr>
 						<tr>
 							<td class="tC">
-								<span class="checkBox blind_lab">
+								<span class="checkBox blindLable">
 									<input type="checkbox" id="cell2" />
 									<label for="cell2">선택</label>
 								</span>
