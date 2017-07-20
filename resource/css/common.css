@@ -3,8 +3,8 @@
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
 * Last Update :2017-07-20
-* Modify : 김미나
-* Ver : 1.05
+* Modify : 손상만
+* Ver : 1.06
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -86,6 +86,17 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .vB { vertical-align: bottom !important; }
 
 .vN { vertical-align: 0 !important; }
+
+/* 포인트 컬러 */
+.fontColor1 { color: #666; }
+
+.fontColor2 { color: #718fac; }
+
+.fontColor3 { color: #7c9dbc; }
+
+.fontColor4 { color: #ff903b; }
+
+.fontColor5 { color: #ee1c23; }
 
 /* 폼요소 너비 */
 .widAll { width: 100%; }
