@@ -1406,6 +1406,13 @@ table{
 			color:$color0;
 			text-align:center;
 			box-sizing:border-box;
+			&.on,
+			&:hover,
+			&:focus{
+				color:#fff;
+				background:#7e9fbd;
+				transition:all 0.3s;
+			}
 		}
 		strong{
 			display:inline-block;
@@ -1423,7 +1430,7 @@ table{
 			&.on,
 			&:hover,
 			&:focus{
-				color:$color2;
+				color:#fff;
 				background:#7e9fbd;
 				transition:all 0.3s;
 			}

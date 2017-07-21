@@ -306,8 +306,9 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 38px; height: 38px; border: 1px solid #e7e7e7; box-sizing: border-box; }
 .paging > span { display: inline-block; height: 38px; margin: 0 15px; vertical-align: top; }
 .paging > span > a { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; }
+.paging > span > a.on, .paging > span > a:hover, .paging > span > a:focus { color: #fff; background: #7e9fbd; transition: all 0.3s; }
 .paging > span strong { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; font-weight: normal; }
-.paging > span strong.on, .paging > span strong:hover, .paging > span strong:focus { color: #7c9dbc; background: #7e9fbd; transition: all 0.3s; }
+.paging > span strong.on, .paging > span strong:hover, .paging > span strong:focus { color: #fff; background: #7e9fbd; transition: all 0.3s; }
 .paging .first { background: #fff url(/resource/img/btn_page_first.png) no-repeat center; }
 .paging .first:hover, .paging .first:focus { background-image: url(/resource/img/btn_page_first_over.png); }
 .paging .previous { background: #fff url(/resource/img/btn_page_previous.png) no-repeat center; margin-left: -5px; }
