@@ -110,7 +110,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 
 .selectBox { display: inline-block; }
 .selectBox .designSelect { position: relative; background: #fff; }
-.selectBox .designSelect.on, .selectBox .designSelect:active, .selectBox .designSelect:focus { background: url(/resource/img/bg_select_over.png) no-repeat right center; }
+.selectBox .designSelect.on button { background: url(/resource/img/bg_select_over.png) no-repeat right center; }
 .selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 47px 0 20px; width: 100%; height: 34px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 34px; box-sizing: border-box; text-align: left; font-size: 14px; color: #666; }
 .selectBox ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; box-sizing: border-box; width: 100%; z-index: 1; }
 .selectBox ul li:first-child > a { border-top: none; }

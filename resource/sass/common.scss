@@ -355,10 +355,10 @@ body{
 	.designSelect{
 		position:relative;
 		background:#fff;
-		&.on,
-		&:active,
-		&:focus{
-			background:url(#{$img-common}bg_select_over.png) no-repeat right center;
+		&.on{
+			button{
+				background:url(#{$img-common}bg_select_over.png) no-repeat right center;
+			}
 		}
 		button{
 			border:1px solid #bcc5d4;
