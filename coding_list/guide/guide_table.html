@@ -22,24 +22,6 @@
 		<!-- contentsArea -->
 		<article class="contentsArea col2">
 			<div>
-
-				<div class="tableTy2">
-					<table>
-						<colgroup>
-						<col style="width:104px" />
-						<col />
-						</colgroup>
-						<tbody>
-						<tr>
-							<th scope="row">카테고리명</th>
-							<td>
-								<input type="text" />
-							</td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-				
 				<!-- tableTy2 -->
 				<div class="tableTy2">
 					<table>
@@ -253,15 +235,18 @@
 	<h2 class="h2_guide">03. 테이블헤더영역</h2>
 	<div class="guide_wrap">
 		<div class="tableHeader">
-			<div>
-				<span class="tablePaging">
-					<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
-				</span>
-				<div class="btnArea">
-					<a href="#" class="btn btnBlue">조회</a>
-					<a href="#" class="btn btnWhite">조회</a>
-					<a href="#" class="btn btnGray">신청취소</a>
-				</div>
+			<span class="tablePaging">
+				<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+			</span>
+			<button type="button" class="btn btnBlue">조회</button>
+			<button type="button"class="btn btnWhite">조회</button>
+			<button type="button" class="btn btnGray">신청취소</button>
+			<div class="selectBox" data-form="selectBox"> 
+				<select title="검색어 분류" id="select0">
+					<option>전체</option>
+					<option>제목</option>
+					<option>내용</option>
+				</select>
 			</div>
 		</div>
 	</div>
@@ -269,15 +254,24 @@
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
 <<div class="tableHeader">
-	<div>
-		<span class="tablePaging">
-			<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
-		</span>
-		<div class="btnArea">
-			<a href="#" class="btn btnBlue">조회</a>
-			<a href="#" class="btn btnWhite">조회</a>
-			<a href="#" class="btn btnGray">신청취소</a>
-		</div>
+		
+	<!-- 리스트페이징 -->
+	<span class="tablePaging">
+		<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+	</span>
+
+	<!-- 버튼 -->
+	<button type="button" class="btn btnBlue">조회</button>
+	<button type="button" class="btn btnWhite">조회</button>
+	<button type="button" class="btn btnGray">신청취소</button>
+	
+	<!-- 셀렉트박스 -->
+	<div class="selectBox" data-form="selectBox"> 
+		<select title="검색어 분류" id="select0">
+			<option>전체</option>
+			<option>제목</option>
+			<option>내용</option>
+		</select>
 	</div>
 </div>
 </xmp>
@@ -306,7 +300,7 @@
 				<tbody>
 					<tr>
 						<td class="tC">
-							<span class="radioBox blindLable">
+							<span class="radioBox blindLable"> <!-- 체크박스, 라디오버튼만 나올경우 -->
 								<input type="radio" id="cell1" />
 								<label for="cell1">선택</label>
 							</span>
@@ -400,26 +394,24 @@
 		<div class="tableTy1">
 			<table>
 				<colgroup>
-					<col style="width:10%;" />
-					<col style="width:90%;" />
+					<col style="width:134px;" />
+					<col style="width:*" />
 				</colgroup>
 				<tbody>
 					<tr>
-						<th scope="row">번호</th>
-						<td>
-							<span class="radioBox blindLable">
-								<input type="radio" id="cell1" />
-								<label for="cell1">선택</label>
-							</span>
-						</td>
+						<th scope="row">상품ID</th>
+						<td class="fontColor6"> 시스템자동생성</td>
 					</tr>
 					<tr>
-						<th scope="row">번호</th>
+						<th scope="row">상품카테고리</th>
 						<td>
-							<span class="checkBox blindLable">
-								<input type="checkbox" id="cell2" />
-								<label for="cell2">선택</label>
-							</span>
+							<div class="selectBox" data-form="selectBox">
+								<select title="검색어 분류" id="select0">
+									<option>전체</option>
+									<option>핸드북</option>
+									<option>핸드북</option>
+								</select>
+							</div>
 						</td>
 					</tr>
 					<tr>

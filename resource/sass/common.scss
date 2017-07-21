@@ -31,7 +31,7 @@ p,
 blockquote,
 th,
 td,
-p,
+p,p
 iframe,
 figure
 {
@@ -326,6 +326,10 @@ body{
 	color:$color4 !important;
 }
 
+.fontColor6{
+	color:#2f9fbb !important;
+}
+
 
 /* 폼요소 너비 */
 .widAll{
@@ -351,6 +355,11 @@ body{
 	.designSelect{
 		position:relative;
 		background:#fff;
+		&.on,
+		&:active,
+		&:focus{
+			background:url(#{$img-common}bg_select_over.png) no-repeat right center;
+		}
 		button{
 			border:1px solid #bcc5d4;
 			padding:0 47px 0 20px;
@@ -388,7 +397,7 @@ body{
 				height:40px;
 				line-height:40px;
 				border-top:1px solid #ccc;
-
+				text-align:left;
 				&:hover,
 				&:focus{
 					color:#7c9dbc;
@@ -650,6 +659,10 @@ body{
 				line-height:40px;
 				box-sizing:border-box;
 				border-right:1px solid #ccc;
+				&:hover,
+				&:focus{
+					background:url(#{$img-common}bg_select_over.png) no-repeat right center;
+				}
 				> a{
 					display:block;
 					min-width:250px;
@@ -740,7 +753,6 @@ body{
 }
 .contentsArea{
 	width:100%;
-	padding-bottom:60px;
 	display:inline-block;
 	vertical-align:top;
 	> div{
@@ -786,6 +798,7 @@ body{
 .tableHeader{
 	margin-bottom:15px;
 	text-align:right;
+	vertical-align:top;
 	&:after{
 			content:"";
 			display:block;
@@ -1479,7 +1492,7 @@ table{
 .btn{
 	display:inline-block;
 	padding:0 19px;
-	height:32px;
+	height:34px;
 	font-size:15px;
 	@include weight('B');
 	color:#fff;
@@ -1542,6 +1555,7 @@ table{
 	.popContent{
 		background:#fff;
 		padding:20px 18px;
+		min-height:340px
 	}
 	.popBottom{
 		height:30px;
@@ -1554,6 +1568,7 @@ table{
 			+ label{
 				display:inline-block;
 				font-size:12px;
+				cursor:pointer;
 			}
 		}
 	}
