@@ -567,9 +567,10 @@ body{
 						}
 						&.colum2{
 							> ul{
-								width:195px;
 								li{
-									width:95px !important;
+									width:50%;
+									float:left;
+									box-sizing:border-box;
 									display:inline-block;
 								}
 							}
@@ -581,13 +582,12 @@ body{
 						padding:10px 0;
 						border:1px solid #6a9fd1;
 						position:absolute;
-						left:0;
+						left:195px;
+						width:195px;
 						top:0;
-						margin-left:195px;
 						z-index:2;
 						>li{
 							> a{
-								min-width:195px;
 								display:block;
 								padding:0 10px;
 								font-size:14px;
@@ -905,7 +905,7 @@ body{
 }
 .ui-datepicker{
 	width:236px;
-	display:none;
+	//display:none;
 	.ui-icon {
 		display:block;
 		text-indent:-99999px;
@@ -935,37 +935,33 @@ body{
 		top:0;
 		right:2px;
 		width:20px;
-		height:30px;
+		height:25px;
 		display:inline-block;
 		background:url(#{$img-common}btn_datapicker_next.png) no-repeat center center;
 	}
 	.ui-datepicker-title{
 		overflow:hidden;
-		height:30px;
-		line-height:30px;
+		height:25px;
+		line-height:25px;
 	}
 	.ui-datepicker-title{
 		select {
 			float:right;
-			padding:1px 1px 1px 0;
+			padding:0 8px;
 			height:28px;
 			height:28px;
 			font-size:12px;
 			color:$color0;
-			line-height:28px;
 			vertical-align:middle;
-				width:78px;
-				height:23x;
+			width:78px;
+			height:23x;
 			
 			&.ui-datepicker-month{
 				margin:0 30px 0 5px;
-				padding:2px 5px;
-				border:1px solid #bcc5d4;
+				border:1px solid #ef8514;
 			}
 			&.ui-datepicker-year{
-				
-				padding:2px 5px;
-				border:1px solid #bcc5d4;
+				border:1px solid #8acadf;
 			}
 		}
 	}
