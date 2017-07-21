@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
+	<title>Contents 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+<h1 class="h1_guide">Contents Guide</h1>
+
+	<h2 class="h2_guide">01. 페이지네비게이션</h2>
+	<div class="guide_wrap">
+		<!-- paging -->
+		<div class="paging">
+			<a href="#" class="first">맨 처음</a>
+			<a href="#" class="previous">이전</a>
+			<span>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+				<a href="#">5</a>
+			</span>
+			<a href="#" class="next">다음</a>
+			<a href="#" class="end">맨 끝</a>
+		</div>
+		<!-- //paging -->
+	</div>
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="paging">
+	<a href="#" class="first">맨 처음</a>
+	<a href="#" class="previous">이전</a>
+	<span>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+		<a href="#">5</a>
+		<a href="#">6</a>
+		<a href="#">7</a>
+		<a href="#">8</a>
+		<a href="#">9</a>
+		<a href="#">10</a>
+	</span>
+	<a href="#" class="next">다음</a>
+	<a href="#" class="end">맨 끝</a>
+</div>
+</xmp>
+</div>
+<!-- // code -->
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+<script>
+	ui.selectBox.init();
+</script>
+</body>
+</html>

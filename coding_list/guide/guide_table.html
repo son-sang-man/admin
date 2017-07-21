@@ -107,8 +107,8 @@
 			<table>
 				<caption></caption>
 				<colgroup>
-					<col style="width:14%" />
-					<col style="width:86%" />
+					<col style="width:104px" />
+					<col />
 				</colgroup>
 				<tbody>
 					<tr>
@@ -136,10 +136,10 @@
 			<table>
 				<caption></caption>
 				<colgroup>
-					<col style="width:12%" />
-					<col style="width:38%" />
-					<col style="width:12%" />
-					<col style="width:38%" />
+					<col style="width:104px" />
+					<col />
+					<col style="width:104px" />
+					<col />
 				</colgroup>
 				<tbody>
 					<tr>
@@ -186,10 +186,10 @@
 <div class="tableTy2">
 	<table>
 		<colgroup>
-			<col style="width:12%" />
-			<col style="width:38%" />
-			<col style="width:12%" />
-			<col style="width:38%" />
+			<col style="width:104px" />
+			<col />
+			<col style="width:104px" />
+			<col />
 		</colgroup>
 		<tbody>
 			<tr>
@@ -284,31 +284,20 @@
 		<div class="tableTy1">
 			<table>
 				<colgroup>
-					<col style="width:10%;" />
-					<col style="width:25%;" />
-					<col style="width:35%;" />
-					<col style="width:30%;" />
+				<col style="width:99px" />
+				<col />
+				<col style="width:195px" />
+				<col style="width:85px" />
 				</colgroup>
 				<thead>
 					<tr>
-						<th scope="col">번호</th>
-						<th scope="col">이름</th>
-						<th scope="col">작성자</th>
-						<th scope="col">진행상태</th>
+						<th scope="col">글번호</th>
+						<th scope="col">카테고리명</th>
+						<th scope="col">상태</th>
+						<th scope="col">관리</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td class="tC">
-							<span class="radioBox blindLable"> <!-- 체크박스, 라디오버튼만 나올경우 -->
-								<input type="radio" id="cell1" />
-								<label for="cell1">선택</label>
-							</span>
-						</td>
-						<td>홍길동</td>
-						<td>홍길동</td>
-						<td>진행</td>
-					</tr>
 					<tr>
 						<td class="tC">
 							<span class="checkBox blindLable">
@@ -316,15 +305,26 @@
 								<label for="cell2">선택</label>
 							</span>
 						</td>
-						<td>홍길동</td>
-						<td>홍길동</td>
-						<td>진행</td>
+						<td>비철</td>
+						<td class="tC">사용</td>
+						<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 					</tr>
 					<tr>
-						<td class="tC">1</td>
-						<td>홍길동</td>
-						<td>홍길동</td>
-						<td>진행</td>
+						<td class="tC">
+							<span class="radioBox blindLable"> <!-- 체크박스, 라디오버튼만 나올경우 -->
+								<input type="radio" id="cell1" />
+								<label for="cell1">선택</label>
+							</span>
+						</td>
+						<td>비철</td>
+						<td class="tC">사용</td>
+						<td class="tC"><span class="btnSmall btnRed">관리</span></td>
+					</tr>
+					<tr>
+						<td class="tC">10</td>
+						<td>비철</td>
+						<td class="tC">사용</td>
+						<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 					</tr>
 				</tbody>
 			</table>
@@ -335,34 +335,23 @@
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
 <!-- table_ty01 -->
-<div class="tableTy1">
+<<div class="tableTy1">
 	<table>
 		<colgroup>
-			<col style="width:10%;" />
-			<col style="width:25%;" />
-			<col style="width:35%;" />
-			<col style="width:30%;" />
+		<col style="width:99px" />
+		<col />
+		<col style="width:195px" />
+		<col style="width:85px" />
 		</colgroup>
 		<thead>
 			<tr>
-				<th scope="col">번호</th>
-				<th scope="col">이름</th>
-				<th scope="col">작성자</th>
-				<th scope="col">진행상태</th>
+				<th scope="col">글번호</th>
+				<th scope="col">카테고리명</th>
+				<th scope="col">상태</th>
+				<th scope="col">관리</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td class="tC">
-					<span class="radioBox blindLable">
-						<input type="radio" id="cell1" />
-						<label for="cell1">선택</label>
-					</span>
-				</td>
-				<td>홍길동</td>
-				<td>홍길동</td>
-				<td>진행</td>
-			</tr>
 			<tr>
 				<td class="tC">
 					<span class="checkBox blindLable">
@@ -370,15 +359,26 @@
 						<label for="cell2">선택</label>
 					</span>
 				</td>
-				<td>홍길동</td>
-				<td>홍길동</td>
-				<td>진행</td>
+				<td>비철</td>
+				<td class="tC">사용</td>
+				<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 			</tr>
 			<tr>
-				<td class="tC">1</td>
-				<td>홍길동</td>
-				<td>홍길동</td>
-				<td>진행</td>
+				<td class="tC">
+					<span class="radioBox blindLable"> <!-- 체크박스, 라디오버튼만 나올경우 -->
+						<input type="radio" id="cell1" />
+						<label for="cell1">선택</label>
+					</span>
+				</td>
+				<td>비철</td>
+				<td class="tC">사용</td>
+				<td class="tC"><span class="btnSmall btnRed">관리</span></td>
+			</tr>
+			<tr>
+				<td class="tC">10</td>
+				<td>비철</td>
+				<td class="tC">사용</td>
+				<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 			</tr>
 		</tbody>
 	</table>
@@ -395,7 +395,7 @@
 			<table>
 				<colgroup>
 					<col style="width:134px;" />
-					<col style="width:*" />
+					<col />
 				</colgroup>
 				<tbody>
 					<tr>
@@ -432,26 +432,24 @@
 <div class="tableTy1">
 	<table>
 		<colgroup>
-			<col style="width:10%;" />
-			<col style="width:90%;" />
+			<col style="width:134px;" />
+			<col />
 		</colgroup>
 		<tbody>
 			<tr>
-				<th scope="row">번호</th>
-				<td>
-					<span class="radioBox blindLable">
-						<input type="radio" id="cell1" />
-						<label for="cell1">선택</label>
-					</span>
-				</td>
+				<th scope="row">상품ID</th>
+				<td class="fontColor6"> 시스템자동생성</td>
 			</tr>
 			<tr>
-				<th scope="row">번호</th>
+				<th scope="row">상품카테고리</th>
 				<td>
-					<span class="checkBox blindLable">
-						<input type="checkbox" id="cell2" />
-						<label for="cell2">선택</label>
-					</span>
+					<div class="selectBox" data-form="selectBox">
+						<select title="검색어 분류" id="select0">
+							<option>전체</option>
+							<option>핸드북</option>
+							<option>핸드북</option>
+						</select>
+					</div>
 				</td>
 			</tr>
 			<tr>
@@ -628,49 +626,6 @@
 </xmp>
 </div>
 <!-- //code -->
-
-	<h2 class="h2_guide">03. 페이지네비게이션</h2>
-	<div class="guide_wrap">
-		<!-- paging -->
-		<div class="paging">
-			<a href="#" class="first">맨 처음</a>
-			<a href="#" class="previous">이전</a>
-			<span>
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
-				<a href="#">5</a>
-			</span>
-			<a href="#" class="next">다음</a>
-			<a href="#" class="end">맨 끝</a>
-		</div>
-		<!-- //paging -->
-	</div>
-<div class="d_desc code">
-<xmp class="prettyprint linenums javascript">
-<div class="paging">
-	<a href="#" class="first">맨 처음</a>
-	<a href="#" class="previous">이전</a>
-	<span>
-		<a href="#">1</a>
-		<a href="#">2</a>
-		<a href="#">3</a>
-		<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
-		<a href="#">5</a>
-		<a href="#">6</a>
-		<a href="#">7</a>
-		<a href="#">8</a>
-		<a href="#">9</a>
-		<a href="#">10</a>
-	</span>
-	<a href="#" class="next">다음</a>
-	<a href="#" class="end">맨 끝</a>
-</div>
-</xmp>
-</div>
-<!-- // code -->
-	</div>
 
 </div>
 

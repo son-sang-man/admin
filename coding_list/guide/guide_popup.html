@@ -11,31 +11,38 @@
 	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/resource/js/ui.js"></script>
-	<script type="text/javascript" src="/resource/js/common.js"></script>
 </head>
 <body>
 
 <div id="wrap" class="coding_guide">
 <h1 class="h1_guide">Popup Guide</h1>
 	
-	<h2 class="h2_guide">01. Window Popup 
-		<!-- <a class="btn btnBlue" href="#" onClick="javascript:window.open('/html/popup.html, '팝업명', 'width=450, height=400, scrollbar=yes')"> 팝업열기</a> -->
+	<h2 class="h2_guide">01. Window Popup 연결
+		<a class="btn btnBlue" href="#" onClick="javascript:window.open('/html/popup.html, '팝업명', 'width=450, height=400, scrollbar=yes')"> 팝업열기</a>
 	</h2>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<a class="btn btnBlue" href="#" onClick="javascript:window.open('/html/popup.html, '팝업명', 'width=450, height=400, scrollbar=yes')"> 팝업열기</a>
+
+</xmp>
+	</div>
 	
+	<h2 class="h2_guide">01. Window Popup 
 	<div class="guide_wrap">
 		<!-- popup -->
 		<div class="popup">
-			<div class="popHeader">
+			<header class="popHeader">
 				<h1>POPUP TITLE</h1>
-			</div>
-			<div class="popContent">
+			</header>
+			<section class="popContent">
 			내용
 
-			</div>
-			<div  class="popBottom">
+			</section>
+			<footer class="popBottom">
 				<input type="checkBox" class="todayClose" id="todayClose" />
 				<label for="todayClose">오늘하루 창 닫기</label>
-			</div>
+			</footer>
 			<button type="button" class="close">닫기</button>
 		</div>
 		<!-- //popup -->
@@ -44,20 +51,22 @@
 	<div class="d_desc code">
 <!-- code -->
 <xmp class="prettyprint linenums javascript">
+<!-- popup -->
 <div class="popup">
-	<div class="popHeader">
+	<header class="popHeader">
 		<h1>POPUP TITLE</h1>
-	</div>
-	<div class="popContent">
+	</header>
+	<section class="popContent">
 	내용
 
-	</div>
-	<div  class="popBottom">
+	</section>
+	<footer class="popBottom">
 		<input type="checkBox" class="todayClose" id="todayClose" />
 		<label for="todayClose">오늘하루 창 닫기</label>
-	</div>
+	</footer>
 	<button type="button" class="close">닫기</button>
 </div>
+<!-- //popup -->
 </xmp>
 <!-- //code -->
 	</div>

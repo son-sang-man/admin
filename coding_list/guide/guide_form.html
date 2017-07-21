@@ -104,16 +104,46 @@
 
 	<h2 class="h2_guide">03. datepicker</h2>
 	<div class="guide_wrap">
+		
+		<!-- 단독으로 쓰일경우 -->
 		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
 		~
 		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+
+		<br /><br />
+
+		<!-- 기간설정 버튼조합 -->
+		<div class="dateArea">
+			<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+			~
+			<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+
+			<button type="button" class="btn btnWhite">1주일</button>
+			<button type="button" class="btn btnWhite">1개월</button>
+			<button type="button" class="btn btnWhite">3개월</button>
+		</div>
+
 	</div>
 	<div class="d_desc code">
 <!-- code -->
 <xmp class="prettyprint linenums javascript">
+
+<!-- 단독으로 쓰일경우 -->
 <span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
 ~
 <span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+
+<!-- 기간설정 버튼조합 -->
+<div class="dateArea">
+	<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+	~
+	<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+
+	<button type="button" class="btn btnWhite">1주일</button>
+	<button type="button" class="btn btnWhite">1개월</button>
+	<button type="button" class="btn btnWhite">3개월</button>
+</div>
+
 </xmp>
 	</div>
 
