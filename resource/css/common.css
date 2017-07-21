@@ -2,7 +2,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-20
+* Last Update : 2017-07-20
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -128,11 +128,12 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #header .utill > h1 { width: 226px; height: 32px; }
 #header .utill > h1 > a { display: block; height: 32px; }
 #header .utill > ul { position: absolute; right: 0; top: 20px; }
-#header .utill > ul .user { padding-left: 35px; background: url(/resource/img/bg_user.png) no-repeat left center; color: #c8ceda; }
-#header .utill > ul > li { display: inline-block; height: 27px; font-size: 12px; color: #c8ceda; line-height: 27px; }
-#header .utill > ul > li a { position: relative; display: inline-block; font-size: 12px; color: #c8ceda; }
+#header .utill > ul .user { padding-left: 35px; line-height: 28px; background: url(/resource/img/bg_user.png) no-repeat left center; color: #c8ceda; }
+#header .utill > ul > li { display: inline-block; margin-right: 11px; font-size: 12px; color: #c8ceda; line-height: 28px; }
+#header .utill > ul > li a { position: relative; padding: 0 7px; display: inline-block; font-size: 12px; color: #c8ceda; }
 #header .utill > ul > li a:hover, #header .utill > ul > li a:focus { color: #96c7f4; }
-#header .utill > ul > li:before { content: ""; display: inline-block; width: 1px; height: 11px; background: #c8ceda; margin: 0 11px; }
+#header .utill > ul > li:before { content: ""; display: inline-block; width: 1px; height: 11px; background: #c8ceda; }
+#header .utill > ul > li:first-child { margin-left: 0; }
 #header .utill > ul > li:first-child:before { display: none; }
 
 #gnb > ul { display: inline-block; vertical-align: top; }
@@ -160,7 +161,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
 #skipNavi > a:focus, #skipNavi > a:active { height: auto; width: 100%; padding: 5px; margin-bottom: 10px; position: absolute; left: 0; top: 0; }
 
-#container .location { height: 40px; background: #f9f9f9; border-bottom: 1px solid #ccc; }
+#container .location { height: 40px; background: #f9f9f9; }
 #container .location > ul { width: 1600px; margin: auto; }
 #container .location > ul > li { position: relative; float: left; height: 40px; line-height: 40px; box-sizing: border-box; border-right: 1px solid #ccc; }
 #container .location > ul > li > a { display: block; min-width: 250px; padding-right: 50px; padding-left: 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; box-sizing: border-box; }
@@ -200,7 +201,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 
 #footer { border-top: 2px solid #ccc; border-bottom: 3px solid #f2f5f8; background: #e5e5e5; }
 #footer > div { position: relative; width: 1600px; padding: 20px 0; margin: auto; }
-#footer > div .logoKsa { display: inline-block; width: 156px; height: 47px; margin-top: 10px; }
+#footer > div .logoKsa { display: inline-block; width: 156px; height: 40px; margin-top: 10px; }
 #footer > div .info { margin-left: 20px; display: inline-block; }
 #footer > div .info > ul > li { display: inline-block; padding-right: 5px; padding-left: 5px; margin-left: 5px; border-left: 1px solid #666; height: 11px; line-height: 11px; font-size: 12px; color: #666; }
 #footer > div .info > ul > li:first-child { padding: 0; margin: 0; border: 0; }
@@ -209,33 +210,33 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #footer > div .contact:hover, #footer > div .contact:focus { background: #ff903b url(/resource/img/bg_contact.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; color: #fff; }
 
 /* datepicker */
-.dataBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; background: #087ea5; }
-.dataBox input { border: none; }
+.dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; }
+.dateBox input { border: none; }
 
-.ui-datepicker { width: 222px; display: none; }
+.ui-datepicker { width: 236px; display: none; }
 .ui-datepicker .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
 .ui-datepicker.ui-widget-content { background: #fff; }
-.ui-datepicker .ui-datepicker-header { position: relative; height: 40px; background: #087ea5; line-height: 40px; }
+.ui-datepicker .ui-datepicker-header { position: relative; padding: 10px 0; height: 30px; background: #087ea5; }
 .ui-datepicker .ui-datepicker-prev { position: absolute; top: 0; left: 2px; width: 20px; height: 30px; display: inline-block; background: url(/resource/img/btn_datapicker_prev.png) no-repeat center center; }
 .ui-datepicker .ui-datepicker-next { position: absolute; top: 0; right: 2px; width: 20px; height: 30px; display: inline-block; background: url(/resource/img/btn_datapicker_next.png) no-repeat center center; }
 .ui-datepicker .ui-datepicker-title { overflow: hidden; height: 30px; line-height: 30px; }
 .ui-datepicker .ui-datepicker-title select { float: right; padding: 1px 1px 1px 0; height: 28px; height: 28px; font-size: 12px; color: #666; line-height: 28px; vertical-align: middle; border: 1px solid #bcc5d4; }
 .ui-datepicker .ui-datepicker-title select.ui-datepicker-month { width: 78px; height: 30px; margin: 0 30px 0 5px; padding: 2px 5px; }
 .ui-datepicker .ui-datepicker-title select.ui-datepicker-year { width: 78px; height: 30px; padding: 2px 5px; }
-.ui-datepicker table { width: 100%; font-size: 12px; color: #333; border-collapse: collapse; margin: 10px 0; }
+.ui-datepicker table { width: 196px; font-size: 12px; color: #333; border-collapse: collapse; margin: 10px auto; }
 .ui-datepicker table td span, .ui-datepicker table td a { display: block; width: 22px; height: 22px; line-height: 22px; text-align: center; margin: auto; text-decoration: none; }
-.ui-datepicker table td span:hover, .ui-datepicker table td span:focus, .ui-datepicker table td a:hover, .ui-datepicker table td a:focus { background: #df3232; color: #fff; }
-.ui-datepicker table thead tr:first-child th { padding: 0; height: 26px; line-height: 26px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; text-align: center; }
+.ui-datepicker table td span:hover, .ui-datepicker table td span:focus, .ui-datepicker table td a:hover, .ui-datepicker table td a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
+.ui-datepicker table thead tr:first-child th { padding: 0; height: 26px; line-height: 26px; text-align: center; }
 .ui-datepicker table tbody tr td:first-child a { color: #df3232; }
-.ui-datepicker table tbody tr td:first-child a:hover, .ui-datepicker table tbody tr td:first-child a:focus { background: #df3232; color: #fff; }
+.ui-datepicker table tbody tr td:first-child a:hover, .ui-datepicker table tbody tr td:first-child a:focus { width: 20px; height: 20px; background: #087ea5; border-radius: 10px; color: #fff; }
 .ui-datepicker table tbody tr td:nth-of-type(7) a { color: #326fdf; }
-.ui-datepicker table tbody tr td:nth-of-type(7) a:hover, .ui-datepicker table tbody tr td:nth-of-type(7) a:focus { background: #df3232; color: #fff; }
-.ui-datepicker .ui-datepicker-buttonpane { background-image: none; border: none; }
+.ui-datepicker table tbody tr td:nth-of-type(7) a:hover, .ui-datepicker table tbody tr td:nth-of-type(7) a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; border: none; padding: 0 18px 20px; display: block; vertical-align: top; }
 .ui-datepicker .ui-datepicker-buttonpane button { float: right; overflow: visible; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close { font-size: 11px; color: #666; background: #fff; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float: left; width: 48px; height: 19px; line-height: 19px; font-size: 10px; font-weight: 700; color: #767676; border: 1px solid #acacac; background: #eff1f2; }
 
-.ui-datepicker-trigger { display: inline-block; width: 19px; height: 18px; line-height: 30px; vertical-align: middle; padding: 5px 10px 6px; cursor: pointer; }
+.ui-datepicker-trigger { display: inline-block; width: 37px; height: 32px; line-height: 30px; vertical-align: middle; padding: 5px 10px 6px; font-size: 0; background: url(/resource/img/btn_datapicker.png) no-repeat center; }
 
 /* tab */
 .tab { position: relative; }
@@ -276,24 +277,24 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .dot { display: inline-block; width: 1px; height: 2px; background: #666; text-align: center; margin: 0 2px; }
 
 /* radio */
-.radioBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
-.radioBox:input-child { margin-left: 0; }
+.radioBox { position: relative; display: inline-block; line-height: 24px; vertical-align: middle; }
+.radioBox + .radioBox { margin-right: 20px; }
 .radioBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
-.radioBox input[type="radio"]:checked + label { background: url(/resource/img/bg_radio_on.png) no-repeat 0 5px; }
+.radioBox input[type="radio"]:checked + label { background: url(/resource/img/bg_radio_on.png) no-repeat left center; }
 .radioBox input[type="radio"]:disabled + label { background: url(/resource/img/bg_radio_disable.png) no-repeat 0 5px; }
 .radioBox input[type="radio"]:disabled:checked + label { background: url(/resource/img/bg_radio_disable_on.png) no-repeat 0 5px; }
-.radioBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_radio.png) no-repeat 0 5px; cursor: pointer; }
+.radioBox label { display: block; padding-left: 23px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_radio.png) no-repeat 0 5px; cursor: pointer; }
 .radioBox.blindLable { width: 18px; margin-left: 0; }
 .radioBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 
 /* checkbox */
-.checkBox { position: relative; display: inline-block; margin-left: 20px; line-height: 22px; vertical-align: middle; }
-.checkBox:input-child { margin-left: 0; }
+.checkBox { position: relative; display: inline-block; line-height: 24px; vertical-align: middle; }
+.checkBox + .checkBox { margin-left: 20px; }
 .checkBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
 .checkBox input[type="checkbox"]:checked + label { background: url(/resource/img/bg_check_on.png) no-repeat 0 5px; }
 .checkBox input[type="checkbox"]:disabled + label { background: url(/resource/img/bg_check_disable.png) no-repeat 0 5px; }
 .checkBox input[type="checkbox"]:disabled:checked + label { background: url(/resource/img/bg_check_disable_on.png) no-repeat 0 5px; }
-.checkBox label { display: block; padding-left: 20px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; }
+.checkBox label { display: block; padding-left: 23px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; }
 .checkBox.blindLable { width: 17px; margin-left: 0; }
 .checkBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 
@@ -331,3 +332,11 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .btnRed { background: #ffbfbf; border: 1px solid #f2151a; color: #f2151a; }
 
 .btnGray { background: #f2f2f2; border: 1px solid #bfbfbf; color: #999; }
+
+.popup { position: relative; }
+.popup .popHeader { height: 60px; background: #7d8d9c; }
+.popup .popHeader > h1 { padding-left: 20px; line-height: 60px; font-size: 18px; color: #fff; }
+.popup .popContent { background: #fff; padding: 20px 18px; }
+.popup .popBottom { height: 30px; padding: 0 20px; line-height: 30px; border-top: 1px solid #d5d5d5; background: #e5e5e5; text-align: right; }
+.popup .popBottom .todayClose + label { display: inline-block; font-size: 12px; }
+.popup .close { position: absolute; top: 0; right: 0; width: 60px; height: 60px; background: url(/resource/img/btn_popclose.png) no-repeat; font-size: 0; }
