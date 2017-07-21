@@ -1,12 +1,55 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-19
-* Ver : 1.02
+* Last Update :2017-07-21
+* Ver : 1.00
 */
 
 // UI Module
 var ui = {
+	gnb : {
+		event : function(){
+			// 1 Depth Mouse Event
+			$(document).on({
+				mouseenter : function(){
+					if($(this).find("ul").is(":animated")) return;
+					$(this).addClass("on").attr("title","선택됨").siblings().removeClass("on").removeAttr("title");
+					$(this).find("> ul").slideDown().parent().siblings().find("> ul").slideUp();
+				},
+				mouseleave : function(){
+					if($(this).find("ul").is(":animated")) return;
+					$(this).removeClass("on").removeAttr("title").find("> ul").slideUp();
+				}
+			}, "#gnb > ul > li");
+			// 1 Depth KeyBord Event
+			$(document).on({
+				focusin : function(){
+					if($(this).next("ul").is(":animated")) return;
+					$(this).parent().addClass("on").attr("title","선택됨").siblings().removeClass("on").removeAttr("title");
+					$(this).next("ul").slideDown().parent().siblings().find("> ul").slideUp();
+				}
+			}, "#gnb > ul > li > a");
+			// 2 Depth
+			$(document).on({
+				mouseenter : function(){
+					$(this).attr("title","선택됨").siblings().removeAttr("title");
+					$(this).find("> ul").show().parent().siblings().find("> ul").hide();
+				},
+				mouseleave : function(){
+					$(this).removeAttr("title");
+					$(this).find("> ul").hide();
+				}
+			}, "#gnb > ul > li > ul > li");
+			// 2 Depth KeyBord Event
+			$(document).on({
+				focusin : function(){
+					if($(this).next("ul").is(":animated")) return;
+					$(this).parent().addClass("on").attr("title","선택됨").siblings().removeClass("on").removeAttr("title");
+					$(this).next("ul").slideDown().parent().siblings().find("> ul").slideUp();
+				}
+			}, "#gnb > ul > li > ul > li > a");
+		}
+	},
 	selectBox : {
 		selectOpen : false,
 		/**
@@ -79,7 +122,7 @@ var ui = {
 					if($(this).next("ul").css("display") == "none"){
 						$("[data-form='selectBox']").find("ul").hide();
 						var idx = $(this).closest(".designSelect").next("select").find("option:selected").index();
-						$(this).closest(".designSelect").find("ul").slideDown();
+						$(this).closest(".designSelect").addClass("on").find("ul").slideDown();
 						$(this).attr("title","닫힘");
 						$(this).closest(".designSelect").find("ul li").eq(idx).find("a").focus();
 						ui.selectBox.selectOpen = true;
@@ -95,7 +138,7 @@ var ui = {
 					e.preventDefault();
 					var idx = $(this).parent().index();
 					var text = $(this).text();
-					$(this).closest(".designSelect").find("> button").attr("title","열림").text(text);
+					$(this).closest(".designSelect").removeClass("on").find("> button").attr("title","열림").text(text);
 					$(this).attr("title","선택됨").parent().siblings().find("> a").removeAttr("title");
 					$(this).closest(".designSelect").next("select").find("option").eq(idx).attr("selected","selected").siblings().removeAttr("selected")
 					$(this).closest(".designSelect").next("select").trigger("change");
@@ -107,6 +150,7 @@ var ui = {
 				mouseup: function(e){
 					var $obj =  $("[data-form='selectBox']");
 					if (!$obj.is(e.target) && $obj.has(e.target).length === 0){
+						$obj.find(".designSelect").removeClass("on");
 						$obj.find(".designSelect ul").slideUp();
 						$obj.find(".designSelect button").attr("title","열림");
 						ui.selectBox.selectOpen = false;
@@ -154,6 +198,7 @@ var ui = {
 	 * @function UI initializer
 	**/
 	init : function(){
+		ui.gnb.event();
 		ui.selectBox.init();
 		ui.datePicker.event();
 	}
