@@ -145,7 +145,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #gnb > ul > li:last-child > a { padding-right: 0; }
 #gnb > ul > li.on > a { color: #96c7f4; }
 #gnb > ul > li > a { display: inline-block; padding: 15px; font-size: 18px; color: #c8ceda; height: 24px; }
-#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 38px; box-sizing: border-box; z-index: 1; }
+#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 53px; box-sizing: border-box; z-index: 1; }
 #gnb > ul > li > ul > li { position: relative; }
 #gnb > ul > li > ul > li:first-child > a { border-top: none; }
 #gnb > ul > li > ul > li > a { display: block; min-width: 195px; padding: 8px 28px 8px 10px; font-size: 16px; color: #666; line-height: 24px; box-sizing: border-box; border-top: 1px solid #6a9ed0; }
