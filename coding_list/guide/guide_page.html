@@ -1,17 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 <head>
-	<title>KSSN 한국정보통신망</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="/resource/css/common.css" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
+	<title>Page 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
 	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="/resource/js/ui.js"></script>
 </head>
 <body>
-	<div id="skipNavi">
-		<a href="#container">본문 이동</a>
-	</div>
+	
 	<div id="wrap">
 		<!-- header -->
 		<header id="header">
@@ -64,7 +66,7 @@
 								<li><a href="#">영업활동 조회</a></li>
 								<li><a href="#">견적자 확인 요청</a></li>
 								<li><a href="#">고정거래업체 관리</a></li>
-								<!-- 하위메뉴 2단일 경우 class="colum2" 추가 -->
+								<!-- 하위메뉴 2단일 경우 li에 class="colum2" 추가 -->
 								<li class="depth colum2"><a href="#">영업활동 통계</a>
 									<ul>
 										<li><a href="#">ISO</a></li>
@@ -106,34 +108,38 @@
 			<div class="location">
 				<ul>
 					<li class="home"><a href="#">홈</a></li>
-					<li><a href="#">메뉴1</a> <!-- 하위메뉴 활성화 class="on" 추가 -->
+					<li><!-- 하위메뉴 활성화 li에 class="on" 추가 -->
+						<button type="button">메뉴1</button> 
 						<ul>
-							<li><a href="#">하위메뉴1</a></li>
-							<li><a href="#">하위메뉴1</a></li>
-							<li><a href="#">하위메뉴1</a></li>
+							<li><a href="#"><span>하위메뉴1</span></a></li>
+							<li><a href="#"><span>하위메뉴1</span></a></li>
+							<li><a href="#"><span>하위메뉴1</span></a></li>
 						</ul>
 					</li>
-					<li><a href="#">메뉴2</a>
+					<li>
+						<button type="button">메뉴2</button>
 						<ul>
-							<li><a href="#">하위메뉴2</a></li>
-							<li><a href="#">하위메뉴2</a></li>
-							<li><a href="#">하위메뉴2</a></li>
+							<li><a href="#"><span>하위메뉴2</span></a></li>
+							<li><a href="#"><span>하위메뉴2</span></a></li>
+							<li><a href="#"><span>하위메뉴2</span></a></li>
 						</ul>
 					</li>
-					<li class="last"><a href="#" T>메뉴3</a><!--  최종 로케이션일 경우 class="last" 추가 -->
+					<li class="last"><!--  최종 로케이션일 경우 li에 class="last" 추가 -->
+						<button type="button">메뉴3</button>
 						<ul>
-							<li><a href="#">하위메뉴3</a></li>
-							<li><a href="#">하위메뉴3</a></li>
-							<li><a href="#">하위메뉴3</a></li>
+							<li><a href="#"><span>하위메뉴3</span></a></li>
+							<li><a href="#"><span>하위메뉴3</span></a></li>
+							<li><a href="#"><span>하위메뉴3</span></a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 			<div class="contentsTop"><h2 class="title1">대 타이틀 : 견적 의뢰 정보</h2></div>
-			
-			<!-- contents--> 
+
+			<!-- contents -->
 			<section id="contents">
 				<h3 class="title2">레이아웃 2단</h3>
+				
 				<atricle class="contentsArea col2">
 					<div>
 						<div style="background:#eee;height:58px;">컨텐츠1</div>
@@ -155,7 +161,6 @@
 							<div style="background:#eee;height:58px;">컨텐츠3</div>
 					</div>
 				</atricle>
-
 			</section>
 			<!-- //contents -->
 		</div>
@@ -174,15 +179,55 @@
 					<address>(우153-787) 서울특별시 금천구 가산디지털1로 145 (가산동 371-50) 에이스하이엔드타워 3차 </address>
 					Copyright (C) 2017 KSA. All rights reserved
 				</div>
-				<a href="#" class="btn btnBlue contact">담당자별 연락처보기</a>
+				<a href="#" class="btn btnWhite contact">담당자별 연락처보기</a>
 			</div>
 		</footer>
 		<!-- //footer -->
-
+		
 	</div>
 	<!-- //wrap -->
 	<script>
 		ui.init();
 	</script>
+
+
+	<div id="wrap" class="coding_guide" style="margin-top:50px;">
+		<h1 class="h1_guide">Page Guide</h1>
+		<h2 class="h2_guide">01. Page 가이드 </h2>
+		<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<!-- 레이아웃 2단 -->
+<atricle class="contentsArea col2">
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠1</div>
+	</div>
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠2</div>
+	</div>
+</atricle>
+
+<!-- 레이아웃 3단 -->
+<atricle class="contentsArea col3">
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠1</div>
+	</div>
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠2</div>
+	</div>
+	<div>
+			<div style="background:#eee;height:58px;">컨텐츠3</div>
+	</div>
+</atricle>
+</xmp>
+<!-- code -->
+		</div>
+	</div>
+
+
+
+
+	</div>
+	<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
 </body>
 </html>
