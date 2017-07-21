@@ -523,7 +523,7 @@ body{
 				border:1px solid #6a9fd1;
 				position:absolute;
 				left:0;
-				top:53px;
+				top:54px;
 				box-sizing:border-box;
 				z-index:1;
 				> li{
@@ -584,7 +584,7 @@ body{
 						position:absolute;
 						left:195px;
 						width:195px;
-						top:0;
+						top:-1px;
 						z-index:2;
 						>li{
 							> a{
@@ -956,8 +956,9 @@ body{
 	.ui-datepicker-title{
 		overflow:hidden;
 		height:25px;
-		width:130px;
+		width:140px;
 		margin:auto;
+		text-align:center;
 	}
 	.ui-datepicker-title{
 		select {
@@ -968,16 +969,15 @@ body{
 			color:$color0;
 			vertical-align:middle;
 			background:#fff url(#{$img-common}bg_selectdate.png) no-repeat right center;
+			padding-right:23px;
 			&:hover{
 				background-image:url(#{$img-common}bg_selectdate_over.png) no-repeat;
 			}
 			&.ui-datepicker-month{
-				width:52px;
 				border:1px solid #ef8514;
 			}
 			&.ui-datepicker-year{
 				border:1px solid #8acadf;
-				width:69px;
 				margin-right:5px;
 
 			}
@@ -1060,7 +1060,12 @@ body{
 	.ui-datepicker-buttonpane {
 		display:none;
 	}
-
+	.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight:bold;
+}	
+	
 }
 .ui-datepicker-trigger{
 	display:inline-block;

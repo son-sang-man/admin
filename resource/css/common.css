@@ -143,7 +143,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #gnb > ul > li:first-child > a { padding-left: 0; }
 #gnb > ul > li.on > a { color: #96c7f4; }
 #gnb > ul > li > a { display: inline-block; padding: 15px; font-size: 18px; color: #c8ceda; height: 24px; }
-#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 53px; box-sizing: border-box; z-index: 1; }
+#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 54px; box-sizing: border-box; z-index: 1; }
 #gnb > ul > li > ul > li { position: relative; }
 #gnb > ul > li > ul > li:first-child > a { border-top: none; }
 #gnb > ul > li > ul > li > a { display: block; min-width: 195px; padding: 8px 28px 8px 10px; font-size: 16px; color: #666; line-height: 24px; box-sizing: border-box; border-top: 1px solid #6a9ed0; }
@@ -153,7 +153,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #gnb > ul > li > ul > li.depth.on > ul { display: block; }
 #gnb > ul > li > ul > li.depth.on > a { color: #fff; background: #6a9fd1 url(/resource/img/bg_gnb_arrow_over.png) no-repeat right center; }
 #gnb > ul > li > ul > li.depth.colum2 > ul li { width: 50%; float: left; box-sizing: border-box; display: inline-block; }
-#gnb > ul > li > ul > li > ul { display: none; background: #fff; padding: 10px 0; border: 1px solid #6a9fd1; position: absolute; left: 195px; width: 195px; top: 0; z-index: 2; }
+#gnb > ul > li > ul > li > ul { display: none; background: #fff; padding: 10px 0; border: 1px solid #6a9fd1; position: absolute; left: 195px; width: 195px; top: -1px; z-index: 2; }
 #gnb > ul > li > ul > li > ul > li > a { display: block; padding: 0 10px; font-size: 14px; color: #666; line-height: 24px; box-sizing: border-box; }
 #gnb > ul > li > ul > li > ul > li > a:hover, #gnb > ul > li > ul > li > ul > li > a:focus { color: #699fd0; }
 
@@ -222,11 +222,11 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-prev:focus { background: url(/resource/img/btn_datapicker_prev_over.png) no-repeat center center; }
 .ui-datepicker .ui-datepicker-next { position: absolute; top: 10px; right: 16px; width: 25px; height: 25px; display: inline-block; background: #05495f; border-radius: 10px; background: url(/resource/img/btn_datapicker_next.png) no-repeat center center; }
 .ui-datepicker .ui-datepicker-next:hover, .ui-datepicker .ui-datepicker-next:focus { background: url(/resource/img/btn_datapicker_next_over.png) no-repeat center center; }
-.ui-datepicker .ui-datepicker-title { overflow: hidden; height: 25px; width: 130px; margin: auto; }
-.ui-datepicker .ui-datepicker-title select { float: right; padding-left: 8px; height: 25px; font-size: 14px; color: #666; vertical-align: middle; background: #fff url(/resource/img/bg_selectdate.png) no-repeat right center; }
+.ui-datepicker .ui-datepicker-title { overflow: hidden; height: 25px; width: 140px; margin: auto; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { float: right; padding-left: 8px; height: 25px; font-size: 14px; color: #666; vertical-align: middle; background: #fff url(/resource/img/bg_selectdate.png) no-repeat right center; padding-right: 23px; }
 .ui-datepicker .ui-datepicker-title select:hover { background-image: url(/resource/img/bg_selectdate_over.png) no-repeat; }
-.ui-datepicker .ui-datepicker-title select.ui-datepicker-month { width: 52px; border: 1px solid #ef8514; }
-.ui-datepicker .ui-datepicker-title select.ui-datepicker-year { border: 1px solid #8acadf; width: 69px; margin-right: 5px; }
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-month { border: 1px solid #ef8514; }
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year { border: 1px solid #8acadf; margin-right: 5px; }
 .ui-datepicker table { width: 196px; font-size: 13px; color: #333; border-collapse: collapse; margin: 10px auto; }
 .ui-datepicker table td span, .ui-datepicker table td a { display: block; width: 22px; height: 22px; line-height: 21px; text-align: center; margin: auto; text-decoration: none; }
 .ui-datepicker table td span:hover, .ui-datepicker table td span:focus, .ui-datepicker table td a:hover, .ui-datepicker table td a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
@@ -238,6 +238,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .ui-datepicker table tbody tr td:nth-of-type(7) a { color: #326fdf; }
 .ui-datepicker table tbody tr td:nth-of-type(7) a:hover, .ui-datepicker table tbody tr td:nth-of-type(7) a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
 .ui-datepicker .ui-datepicker-buttonpane { display: none; }
+.ui-datepicker .ui-priority-primary, .ui-datepicker .ui-widget-content .ui-priority-primary, .ui-datepicker .ui-widget-header .ui-priority-primary { font-weight: bold; }
 
 .ui-datepicker-trigger { display: inline-block; width: 32px; height: 32px; vertical-align: top; font-size: 0; background: url(/resource/img/btn_datapicker.png) no-repeat center; }
 
