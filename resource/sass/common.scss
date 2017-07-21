@@ -513,9 +513,6 @@ body{
 				font-size:18px;
 				color:#c8ceda;
 				height:24px;
-				&:hover,
-				&:focus{
-				}
 			}
 			> ul {
 				display:none;
@@ -525,7 +522,7 @@ body{
 				left:0;
 				top:53px;
 				box-sizing:border-box;
-				z-index:1;
+				z-index:2;
 				> li{
 					position:relative;
 					&:first-child{
@@ -661,7 +658,7 @@ body{
 					text-align:left;
 				}
 				> ul {
-					display:none;
+					visibility:hidden;
 					border:none;
 					background:#fff;
 					position:absolute;
@@ -704,7 +701,7 @@ body{
 				&:hover,
 				&:focus,
 				&:active{
-					background:#ff904b url(#{$img-common}bg_home.png) no-repeat center center;
+					background-color:#ff904b;
 				}
 				> a{
 					display:block;
@@ -952,14 +949,14 @@ body{
 			vertical-align:middle;
 				width:78px;
 				height:23x;
-			
+
 			&.ui-datepicker-month{
 				margin:0 30px 0 5px;
 				padding:2px 5px;
 				border:1px solid #bcc5d4;
 			}
 			&.ui-datepicker-year{
-				
+
 				padding:2px 5px;
 				border:1px solid #bcc5d4;
 			}
@@ -1196,14 +1193,14 @@ table{
 			&:first-child{
 				border-left:0;
 			}
-			
+
 		}
 	}
 	tbody{
 		th{
 			border-top:1px solid #d5d5d5;
 			border-left:1px solid #d5d5d5;
-			
+
 		}
 		td{
 			border-top:1px solid #d5d5d5;
@@ -1526,7 +1523,7 @@ table{
 	border:1px solid #f2151a;
 	color:#f2151a;
 }
-	
+
 .btnGray{
 	background:#f2f2f2;
 	border:1px solid #bfbfbf;
