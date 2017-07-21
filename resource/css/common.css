@@ -164,13 +164,13 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 
 #container .location { height: 40px; background: #f9f9f9; }
 #container .location > ul { width: 1600px; margin: auto; }
-#container .location > ul > li { position: relative; float: left; height: 40px; line-height: 40px; box-sizing: border-box; border-right: 1px solid #ccc; }
+#container .location > ul > li { position: relative; float: left; line-height: 40px; box-sizing: border-box; border-right: 1px solid #ccc; }
 #container .location > ul > li > button { display: block; min-width: 250px; padding-right: 50px; padding-left: 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; box-sizing: border-box; text-align: left; }
 #container .location > ul > li > ul { display: none; border: none; background: #fff; position: absolute; width: 100%; z-index: 1; margin-left: -1px; border: 1px solid #ccc; }
-#container .location > ul > li > ul li:first-child a:before { display: none; }
+#container .location > ul > li > ul li:first-child a span { border-top: none; }
 #container .location > ul > li > ul li a { display: block; position: relative; font-size: 14px; color: #666; height: 40px; line-height: 40px; padding: 0 20px; }
 #container .location > ul > li > ul li a:hover, #container .location > ul > li > ul li a:focus { color: #7c9dbc; }
-#container .location > ul > li > ul li a:before { content: ""; display: block; color: #666; background: #ccc; width: 210px; height: 1px; text-align: center; }
+#container .location > ul > li > ul li a > span { display: block; border-top: 1px solid #ccc; }
 #container .location > ul .home { min-width: 56px; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat center center; }
 #container .location > ul .home:hover, #container .location > ul .home:focus, #container .location > ul .home:active { background: #ff904b url(/resource/img/bg_home.png) no-repeat center center; }
 #container .location > ul .home > a { display: block; position: absolute; width: 56px; height: 40px; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
@@ -222,9 +222,9 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .ui-datepicker .ui-datepicker-prev { position: absolute; top: 0; left: 2px; width: 20px; height: 30px; display: inline-block; background: url(/resource/img/btn_datapicker_prev.png) no-repeat center center; }
 .ui-datepicker .ui-datepicker-next { position: absolute; top: 0; right: 2px; width: 20px; height: 30px; display: inline-block; background: url(/resource/img/btn_datapicker_next.png) no-repeat center center; }
 .ui-datepicker .ui-datepicker-title { overflow: hidden; height: 30px; line-height: 30px; }
-.ui-datepicker .ui-datepicker-title select { float: right; padding: 1px 1px 1px 0; height: 28px; height: 28px; font-size: 12px; color: #666; line-height: 28px; vertical-align: middle; border: 1px solid #bcc5d4; }
-.ui-datepicker .ui-datepicker-title select.ui-datepicker-month { width: 78px; height: 30px; margin: 0 30px 0 5px; padding: 2px 5px; }
-.ui-datepicker .ui-datepicker-title select.ui-datepicker-year { width: 78px; height: 30px; padding: 2px 5px; }
+.ui-datepicker .ui-datepicker-title select { float: right; padding: 1px 1px 1px 0; height: 28px; height: 28px; font-size: 12px; color: #666; line-height: 28px; vertical-align: middle; width: 78px; height: 23x; }
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-month { margin: 0 30px 0 5px; padding: 2px 5px; border: 1px solid #bcc5d4; }
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year { padding: 2px 5px; border: 1px solid #bcc5d4; }
 .ui-datepicker table { width: 196px; font-size: 12px; color: #333; border-collapse: collapse; margin: 10px auto; }
 .ui-datepicker table td span, .ui-datepicker table td a { display: block; width: 22px; height: 22px; line-height: 22px; text-align: center; margin: auto; text-decoration: none; }
 .ui-datepicker table td span:hover, .ui-datepicker table td span:focus, .ui-datepicker table td a:hover, .ui-datepicker table td a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
@@ -238,7 +238,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close { font-size: 11px; color: #666; background: #fff; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float: left; width: 48px; height: 19px; line-height: 19px; font-size: 10px; font-weight: 700; color: #767676; border: 1px solid #acacac; background: #eff1f2; }
 
-.ui-datepicker-trigger { display: inline-block; width: 37px; height: 32px; line-height: 30px; vertical-align: middle; padding: 5px 10px 6px; font-size: 0; background: url(/resource/img/btn_datapicker.png) no-repeat center; }
+.ui-datepicker-trigger { display: inline-block; width: 34px; height: 34px; line-height: 30px; vertical-align: middle; padding: 5px 10px 6px; font-size: 0; background: url(/resource/img/btn_datapicker.png) no-repeat center; }
 
 /* tab */
 .tab { position: relative; }
