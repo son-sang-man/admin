@@ -1430,34 +1430,34 @@ table{
 		}
 	}
 	.first{
-		background:#fff url(#{$img-common}bg_page_first.png) no-repeat center;
+		background:#fff url(#{$img-common}btn_page_first.png) no-repeat center;
 		&:hover,
 		&:focus{
-			background-image:url(#{$img-common}bg_page_first_over.png);
+			background-image:url(#{$img-common}btn_page_first_over.png);
 		}
 
 	}
 	.previous{
-		background:#fff url(#{$img-common}bg_page_previous.png) no-repeat center;
+		background:#fff url(#{$img-common}btn_page_previous.png) no-repeat center;
 		margin-left:-5px;
 		&:hover,
 		&:focus{
-			background-image:url(#{$img-common}bg_page_previous_over.png);
+			background-image:url(#{$img-common}btn_page_previous_over.png);
 		}
 	}
 	.next{
-		background:#fff url(#{$img-common}bg_page_next.png) no-repeat center;
+		background:#fff url(#{$img-common}btn_page_next.png) no-repeat center;
 		&:hover,
 		&:focus{
-			background-image:url(#{$img-common}bg_page_next_over.png);
+			background-image:url(#{$img-common}btn_page_next_over.png);
 		}
 	}
 	.end{
-		background:#fff url(#{$img-common}bg_page_end.png) no-repeat center;
+		background:#fff url(#{$img-common}btn_page_end.png) no-repeat center;
 		margin-left:-5px;
 		&:hover,
 		&:focus{
-			background-image:url(#{$img-common}bg_page_end_over.png);
+			background-image:url(#{$img-common}btn_page_end_over.png);
 		}
 	}
 }

@@ -308,14 +308,14 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .paging > span > a { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; }
 .paging > span strong { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; font-weight: normal; }
 .paging > span strong.on, .paging > span strong:hover, .paging > span strong:focus { color: #7c9dbc; background: #7e9fbd; transition: all 0.3s; }
-.paging .first { background: #fff url(/resource/img/bg_page_first.png) no-repeat center; }
-.paging .first:hover, .paging .first:focus { background-image: url(/resource/img/bg_page_first_over.png); }
-.paging .previous { background: #fff url(/resource/img/bg_page_previous.png) no-repeat center; margin-left: -5px; }
-.paging .previous:hover, .paging .previous:focus { background-image: url(/resource/img/bg_page_previous_over.png); }
-.paging .next { background: #fff url(/resource/img/bg_page_next.png) no-repeat center; }
-.paging .next:hover, .paging .next:focus { background-image: url(/resource/img/bg_page_next_over.png); }
-.paging .end { background: #fff url(/resource/img/bg_page_end.png) no-repeat center; margin-left: -5px; }
-.paging .end:hover, .paging .end:focus { background-image: url(/resource/img/bg_page_end_over.png); }
+.paging .first { background: #fff url(/resource/img/btn_page_first.png) no-repeat center; }
+.paging .first:hover, .paging .first:focus { background-image: url(/resource/img/btn_page_first_over.png); }
+.paging .previous { background: #fff url(/resource/img/btn_page_previous.png) no-repeat center; margin-left: -5px; }
+.paging .previous:hover, .paging .previous:focus { background-image: url(/resource/img/btn_page_previous_over.png); }
+.paging .next { background: #fff url(/resource/img/btn_page_next.png) no-repeat center; }
+.paging .next:hover, .paging .next:focus { background-image: url(/resource/img/btn_page_next_over.png); }
+.paging .end { background: #fff url(/resource/img/btn_page_end.png) no-repeat center; margin-left: -5px; }
+.paging .end:hover, .paging .end:focus { background-image: url(/resource/img/btn_page_end_over.png); }
 
 /* button */
 .btnArea { text-align: center; }
