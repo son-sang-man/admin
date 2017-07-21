@@ -639,7 +639,7 @@ body{
 
 #container{
 	.location{
-		height:40px;
+		height:41px;
 		background:#f9f9f9;
 		> ul{
 			width:1600px;
@@ -647,7 +647,7 @@ body{
 			> li{
 				position:relative;
 				float:left;
-				line-height:40px;
+				line-height:41px;
 				box-sizing:border-box;
 				border-right:1px solid #ccc;
 				> button {
@@ -655,7 +655,7 @@ body{
 					min-width:250px;
 					padding-right:50px;
 					padding-left:20px;
-					height:40px;
+					height:41px;
 					background:url(#{$img-common}bg_select.png) no-repeat right center;
 					box-sizing:border-box;
 					text-align:left;
@@ -699,17 +699,18 @@ body{
 			}
 			.home{
 				width:56px;
-				height:40px;
-				background:#7c9dbc url(#{$img-common}bg_home.png) no-repeat center center;
+				height:41px;
+				background:#7c9dbc url(#{$img-common}bg_home.png) no-repeat;
 				&:hover,
 				&:focus,
 				&:active{
-					background:#ff904b url(#{$img-common}bg_home.png) no-repeat center center;
+					background:#ff904b url(#{$img-common}bg_home.png) no-repeat;
 				}
 				> a{
 					display:block;
 					position:absolute;
-					height:40px;
+					width:56px;
+					height:41px;
 					border:0;
 					overflow:hidden;
 					font-size:0;
@@ -908,66 +909,83 @@ body{
 	//display:none;
 	.ui-icon {
 		display:block;
-		text-indent:-99999px;
 		overflow:hidden;
-		background-repeat:no-repeat;
+		font-size:0;
+		height:0;
 	}
 	&.ui-widget-content{
 		background:#fff;
+		border:1px solid #ccc;
 	}
 	.ui-datepicker-header{
 		position:relative;
 		padding:10px 0;
-		height:30px;
 		background:#087ea5;
 	}
 	.ui-datepicker-prev{
 		position:absolute;
-		top:0;
-		left:2px;
-		width:20px;
-		height:30px;
+		top:10px;
+		left:16px;
+		width:25px;
+		height:25px;
 		display:inline-block;
-		background:url(#{$img-common}btn_datapicker_prev.png) no-repeat center center;
+		background:#05495f;
+		border-radius:10px;
+		background:url(#{$img-common}btn_datapicker_prev.png) no-repeat center center;	
+		&:hover,
+		&:focus{
+			background:url(#{$img-common}btn_datapicker_prev_over.png) no-repeat center center;	
+
+		}
 	}
 	.ui-datepicker-next{
 		position:absolute;
-		top:0;
-		right:2px;
-		width:20px;
+		top:10px;
+		right:16px;
+		width:25px;
 		height:25px;
 		display:inline-block;
+		background:#05495f;
+		border-radius:10px;
 		background:url(#{$img-common}btn_datapicker_next.png) no-repeat center center;
+		&:hover,
+		&:focus{
+			background:url(#{$img-common}btn_datapicker_next_over.png) no-repeat center center;	
+		}
 	}
 	.ui-datepicker-title{
 		overflow:hidden;
 		height:25px;
-		line-height:25px;
+		width:130px;
+		margin:auto;
 	}
 	.ui-datepicker-title{
 		select {
 			float:right;
-			padding:0 8px;
-			height:28px;
-			height:28px;
-			font-size:12px;
+			padding-left:8px;
+			height:25px;
+			font-size:14px;
 			color:$color0;
 			vertical-align:middle;
-			width:78px;
-			height:23x;
-			
+			background:#fff url(#{$img-common}bg_selectdate.png) no-repeat right center;
+			&:hover{
+				background-image:url(#{$img-common}bg_selectdate_over.png) no-repeat;
+			}
 			&.ui-datepicker-month{
-				margin:0 30px 0 5px;
+				width:52px;
 				border:1px solid #ef8514;
 			}
 			&.ui-datepicker-year{
 				border:1px solid #8acadf;
+				width:69px;
+				margin-right:5px;
+
 			}
 		}
 	}
 	table{
 		width:196px;
-		font-size:12px;
+		font-size:13px;
 		color:#333;
 		border-collapse:collapse;
 		margin:10px auto;
@@ -977,7 +995,7 @@ body{
 				display:block;
 				width:22px;
 				height:22px;
-				line-height:22px;
+				line-height:21px;
 				text-align:center;
 				margin:auto;
 				text-decoration:none;
@@ -997,6 +1015,13 @@ body{
 						height:26px;
 						line-height:26px;
 						text-align:center;
+						color:#7e8da3;
+						&:first-child{
+							color:#ee1c23;
+						}
+						&:last-child{
+							color:#3462cc;
+						}
 					}
 				}
 			}
@@ -1006,7 +1031,7 @@ body{
 				td{
 					&:first-child{
 						a{
-							color:#df3232;
+							color:#697685;
 							&:hover,
 							&:focus{
 								width:20px;
@@ -1033,32 +1058,7 @@ body{
 		}
 	}
 	.ui-datepicker-buttonpane {
-		background-image:none;
-		border:none;
-		padding:0 18px 20px;
-		display:block;
-		vertical-align:top;
-		button {
-			float:right;
-			overflow:visible;
-			&.ui-datepicker-close{
-				font-size:11px;
-				color:$color0;
-				background:#fff;
-			}
-			&.ui-datepicker-current{
-				float:left;
-				width:48px;
-				height:19px;
-				line-height:19px;
-				font-size:10px;
-				@include weight("B");
-				color:#767676;
-				border:1px solid #acacac;
-				background:#eff1f2;
-			}
-		}
-
+		display:none;
 	}
 
 }
@@ -1424,6 +1424,7 @@ table{
 			&:hover,
 			&:focus{
 				color:$color2;
+				background:#7e9fbd;
 				transition:all 0.3s;
 			}
 		}
