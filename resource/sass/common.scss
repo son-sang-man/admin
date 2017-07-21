@@ -357,7 +357,8 @@ body{
 		background:#fff;
 		&.on{
 			button{
-				background:url(#{$img-common}bg_select_over.png) no-repeat right center;
+				border:2px solid #7c9dbc;
+				background-image:url(#{$img-common}bg_select_over.png) no-repeat;
 			}
 		}
 		button{
@@ -380,23 +381,19 @@ body{
 		border:1px solid #ccc;
 		position:absolute;
 		left:0;
+		top:34px;
 		box-sizing:border-box;
 		width:100%;
+		padding:10px 0;
 		z-index:1;
 		li{
-			&:first-child{
-				> a{
-					border-top:none;
-				}
-			}
+
 			a{
 				display:block;
-				margin:0 20px;
-				font-size:16px;
+				padding:0 10px;
+				font-size:13px;
 				color:#666;
-				height:40px;
-				line-height:40px;
-				border-top:1px solid #ccc;
+				line-height:22px;
 				text-align:left;
 				&:hover,
 				&:focus{
@@ -663,7 +660,8 @@ body{
 				&:focus{
 					background:url(#{$img-common}bg_select_over.png) no-repeat right center;
 				}
-				> a{
+				> button{
+
 					display:block;
 					min-width:250px;
 					padding-right:50px;
@@ -671,6 +669,7 @@ body{
 					height:40px;
 					background:url(#{$img-common}bg_select.png) no-repeat right center;
 					box-sizing:border-box;
+					text-align:left;
 				}
 				> ul {
 					display:none;
@@ -681,8 +680,11 @@ body{
 					left:0;
 					width:100%;
 					z-index:1;
+					padding:0 20px;
 					margin-left:-1px;
+					box-sizing:border-box;
 					li{
+						width:100%;
 						&:first-child{
 							> a{
 								border-top:none;
@@ -690,7 +692,6 @@ body{
 						}
 						a{
 							display:block;
-							margin:0 20px;
 							font-size:16px;
 							color:#666;
 							height:40px;
@@ -705,7 +706,6 @@ body{
 				}
 			}
 			.home{
-				width:56px;
 				min-width:56px;
 				background:#7c9dbc url(#{$img-common}bg_home.png) no-repeat center center;
 				&:hover,
@@ -716,8 +716,8 @@ body{
 				> a{
 					display:block;
 					position:absolute;
-					width:0;
-					height:0;
+					width:56px;
+					height:40px;
 					border:0;
 					overflow:hidden;
 					font-size:0;
@@ -726,7 +726,7 @@ body{
 				}
 			}
 			.last{
-				> a{
+				> button{
 					color:$color2;
 				}
 			}
@@ -1555,7 +1555,9 @@ table{
 	.popContent{
 		background:#fff;
 		padding:20px 18px;
-		min-height:340px
+		min-height:340px;
+		font-size:13px;
+		color:$color0;
 	}
 	.popBottom{
 		height:30px;
@@ -1568,7 +1570,8 @@ table{
 			+ label{
 				display:inline-block;
 				font-size:12px;
-				cursor:pointer;
+				color:$color0;
+				vertical-align:top;
 			}
 		}
 	}
