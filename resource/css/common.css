@@ -141,7 +141,6 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #gnb > ul { display: inline-block; vertical-align: top; }
 #gnb > ul > li { position: relative; float: left; }
 #gnb > ul > li:first-child > a { padding-left: 0; }
-#gnb > ul > li:last-child > a { padding-right: 0; }
 #gnb > ul > li.on > a { color: #96c7f4; }
 #gnb > ul > li > a { display: inline-block; padding: 15px; font-size: 18px; color: #c8ceda; height: 24px; }
 #gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 53px; box-sizing: border-box; z-index: 1; }
@@ -166,13 +165,12 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #container .location { height: 40px; background: #f9f9f9; }
 #container .location > ul { width: 1600px; margin: auto; }
 #container .location > ul > li { position: relative; float: left; height: 40px; line-height: 40px; box-sizing: border-box; border-right: 1px solid #ccc; }
-#container .location > ul > li:hover, #container .location > ul > li:focus { background: url(/resource/img/bg_select_over.png) no-repeat right center; }
 #container .location > ul > li > button { display: block; min-width: 250px; padding-right: 50px; padding-left: 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; box-sizing: border-box; text-align: left; }
-#container .location > ul > li > ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; width: 100%; z-index: 1; padding: 0 20px; margin-left: -1px; box-sizing: border-box; }
-#container .location > ul > li > ul li { width: 100%; }
-#container .location > ul > li > ul li:first-child > a { border-top: none; }
-#container .location > ul > li > ul li a { display: block; font-size: 16px; color: #666; height: 40px; line-height: 40px; border-top: 1px solid #ccc; }
+#container .location > ul > li > ul { display: none; border: none; background: #fff; position: absolute; width: 100%; z-index: 1; margin-left: -1px; border: 1px solid #ccc; }
+#container .location > ul > li > ul li:first-child a:before { display: none; }
+#container .location > ul > li > ul li a { display: block; position: relative; font-size: 14px; color: #666; height: 40px; line-height: 40px; padding: 0 20px; }
 #container .location > ul > li > ul li a:hover, #container .location > ul > li > ul li a:focus { color: #7c9dbc; }
+#container .location > ul > li > ul li a:before { content: ""; display: block; color: #666; background: #ccc; width: 210px; height: 1px; text-align: center; }
 #container .location > ul .home { min-width: 56px; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat center center; }
 #container .location > ul .home:hover, #container .location > ul .home:focus, #container .location > ul .home:active { background: #ff904b url(/resource/img/bg_home.png) no-repeat center center; }
 #container .location > ul .home > a { display: block; position: absolute; width: 56px; height: 40px; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
