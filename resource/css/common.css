@@ -212,8 +212,8 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #footer > div .contact:hover, #footer > div .contact:focus { background: #ff903b url(/resource/img/bg_contact.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; color: #fff; }
 
 /* datepicker */
-.dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; }
-.dateBox input { border: none; }
+.dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; height: 32px; vertical-align: middle; }
+.dateBox input { height: 32px; line-height: 32px; border: none; }
 
 .ui-datepicker { width: 236px; display: none; }
 .ui-datepicker .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
@@ -238,7 +238,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close { font-size: 11px; color: #666; background: #fff; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float: left; width: 48px; height: 19px; line-height: 19px; font-size: 10px; font-weight: 700; color: #767676; border: 1px solid #acacac; background: #eff1f2; }
 
-.ui-datepicker-trigger { display: inline-block; width: 34px; height: 34px; line-height: 30px; vertical-align: middle; padding: 5px 10px 6px; font-size: 0; background: url(/resource/img/btn_datapicker.png) no-repeat center; }
+.ui-datepicker-trigger { display: inline-block; width: 32px; height: 32px; vertical-align: top; font-size: 0; background: url(/resource/img/btn_datapicker.png) no-repeat center; }
 
 /* tab */
 .tab { position: relative; }
