@@ -679,18 +679,18 @@ body{
 						}
 						a{
 							display:block;
-							position: relative;
-							font-size:14px;
-							color:#666;
-							height:40px;
-							line-height:40px;
 							padding:0 20px;
 							&:hover,
 							&:focus{
-								color:#7c9dbc;
+								> span{
+									color:#7c9dbc;
+								}
 							}
 							> span{
 								display:block;
+								font-size:14px;
+								color:#666;
+								line-height:40px;
 								border-top:1px solid #ccc;
 							}
 						}
@@ -698,7 +698,8 @@ body{
 				}
 			}
 			.home{
-				min-width:56px;
+				width:56px;
+				height:40px;
 				background:#7c9dbc url(#{$img-common}bg_home.png) no-repeat center center;
 				&:hover,
 				&:focus,
@@ -708,7 +709,6 @@ body{
 				> a{
 					display:block;
 					position:absolute;
-					width:56px;
 					height:40px;
 					border:0;
 					overflow:hidden;

@@ -168,12 +168,12 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #container .location > ul > li > button { display: block; min-width: 250px; padding-right: 50px; padding-left: 20px; height: 40px; background: url(/resource/img/bg_select.png) no-repeat right center; box-sizing: border-box; text-align: left; }
 #container .location > ul > li > ul { display: none; border: none; background: #fff; position: absolute; width: 100%; z-index: 1; margin-left: -1px; border: 1px solid #ccc; }
 #container .location > ul > li > ul li:first-child a span { border-top: none; }
-#container .location > ul > li > ul li a { display: block; position: relative; font-size: 14px; color: #666; height: 40px; line-height: 40px; padding: 0 20px; }
-#container .location > ul > li > ul li a:hover, #container .location > ul > li > ul li a:focus { color: #7c9dbc; }
-#container .location > ul > li > ul li a > span { display: block; border-top: 1px solid #ccc; }
-#container .location > ul .home { min-width: 56px; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat center center; }
+#container .location > ul > li > ul li a { display: block; padding: 0 20px; }
+#container .location > ul > li > ul li a:hover > span, #container .location > ul > li > ul li a:focus > span { color: #7c9dbc; }
+#container .location > ul > li > ul li a > span { display: block; font-size: 14px; color: #666; line-height: 40px; border-top: 1px solid #ccc; }
+#container .location > ul .home { width: 56px; height: 40px; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat center center; }
 #container .location > ul .home:hover, #container .location > ul .home:focus, #container .location > ul .home:active { background: #ff904b url(/resource/img/bg_home.png) no-repeat center center; }
-#container .location > ul .home > a { display: block; position: absolute; width: 56px; height: 40px; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
+#container .location > ul .home > a { display: block; position: absolute; height: 40px; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
 #container .location > ul .last > button { color: #7c9dbc; }
 
 .contentsTop { background: #fff; border: 1px solid #ccc; }
