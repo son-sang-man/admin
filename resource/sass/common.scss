@@ -358,7 +358,7 @@ body{
 		&.on{
 			button{
 				border:2px solid #7c9dbc;
-				background-image:url(#{$img-common}bg_select_over.png) no-repeat;
+				background-image:url(#{$img-common}bg_select_over.png);
 			}
 		}
 		button{
@@ -907,7 +907,6 @@ body{
 }
 .ui-datepicker{
 	width:236px;
-	//display:none;
 	.ui-icon {
 		display:block;
 		overflow:hidden;
@@ -922,10 +921,14 @@ body{
 		position:relative;
 		padding:10px 0;
 		background:#087ea5;
+		width:238px;
+		left:-1px;
+		top:0;
+
 	}
 	.ui-datepicker-prev{
 		position:absolute;
-		top:10px;
+		top:11px;
 		left:16px;
 		width:25px;
 		height:25px;
@@ -941,7 +944,7 @@ body{
 	}
 	.ui-datepicker-next{
 		position:absolute;
-		top:10px;
+		top:11px;
 		right:16px;
 		width:25px;
 		height:25px;
@@ -967,20 +970,20 @@ body{
 			padding-left:8px;
 			height:25px;
 			font-size:14px;
+			@include weight("B");
 			color:$color0;
 			vertical-align:middle;
 			background:#fff url(#{$img-common}bg_selectdate.png) no-repeat right center;
 			padding-right:23px;
-			&:hover{
-				background-image:url(#{$img-common}bg_selectdate_over.png) no-repeat;
-			}
-			&.ui-datepicker-month{
+			border:1px solid #8acadf;
+			&:active,
+			&:hover,
+			{
+				background-image:url(#{$img-common}bg_selectdate_over.png);
 				border:1px solid #ef8514;
 			}
 			&.ui-datepicker-year{
-				border:1px solid #8acadf;
 				margin-right:5px;
-
 			}
 		}
 	}
