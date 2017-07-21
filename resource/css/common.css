@@ -144,9 +144,9 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 #gnb > ul > li.on > a { color: #96c7f4; }
 #gnb > ul > li > a { display: inline-block; padding: 15px; font-size: 18px; color: #c8ceda; height: 24px; }
 #gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 54px; box-sizing: border-box; z-index: 1; }
-#gnb > ul > li > ul > li { position: relative; }
-#gnb > ul > li > ul > li:first-child > a { border-top: none; }
-#gnb > ul > li > ul > li > a { display: block; min-width: 195px; padding: 8px 28px 8px 10px; font-size: 16px; color: #666; line-height: 24px; box-sizing: border-box; border-top: 1px solid #6a9ed0; }
+#gnb > ul > li > ul > li { position: relative; height: 40px; border-top: 1px solid #6a9ed0; }
+#gnb > ul > li > ul > li:first-child { border-top: none; }
+#gnb > ul > li > ul > li > a { display: block; min-width: 195px; padding: 8px 28px 8px 10px; font-size: 16px; color: #666; line-height: 24px; box-sizing: border-box; }
 #gnb > ul > li > ul > li > a:hover, #gnb > ul > li > ul > li > a:focus { color: #96c7f4; }
 #gnb > ul > li > ul > li.depth > a { background: #fff url(/resource/img/bg_gnb_arrow.png) no-repeat right center; }
 #gnb > ul > li > ul > li.depth > a:hover, #gnb > ul > li > ul > li.depth > a:focus { background: #6a9fd1 url(/resource/img/bg_gnb_arrow_over.png) no-repeat right center; color: #fff; }

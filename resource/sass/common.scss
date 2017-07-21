@@ -528,10 +528,10 @@ body{
 				z-index:1;
 				> li{
 					position:relative;
+					height:40px;
+					border-top:1px solid #6a9ed0;
 					&:first-child{
-						> a{
-							border-top:none;
-						}
+						border-top:none;
 					}
 					> a{
 						display:block;
@@ -541,7 +541,7 @@ body{
 						color:#666;
 						line-height:24px;
 						box-sizing:border-box;
-						border-top:1px solid #6a9ed0;
+						//border-top:1px solid #6a9ed0;
 						&:hover,
 						&:focus{
 							color:#96c7f4;
