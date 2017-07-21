@@ -836,13 +836,13 @@ body{
 	> div{
 		position:relative;
 		width:1600px;
-		padding:20px 0;
+		padding:20px 0 35px;
 		margin:auto;
 		.logoKsa{
 			display:inline-block;
-			width:156px;
+			width:148x;
 			height:40px;
-			margin-top:10px;
+			margin-top:8px;
 		}
 		.info{
 			margin-left:20px;
@@ -851,7 +851,7 @@ body{
 				>li{
 					display:inline-block;
 					padding-right:5px;
-					padding-left:5px;
+					padding-left:7px;
 					margin-left:5px;
 					border-left:1px solid #666;
 					height:11px;
@@ -867,6 +867,7 @@ body{
 			}
 			address{
 				display:block;
+				margin:5px 0;
 				font-style:normal;
 			}
 		}
@@ -1275,7 +1276,7 @@ table{
 	line-height:24px;
 	vertical-align:middle;
 	+ .radioBox{
-		margin-right:20px;
+		margin-left:20px;
 	}
 	input{
 		position:absolute;
@@ -1285,16 +1286,16 @@ table{
 		&[type="radio"]{
 			&:checked{
 				+ label{
-					background:url(#{$img-common}bg_radio_on.png) no-repeat left center;
+					background:url(#{$img-common}bg_radio_on.png) no-repeat 0 5px;
 				}
 			}
 			&:disabled{
 				+ label{
-				background:url(#{$img-common}bg_radio_disable.png) no-repeat 0 5px;
+				background-image:url(#{$img-common}bg_radio_disable.png) no-repeat;
 				}
 				&:checked{
 					+ label{
-						background:url(#{$img-common}bg_radio_disable_on.png) no-repeat 0 5px;
+						background-image:url(#{$img-common}bg_radio_disable_on.png) no-repeat;
 					}
 				}
 			}
@@ -1305,11 +1306,8 @@ table{
 		padding-left:23px;
 		font-size:14px;
 		color:#4c4c4c;
-		background:url(#{$img-common}bg_radio.png) no-repeat 0 5px;cursor:pointer;
-		// &:hover {
-		// 	background:url(#{$img-common}bg_radio_over.png) no-repeat 0 5px;
-		// }
-
+		background:url(#{$img-common}bg_radio.png) no-repeat 0 5px;
+		cursor:pointer;
 	}
 	&.blindLable{
 		width:18px;
@@ -1344,11 +1342,11 @@ table{
 			}
 			&:disabled{
 				+ label{
-					background:url(#{$img-common}bg_check_disable.png) no-repeat 0 5px;
+					background-image:url(#{$img-common}bg_check_disable.png) no-repeat;
 				}
 				&:checked{
 					+ label{
-						background:url(#{$img-common}bg_check_disable_on.png) no-repeat 0 5px;
+						background-image:url(#{$img-common}bg_check_disable_on.png) no-repeat;
 					}
 				}
 			}
@@ -1574,7 +1572,7 @@ table{
 				display:inline-block;
 				font-size:12px;
 				color:$color0;
-				vertical-align:top;
+				vertical-align:1px;
 			}
 		}
 	}
