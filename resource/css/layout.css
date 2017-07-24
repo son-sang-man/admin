@@ -4,9 +4,9 @@
 * Creat Date : 2017-07-10
 * Last Update : 2017-07-24
 */
-a #skipNavi { position: relative; z-index: 9999; }
-a #skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
-a #skipNavi > a:focus, a #skipNavi > a:active { height: auto; width: 100%; padding: 5px; margin-bottom: 10px; position: absolute; left: 0; top: 0; }
+#skipNavi { position: relative; z-index: 9999; }
+#skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
+#skipNavi > a:focus, #skipNavi > a:active { height: auto; width: 100%; padding: 5px; margin-bottom: 10px; position: absolute; left: 0; top: 0; }
 
 #wrap { width: 100%; min-width: 1600px; margin: auto; }
 
