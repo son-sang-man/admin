@@ -421,7 +421,7 @@
 							<input type="text" class="txt" title="상품명 입력">
 						</td>
 					</tr>
-					<tr>
+					<!-- <tr>
 						<th scope="row">파일첨부</th>
 						<td>
 							<div class="filebox">
@@ -433,7 +433,7 @@
 								<span><img src="/resource/img/img_thum.gif" /></span>
 							</div>
 						</td>
-					</tr>
+					</tr> -->
 				</tbody>
 			</table>
 		</div>
@@ -467,9 +467,9 @@
 				</td>
 			</tr>
 			<tr>
-				<th scope="row">파일첨부</th>
+				<th scope="row">상품명</th>
 				<td>
-					<input type="file" title="파일첨부" />
+					<input type="text" class="txt" title="상품명 입력">
 				</td>
 			</tr>
 		</tbody>
@@ -646,6 +646,22 @@
 <script type="text/javascript" src="/coding_list/js/pretty.js"></script>
 <script>
 	ui.selectBox.init();
+
+
+	//파일첨부
+	$(document).ready(function(){
+	  var fileTarget = $('.filebox .fileHidden');
+
+	    fileTarget.on('change', function(){
+	        if(window.FileReader){
+	            var filename = $(this)[0].files[0].name;
+	        } else {
+	            var filename = $(this).val().split('/').pop().split('\\').pop();
+	        }
+	        $(this).siblings('.txt').val(filename);
+	    });
+
+	}); 
 </script>
 </body>
 </html>
