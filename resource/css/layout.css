@@ -43,19 +43,20 @@
 #gnb > ul > li > ul > li > ul > li > a { display: block; padding: 0 10px; font-size: 14px; color: #666; line-height: 24px; box-sizing: border-box; }
 #gnb > ul > li > ul > li > ul > li > a:hover, #gnb > ul > li > ul > li > ul > li > a:focus { color: #699fd0; }
 
-#container .location { height: 41px; background: #f9f9f9; }
-#container .location > ul { width: 1600px; margin: auto; }
-#container .location > ul > li { position: relative; float: left; line-height: 41px; box-sizing: border-box; border-right: 1px solid #ccc; }
-#container .location > ul > li > button { display: block; min-width: 250px; padding-right: 50px; padding-left: 20px; height: 41px; background: url(/resource/img/bg_select.png) no-repeat right center; box-sizing: border-box; text-align: left; }
-#container .location > ul > li > ul { display: none; border: none; background: #fff; position: absolute; width: 100%; z-index: 1; margin-left: -1px; border: 1px solid #ccc; }
-#container .location > ul > li > ul li:first-child a span { border-top: none; }
-#container .location > ul > li > ul li a { display: block; padding: 0 20px; }
-#container .location > ul > li > ul li a:hover > span, #container .location > ul > li > ul li a:focus > span { color: #7c9dbc; }
-#container .location > ul > li > ul li a > span { display: block; font-size: 14px; color: #666; line-height: 40px; border-top: 1px solid #ccc; }
-#container .location > ul .home { width: 56px; height: 41px; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat; }
-#container .location > ul .home:hover, #container .location > ul .home:focus, #container .location > ul .home:active { background: #ff904b url(/resource/img/bg_home.png) no-repeat; }
-#container .location > ul .home > a { display: block; position: absolute; width: 56px; height: 41px; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
-#container .location > ul .last > button { color: #7c9dbc; }
+#container .location { width: 1600px; margin: auto; }
+#container .location > div { height: 41px; background: #f9f9f9; display: inline-block; vertical-align: top; }
+#container .location > div > a { float: left; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat; width: 56px; height: 41px; font-size: 0; }
+#container .location > div > a:hover, #container .location > div > a:focus, #container .location > div > a:active { background-color: #ff904b; background-image: url(/resource/img/bg_home.png); }
+#container .location > div > ul { float: left; display: inline-block; vertical-align: top; }
+#container .location > div > ul > li { float: left; line-height: 41px; box-sizing: border-box; border-right: 1px solid #ccc; }
+#container .location > div > ul > li > button { display: block; padding-right: 50px; padding-left: 20px; height: 41px; background: url(/resource/img/bg_select.png) no-repeat right center; width: 100%; text-align: left; }
+#container .location > div > ul > li > button span { line-height: 41px; display: block; }
+#container .location > div > ul > li > ul { visibility: hidden; border: none; background: #fff; position: absolute; width: 100%; z-index: 1; margin-left: -1px; border: 1px solid #ccc; }
+#container .location > div > ul > li > ul li:first-child a span { border-top: none; }
+#container .location > div > ul > li > ul li a { display: block; padding: 0 20px; }
+#container .location > div > ul > li > ul li a:hover > span, #container .location > div > ul > li > ul li a:focus > span { color: #7c9dbc; }
+#container .location > div > ul > li > ul li a > span { font-size: 14px; color: #666; line-height: 40px; border-top: 1px solid #ccc; }
+#container .location > div > ul .last > button { color: #7c9dbc; }
 
 .contentsTop { background: #fff; border: 1px solid #ccc; }
 .contentsTop h2 { line-height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
