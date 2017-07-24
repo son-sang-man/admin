@@ -621,11 +621,10 @@ body{
 		display:none;
 	}
 	.ui-priority-primary,
-.ui-widget-content .ui-priority-primary,
-.ui-widget-header .ui-priority-primary {
+	.ui-widget-content .ui-priority-primary,
+	.ui-widget-header .ui-priority-primary {
 	font-weight:bold;
-}	
-	
+	}	
 }
 .ui-datepicker-trigger{
 	display:inline-block;
