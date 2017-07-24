@@ -29,36 +29,48 @@
 		<!-- container -->
 		<div id="container">
 			<div class="location">
-				<ul>
-					<li class="home"><a href="#">홈</a></li>
-					<li><a href="#">메뉴1</a> <!-- 하위메뉴 활성화 class="on" 추가 -->
-						<ul>
-							<li><a href="#">하위메뉴1</a></li>
-							<li><a href="#">하위메뉴1</a></li>
-							<li><a href="#">하위메뉴1</a></li>
-						</ul>
-					</li>
-					<li><a href="#">메뉴2</a>
-						<ul>
-							<li><a href="#">하위메뉴2</a></li>
-							<li><a href="#">하위메뉴2</a></li>
-							<li><a href="#">하위메뉴2</a></li>
-						</ul>
-					</li>
-					<li class="last"><a href="#" T>메뉴3</a><!--  최종 로케이션일 경우 class="last" 추가 -->
-						<ul>
-							<li><a href="#">하위메뉴3</a></li>
-							<li><a href="#">하위메뉴3</a></li>
-							<li><a href="#">하위메뉴3</a></li>
-						</ul>
-					</li>
-				</ul>
+				<div>
+					<a href="#">홈</a>
+					<ul>
+						<li> <!-- 하위메뉴 활성화 class="on" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴1111111111111111111111111111111</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li class="last"> <!--  최종 로케이션일 경우 class="last" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="contentsTop"><h2 class="title1">핸드북 카테고리 관리</h2></div>
-			
+
 			<!-- contents -->
 			<section id="contents">
-				
 				<h3 class="title2">핸드북 카테고리 검색</h3>
 				<div class="tableTy2">
 					<table>
@@ -202,6 +214,22 @@
 	<!-- 페이지 내 스크립트 영역 -->
 	<script>
 		ui.init(); // 퍼블리싱 UI적용 스크립트
+
+		var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+}
+
+if(mm<10) {
+    mm='0'+mm
+}
+
+today = mm+'/'+dd+'/'+yyyy;
+// alert(today);
 	</script>
 	<!-- // 페이지 내 스크립트 영역 -->
 </body>
