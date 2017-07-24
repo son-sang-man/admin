@@ -42,3 +42,7 @@ h2.c_left {padding:2px; line-height:normal}
 .guide_table td {padding:5px 10px; border:1px solid #ccc;}
 .guide_table th {color:#000;}
 .guide_table thead th {background-color:#ddd; border-bottom:0 none;}
+
+.guideTitle { font-size: 18px; font-weight: 700; margin: 50px 0 20px; background: #eee; height: 30px; line-height: 30px; }
+
+.guideTitleSmall { font-size: 14px; margin: 30px 0 20px; }

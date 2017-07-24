@@ -395,21 +395,6 @@ body{
 		}
 	}
 }
-
-/* 임시 */
-.guideTitle {
-	font-size:18px;
-	@include weight("B");
-	margin:50px 0 20px;
-	background:#eee;
-	height:30px;
-	line-height:30px;
-}
-.guideTitleSmall {
-	font-size:14px;
-	margin:30px 0 20px;
-}
-
 .title1{
 	font-size:22px;
 	color:#444;
