@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @import "config.scss";
+//@import "layout.scss";
 
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update : 2017-07-20
+* Last Update : 2017-07-24
 */
-
 body,
 div,
 dl,
@@ -252,7 +252,6 @@ body{
 	-moz-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
 }
-
 /* 요소 숨김 */
 .blind{
 	display:block;
@@ -341,18 +340,6 @@ body{
 .widAll{
 	width:100%;
 }
-.wid50{
-	width:50px;
-}
-.wid600{
-	width:600px;
-}
-.wid510{
-	width:510px;
-}
-// .wid390{
-// 	width:390px;
-// }
 
 // 셀렉트 박스
 .selectBox{
@@ -408,6 +395,7 @@ body{
 		}
 	}
 }
+<<<<<<< HEAD
 
 
 /* 임시 */
@@ -788,6 +776,8 @@ body{
 	}
 }
 
+=======
+>>>>>>> 33ba3002afda2d7d5b69e3bbdc851997258ebae9
 .title1{
 	font-size:22px;
 	color:#444;
@@ -836,69 +826,6 @@ body{
 				display:inline-block;
 				color:#666;
 				@include weight("N");
-			}
-		}
-	}
-}
-
-#footer{
-	border-top:2px solid #ccc;
-	border-bottom:3px solid #f2f5f8;
-	background:#e5e5e5;
-	> div{
-		position:relative;
-		width:1600px;
-		padding:20px 0 35px;
-		margin:auto;
-		.logoKsa{
-			display:inline-block;
-			width:148x;
-			height:40px;
-			margin-top:8px;
-		}
-		.info{
-			margin-left:20px;
-			display:inline-block;
-			> ul{
-				>li{
-					display:inline-block;
-					padding-right:5px;
-					padding-left:7px;
-					margin-left:5px;
-					border-left:1px solid #666;
-					height:11px;
-					line-height:11px;
-					font-size:12px;
-					color:#666;
-					&:first-child{
-						padding:0;
-						margin:0;
-						border:0;
-					}
-				}
-			}
-			address{
-				display:block;
-				margin:5px 0;
-				font-style:normal;
-			}
-		}
-		.contact{
-			position:absolute;
-			right:0;
-			top:30px;
-			padding-left:45px;
-			background:#7c9dbc url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
-			font-size:12px;
-			height:40px;
-			line-height:40px;
-			color:#fff;
-			&:hover,
-			&:focus{
-				background:#ff903b url(#{$img-common}bg_contact.png) no-repeat 20px 10px;
-				transition:all 0.3s;
-				border:1px solid #ff904b;
-				color:#fff;
 			}
 		}
 	}

@@ -2,7 +2,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update : 2017-07-20
+* Last Update : 2017-07-24
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, p iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -103,12 +103,6 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 /* 폼요소 너비 */
 .widAll { width: 100%; }
 
-.wid50 { width: 50px; }
-
-.wid600 { width: 600px; }
-
-.wid510 { width: 510px; }
-
 .selectBox { display: inline-block; }
 .selectBox .designSelect { position: relative; background: #fff; }
 .selectBox .designSelect.on button { border: 2px solid #7c9dbc; background-image: url(/resource/img/bg_select_over.png); }
@@ -117,6 +111,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .selectBox ul li a { display: block; padding: 0 10px; font-size: 13px; color: #666; line-height: 22px; text-align: left; }
 .selectBox ul li a:hover, .selectBox ul li a:focus { color: #7c9dbc; }
 
+<<<<<<< HEAD
 /* 임시 */
 .guideTitle { font-size: 18px; font-weight: 700; margin: 50px 0 20px; background: #eee; height: 30px; line-height: 30px; }
 
@@ -189,6 +184,8 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .contentsArea.col3 > div { width: 33%; }
 .contentsArea.col3 > div:nth-of-type(2) { width: 34%; padding-right: 15px; }
 
+=======
+>>>>>>> 33ba3002afda2d7d5b69e3bbdc851997258ebae9
 .title1 { font-size: 22px; color: #444; }
 
 .title2 { font-size: 18px; padding: 20px 0 15px; position: relative; color: #444; font-weight: normal; overflow: hidden; }
@@ -201,16 +198,6 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .tableHeader .tablePaging > strong:after { content: "/"; padding: 0 5px; display: inline-block; color: #666; font-weight: normal; }
 .tableHeader .tablePaging > em { font-weight: normal; }
 .tableHeader .tablePaging > em:after { content: "page"; padding-left: 5px; display: inline-block; color: #666; font-weight: normal; }
-
-#footer { border-top: 2px solid #ccc; border-bottom: 3px solid #f2f5f8; background: #e5e5e5; }
-#footer > div { position: relative; width: 1600px; padding: 20px 0 35px; margin: auto; }
-#footer > div .logoKsa { display: inline-block; width: 148x; height: 40px; margin-top: 8px; }
-#footer > div .info { margin-left: 20px; display: inline-block; }
-#footer > div .info > ul > li { display: inline-block; padding-right: 5px; padding-left: 7px; margin-left: 5px; border-left: 1px solid #666; height: 11px; line-height: 11px; font-size: 12px; color: #666; }
-#footer > div .info > ul > li:first-child { padding: 0; margin: 0; border: 0; }
-#footer > div .info address { display: block; margin: 5px 0; font-style: normal; }
-#footer > div .contact { position: absolute; right: 0; top: 30px; padding-left: 45px; background: #7c9dbc url(/resource/img/bg_contact.png) no-repeat 20px 10px; font-size: 12px; height: 40px; line-height: 40px; color: #fff; }
-#footer > div .contact:hover, #footer > div .contact:focus { background: #ff903b url(/resource/img/bg_contact.png) no-repeat 20px 10px; transition: all 0.3s; border: 1px solid #ff904b; color: #fff; }
 
 /* datepicker */
 .dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; height: 32px; vertical-align: middle; }
