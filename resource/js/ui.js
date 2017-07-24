@@ -1,7 +1,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-21
+* Last Update :2017-07-24
 * Ver : 1.00
 */
 
@@ -48,6 +48,63 @@ var ui = {
 					$(this).next("ul").slideDown().parent().siblings().find("> ul").slideUp();
 				}
 			}, "#gnb > ul > li > ul > li > a");
+		}
+	},
+	location : {
+		setting : function(){
+			var $obj = $(".location > div");
+			var itemDepthArray1 = new Array;
+			var itemDepthArray2 = new Array;
+			var itemDepthArray3 = new Array;
+			var itemDepthArray4 = new Array;
+
+			// Max 값 구하기
+			$obj.find("> ul > li").each(function(i){
+				$(this).find("> ul > li").each(function(){
+					var itemW = $(this).find("span").width();
+					switch(i){
+						case 0 : itemDepthArray1.push(itemW); break;
+						case 1 : itemDepthArray2.push(itemW); break;
+						case 2 : itemDepthArray3.push(itemW); break;
+						case 3 : itemDepthArray4.push(itemW); break;
+					}
+				});
+			});
+
+			// width값 조절
+			$obj.find("> ul > li").each(function(i){
+				var max,
+					itemW = $(this).find("button > span").width();
+				switch(i){
+					case 0 : max = Math.max.apply(null, itemDepthArray1); break;
+					case 1 : max = Math.max.apply(null, itemDepthArray2); break;
+					case 2 : max = Math.max.apply(null, itemDepthArray3); break;
+					case 3 : max = Math.max.apply(null, itemDepthArray4); break;
+				}
+				if(max < 180){
+					$(this).find("button > span").css("width","180px");
+				} else {
+					$(this).find("button > span").css("width",max);
+				}
+			});
+			$obj.find("> ul > li").css("position","relative");
+			$obj.find("> ul > li > ul > li span").css("display","block");
+		},
+		event : function(e){
+			$(document).on({
+				click : function(){
+					if(!$(this).parent().hasClass("on")){
+						$(this).attr("title","활성화").parent().addClass("on").find("ul").css("visibility","visible").parent().siblings().removeClass("on").find("ul").css("visibility","hidden").prev().removeAttr("title");
+					} else {
+						$(this).removeAttr("title").parent().removeClass("on").find("ul").css("visibility","hidden");
+					}
+
+				}
+			}, ".location button");
+		},
+		init : function(){
+			ui.location.setting();
+			ui.location.event();
 		}
 	},
 	selectBox : {
@@ -172,7 +229,7 @@ var ui = {
 		 * @function Date Picker 셋팅
 		 * jQuery Ui 참조
 		**/
-		event : function(){
+		init : function(){
 			$( ".datePicker" ).datepicker({
 				closeText: '닫기 x',
 				prevText: '이전달',
@@ -187,7 +244,7 @@ var ui = {
 				// buttonText: "날짜 선택",
 				changeMonth: true,
 				changeYear: true,
-				showOtherMonths: true, 
+				showOtherMonths: true,
 				monthNamesShort: ['1월','2월','3월','4월','5월','6월', '7월','8월','9월','10월','11월','12월'],
 				dayNamesShort: ['일','월','화','수','목','금','토'],
 				dayNamesMin: ['일','월','화','수','목','금','토'],
@@ -200,8 +257,9 @@ var ui = {
 	**/
 	init : function(){
 		ui.gnb.event();
+		ui.location.init();
 		ui.selectBox.init();
-		ui.datePicker.event();
+		ui.datePicker.init();
 	}
 }
 
