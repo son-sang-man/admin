@@ -2,7 +2,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update : 2017-07-24
+* Last Update : 2017-07-25
 */
 #skipNavi { position: relative; z-index: 9999; }
 #skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
@@ -29,7 +29,7 @@
 #gnb > ul > li:first-child > a { padding-left: 0; }
 #gnb > ul > li.on > a { color: #96c7f4; }
 #gnb > ul > li > a { display: inline-block; padding: 15px; font-size: 18px; color: #c8ceda; height: 24px; }
-#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 54px; box-sizing: border-box; z-index: 1; }
+#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 54px; box-sizing: border-box; z-index: 2; }
 #gnb > ul > li > ul > li { position: relative; height: 40px; border-top: 1px solid #6a9ed0; }
 #gnb > ul > li > ul > li:first-child { border-top: none; }
 #gnb > ul > li > ul > li > a { display: block; min-width: 195px; padding: 8px 28px 8px 10px; font-size: 16px; color: #666; line-height: 24px; box-sizing: border-box; }
