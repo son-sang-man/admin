@@ -200,6 +200,19 @@
 				</div>
 			</section>
 			<!-- //contents -->
+			<div class="dateArea">
+				<div class="dateWrap">
+					<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+					~
+					<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+				</div>
+				<div class="dateBtn">
+					<button type="button" class="btn btnWhite" data-term="2w">1주일</button>
+					<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+					<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+					<button type="button" class="btn btnWhite" data-term="1y">1년</button>
+				</div>
+			</div>
 		</div>
 		<!-- //container -->
 
@@ -215,21 +228,27 @@
 	<script>
 		ui.init(); // 퍼블리싱 UI적용 스크립트
 
-		var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
+		$(".dateArea .dateBtn button").click(function(){
+			var fromDate = new Date()
+			var termNumber =  parseFloat($(this).data('term').replace(/a-z/gi, ''))
+			var term =  $(this).data('term').replace(/[0-9]/gi, '');
+			switch(term){
+				case "d" :
+					fromDate.setDate(fromDate.getDate() - termNumber);
+				break;
+				case "w" :
+					fromDate.setDate(fromDate.getDate() - (termNumber*6) - 1);
+				break;
+				case "m" :
+					fromDate.setMonth(fromDate.getMonth() - termNumber);
+				break;
+				case "y" :
+					fromDate.setYear(fromDate.getFullYear() - termNumber);
+				break;
+			}
+			var date = fromDate.getFullYear() + "-" + (fromDate.getMonth() + 1) + "-" + fromDate.getDate();
+		});
 
-if(dd<10) {
-    dd='0'+dd
-}
-
-if(mm<10) {
-    mm='0'+mm
-}
-
-today = mm+'/'+dd+'/'+yyyy;
-// alert(today);
 	</script>
 	<!-- // 페이지 내 스크립트 영역 -->
 </body>
