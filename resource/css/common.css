@@ -41,10 +41,10 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; colo
 select:disabled { background-color: #f2f2f2; color: #999; }
 
 input { margin: 0; padding: 0; font-family: inherit; font-size: inherit; color: #666; line-height: 17px; vertical-align: top; -webkit-border-radius: 0; }
-input[type="text"], input[type="password"], input[type="tel"] input[type="file"] { width: 350px; height: 34px; line-height: 34px; box-sizing: border-box; padding-left: 10px; border: none; background: #fff; -webkit-appearance: none; }
-input[type="text"]:focus, input[type="password"]:focus, input[type="tel"] input[type="file"]:focus { border: 2px solid #7c9dbc; }
-input[type="text"]:disabled, input[type="password"]:disabled, input[type="tel"] input[type="file"]:disabled { background-color: #f2f2f2; color: #999; }
-input[type="text"].txt, input[type="password"].txt, input[type="tel"] input[type="file"].txt { border: 1px solid #d5d5d5; }
+input[type="text"], input[type="password"], input[type="tel"], input[type="file"] { width: 350px; height: 34px; line-height: 34px; box-sizing: border-box; padding-left: 10px; border: none; background: #fff; -webkit-appearance: none; }
+input[type="text"]:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="file"]:focus { border: 2px solid #7c9dbc; }
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="tel"]:disabled, input[type="file"]:disabled { background-color: #f2f2f2; color: #999; }
+input[type="text"].txt, input[type="password"].txt, input[type="tel"].txt, input[type="file"].txt { border: 1px solid #d5d5d5; }
 input[type="radio"] { width: 17px; height: 17px; vertical-align: -1px; }
 input[type="checkbox"] { width: 13px; height: 13px; vertical-align: -1px; }
 
@@ -259,9 +259,10 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .popup .popBottom .todayClose + label { display: inline-block; font-size: 12px; color: #666; vertical-align: 1px; }
 .popup .close { position: absolute; top: 0; right: 0; width: 60px; height: 60px; background: url(/resource/img/btn_popclose.png) no-repeat; font-size: 0; }
 
-.filebox input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; border: 0; }
-.filebox label { display: inline-block; padding: 0 19px; height: 32px; line-height: 34px; background: #7c9dbc; border: 1px solid #718fac; font-size: 15px; color: #fff; cursor: pointer; }
-.filebox label:hover, .filebox label:focus { background: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
+.fileBox { display: inline-block; position: relative; }
+.fileBox input[type="file"] { position: absolute; top: 0px; right: 0px; width: 96px; height: 34px; opacity: 0; }
+.fileBox label { display: inline-block; padding: 0 19px; height: 32px; line-height: 34px; background: #7c9dbc; border: 1px solid #718fac; font-size: 15px; color: #fff; cursor: pointer; }
+.fileBox label:hover, .fileBox label:focus { background: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
 
 .fileList { margin-top: 10px; }
 .fileList > span { border: 1px solid #d5d5d5; display: inline-block; }

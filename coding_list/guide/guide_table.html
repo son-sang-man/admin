@@ -421,19 +421,19 @@
 							<input type="text" class="txt" title="상품명 입력">
 						</td>
 					</tr>
-					<!-- <tr>
+					<tr>
 						<th scope="row">파일첨부</th>
 						<td>
-							<div class="filebox">
+							<div class="fileBox">
 								<input type="text" class="txt" value="파일선택" disabled="disabled" />
-								<label for="fileBtn">찾아보기</label>
-								<input type="file" id="fileBtn" class="fileHidden" />
+								<label class="aa">찾아보기</label>
+								<input type="file" class="fileHidden" />
 							</div>
 							<div class="fileList">
 								<span><img src="/resource/img/img_thum.gif" /></span>
 							</div>
 						</td>
-					</tr> -->
+					</tr>
 				</tbody>
 			</table>
 		</div>
@@ -470,6 +470,19 @@
 				<th scope="row">상품명</th>
 				<td>
 					<input type="text" class="txt" title="상품명 입력">
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">파일첨부</th>
+				<td>
+					<div class="fileBox">
+						<input type="text" class="txt" value="파일선택" disabled="disabled" />
+						<label class="aa">찾아보기</label>
+						<input type="file" class="fileHidden" />
+					</div>
+					<div class="fileList">
+						<span><img src="/resource/img/img_thum.gif" /></span>
+					</div>
 				</td>
 			</tr>
 		</tbody>
@@ -646,22 +659,6 @@
 <script type="text/javascript" src="/coding_list/js/pretty.js"></script>
 <script>
 	ui.selectBox.init();
-
-
-	//파일첨부
-	$(document).ready(function(){
-	  var fileTarget = $('.filebox .fileHidden');
-
-	    fileTarget.on('change', function(){
-	        if(window.FileReader){
-	            var filename = $(this)[0].files[0].name;
-	        } else {
-	            var filename = $(this).val().split('/').pop().split('\\').pop();
-	        }
-	        $(this).siblings('.txt').val(filename);
-	    });
-
-	}); 
 </script>
 </body>
 </html>

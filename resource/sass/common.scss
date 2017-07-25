@@ -193,7 +193,7 @@ input{
 	-webkit-border-radius:0;
 	&[type="text"],
 	&[type="password"],
-	&[type="tel"]
+	&[type="tel"],
 	&[type="file"]
 	{
 		width:350px;
@@ -1145,18 +1145,19 @@ table{
 		background:url(#{$img-common}btn_popclose.png) no-repeat;
 		font-size:0;
 	}
-
 }
-.filebox{
+
+.fileBox{
+	display:inline-block;
+	position:relative;
 	input{
-		&[type="file"]{
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			padding: 0;
-			margin: -1px;
-			overflow: hidden;
-			border: 0;
+		&[type="file"] {
+		position:absolute;
+		top:0px;
+		right:0px;
+		width:96px;
+		height:34px;
+		opacity:0;
 		}
 	}
 	label{
@@ -1176,6 +1177,9 @@ table{
 			transition:all 0.3s;
 		}
 	}
+	.fileHidden{
+
+	}
 }
 .fileList{
 	margin-top:10px;
@@ -1187,6 +1191,3 @@ table{
 		}
 	}
 }
-
-
-
