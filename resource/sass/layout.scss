@@ -3,7 +3,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update : 2017-07-24
+* Last Update : 2017-07-25
 */
 #skipNavi{
 	position:relative;
@@ -138,7 +138,7 @@
 				left:0;
 				top:54px;
 				box-sizing:border-box;
-				z-index:1;
+				z-index:2;
 				> li{
 					position:relative;
 					height:40px;
@@ -219,94 +219,98 @@
 		}
 	}
 }
-#container{
-	.location{
-		width:1600px;
-		margin:auto;
-		> div{
+
+.location{
+	width:1600px;
+	margin:auto;
+	> div{
+		height:41px;
+		background:#f9f9f9;
+		display:inline-block;
+		vertical-align:top;
+		> a{
+			float:left;
+			background:#7c9dbc url(#{$img-common}bg_home.png) no-repeat;
+			width:56px;
 			height:41px;
-			background:#f9f9f9;
+			font-size:0;
+			&:hover,
+			&:focus,
+			&:active{
+				background-color:#ff904b;
+				background-image:url(#{$img-common}bg_home.png);
+			}
+		}
+		> ul{
+			float:left;
 			display:inline-block;
 			vertical-align:top;
-			> a{
+			> li{
 				float:left;
-				background:#7c9dbc url(#{$img-common}bg_home.png) no-repeat;
-				width:56px;
-				height:41px;
-				font-size:0;
-				&:hover,
-				&:focus,
-				&:active{
-					background-color:#ff904b;
-					background-image:url(#{$img-common}bg_home.png);
+				line-height:41px;
+				box-sizing:border-box;
+				border-right:1px solid #ccc;
+				> button {
+					display:block;
+					padding-right:50px;
+					padding-left:20px;
+					height:41px;
+					background:url(#{$img-common}bg_select.png) no-repeat right center;
+					width:100%;
+					text-align:left;
+					span{
+						line-height:41px;
+						display:block;
+					}
+				}
+				&.on{
+					button{
+						background-image:url(#{$img-common}bg_select_over.png)
+					}
+				}
+				> ul {
+					visibility:hidden;
+					border:none;
+					background:#fff;
+					position:absolute;
+					width:100%;
+					z-index:1;
+					margin-left:-1px;
+					border:1px solid #ccc;
+					li{
+						&:first-child{
+							a{
+								span{
+									border-top:none;
+								}
+							}
+						}
+						a{
+							display:block;
+							padding:0 20px;
+							&:hover,
+							&:focus{
+								> span{
+									color:#7c9dbc;
+								}
+							}
+							> span{
+								// display:block;
+								font-size:14px;
+								color:#666;
+								line-height:40px;
+								border-top:1px solid #ccc;
+							}
+						}
+					}
 				}
 			}
-			> ul{
-				float:left;
-				display:inline-block;
-				vertical-align:top;
-				> li{
-					float:left;
-					line-height:41px;
-					box-sizing:border-box;
-					border-right:1px solid #ccc;
-					> button {
-						display:block;
-						padding-right:50px;
-						padding-left:20px;
-						height:41px;
-						background:url(#{$img-common}bg_select.png) no-repeat right center;
-						width:100%;
-						text-align:left;
-						span{
-							line-height:41px;
-							display:block;
-						}
-					}
-					> ul {
-						visibility:hidden;
-						border:none;
-						background:#fff;
-						position:absolute;
-						width:100%;
-						z-index:1;
-						margin-left:-1px;
-						border:1px solid #ccc;
-						li{
-							&:first-child{
-								a{
-									span{
-										border-top:none;
-									}
-								}
-							}
-							a{
-								display:block;
-								padding:0 20px;
-								&:hover,
-								&:focus{
-									> span{
-										color:#7c9dbc;
-									}
-								}
-								> span{
-									// display:block;
-									font-size:14px;
-									color:#666;
-									line-height:40px;
-									border-top:1px solid #ccc;
-								}
-							}
-						}
-					}
-				}
-				.home{
+			.home{
 
-				}
-				.last{
-					> button{
-						color:$color2;
-					}
+			}
+			.last{
+				> button{
+					color:$color2;
 				}
 			}
 		}

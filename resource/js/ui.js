@@ -51,6 +51,7 @@ var ui = {
 		}
 	},
 	location : {
+		open : false,
 		setting : function(){
 			var $obj = $(".location > div");
 			var itemDepthArray1 = new Array;
@@ -95,12 +96,24 @@ var ui = {
 				click : function(){
 					if(!$(this).parent().hasClass("on")){
 						$(this).attr("title","활성화").parent().addClass("on").find("ul").css("visibility","visible").parent().siblings().removeClass("on").find("ul").css("visibility","hidden").prev().removeAttr("title");
+							ui.location.open = true;
 					} else {
 						$(this).removeAttr("title").parent().removeClass("on").find("ul").css("visibility","hidden");
 					}
 
 				}
 			}, ".location button");
+			$(document).on({
+				mouseup: function(e){
+					var $obj =  $(".location > div > ul ul");
+					if (!$obj.is(e.target) && $obj.has(e.target).length === 0){
+						$obj.prev().removeAttr("title");
+						$obj.parent().removeClass("on");
+						$obj.css("visibility","hidden");
+						ui.location.open = false;
+					}
+				}
+			});
 		},
 		init : function(){
 			ui.location.setting();
@@ -108,7 +121,7 @@ var ui = {
 		}
 	},
 	selectBox : {
-		selectOpen : false,
+		open : false,
 		/**
 		 * @function 디자인 select box 새엉 및 재셋팅 시
 		 * @param {String} target - 디자인 셀렉트 셀렉터
@@ -157,7 +170,6 @@ var ui = {
 			var $obj = $("[data-form='selectBox']");
 			// 로드 시 디자인 셀렉트 생성
 			$obj.each(function(i){
-				$(this).addClass("aaa" + i)
 				ui.selectBox.creat($(this));
 			})
 		},
@@ -182,11 +194,11 @@ var ui = {
 						$(this).closest(".designSelect").addClass("on").find("ul").slideDown();
 						$(this).attr("title","닫힘");
 						$(this).closest(".designSelect").find("ul li").eq(idx).find("a").focus();
-						ui.selectBox.selectOpen = true;
+						ui.selectBox.open = true;
 					} else {
 						$(this).closest(".designSelect").find("ul").slideUp();
 						$(this).closest(".designSelect").find("button").attr("title","열림");
-						ui.selectBox.selectOpen = false;
+						ui.selectBox.open = false;
 					}
 				},
 			}, "[data-form='selectBox'] button");
@@ -200,7 +212,7 @@ var ui = {
 					$(this).closest(".designSelect").next("select").find("option").eq(idx).attr("selected","selected").siblings().removeAttr("selected")
 					$(this).closest(".designSelect").next("select").trigger("change");
 					$(this).closest("ul").slideUp();
-					ui.selectBox.selectOpen = false;
+					ui.selectBox.open = false;
 				}
 			}, "[data-form='selectBox'] ul a");
 			$(document).on({
@@ -210,7 +222,7 @@ var ui = {
 						$obj.find(".designSelect").removeClass("on");
 						$obj.find(".designSelect ul").slideUp();
 						$obj.find(".designSelect button").attr("title","열림");
-						ui.selectBox.selectOpen = false;
+						ui.selectBox.open = false;
 					}
 				}
 			});

@@ -2,7 +2,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update : 2017-07-24
+* Last Update : 2017-07-25
 */
 #skipNavi { position: relative; z-index: 9999; }
 #skipNavi > a { position: relative; display: block; height: 1px; width: 1px; margin-bottom: -1px; overflow: hidden; font-size: 16px; color: #fff; font-weight: 700; background: #7c9dbc; white-space: nowrap; text-align: center; }
@@ -29,7 +29,7 @@
 #gnb > ul > li:first-child > a { padding-left: 0; }
 #gnb > ul > li.on > a { color: #96c7f4; }
 #gnb > ul > li > a { display: inline-block; padding: 15px; font-size: 18px; color: #c8ceda; height: 24px; }
-#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 54px; box-sizing: border-box; z-index: 1; }
+#gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 54px; box-sizing: border-box; z-index: 2; }
 #gnb > ul > li > ul > li { position: relative; height: 40px; border-top: 1px solid #6a9ed0; }
 #gnb > ul > li > ul > li:first-child { border-top: none; }
 #gnb > ul > li > ul > li > a { display: block; min-width: 195px; padding: 8px 28px 8px 10px; font-size: 16px; color: #666; line-height: 24px; box-sizing: border-box; }
@@ -43,20 +43,21 @@
 #gnb > ul > li > ul > li > ul > li > a { display: block; padding: 0 10px; font-size: 14px; color: #666; line-height: 24px; box-sizing: border-box; }
 #gnb > ul > li > ul > li > ul > li > a:hover, #gnb > ul > li > ul > li > ul > li > a:focus { color: #699fd0; }
 
-#container .location { width: 1600px; margin: auto; }
-#container .location > div { height: 41px; background: #f9f9f9; display: inline-block; vertical-align: top; }
-#container .location > div > a { float: left; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat; width: 56px; height: 41px; font-size: 0; }
-#container .location > div > a:hover, #container .location > div > a:focus, #container .location > div > a:active { background-color: #ff904b; background-image: url(/resource/img/bg_home.png); }
-#container .location > div > ul { float: left; display: inline-block; vertical-align: top; }
-#container .location > div > ul > li { float: left; line-height: 41px; box-sizing: border-box; border-right: 1px solid #ccc; }
-#container .location > div > ul > li > button { display: block; padding-right: 50px; padding-left: 20px; height: 41px; background: url(/resource/img/bg_select.png) no-repeat right center; width: 100%; text-align: left; }
-#container .location > div > ul > li > button span { line-height: 41px; display: block; }
-#container .location > div > ul > li > ul { visibility: hidden; border: none; background: #fff; position: absolute; width: 100%; z-index: 1; margin-left: -1px; border: 1px solid #ccc; }
-#container .location > div > ul > li > ul li:first-child a span { border-top: none; }
-#container .location > div > ul > li > ul li a { display: block; padding: 0 20px; }
-#container .location > div > ul > li > ul li a:hover > span, #container .location > div > ul > li > ul li a:focus > span { color: #7c9dbc; }
-#container .location > div > ul > li > ul li a > span { font-size: 14px; color: #666; line-height: 40px; border-top: 1px solid #ccc; }
-#container .location > div > ul .last > button { color: #7c9dbc; }
+.location { width: 1600px; margin: auto; }
+.location > div { height: 41px; background: #f9f9f9; display: inline-block; vertical-align: top; }
+.location > div > a { float: left; background: #7c9dbc url(/resource/img/bg_home.png) no-repeat; width: 56px; height: 41px; font-size: 0; }
+.location > div > a:hover, .location > div > a:focus, .location > div > a:active { background-color: #ff904b; background-image: url(/resource/img/bg_home.png); }
+.location > div > ul { float: left; display: inline-block; vertical-align: top; }
+.location > div > ul > li { float: left; line-height: 41px; box-sizing: border-box; border-right: 1px solid #ccc; }
+.location > div > ul > li > button { display: block; padding-right: 50px; padding-left: 20px; height: 41px; background: url(/resource/img/bg_select.png) no-repeat right center; width: 100%; text-align: left; }
+.location > div > ul > li > button span { line-height: 41px; display: block; }
+.location > div > ul > li.on button { background-image: url(/resource/img/bg_select_over.png); }
+.location > div > ul > li > ul { visibility: hidden; border: none; background: #fff; position: absolute; width: 100%; z-index: 1; margin-left: -1px; border: 1px solid #ccc; }
+.location > div > ul > li > ul li:first-child a span { border-top: none; }
+.location > div > ul > li > ul li a { display: block; padding: 0 20px; }
+.location > div > ul > li > ul li a:hover > span, .location > div > ul > li > ul li a:focus > span { color: #7c9dbc; }
+.location > div > ul > li > ul li a > span { font-size: 14px; color: #666; line-height: 40px; border-top: 1px solid #ccc; }
+.location > div > ul .last > button { color: #7c9dbc; }
 
 .contentsTop { background: #fff; border: 1px solid #ccc; }
 .contentsTop h2 { line-height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
