@@ -318,7 +318,8 @@
 }
 .contentsTop{
 	background:#fff;
-	border:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 	h2{
 		line-height:62px;
 		box-sizing:border-box;
