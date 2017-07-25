@@ -37,10 +37,8 @@ $img-common : "/resource/img/";
 @mixin weight($value){
 	@if $value == "N" {
 		font-weight:normal;
-	} @else if $value == "M" {
-		font-weight:600;
 	} @else if $value == "B" {
-		font-weight:700;
+		font-weight:bold;
 	}
 }
 
