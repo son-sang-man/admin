@@ -50,7 +50,7 @@ input[type="checkbox"] { width: 13px; height: 13px; vertical-align: -1px; }
 
 textarea { -webkit-appearance: none; -webkit-border-radius: 0; border: 1px solid #ccc; color: #666; background: #fff; padding: 15px; font-size: 15px; width: 100%; box-sizing: border-box; }
 
-body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun gothic", "맑은 고딕", sans-serif; color: #666; background: #fff; letter-spacing: -1.0px; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun gothic", "맑은 고딕", sans-serif; color: #666; background: #fff; letter-spacing: -1.0px; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /* 요소 숨김 */
 .blind { display: block; position: absolute; width: 0; height: 0; border: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
@@ -140,7 +140,7 @@ body { font-style: normal; font-size: 13px; font-family: "segoe ui", "malgun got
 .ui-datepicker .ui-datepicker-title select { float: right; padding-left: 8px; height: 25px; font-size: 14px; font-weight: 700; color: #666; vertical-align: middle; background: #fff url(/resource/img/bg_selectdate.png) no-repeat right center; padding-right: 23px; border: 1px solid #8acadf; }
 .ui-datepicker .ui-datepicker-title select:active, .ui-datepicker .ui-datepicker-title select:hover { background-image: url(/resource/img/bg_selectdate_over.png); border: 1px solid #ef8514; }
 .ui-datepicker .ui-datepicker-title select.ui-datepicker-year { margin-right: 5px; }
-.ui-datepicker table { width: 196px; font-size: 13px; color: #333; border-collapse: collapse; margin: 10px auto; }
+.ui-datepicker table { width: 196px; font-size: 14px; color: #333; border-collapse: collapse; margin: 10px auto; }
 .ui-datepicker table td span, .ui-datepicker table td a { display: block; width: 22px; height: 22px; line-height: 21px; text-align: center; margin: auto; text-decoration: none; }
 .ui-datepicker table td span:hover, .ui-datepicker table td span:focus, .ui-datepicker table td a:hover, .ui-datepicker table td a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
 .ui-datepicker table thead tr:first-child th { padding: 0; height: 26px; line-height: 26px; text-align: center; color: #7e8da3; }
@@ -175,7 +175,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 
 .tableTy1 table { width: 100%; }
 .tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
-.tableTy1 tr td { padding: 13px 10px; font-size: 13px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
+.tableTy1 tr td { padding: 13px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
 .tableTy1 thead th { text-align: center; }
 .tableTy1 thead th:first-child { border-left: 0; }
 .tableTy1 tbody th { border-top: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
