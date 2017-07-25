@@ -379,7 +379,6 @@ body{
 		padding:10px 0;
 		z-index:1;
 		li{
-
 			a{
 				display:block;
 				padding:0 10px;
@@ -408,25 +407,25 @@ body{
 	@include weight("N");
 	overflow:hidden;
 }
+
 .tableHeader{
-	margin-bottom:15px;
-	margin-top:-35px;
-	text-align:right;
+	display:block;
 	vertical-align:top;
-	&:after{
-			content:"";
-			display:block;
-			clear:both;
-		}
-	.btnArea{
-		display:inline-block;
-		text-align:center;
-		margin-top:0;
+	text-align:right;
+	> h3{
+		float:left;
+	}
+	.fR{
+		padding-top:20px;
+	}
+	.btn_ico{
+		margin-left:1px;
 	}
 	.tablePaging{
 		display:inline-block;
 		font-size:12px;
 		color:#666;
+		margin-right:10px;
 		> strong{
 			@include weight("N");
 			&:after{
@@ -446,6 +445,18 @@ body{
 				color:#666;
 				@include weight("N");
 			}
+		}
+	}
+	.selectBox{
+		margin-left:1px;
+		.designSelect{
+			button{
+				height:26px;
+				line-height:26px;
+			}
+		}
+		ul{
+			top:26px !important;
 		}
 	}
 }
@@ -1092,6 +1103,38 @@ table{
 	border:1px solid #bfbfbf;
 	color:#999;
 }
+
+.btn_ico{
+	background:#fff;
+	border:1px solid #718fac;
+	color:$color2;
+	display:inline-block;
+	padding:0 10px;
+	height:26px;
+	font-size:14px;
+	line-height:26px;
+	+ .btn{
+		margin-left:4px;
+	}
+	&:hover,
+	&:focus{
+		border:1px solid #ee1c23;
+		color:$color4;
+		transition:all 0.3s;
+	}
+}
+.btnPrint{
+	padding-left:35px;
+	background-image:url();
+
+}
+.btnPdf{
+	padding-left:30px;
+	background-image:url();
+}
+
+
+
 
 .popup{
 	position:relative;
