@@ -11,7 +11,7 @@
 #wrap { width: 100%; min-width: 1600px; margin: auto; }
 
 #header { height: 99px; background: #404652; border-bottom: 2px solid #d75605; }
-#header > div { width: 1600px; margin: auto; height: 100%; }
+#header > div { width: 1600px; margin: auto; }
 #header .utill { position: relative; padding-top: 15px; }
 #header .utill > h1 { width: 226px; height: 32px; }
 #header .utill > h1 > a { display: block; height: 32px; }
