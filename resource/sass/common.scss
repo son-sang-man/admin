@@ -211,8 +211,15 @@ input{
 			background-color:#f2f2f2;
 			color:#999;
 		}
+		&[readonly]{ //미정
+			background-color:#f2f2f2;
+			color:#999;
+		}
 		&.txt{
 			border:1px solid #d5d5d5;
+		}
+		+ .btn{
+			margin-left:5px;
 		}
 	}
 	&[type="radio"]
@@ -228,7 +235,6 @@ input{
 		vertical-align:-1px
 	}
 }
-
 textarea{
 	-webkit-appearance:none;
 	-webkit-border-radius:0;
@@ -817,6 +823,14 @@ table{
 			background:#fff;
 			border-bottom:1px solid #d5d5d5;
 			border-left:1px solid #d5d5d5;
+			.necessory{
+				&:before{
+					content:"*";
+					display:inline-block;
+					color:$color4;
+					margin-right:5px;
+				}
+			}
 		}
 	}
 	thead{
@@ -1307,18 +1321,22 @@ table{
 		font-size:0;
 	}
 }
-
 .fileBox{
 	display:inline-block;
 	position:relative;
 	input{
-		&[type="file"] {
-		position:absolute;
-		top:0px;
-		right:0px;
-		width:96px;
-		height:34px;
-		opacity:0;
+		&[type="file"]
+		{
+			position:absolute;
+			top:0px;
+			right:0px;
+			width:96px;
+			height:34px;
+			opacity:0;
+			&:readonly{ //미정
+				background-color:#f2f2f2;
+				color:#999;
+			}
 		}
 	}
 	label{
@@ -1339,9 +1357,6 @@ table{
 		}
 	}
 	.fileHidden{
-
-	}
-	&.ty1{
 
 	}
 }
