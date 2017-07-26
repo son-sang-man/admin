@@ -115,7 +115,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 
 .title1 { padding-left: 17px; font-size: 22px; color: #777; font-weight: bold; background: url(/resource/img/bg_title1.png) no-repeat left center; }
 
-.title2 { padding-left: 12px; margin-top: 20px; font-size: 18px; position: relative; color: #7a7a7a; font-weight: bold; overflow: hidden; background: url(/resource/img/bg_title2.png) no-repeat left center; }
+.title2 { padding-left: 12px; font-size: 18px; position: relative; color: #7a7a7a; font-weight: bold; overflow: hidden; background: url(/resource/img/bg_title2.png) no-repeat left center; }
 .title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableHeader, .title2 + .contentsArea { margin-top: 15px; }
 .title2 + .btnArea { margin-top: 10px; }
 

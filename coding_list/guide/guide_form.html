@@ -120,19 +120,19 @@
 	<div class="guide_wrap">
 
 		<!-- 단독으로 쓰일경우 -->
-		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
 
 		<br /><br />
 
 		<!-- 기간설정 버튼조합 -->
 		<div class="dateArea" data-term="3w">
 			<div class="dateWrap">
-				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
 				~
-				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
 			</div>
 			<div class="dateBtn">
-				<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+				<button type="button" class="btn btnWhite on" data-term="1w">1주일</button><!--  버튼 활성화 된 상태 클래스 on 추가 -->
 				<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
 				<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
 				<button type="button" class="btn btnWhite" data-term="1y">1년</button>
@@ -145,17 +145,19 @@
 <xmp class="prettyprint linenums javascript">
 
 <!-- 단독으로 쓰일경우 -->
-<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+
+<br /><br />
 
 <!-- 기간설정 버튼조합 -->
 <div class="dateArea" data-term="3w">
 	<div class="dateWrap">
-		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
 		~
-		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
 	</div>
 	<div class="dateBtn">
-		<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+		<button type="button" class="btn btnWhite on" data-term="1w">1주일</button><!--  버튼 활성화 된 상태 클래스 on 추가 -->
 		<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
 		<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
 		<button type="button" class="btn btnWhite" data-term="1y">1년</button>
@@ -188,10 +190,10 @@
 	</div>
 
 
-	<h2 class="h2_guide">05. 첨부파일</h2>
+	<h2 class="h2_guide">05. 첨부파일 : 파일명, 삭제기능</h2>
 	<div class="guide_wrap">
 		<div class="fileBox ty1">
-			<input type="text" class="txt" value="파일선택" disabled="disabled" />
+			<input type="text" class="txt" value="파일선택" readonly="readonly" />
 			<label class="aa">찾아보기</label>
 			<input type="file" class="fileHidden" />
 		</div>
