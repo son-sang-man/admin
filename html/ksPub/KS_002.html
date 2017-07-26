@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>KSSN 한국정보통신망</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/layout.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<script>
+		// 인크루드용 개발적용시 삭제
+		$(function(){
+			$("#header").load("/html/inc/layout.html #header > div");
+			$("#footer").load("/html/inc/layout.html #footer > div");
+		})
+	</script>
+</head>
+<body>
+	<div id="skipNavi">
+		<a href="#container">본문 이동</a>
+	</div>
+	<div id="wrap">
+		<!-- header -->
+		<header id="header">
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div class="location">
+				<div>
+					<a href="#">홈</a>
+					<ul>
+						<li> <!-- 하위메뉴 활성화 class="on" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴1111111111111111111111111111111</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li class="last"> <!--  최종 로케이션일 경우 class="last" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contentsTop"><h2 class="title1">COSD 서식편집 정보</h2></div>
+
+			<!-- contents -->
+			<section id="contents">
+				<div class="tableTy1 ty1">
+					<table>
+						<colgroup>
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">구분</th>
+							<td>개정</td>
+							<th scope="row">편집단계</th>
+							<td>검수완료</td>
+						</tr>
+						<tr>
+							<th scope="row">신청일</th>
+							<td>2017-07-01</td>
+							<th scope="row">납품기한</th>
+							<td>2017-07-01</td>
+						</tr>
+						<tr>
+							<th scope="row">신청번호</th>
+							<td>COSD-17-1093</td>
+							<th scope="row">신청기관</th>
+							<td>한국전자정보통신산업진흥회연락처</td>
+						</tr>
+						<tr>
+							<th scope="row">고무표준번호</th>
+							<td colspan="3">X ISO/IEC 9798-4</td>
+						</tr>
+						<tr>
+							<th scope="row">표준명</th>
+							<td colspan="3">고무 및 고무 제품－열중량 분석법을 이용한 가황물과 미가황 혼합물의 조성 측정－제1부：부타디엔 고무, 에틸렌－프로필렌 공중합체와 삼원공중합체, 이소부텐－이소프렌 고무,이소프렌 고무 및 스티렌－부타디엔 고무</td>
+						</tr>
+						<tr>
+							<th scope="row">원안첨부파일</th>
+							<td colspan="3">(제정) KS A ISO 10801_나노기술 나노물질 흡입독성시험을 위한 증발, 응축에 의한 금속나노입자 발생방법.docx</td>
+						</tr>
+						<tr>
+							<th scope="row">작업완료파일</th>
+							<td colspan="3">
+								<div class="fileBox">
+									<input type="text" class="txt" value="파일선택" readonly="readonly" title="파일첨부 파일명" />
+									<label>찾아보기</label>
+									<input type="file" class="fileHidden" title="파일첨부" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">담당부서</th>
+							<td>기술표준센터담당자</td>
+							<th scope="row">담당자</th>
+							<td>황기순</td>
+						</tr>
+						<tr>
+							<th scope="row">연락처</th>
+							<td>010-0000-1234</td>
+							<th scope="row">이메일</th>
+							<td>test0707@test.co.kr</td>
+						</tr>
+						<tr>
+							<th scope="row">요청자 메모</th>
+							<td colspan="3">테스트입니다.</td>
+						</tr>
+						<tr>
+							<th scope="row">요청자 메모</th>
+							<td colspan="3">
+								<textarea>안녕하세요 관리자 입니다. 안녕하세요 관리자 입니다.</textarea>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<h3 class="title2">COSD 확인진행</h3>
+				<div class="tableTy1 ty1">
+					<table>
+						<colgroup>
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">입고예정일 / 처리자</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+								/
+								<input type="text" />
+							</td>
+							<th scope="row">교정완료일 / 교정자</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+								/
+								<input type="text" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">편집완료일 / 편집자</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+								/
+								<input type="text" />
+							</td>
+							<th scope="row">검수완료일 / 검수자</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+								/
+								<input type="text" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">작업면수(표지포함)</th>
+							<td>
+								<input type="text" /> page
+							</td>
+							<th scope="row">검수완료일 / 검수자</th>
+							<td class="tR">90,000원</td>
+						</tr>
+						<tr>
+							<th scope="row">비고</th>
+							<td class="tR" colspan="3">부속서 부분이 부합화 표준으로 존재하여 삭제여부 검토 요함. 그 부분 KSDT 편집 제외(면수에서도 제외)</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="contentsArea col2">
+					<div>
+						<h3 class="title2">교정작업</h3>
+						<div class="tableTy1">
+							<table>
+								<colgroup>
+									<col style="width:10%" />
+									<col style="width:30%" />
+									<col style="width:30%" />
+									<col style="width:30%" />
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">교정 시작일</th>
+									<th scope="col">교정 종료일</th>
+									<th scope="col">작업자</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row" class="tC">교열</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">초교</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">재교</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">3교</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">4교</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div>
+						<h3 class="title2">편집작업</h3>
+						<div class="tableTy1">
+							<table>
+								<colgroup>
+									<col style="width:10%" />
+									<col style="width:30%" />
+									<col style="width:30%" />
+									<col style="width:30%" />
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">편집 시작일</th>
+									<th scope="col">편집 종료일</th>
+									<th scope="col">작업자</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row" class="tC">조판</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">1차</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">2차</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">3차</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								<tr>
+									<th scope="row" class="tC">4차</th>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td>
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</td>
+									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 페이지 내 스크립트 영역 -->
+	<script>
+		ui.init(); // 퍼블리싱 UI적용 스크립트
+	</script>
+	<!-- // 페이지 내 스크립트 영역 -->
+</body>
+</html>
