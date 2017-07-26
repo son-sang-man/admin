@@ -15,20 +15,32 @@
 #header .utill { position: relative; padding-top: 15px; }
 #header .utill > h1 { width: 226px; height: 32px; }
 #header .utill > h1 > a { display: block; height: 32px; }
-#header .utill > ul { position: absolute; right: 0; top: 20px; }
-#header .utill > ul .user { padding-left: 35px; line-height: 28px; background: url(/resource/img/bg_user.png) no-repeat left center; color: #c8ceda; }
-#header .utill > ul > li { display: inline-block; margin-right: 11px; font-size: 12px; color: #c8ceda; line-height: 28px; }
-#header .utill > ul > li a { position: relative; padding: 0 7px; display: inline-block; font-size: 12px; color: #c8ceda; }
-#header .utill > ul > li a:hover, #header .utill > ul > li a:focus { color: #96c7f4; }
-#header .utill > ul > li:before { content: ""; display: inline-block; width: 1px; height: 11px; background: #c8ceda; }
-#header .utill > ul > li:first-child { margin-left: 0; }
-#header .utill > ul > li:first-child:before { display: none; }
+#header .utill .right { position: absolute; right: 0; top: 20px; }
+#header .utill .right .user { padding-left: 35px; padding-right: 6px; line-height: 28px; background: url(/resource/img/bg_user.png) no-repeat left center; color: #c8ceda; }
+#header .utill .right > li { display: inline-block; font-size: 12px; color: #c8ceda; line-height: 28px; }
+#header .utill .right > li > a { position: relative; padding: 0 10px; display: inline-block; font-size: 12px; color: #c8ceda; }
+#header .utill .right > li > a:hover, #header .utill .right > li > a:focus { color: #96c7f4; }
+#header .utill .right > li:before { content: ""; display: inline-block; width: 1px; height: 11px; background: #c8ceda; }
+#header .utill .right > li:first-child { margin-left: 0; }
+#header .utill .right > li:first-child:before { display: none; }
+
+.exchange { margin-left: 10px; }
+.exchange:before { display: none !important; }
+.exchange button { width: 114px; height: 27px; font-size: 0; background: url(/resource/img/btn_exchange.png) no-repeat; }
+.exchange button:hover, .exchange button:focus { background-image: url(/resource/img/btn_exchange_over.png); transition: all 0.3s; }
+
+.exchangePop { position: absolute; right: 0; top: 40px; width: 252px !important; border: 1px solid #d0d0d0; border-top: 4px solid #ef393d; background: #fff; z-index: 20; }
+.exchangePop .head { height: 46px; line-height: 46px; padding: 0 10px; color: #ee1c23; font-weight: bold; }
+.exchangePop .tableTy1 table tr th { height: 33px; line-height: 33px; padding: 0 10px; }
+.exchangePop .tableTy1 table tr td { height: 28px; line-height: 28px; padding: 0 10px; }
+.exchangePop .exClose { position: absolute; right: 0; top: 0; width: 40px; height: 45px; background: url(/resource/img/btn_exclose.png) no-repeat center; overflow: hidden; font-size: 0; white-space: nowrap; }
 
 #gnb > ul { display: inline-block; vertical-align: top; }
-#gnb > ul > li { position: relative; float: left; }
+#gnb > ul > li { position: relative; float: left; margin-left: 2px; }
+#gnb > ul > li:first-child { margin-left: 0; }
 #gnb > ul > li:first-child > a { padding-left: 0; }
 #gnb > ul > li.on > a { color: #96c7f4; }
-#gnb > ul > li > a { display: inline-block; padding: 15px; font-size: 18px; color: #c8ceda; height: 24px; }
+#gnb > ul > li > a { display: inline-block; padding: 15px 34px; font-size: 18px; color: #c8ceda; height: 24px; }
 #gnb > ul > li > ul { display: none; background: #fff; border: 1px solid #6a9fd1; position: absolute; left: 0; top: 54px; box-sizing: border-box; z-index: 2; }
 #gnb > ul > li > ul > li { position: relative; height: 40px; border-top: 1px solid #6a9ed0; }
 #gnb > ul > li > ul > li:first-child { border-top: none; }

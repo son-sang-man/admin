@@ -396,22 +396,30 @@ body{
 }
 
 .title1{
+	padding-left:17px;
 	font-size:22px;
-	color:#444;
+	color:#777;
+	@include weight("B");
+	background:url(#{$img-common}bg_title1.png) no-repeat left center;
 }
 .title2{
+	padding-left:12px;
 	font-size:18px;
-	padding:20px 0 15px;
+	padding:20px 0 15px 12px;
 	position:relative;
-	color:#444;
-	@include weight("N");
+	color:#7a7a7a;
+	@include weight("B");
 	overflow:hidden;
+	background:url(#{$img-common}bg_title2.png) no-repeat left center;
+}
+.blit{
+
 }
 
 .tableHeader{
 	display:block;
 	vertical-align:top;
-	text-align:right;
+	overflow:hidden;
 	> h3{
 		float:left;
 	}
@@ -771,19 +779,33 @@ table{
 			&:first-child{
 				border-left:0;
 			}
-
 		}
 	}
 	tbody{
-		th{
-			border-top:1px solid #d5d5d5;
-			border-left:1px solid #d5d5d5;
-
-		}
-		td{
-			border-top:1px solid #d5d5d5;
-			&:first-child{
-				border-left:0;
+		tr{
+			&:hover,
+			&:focus{
+				th, 
+				td{
+					background:#fbfbfb;
+				}
+			}
+			&.add{
+				th, 
+				td{
+					background:#f4faff;
+				}
+			}
+			th{
+				border-top:1px solid #d5d5d5;
+				border-left:1px solid #d5d5d5;
+			}
+			td{
+				border-top:1px solid #d5d5d5;
+				color:$color0;
+				&:first-child{
+					border-left:0;
+				}
 			}
 		}
 	}
@@ -797,8 +819,24 @@ table{
 	+ .btnArea{
 		margin-top:10px;
 	}
+	&.ty1{
+		tbody{
+			tr{
+				&:hover,
+				&:focus{
+					th, 
+					td{
+						background:none;
+					}
+				}
+			}
+		}	
+	}
 
 }
+
+
+
 .tableTy2 {
 	border:1px solid #bcc8d4;
 	background:#d0dce7;
@@ -863,11 +901,11 @@ table{
 			}
 			&:disabled{
 				+ label{
-				background-image:url(#{$img-common}bg_radio_disable.png) no-repeat;
+				background-image:url(#{$img-common}bg_radio_disable.png);
 				}
 				&:checked{
 					+ label{
-						background-image:url(#{$img-common}bg_radio_disable_on.png) no-repeat;
+						background-image:url(#{$img-common}bg_radio_disable_on.png);
 					}
 				}
 			}
@@ -914,11 +952,11 @@ table{
 			}
 			&:disabled{
 				+ label{
-					background-image:url(#{$img-common}bg_check_disable.png) no-repeat;
+					background-image:url(#{$img-common}bg_check_disable.png);
 				}
 				&:checked{
 					+ label{
-						background-image:url(#{$img-common}bg_check_disable_on.png) no-repeat;
+						background-image:url(#{$img-common}bg_check_disable_on.png);
 					}
 				}
 			}
@@ -1072,17 +1110,17 @@ table{
 	}
 }
 .btnBlue{
-	background:#7c9dbc;
+	background-color:#7c9dbc;
 	border:1px solid #718fac;
 	&:hover,
 	&:focus{
-		background:#ff903b;
+		background-color:#ff903b;
 		border:1px solid #ff903b;
 		transition:all 0.3s;
 	}
 }
 .btnWhite{
-	background:#fff;
+	background-color:#fff;
 	border:1px solid #7f8f9e;
 	color:#666;
 	&:hover,
@@ -1093,13 +1131,13 @@ table{
 	}
 }
 .btnRed{
-	background:#ffbfbf;
+	background-color:#ffbfbf;
 	border:1px solid #f2151a;
 	color:#f2151a;
 }
 
 .btnGray{
-	background:#f2f2f2;
+	background-color:#f2f2f2;
 	border:1px solid #bfbfbf;
 	color:#999;
 }
@@ -1122,15 +1160,45 @@ table{
 		color:$color4;
 		transition:all 0.3s;
 	}
+	&.btnPrint{
+		padding-left:35px;
+		background:url(#{$img-common}btn_print_s.png) no-repeat 10px center;
+		&:hover,
+		&:focus{
+			background-image:url(#{$img-common}btn_print_s_over.png);
+		}
+	}
+	&.btnPdf{
+		padding-left:30px;
+		background:url(#{$img-common}btn_pdf_s.png) no-repeat 10px center;
+		&:hover,
+		&:focus{
+			background-image:url(#{$img-common}btn_pdf_s_over.png);
+		}
+	}
 }
 .btnPrint{
 	padding-left:35px;
-	background-image:url();
+	background-image:url(#{$img-common}btn_print.png);
+	background-repeat:no-repeat;
+	background-position:10px center;
 
 }
 .btnPdf{
 	padding-left:30px;
-	background-image:url();
+	background-image:url(#{$img-common}btn_pdf.png);
+	background-repeat:no-repeat;
+	background-position:10px center;
+}
+.btnLink{
+	display:inline-block;
+	color:$color2;
+	text-decoration:underline;
+	&:hover,
+	&:focus{ 
+		text-decoration:underline;
+		
+	}
 }
 
 
