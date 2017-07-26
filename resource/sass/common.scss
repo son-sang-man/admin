@@ -576,15 +576,26 @@ body{
 				display:block;
 				width:22px;
 				height:22px;
-				line-height:21px;
+				line-height:22px;
 				text-align:center;
 				margin:auto;
 				text-decoration:none;
 				&:hover,
-				&:focus{
+				&:focus,
+				&.ui-state-active{
 					background:#087ea5;
-					border-radius:10px;
-					color:#fff;
+					border-radius:11px;
+					color:#fff !important;
+				}
+			}
+			&:first-child{
+				a{
+					color:$color4;
+				}
+			}
+			&:nth-of-type(7){
+				a{
+					color:$color5;
 				}
 			}
 		}
@@ -607,36 +618,39 @@ body{
 				}
 			}
 		}
-		tbody{
-			tr{
-				td{
-					&:first-child{
-						a{
-							color:#697685;
-							&:hover,
-							&:focus{
-								width:20px;
-								height:20px;
-								background:#087ea5;
-								border-radius:10px;
-								color:#fff;
-							}
-						}
-					}
-					&:nth-of-type(7){
-						a{
-							color:#326fdf;
-							&:hover,
-							&:focus{
-								background:#087ea5;
-								border-radius:10px;
-								color:#fff;
-							}
-						}
-					}
-				}
-			}
-		}
+		// tbody{
+		// 	tr{
+		// 		td{
+		// 			a{
+		// 				&.ui-state-active{
+
+		// 				}
+		// 			}
+		// 			&:first-child{
+		// 				a{
+		// 					color:$color4;
+		// 					// &:hover,
+		// 					// &:focus{
+		// 					// 	width:20px;
+		// 					// 	height:20px;
+		// 					// 	background:#087ea5;
+		// 					// 	border-radius:10px;
+		// 					// 	color:#fff;
+		// 					// }
+		// 				}
+		// 			}
+		// 			&:nth-of-type(7){
+		// 				a{
+		// 					color:$color5;
+		// 					// &:hover,
+		// 					// &:focus{
+		// 					// 	color:#fff;
+		// 					// }
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 	.ui-datepicker-buttonpane {
 		display:none;
@@ -875,8 +889,7 @@ table{
 	height:2px;
 	background:#666;
 	text-align:center;
-	margin:0 2px
-
+	margin:0 2px;
 }
 
 /* radio */
