@@ -58,10 +58,65 @@
 </xmp>
 </div>
 <!-- // code -->
+
+	<h2 class="h2_guide">02.탭</h2>
+	<div class="guide_wrap">
+		<div class="tab">
+			<ul>
+				<li class="on"><a href="#" title="활성화">탭명1</a></li>
+				<li><a href="#">탭명2</a></li>
+				<li><a href="#">탭명3</a></li>
+				<li><a href="#">탭명4</a></li>
+			</ul>
+			<div class="tabContent">
+				<div class="on">탭 컨텐츠 1</div>
+				<div>탭 컨텐츠 2</div>
+				<div>탭 컨텐츠 3</div>
+				<div>탭 컨텐츠 4</div>
+			</div>
+		</div>
 	</div>
 
-</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".tab >  > li > a").click(function(e){
+		e.preventDefault();
+		var index = $(this).parent().index();
+		$(this).parent().addClass("on").siblings().removeClass("on");
+		$(this).attr("title","활성화").parent().siblings().children("a").removeAttr("title");
+		$(".tabContent").find("> div").eq(index).show().siblings().hide();
+	});
+})
+</script>
 
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="tab">
+	<ul>
+		<li class="on"><a href="#" title="활성화">탭명1</a></li>
+		<li><a href="#">탭명2</a></li>
+		<li><a href="#">탭명3</a></li>
+		<li><a href="#">탭명4</a></li>
+	</ul>
+	<div class="tabContent">
+		<div class="on"> 
+			탭 컨텐츠
+		</div>
+		<div>
+			탭 컨텐츠
+		</div>
+		<div>
+			탭 컨텐츠
+		</div>
+		<div>
+			탭 컨텐츠
+		</div>
+	</div>
+</div>
+</xmp>
+</div>
+</div>
+</body>
 <script type="text/javascript" src="/coding_list/js/pretty.js"></script>
 <script>
 	ui.selectBox.init();

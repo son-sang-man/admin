@@ -72,16 +72,26 @@ $(document).ready(function(){
 	
 });
 
-$(document).ready(function(){
-  var fileTarget = $('.filebox .fileHidden');
+ $(document).ready(function(){
+//   var fileTarget = $('.filebox .fileHidden');
 
-    fileTarget.on('change', function(){
-        if(window.FileReader){
-            var filename = $(this)[0].files[0].name;
-        } else {
-            var filename = $(this).val().split('/').pop().split('\\').pop();
-        }
-        $(this).siblings('.txt').val(filename);
-    });
+//     fileTarget.on('change', function(){
+//         if(window.FileReader){
+//             var filename = $(this)[0].files[0].name;
+//         } else {
+//             var filename = $(this).val().split('/').pop().split('\\').pop();
+//         }
+//         $(this).siblings('.txt').val(filename);
+//     });
+
+
+	$(".ccc").change(function(){
+		var idx = $(this).find("> option:selected").index();
+		console.log(idx);
+	});
+		$(".fileHidden").change(function(){
+			var aa = $(this).val();
+			$(".filebox input[type='text']").val(aa);
+		});
 
 }); 
