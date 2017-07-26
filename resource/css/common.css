@@ -104,9 +104,9 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .widAll { width: 100%; }
 
 .selectBox { display: inline-block; }
-.selectBox .designSelect { position: relative; background: #fff; }
+.selectBox .designSelect { position: relative; background: #fff; border: 1px solid #d5d5d5; }
 .selectBox .designSelect.on button { border: 2px solid #7c9dbc; background-image: url(/resource/img/bg_select_over.png); }
-.selectBox .designSelect button { border: 1px solid #d5d5d5; padding: 0 47px 0 10px; width: 100%; height: 34px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 34px; box-sizing: border-box; text-align: left; font-size: 14px; color: #666; }
+.selectBox .designSelect button { padding: 0 47px 0 10px; width: 100%; height: 34px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 34px; box-sizing: border-box; text-align: left; font-size: 14px; color: #666; }
 .selectBox ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; top: 34px; box-sizing: border-box; width: 100%; padding: 10px 0; z-index: 1; }
 .selectBox ul li a { display: block; padding: 0 10px; font-size: 13px; color: #666; line-height: 22px; text-align: left; }
 .selectBox ul li a:hover, .selectBox ul li a:focus { color: #7c9dbc; }
@@ -114,12 +114,12 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .title1 { padding-left: 17px; font-size: 22px; color: #777; font-weight: bold; background: url(/resource/img/bg_title1.png) no-repeat left center; }
 
 .title2 { padding-left: 12px; margin-top: 20px; font-size: 18px; position: relative; color: #7a7a7a; font-weight: bold; overflow: hidden; background: url(/resource/img/bg_title2.png) no-repeat left center; }
-.title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableHeader { margin-top: 15px; }
+.title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableHeader, .title2 + .contentsArea { margin-top: 15px; }
 
 .blit { position: relative; padding: 10px 0; font-size: 13px; padding-left: 8px; text-align: left; }
 .blit:before { content: ""; position: absolute; left: 0; top: 18px; width: 3px; height: 3px; background: #666; display: inline-block; }
 
-.tableHeader { display: block; vertical-align: top; overflow: hidden; }
+.tableHeader { width: 100%; display: inline-block; vertical-align: top; }
 .tableHeader > h3 { float: left; }
 .tableHeader .fR { padding-top: 20px; }
 .tableHeader .btn_ico { margin-left: 1px; }
@@ -181,6 +181,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 table tr .necessory { position: relative; }
 table tr .necessory:before { content: "*"; display: inline-block; color: #df3232; }
 
+.tableTy1 { margin-top: 20px; }
 .tableTy1 table { width: 100%; }
 .tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
 .tableTy1 tr td { padding: 13px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
@@ -202,6 +203,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy2 tr th { padding: 12px 15px 0 20px; font-size: 14px; color: #666; background: #d0dce7; text-align: left; }
 .tableTy2 tr td { padding: 12px 20px 0 0; font-size: 14px; background: #d0dce7; }
 .tableTy2 tr td input:first-child { margin-left: 0; }
+.tableTy2 tr td input .dateBox { height: 34px; border: none; }
 
 .dot { display: inline-block; width: 1px; height: 2px; background: #666; text-align: center; margin: 0 2px; }
 
@@ -228,7 +230,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .checkBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 
 /* paging */
-.paging { height: 38px; line-height: 38px; text-align: center; margin-top: 22px; }
+.paging { height: 38px; line-height: 38px; text-align: center; margin-top: 25px; }
 .paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 38px; height: 38px; border: 1px solid #e7e7e7; box-sizing: border-box; }
 .paging > span { display: inline-block; height: 38px; margin: 0 15px; vertical-align: top; }
 .paging > span > a { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; }
@@ -245,9 +247,9 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .paging .end:hover, .paging .end:focus { background-image: url(/resource/img/btn_page_end_over.png); }
 
 /* button */
-.btnArea { text-align: center; }
+.btnArea { text-align: center; margin-bottom: 30px; }
 
-.btn { display: inline-block; padding: 0 19px; height: 32px; font-size: 15px; font-weight: bold; color: #fff; line-height: 32px; }
+.btn { display: inline-block; padding: 0 19px; height: 34px; line-height: 34px; box-sizing: border-box; font-size: 15px; font-weight: bold; color: #fff; }
 .btn + .btn { margin-left: 4px; }
 
 .btnSmall { display: inline-block; padding: 0 10px; height: 28px; font-size: 12px; color: #fff; line-height: 28px; }
