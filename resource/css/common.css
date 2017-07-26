@@ -132,6 +132,8 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; height: 32px; vertical-align: middle; }
 .dateBox input { height: 32px; line-height: 32px; border: none; }
 
+.dateArea .dateWrap, .dateArea .dateBtn { display: inline-block; vertical-align: top; }
+
 .ui-datepicker { width: 236px; }
 .ui-datepicker .ui-icon { display: block; overflow: hidden; font-size: 0; height: 0; }
 .ui-datepicker.ui-widget-content { background: #fff; border: 1px solid #ccc; }

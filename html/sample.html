@@ -91,22 +91,11 @@
 				<div class="btnArea">
 					<button class="btn btnBlue">조회</button>
 				</div>
+				<h3 class="title2">핸드북 카테고리 목록</h3>
 				<div class="tableHeader">
-					<h3 class="title2">핸드북 카테고리 목록</h3>
-					<div class="fR">
-						<span class="tablePaging">
-							<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
-						</span>
-						<button type="button" class="btn_ico btnPrint">인쇄</button>
-						<button type="button" class="btn_ico btnPdf">엑셀 다운로드</button>
-						<div class="selectBox" data-form="selectBox"> 
-							<select title="검색어 분류" id="select0">
-								<option>전체</option>
-								<option>제목</option>
-								<option>내용</option>
-							</select>
-						</div>
-					</div>
+					<span class="tablePaging">
+						<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+					</span>
 				</div>
 				<div class="tableTy1">
 					<table>
@@ -211,19 +200,6 @@
 				</div>
 			</section>
 			<!-- //contents -->
-			<div class="dateArea">
-				<div class="dateWrap">
-					<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
-					~
-					<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
-				</div>
-				<div class="dateBtn">
-					<button type="button" class="btn btnWhite" data-term="2w">1주일</button>
-					<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
-					<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
-					<button type="button" class="btn btnWhite" data-term="1y">1년</button>
-				</div>
-			</div>
 		</div>
 		<!-- //container -->
 
@@ -238,28 +214,6 @@
 	<!-- 페이지 내 스크립트 영역 -->
 	<script>
 		ui.init(); // 퍼블리싱 UI적용 스크립트
-
-		$(".dateArea .dateBtn button").click(function(){
-			var fromDate = new Date()
-			var termNumber =  parseFloat($(this).data('term').replace(/a-z/gi, ''))
-			var term =  $(this).data('term').replace(/[0-9]/gi, '');
-			switch(term){
-				case "d" :
-					fromDate.setDate(fromDate.getDate() - termNumber);
-				break;
-				case "w" :
-					fromDate.setDate(fromDate.getDate() - (termNumber*6) - 1);
-				break;
-				case "m" :
-					fromDate.setMonth(fromDate.getMonth() - termNumber);
-				break;
-				case "y" :
-					fromDate.setYear(fromDate.getFullYear() - termNumber);
-				break;
-			}
-			var date = fromDate.getFullYear() + "-" + (fromDate.getMonth() + 1) + "-" + fromDate.getDate();
-		});
-
 	</script>
 	<!-- // 페이지 내 스크립트 영역 -->
 </body>
