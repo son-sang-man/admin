@@ -404,13 +404,18 @@ body{
 }
 .title2{
 	padding-left:12px;
+	margin-top:20px;
 	font-size:18px;
-	padding:20px 0 15px 12px;
 	position:relative;
 	color:#7a7a7a;
 	@include weight("B");
 	overflow:hidden;
 	background:url(#{$img-common}bg_title2.png) no-repeat left center;
+	+ .tableTy1,
+	+ .tableTy2,
+	+ .tableHeader{
+		margin-top:15px;
+	} 
 }
 .blit{
 	position:relative;
@@ -443,6 +448,9 @@ body{
 	}
 	.btn_ico{
 		margin-left:1px;
+	}
+	+ .tableTy1{
+		margin-top:15px;
 	}
 	.tablePaging{
 		display:inline-block;
@@ -843,7 +851,7 @@ table{
 		}
 	}
 	+ .btnArea{
-		margin-top:10px;
+		margin-top:20px;
 	}
 	&.ty1{
 		tbody{
@@ -1302,7 +1310,11 @@ table{
 	.fileHidden{
 
 	}
+	&.ty1{
+
+	}
 }
+
 .fileList{
 	margin-top:10px;
 	> span{
