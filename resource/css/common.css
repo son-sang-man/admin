@@ -111,11 +111,11 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .selectBox ul li a { display: block; padding: 0 10px; font-size: 13px; color: #666; line-height: 22px; text-align: left; }
 .selectBox ul li a:hover, .selectBox ul li a:focus { color: #7c9dbc; }
 
-.title1 { font-size: 22px; color: #444; }
+.title1 { padding-left: 17px; font-size: 22px; color: #777; font-weight: bold; background: url(/resource/img/bg_title1.png) no-repeat left center; }
 
-.title2 { font-size: 18px; padding: 20px 0 15px; position: relative; color: #444; font-weight: normal; overflow: hidden; }
+.title2 { padding-left: 12px; font-size: 18px; padding: 20px 0 15px 12px; position: relative; color: #7a7a7a; font-weight: bold; overflow: hidden; background: url(/resource/img/bg_title2.png) no-repeat left center; }
 
-.tableHeader { display: block; vertical-align: top; text-align: right; }
+.tableHeader { display: block; vertical-align: top; text-align: right; overflow: hidden; }
 .tableHeader > h3 { float: left; }
 .tableHeader .fR { padding-top: 20px; }
 .tableHeader .btn_ico { margin-left: 1px; }
@@ -182,11 +182,14 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy1 tr td { padding: 13px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
 .tableTy1 thead th { text-align: center; }
 .tableTy1 thead th:first-child { border-left: 0; }
-.tableTy1 tbody th { border-top: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
-.tableTy1 tbody td { border-top: 1px solid #d5d5d5; }
-.tableTy1 tbody td:first-child { border-left: 0; }
+.tableTy1 tbody tr:hover th, .tableTy1 tbody tr:hover td, .tableTy1 tbody tr:focus th, .tableTy1 tbody tr:focus td { background: #fbfbfb; }
+.tableTy1 tbody tr.add th, .tableTy1 tbody tr.add td { background: #f4faff; }
+.tableTy1 tbody tr th { border-top: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
+.tableTy1 tbody tr td { border-top: 1px solid #d5d5d5; color: #666; }
+.tableTy1 tbody tr td:first-child { border-left: 0; }
 .tableTy1.scrollY .body { height: 200px; overflow-y: auto; }
 .tableTy1 + .btnArea { margin-top: 10px; }
+.tableTy1.ty1 tbody tr:hover th, .tableTy1.ty1 tbody tr:hover td, .tableTy1.ty1 tbody tr:focus th, .tableTy1.ty1 tbody tr:focus td { background: none; }
 
 .tableTy2 { border: 1px solid #bcc8d4; background: #d0dce7; padding-bottom: 12px; }
 .tableTy2 + .btnArea { margin-top: 10px; }
@@ -213,8 +216,8 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .checkBox + .checkBox { margin-left: 20px; }
 .checkBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
 .checkBox input[type="checkbox"]:checked + label { background: url(/resource/img/bg_check_on.png) no-repeat 0 5px; }
-.checkBox input[type="checkbox"]:disabled + label { background-image: url(/resource/img/bg_check_disable.png) no-repeat; }
-.checkBox input[type="checkbox"]:disabled:checked + label { background-image: url(/resource/img/bg_check_disable_on.png) no-repeat; }
+.checkBox input[type="checkbox"]:disabled + label { background-image: url(/resource/img/bg_check_disable.png); }
+.checkBox input[type="checkbox"]:disabled:checked + label { background-image: url(/resource/img/bg_check_disable_on.png); }
 .checkBox label { display: block; padding-left: 23px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; }
 .checkBox.blindLable { width: 17px; margin-left: 0; }
 .checkBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
@@ -245,23 +248,30 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .btnSmall { display: inline-block; padding: 0 10px; height: 28px; font-size: 12px; color: #fff; line-height: 28px; }
 .btnSmall + .btnSmall { margin-left: 4px; }
 
-.btnBlue { background: #7c9dbc; border: 1px solid #718fac; }
-.btnBlue:hover, .btnBlue:focus { background: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
+.btnBlue { background-color: #7c9dbc; border: 1px solid #718fac; }
+.btnBlue:hover, .btnBlue:focus { background-color: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
 
-.btnWhite { background: #fff; border: 1px solid #7f8f9e; color: #666; }
+.btnWhite { background-color: #fff; border: 1px solid #7f8f9e; color: #666; }
 .btnWhite:hover, .btnWhite:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
 
-.btnRed { background: #ffbfbf; border: 1px solid #f2151a; color: #f2151a; }
+.btnRed { background-color: #ffbfbf; border: 1px solid #f2151a; color: #f2151a; }
 
-.btnGray { background: #f2f2f2; border: 1px solid #bfbfbf; color: #999; }
+.btnGray { background-color: #f2f2f2; border: 1px solid #bfbfbf; color: #999; }
 
 .btn_ico { background: #fff; border: 1px solid #718fac; color: #7c9dbc; display: inline-block; padding: 0 10px; height: 26px; font-size: 14px; line-height: 26px; }
 .btn_ico + .btn { margin-left: 4px; }
 .btn_ico:hover, .btn_ico:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
+.btn_ico.btnPrint { padding-left: 35px; background: url(/resource/img/btn_print_s.png) no-repeat 10px center; }
+.btn_ico.btnPrint:hover, .btn_ico.btnPrint:focus { background-image: url(/resource/img/btn_print_s_over.png); }
+.btn_ico.btnPdf { padding-left: 30px; background: url(/resource/img/btn_pdf_s.png) no-repeat 10px center; }
+.btn_ico.btnPdf:hover, .btn_ico.btnPdf:focus { background-image: url(/resource/img/btn_pdf_s_over.png); }
 
-.btnPrint { padding-left: 35px; background-image: url(); }
+.btnPrint { padding-left: 35px; background-image: url(/resource/img/btn_print.png); background-repeat: no-repeat; background-position: 10px center; }
 
-.btnPdf { padding-left: 30px; background-image: url(); }
+.btnPdf { padding-left: 30px; background-image: url(/resource/img/btn_pdf.png); background-repeat: no-repeat; background-position: 10px center; }
+
+.btnLink { display: inline-block; color: #7c9dbc; text-decoration: underline; }
+.btnLink:hover, .btnLink:focus { text-decoration: underline; }
 
 .popup { position: relative; }
 .popup .popHeader { height: 60px; background: #7d8d9c; }

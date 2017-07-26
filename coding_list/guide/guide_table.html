@@ -235,13 +235,36 @@
 	
 	<h2 class="h2_guide">03. 테이블헤더영역</h2>
 	<div class="guide_wrap">
+
 		<div class="tableHeader">
+			<h3 class="title2">타이틀과 함께 쓰일경우</h3>
+			<div class="fR">
+				<span class="tablePaging">
+					<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+				</span>
+				<button type="button" class="btn_ico btnPrint">인쇄</button>
+				<button type="button" class="btn_ico btnPdf">엑셀 다운로드</button>
+				<div class="selectBox" data-form="selectBox"> 
+					<select title="검색어 분류" id="select0">
+						<option>전체</option>
+						<option>제목</option>
+						<option>내용</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<div class="tableHeader">
+		<h3 class="title2">타이틀과 함께 쓰일경우</h3>
+		<div class="fR">
 			<span class="tablePaging">
 				<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
 			</span>
-			<button type="button" class="btn btnBlue">조회</button>
-			<button type="button"class="btn btnWhite">조회</button>
-			<button type="button" class="btn btnGray">신청취소</button>
+			<button type="button" class="btn_ico btnPrint">인쇄</button>
+			<button type="button" class="btn_ico btnPdf">엑셀 다운로드</button>
 			<div class="selectBox" data-form="selectBox"> 
 				<select title="검색어 분류" id="select0">
 					<option>전체</option>
@@ -251,30 +274,23 @@
 			</div>
 		</div>
 	</div>
-<!-- code -->
-<div class="d_desc code">
-<xmp class="prettyprint linenums javascript">
-<<div class="tableHeader">
-		
-	<!-- 리스트페이징 -->
-	<span class="tablePaging">
-		<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
-	</span>
 
-	<!-- 버튼 -->
-	<button type="button" class="btn btnBlue">조회</button>
-	<button type="button" class="btn btnWhite">조회</button>
-	<button type="button" class="btn btnGray">신청취소</button>
-	
-	<!-- 셀렉트박스 -->
-	<div class="selectBox" data-form="selectBox"> 
-		<select title="검색어 분류" id="select0">
-			<option>전체</option>
-			<option>제목</option>
-			<option>내용</option>
-		</select>
+	<!-- 타이틀이 없을 경우 -->
+	<div class="tableHeader">
+		<span class="tablePaging">
+			<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
+		</span>
+		<button type="button" class="btn_ico btnPrint">인쇄</button>
+		<button type="button" class="btn_ico btnPdf">엑셀 다운로드</button>
+		<div class="selectBox" data-form="selectBox"> 
+			<select title="검색어 분류" id="select0">
+				<option>전체</option>
+				<option>제목</option>
+				<option>내용</option>
+			</select>
+		</div>
 	</div>
-</div>
+
 </xmp>
 </div>
 <!-- //code -->
@@ -336,7 +352,7 @@
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
 <!-- table_ty01 -->
-<<div class="tableTy1">
+<div class="tableTy1">
 	<table>
 		<colgroup>
 		<col style="width:99px" />
@@ -392,7 +408,7 @@
 <h2 class="h2_guide">05. 세로형 테이블</h2>
 	<div class="guide_wrap">
 		<!-- table_ty01 -->
-		<div class="tableTy1">
+		<div class="tableTy1 ty1">
 			<table>
 				<colgroup>
 					<col style="width:134px;" />
