@@ -169,8 +169,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tab > ul li:first-child { border-left: 1px solid #d5d5d5; }
 .tab > ul li:last-child { border-right: 1px solid #d5d5d5; }
 .tab > ul li a { position: relative; display: block; min-width: 134px; height: 36px; line-height: 36px; text-align: center; box-sizing: border-box; }
-.tab > ul li.on { background: #fff; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; }
-.tab > ul li.on a { font-size: 16px; }
+.tab > ul li.on { background: #fff; }
 .tab > ul li.on a:after { content: ""; position: absolute; left: 0; top: -1px; width: 100%; height: 36px; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; border-top: 2px solid #7c9dbc; }
 .tab > ul li.tab > ul li a:hover, .tab > ul li.tab > ul li a:focus { color: #666; }
 .tab .tabContent > div { display: none; }
