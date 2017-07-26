@@ -48,7 +48,7 @@ input[type="text"].txt, input[type="password"].txt, input[type="tel"].txt, input
 input[type="radio"] { width: 17px; height: 17px; vertical-align: -1px; }
 input[type="checkbox"] { width: 13px; height: 13px; vertical-align: -1px; }
 
-textarea { -webkit-appearance: none; -webkit-border-radius: 0; border: 1px solid #ccc; color: #666; background: #fff; padding: 15px; font-size: 15px; width: 100%; box-sizing: border-box; }
+textarea { -webkit-appearance: none; -webkit-border-radius: 0; border: 1px solid #ccc; color: #666; background: #fff; padding: 15px 10px; font-family: "segoe ui", "malgun gothic", "맑은 고딕", sans-serif; font-size: 14px; width: 100%; height: 150px; box-sizing: border-box; }
 
 body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun gothic", "맑은 고딕", sans-serif; color: #666; background: #fff; letter-spacing: -1.0px; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
@@ -130,6 +130,8 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tableHeader .selectBox { margin-left: 1px; }
 .tableHeader .selectBox .designSelect button { height: 26px; line-height: 26px; }
 .tableHeader .selectBox ul { top: 26px !important; }
+.tableHeader dl { display: inline-block; margin-right: 10px; }
+.tableHeader dl.txt dt, .tableHeader dl.txt dd { display: inline-block; }
 
 /* datepicker */
 .dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; height: 32px; vertical-align: middle; }
@@ -172,15 +174,14 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tab > ul li:last-child { border-right: 1px solid #d5d5d5; }
 .tab > ul li a { position: relative; display: block; min-width: 134px; height: 36px; line-height: 36px; text-align: center; box-sizing: border-box; }
 .tab > ul li.on { background: #fff; }
-.tab > ul li.on a:after { content: ""; position: absolute; left: 0; top: -1px; width: 100%; height: 36px; border-left: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; border-top: 2px solid #7c9dbc; }
+.tab > ul li.on a:after { content: ""; position: absolute; left: 0; top: -1px; width: 100%; height: 36px; border-top: 2px solid #7c9dbc; }
 .tab > ul li.tab > ul li a:hover, .tab > ul li.tab > ul li a:focus { color: #666; }
 .tab .tabContent > div { display: none; }
 .tab .tabContent > div.on { display: block; }
 
-/* table */
-table tr .necessory { position: relative; }
-table tr .necessory:before { content: "*"; display: inline-block; color: #df3232; }
+.necessory:before { content: "*"; display: inline-block; color: #df3232; margin-right: 5px; }
 
+/* table */
 .tableTy1 table { width: 100%; }
 .tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
 .tableTy1 tr td { padding: 13px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }

@@ -237,9 +237,11 @@ textarea{
 	border:1px solid #ccc;
 	color:$color0;
 	background:#fff;
-	padding:15px;
-	font-size:15px;
+	padding:15px 10px;
+	font-family:$font;
+	font-size:14px;
 	width:100%;
+	height:150px;
 	box-sizing:border-box;
 }
 
@@ -482,6 +484,16 @@ body{
 			top:26px !important;
 		}
 	}
+	dl{
+		display:inline-block;
+		margin-right:10px;
+		&.txt{
+			dt,
+			dd{
+				display:inline-block;
+			}
+		}
+	}
 }
 
 /* datepicker */
@@ -707,8 +719,6 @@ body{
 			 			top:-1px;
 			 			width:100%;
 			 			height:36px;
-			 			border-left:1px solid #d5d5d5;
-			 			border-right:1px solid #d5d5d5;
 			 			border-top:2px solid #7c9dbc;
 			 		}
 			 	}
@@ -736,20 +746,15 @@ body{
 		}
 	}
 }
-
-/* table */
-table{
-	tr{
-		.necessory{
-			position:relative;
-			&:before{
-				content:"*";
-				display:inline-block;
-				color:#df3232;
-			}
-		}
+.necessory{
+	&:before{
+		content:"*";
+		display:inline-block;
+		color:#df3232;
+		margin-right:5px;
 	}
 }
+/* table */
 .tableTy1 {
 	table {
 		width:100%;
@@ -977,9 +982,6 @@ table{
 		color:#4c4c4c;
 		background:url(#{$img-common}bg_check.png) no-repeat 0 5px;
 		cursor:pointer;
- 		// &:hover{
- 		// 	background:url(#{$img-common}bg_check_over.png) no-repeat 0 5px;
- 		// }
 	}
 	&.blindLable{
 		width:17px;

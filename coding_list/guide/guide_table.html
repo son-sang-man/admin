@@ -235,7 +235,7 @@
 	
 	<h2 class="h2_guide">03. 테이블헤더영역</h2>
 	<div class="guide_wrap">
-
+		<!-- 테이블 위에 버튼, 페이징, 셀렉트박스 등 기능이 노출되는 형식 -->
 		<div class="tableHeader">
 			<h3 class="title2">타이틀과 함께 쓰일경우</h3>
 			<div class="fR">
@@ -253,30 +253,32 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- 테이블 위에 노출되는 텍스트 형식 1 -->
+		<div class="tableHeader">
+			<dl class="txt">
+				<dt>원가총액 :</dt>
+				<dd><strong class="fontColor5">1,210</strong> USD</dd>
+			</dl>
+			<dl class="txt">
+				<dt>원화총액 :</dt>
+				<dd><strong class="fontColor5">1,210</strong> 원</dd>
+			</dl>
+		</div>
+
+		<!-- 테이블 위에 노출되는 텍스트 형식 2 -->
+		<div class="tableHeader tR">
+			<span class="necessory fontColor5">표시사항은 필수입력사항입니다.</span>
+		</div>
+
 	</div>
 <!-- code -->
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
-	<div class="tableHeader">
-		<h3 class="title2">타이틀과 함께 쓰일경우</h3>
-		<div class="fR">
-			<span class="tablePaging">
-				<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
-			</span>
-			<button type="button" class="btn_ico btnPrint">인쇄</button>
-			<button type="button" class="btn_ico btnPdf">엑셀 다운로드</button>
-			<div class="selectBox" data-form="selectBox"> 
-				<select title="검색어 분류" id="select0">
-					<option>전체</option>
-					<option>제목</option>
-					<option>내용</option>
-				</select>
-			</div>
-		</div>
-	</div>
-
-	<!-- 타이틀이 없을 경우 -->
-	<div class="tableHeader">
+<!-- 테이블 위에 버튼, 페이징, 셀렉트박스 등 기능이 노출되는 형식 -->
+<div class="tableHeader">
+	<h3 class="title2">타이틀과 함께 쓰일경우</h3>
+	<div class="fR">
 		<span class="tablePaging">
 			<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
 		</span>
@@ -290,6 +292,24 @@
 			</select>
 		</div>
 	</div>
+</div>
+
+<!-- 테이블 위에 노출되는 텍스트 형식 1 -->
+<div class="tableHeader">
+	<dl class="txt">
+		<dt>원가총액 :</dt>
+		<dd><strong class="fontColor5">1,210</strong> USD</dd>
+	</dl>
+	<dl class="txt">
+		<dt>원화총액 :</dt>
+		<dd><strong class="fontColor5">1,210</strong> 원</dd>
+	</dl>
+</div>
+
+<!-- 테이블 위에 노출되는 텍스트 형식 2 -->
+<div class="tableHeader tR">
+	<span class="necessory fontColor5">표시사항은 필수입력사항입니다.</span>
+</div>	
 
 </xmp>
 </div>
@@ -459,6 +479,12 @@
 					<tr>
 						<th scope="row"><span class="necessory" title="필수사항">필수사항</span></th>
 						<td>필수사항입니다.</td>
+					</tr>
+					<tr>
+						<th scope="row">textarea</th>
+						<td>
+							<textarea>내용</textarea>
+						</td>
 					</tr>
 				</tbody>
 			</table>
