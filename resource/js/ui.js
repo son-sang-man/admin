@@ -12,7 +12,7 @@ var ui = {
 			// 1 Depth Mouse Event
 			$(document).on({
 				mouseenter : function(){
-					if($(this).find("ul").is(":animated")) return;
+					// if($("#gnb > ul > li").find("ul").is(":animated")) return;
 					$(this).addClass("on").attr("title","선택됨").siblings().removeClass("on").removeAttr("title");
 					$(this).find("> ul").slideDown().parent().siblings().find("> ul").slideUp();
 				},
