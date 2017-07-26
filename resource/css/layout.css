@@ -29,7 +29,7 @@
 .exchange button { width: 114px; height: 27px; font-size: 0; background: url(/resource/img/btn_exchange.png) no-repeat; }
 .exchange button:hover, .exchange button:focus { background-image: url(/resource/img/btn_exchange_over.png); transition: all 0.3s; }
 
-.exchangePop { position: absolute; right: 0; top: 40px; width: 252px !important; border: 1px solid #d0d0d0; border-top: 4px solid #ef393d; background: #fff; z-index: 20; }
+.exchangePop { display: none; position: absolute; right: 0; top: 40px; width: 252px !important; border: 1px solid #d0d0d0; border-top: 4px solid #ef393d; background: #fff; z-index: 20; }
 .exchangePop .head { height: 46px; line-height: 46px; padding: 0 10px; color: #ee1c23; font-weight: bold; }
 .exchangePop .tableTy1 table tr th { height: 33px; line-height: 33px; padding: 0 10px; }
 .exchangePop .tableTy1 table tr td { height: 28px; line-height: 28px; padding: 0 10px; }
