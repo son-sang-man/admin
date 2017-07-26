@@ -507,6 +507,9 @@ body{
 		display:inline-block;
 		vertical-align:top;
 	}
+	.dateWrap + .dateBtn{
+		margin-left:5px;
+	}
 }
 .ui-datepicker{
 	width:236px;
@@ -847,11 +850,12 @@ table{
 			background:#d0dce7;
 			text-align:left;
 		}
-		td {
+		td{
 			padding:12px 20px 0 0;
 			font-size:14px;
 			background:#d0dce7;
 			input{
+				border:none;
 				&:first-child{
 					margin-left:0;
 				}
@@ -859,7 +863,17 @@ table{
 					height:34px;
 					border:none;
 				}
-
+				+ .btn{
+					margin-left:5px;
+				}
+			}
+			.selectBox{
+				.designSelect{
+					border:none;
+				}
+			}
+			.dateBox{
+				border:none;
 			}
 		}
 	}
@@ -1107,6 +1121,7 @@ table{
 .btnBlue{
 	background-color:#7c9dbc;
 	border:1px solid #718fac;
+	&.on,
 	&:hover,
 	&:focus{
 		background-color:#ff903b;
@@ -1118,6 +1133,7 @@ table{
 	background-color:#fff;
 	border:1px solid #7f8f9e;
 	color:#666;
+	&.on,
 	&:hover,
 	&:focus{
 		border:1px solid #ee1c23;

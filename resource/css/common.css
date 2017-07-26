@@ -137,6 +137,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .dateBox input[readonly] { background: #fff; }
 
 .dateArea .dateWrap, .dateArea .dateBtn { display: inline-block; vertical-align: top; }
+.dateArea .dateWrap + .dateBtn { margin-left: 5px; }
 
 .ui-datepicker { width: 236px; }
 .ui-datepicker .ui-icon { display: block; overflow: hidden; font-size: 0; height: 0; }
@@ -199,8 +200,12 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy2 table { width: 100%; table-layout: fixed; }
 .tableTy2 tr th { padding: 12px 15px 0 20px; font-size: 14px; color: #666; background: #d0dce7; text-align: left; }
 .tableTy2 tr td { padding: 12px 20px 0 0; font-size: 14px; background: #d0dce7; }
+.tableTy2 tr td input { border: none; }
 .tableTy2 tr td input:first-child { margin-left: 0; }
 .tableTy2 tr td input .dateBox { height: 34px; border: none; }
+.tableTy2 tr td input + .btn { margin-left: 5px; }
+.tableTy2 tr td .selectBox .designSelect { border: none; }
+.tableTy2 tr td .dateBox { border: none; }
 
 .dot { display: inline-block; width: 1px; height: 2px; background: #666; text-align: center; margin: 0 2px; }
 
@@ -253,10 +258,10 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .btnSmall + .btnSmall { margin-left: 4px; }
 
 .btnBlue { background-color: #7c9dbc; border: 1px solid #718fac; }
-.btnBlue:hover, .btnBlue:focus { background-color: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
+.btnBlue.on, .btnBlue:hover, .btnBlue:focus { background-color: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
 
 .btnWhite { background-color: #fff; border: 1px solid #7f8f9e; color: #666; }
-.btnWhite:hover, .btnWhite:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
+.btnWhite.on, .btnWhite:hover, .btnWhite:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
 
 .btnRed { background-color: #ffbfbf; border: 1px solid #f2151a; color: #f2151a; }
 
