@@ -106,7 +106,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .selectBox { display: inline-block; }
 .selectBox .designSelect { position: relative; background: #fff; }
 .selectBox .designSelect.on button { border: 2px solid #7c9dbc; background-image: url(/resource/img/bg_select_over.png); }
-.selectBox .designSelect button { border: 1px solid #bcc5d4; padding: 0 47px 0 10px; width: 100%; height: 34px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 34px; box-sizing: border-box; text-align: left; font-size: 14px; color: #666; }
+.selectBox .designSelect button { border: 1px solid #d5d5d5; padding: 0 47px 0 10px; width: 100%; height: 34px; background: url(/resource/img/bg_select.png) no-repeat right center; line-height: 34px; box-sizing: border-box; text-align: left; font-size: 14px; color: #666; }
 .selectBox ul { display: none; border: none; background: #fff; border: 1px solid #ccc; position: absolute; left: 0; top: 34px; box-sizing: border-box; width: 100%; padding: 10px 0; z-index: 1; }
 .selectBox ul li a { display: block; padding: 0 10px; font-size: 13px; color: #666; line-height: 22px; text-align: left; }
 .selectBox ul li a:hover, .selectBox ul li a:focus { color: #7c9dbc; }
@@ -135,7 +135,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 
 /* datepicker */
 .dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; height: 32px; vertical-align: middle; }
-.dateBox input { height: 32px; line-height: 32px; border: none; }
+.dateBox input { height: 32px; width: 133px; line-height: 32px; border: none; }
 
 .dateArea .dateWrap, .dateArea .dateBtn { display: inline-block; vertical-align: top; }
 
