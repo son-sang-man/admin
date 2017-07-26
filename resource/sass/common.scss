@@ -410,13 +410,6 @@ body{
 	@include weight("B");
 	overflow:hidden;
 	background:url(#{$img-common}bg_title2.png) no-repeat left center;
-	+ .tableTy1,
-	+ .tableTy2,
-	+ .tableHeader,
-	+ .contentsArea,
-	{
-		margin-top:15px;
-	}
 }
 .blit{
 	position:relative;
@@ -436,16 +429,12 @@ body{
 	}
 
 }
-
 .tableHeader{
 	width:100%;
 	display:inline-block;
 	vertical-align:top;
 	> h3{
 		float:left;
-	}
-	.fR{
-		padding-top:20px;
 	}
 	.btn_ico{
 		margin-left:1px;
@@ -650,39 +639,6 @@ body{
 				}
 			}
 		}
-		// tbody{
-		// 	tr{
-		// 		td{
-		// 			a{
-		// 				&.ui-state-active{
-
-		// 				}
-		// 			}
-		// 			&:first-child{
-		// 				a{
-		// 					color:$color4;
-		// 					// &:hover,
-		// 					// &:focus{
-		// 					// 	width:20px;
-		// 					// 	height:20px;
-		// 					// 	background:#087ea5;
-		// 					// 	border-radius:10px;
-		// 					// 	color:#fff;
-		// 					// }
-		// 				}
-		// 			}
-		// 			&:nth-of-type(7){
-		// 				a{
-		// 					color:$color5;
-		// 					// &:hover,
-		// 					// &:focus{
-		// 					// 	color:#fff;
-		// 					// }
-		// 				}
-		// 			}
-		// 		}
-		// 	}
-		// }
 	}
 	.ui-datepicker-buttonpane {
 		display:none;
@@ -787,7 +743,6 @@ table{
 	}
 }
 .tableTy1 {
-	margin-top:20px;
 	table {
 		width:100%;
 	}
@@ -875,10 +830,6 @@ table{
 	border:1px solid #bcc8d4;
 	background:#d0dce7;
 	padding-bottom:12px;
-	+ .btnArea{
-		margin-top:10px;
-	}
-
 	table {
 		width:100%;
 		table-layout:fixed;
@@ -1123,7 +1074,6 @@ table{
 /* button */
 .btnArea{
 	text-align:center;
-	margin-bottom:30px;
 }
 .btn{
 	display:inline-block;
@@ -1284,7 +1234,6 @@ table{
 		font-size:0;
 	}
 }
-
 .fileBox{
 	display:inline-block;
 	position:relative;
@@ -1332,4 +1281,25 @@ table{
 			display:block;
 		}
 	}
+}
+
+/* 여백 */
+
+.tableTy2 + .btnArea{
+	margin-top:10px;
+}
+.title2 + .tableTy1,
+.title2 + .tableTy2,
+.title2 + .tableHeader,
+.title2 + .contentsArea
+{
+	margin-top:15px;
+}
+.tableTy1 + .title2
+{
+	margin-top:20px;
+}
+.btnArea + .tableHeader
+{
+	margin-top:30px
 }

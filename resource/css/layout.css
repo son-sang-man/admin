@@ -74,7 +74,7 @@
 .contentsTop { background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
 .contentsTop h2 { line-height: 62px; box-sizing: border-box; width: 1600px; margin: auto; }
 
-#contents { width: 1600px; padding-bottom: 60px; margin: auto; box-sizing: border-box; min-height: 400px; }
+#contents { width: 1600px; padding-top: 20px; padding-bottom: 60px; margin: auto; box-sizing: border-box; min-height: 400px; }
 
 .contentsArea { width: 100%; display: inline-block; vertical-align: top; }
 .contentsArea > div { box-sizing: border-box; float: left; box-sizing: border-box; padding-left: 15px; }

@@ -166,8 +166,6 @@
 		white-space:nowrap;
 	}
 }
-
-
 #gnb{
 	> ul{
 		display:inline-block;
@@ -286,7 +284,6 @@
 		}
 	}
 }
-
 .location{
 	width:1600px;
 	margin:auto;
@@ -396,6 +393,7 @@
 }
 #contents{
 	width:1600px;
+	padding-top:20px;
 	padding-bottom:60px;
 	margin:auto;
 	box-sizing:border-box;
