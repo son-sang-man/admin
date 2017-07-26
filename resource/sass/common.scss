@@ -236,7 +236,8 @@ textarea{
 	color:$color0;
 	background:#fff;
 	padding:15px;
-	font-size:15px;
+	font-size:14px;
+	font-family:"맑은 고딕";
 	width:100%;
 	box-sizing:border-box;
 }
@@ -418,6 +419,10 @@ body{
 	{
 		margin-top:15px;
 	} 
+	+ .btnArea{
+		margin-top:10px;
+	}
+
 }
 .blit{
 	position:relative;
@@ -444,9 +449,7 @@ body{
 	vertical-align:top;
 	> h3{
 		float:left;
-	}
-	.fR{
-		padding-top:20px;
+		margin-top:0;
 	}
 	.btn_ico{
 		margin-left:1px;
@@ -513,6 +516,11 @@ body{
 	.dateBtn{
 		display:inline-block;
 		vertical-align:top;
+	}
+	.dateWrap{
+		+ .dateBtn{
+			margin-left:5px;
+		}
 	}
 }
 .ui-datepicker{
@@ -880,8 +888,8 @@ table{
 	padding-bottom:12px;
 	+ .btnArea{
 		margin-top:10px;
+		margin-bottom:30px;
 	}
-
 	table {
 		width:100%;
 		table-layout:fixed;
@@ -906,7 +914,9 @@ table{
 					height:34px;
 					border:none;
 				}
-			
+			}
+			.designSelect{
+				border:none;
 			}
 		}
 	}
@@ -1030,7 +1040,6 @@ table{
 	height:38px;
 	line-height:38px;
 	text-align:center;
-	margin-top:25px;
 	> a{
 		display:inline-block;
 		overflow:hidden;
@@ -1126,7 +1135,6 @@ table{
 /* button */
 .btnArea{
 	text-align:center;
-	margin-bottom:30px;
 }
 .btn{
 	display:inline-block;
@@ -1155,6 +1163,7 @@ table{
 .btnBlue{
 	background-color:#7c9dbc;
 	border:1px solid #718fac;
+	&.on,
 	&:hover,
 	&:focus{
 		background-color:#ff903b;
@@ -1166,6 +1175,7 @@ table{
 	background-color:#fff;
 	border:1px solid #7f8f9e;
 	color:#666;
+	&.on,
 	&:hover,
 	&:focus{
 		border:1px solid #ee1c23;
@@ -1197,6 +1207,7 @@ table{
 	+ .btn{
 		margin-left:4px;
 	}
+	&.on,
 	&:hover,
 	&:focus{
 		border:1px solid #ee1c23;
@@ -1206,6 +1217,7 @@ table{
 	&.btnPrint{
 		padding-left:35px;
 		background:url(#{$img-common}btn_print_s.png) no-repeat 10px center;
+		&.on,
 		&:hover,
 		&:focus{
 			background-image:url(#{$img-common}btn_print_s_over.png);
@@ -1214,6 +1226,7 @@ table{
 	&.btnPdf{
 		padding-left:30px;
 		background:url(#{$img-common}btn_pdf_s.png) no-repeat 10px center;
+		&.on,
 		&:hover,
 		&:focus{
 			background-image:url(#{$img-common}btn_pdf_s_over.png);

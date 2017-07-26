@@ -48,7 +48,7 @@ input[type="text"].txt, input[type="password"].txt, input[type="tel"].txt, input
 input[type="radio"] { width: 17px; height: 17px; vertical-align: -1px; }
 input[type="checkbox"] { width: 13px; height: 13px; vertical-align: -1px; }
 
-textarea { -webkit-appearance: none; -webkit-border-radius: 0; border: 1px solid #ccc; color: #666; background: #fff; padding: 15px; font-size: 15px; width: 100%; box-sizing: border-box; }
+textarea { -webkit-appearance: none; -webkit-border-radius: 0; border: 1px solid #ccc; color: #666; background: #fff; padding: 15px; font-size: 14px; font-family: "맑은 고딕"; width: 100%; box-sizing: border-box; }
 
 body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun gothic", "맑은 고딕", sans-serif; color: #666; background: #fff; letter-spacing: -1.0px; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
@@ -115,13 +115,13 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 
 .title2 { padding-left: 12px; margin-top: 20px; font-size: 18px; position: relative; color: #7a7a7a; font-weight: bold; overflow: hidden; background: url(/resource/img/bg_title2.png) no-repeat left center; }
 .title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableHeader, .title2 + .contentsArea { margin-top: 15px; }
+.title2 + .btnArea { margin-top: 10px; }
 
 .blit { position: relative; padding: 10px 0; font-size: 13px; padding-left: 8px; text-align: left; }
 .blit:before { content: ""; position: absolute; left: 0; top: 18px; width: 3px; height: 3px; background: #666; display: inline-block; }
 
 .tableHeader { width: 100%; display: inline-block; vertical-align: top; }
-.tableHeader > h3 { float: left; }
-.tableHeader .fR { padding-top: 20px; }
+.tableHeader > h3 { float: left; margin-top: 0; }
 .tableHeader .btn_ico { margin-left: 1px; }
 .tableHeader + .tableTy1 { margin-top: 15px; }
 .tableHeader .tablePaging { display: inline-block; font-size: 12px; color: #666; margin-right: 10px; }
@@ -138,6 +138,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .dateBox input { height: 32px; width: 133px; line-height: 32px; border: none; }
 
 .dateArea .dateWrap, .dateArea .dateBtn { display: inline-block; vertical-align: top; }
+.dateArea .dateWrap + .dateBtn { margin-left: 5px; }
 
 .ui-datepicker { width: 236px; }
 .ui-datepicker .ui-icon { display: block; overflow: hidden; font-size: 0; height: 0; }
@@ -198,12 +199,13 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy1.ty1 tbody tr:hover td, .tableTy1.ty1 tbody tr:focus td { background: #fff; }
 
 .tableTy2 { border: 1px solid #bcc8d4; background: #d0dce7; padding-bottom: 12px; }
-.tableTy2 + .btnArea { margin-top: 10px; }
+.tableTy2 + .btnArea { margin-top: 10px; margin-bottom: 30px; }
 .tableTy2 table { width: 100%; table-layout: fixed; }
 .tableTy2 tr th { padding: 12px 15px 0 20px; font-size: 14px; color: #666; background: #d0dce7; text-align: left; }
 .tableTy2 tr td { padding: 12px 20px 0 0; font-size: 14px; background: #d0dce7; }
 .tableTy2 tr td input:first-child { margin-left: 0; }
 .tableTy2 tr td input .dateBox { height: 34px; border: none; }
+.tableTy2 tr td .designSelect { border: none; }
 
 .dot { display: inline-block; width: 1px; height: 2px; background: #666; text-align: center; margin: 0 2px; }
 
@@ -230,7 +232,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .checkBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 
 /* paging */
-.paging { height: 38px; line-height: 38px; text-align: center; margin-top: 25px; }
+.paging { height: 38px; line-height: 38px; text-align: center; }
 .paging > a { display: inline-block; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; background: #fff; width: 38px; height: 38px; border: 1px solid #e7e7e7; box-sizing: border-box; }
 .paging > span { display: inline-block; height: 38px; margin: 0 15px; vertical-align: top; }
 .paging > span > a { display: inline-block; background: #fff; min-width: 38px; padding: 0px 6px 0 2px; height: 38px; line-height: 38px; border: 1px solid #e7e7e7; font-size: 13px; color: #666; text-align: center; box-sizing: border-box; }
@@ -247,7 +249,7 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .paging .end:hover, .paging .end:focus { background-image: url(/resource/img/btn_page_end_over.png); }
 
 /* button */
-.btnArea { text-align: center; margin-bottom: 30px; }
+.btnArea { text-align: center; }
 
 .btn { display: inline-block; padding: 0 19px; height: 34px; line-height: 34px; box-sizing: border-box; font-size: 15px; font-weight: bold; color: #fff; }
 .btn + .btn { margin-left: 4px; }
@@ -256,10 +258,10 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .btnSmall + .btnSmall { margin-left: 4px; }
 
 .btnBlue { background-color: #7c9dbc; border: 1px solid #718fac; }
-.btnBlue:hover, .btnBlue:focus { background-color: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
+.btnBlue.on, .btnBlue:hover, .btnBlue:focus { background-color: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
 
 .btnWhite { background-color: #fff; border: 1px solid #7f8f9e; color: #666; }
-.btnWhite:hover, .btnWhite:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
+.btnWhite.on, .btnWhite:hover, .btnWhite:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
 
 .btnRed { background-color: #ffbfbf; border: 1px solid #f2151a; color: #f2151a; }
 
@@ -267,11 +269,11 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 
 .btn_ico { background: #fff; border: 1px solid #718fac; color: #7c9dbc; display: inline-block; padding: 0 10px; height: 26px; font-size: 14px; line-height: 26px; }
 .btn_ico + .btn { margin-left: 4px; }
-.btn_ico:hover, .btn_ico:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
+.btn_ico.on, .btn_ico:hover, .btn_ico:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
 .btn_ico.btnPrint { padding-left: 35px; background: url(/resource/img/btn_print_s.png) no-repeat 10px center; }
-.btn_ico.btnPrint:hover, .btn_ico.btnPrint:focus { background-image: url(/resource/img/btn_print_s_over.png); }
+.btn_ico.btnPrint.on, .btn_ico.btnPrint:hover, .btn_ico.btnPrint:focus { background-image: url(/resource/img/btn_print_s_over.png); }
 .btn_ico.btnPdf { padding-left: 30px; background: url(/resource/img/btn_pdf_s.png) no-repeat 10px center; }
-.btn_ico.btnPdf:hover, .btn_ico.btnPdf:focus { background-image: url(/resource/img/btn_pdf_s_over.png); }
+.btn_ico.btnPdf.on, .btn_ico.btnPdf:hover, .btn_ico.btnPdf:focus { background-image: url(/resource/img/btn_pdf_s_over.png); }
 
 .btnPrint { padding-left: 35px; background-image: url(/resource/img/btn_print.png); background-repeat: no-repeat; background-position: 10px center; }
 
