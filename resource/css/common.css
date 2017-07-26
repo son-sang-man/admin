@@ -197,6 +197,8 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .tableTy1 + .btnArea { margin-top: 20px; }
 .tableTy1.ty1 tbody tr:hover th, .tableTy1.ty1 tbody tr:focus th { background: #7c8b9a; }
 .tableTy1.ty1 tbody tr:hover td, .tableTy1.ty1 tbody tr:focus td { background: #fff; }
+.tableTy1 + .btnArea { margin-top: 20px; }
+.tableTy1 + .btnArea + .paging { margin-top: 25px; }
 
 .tableTy2 { border: 1px solid #bcc8d4; background: #d0dce7; padding-bottom: 12px; }
 .tableTy2 + .btnArea { margin-top: 10px; margin-bottom: 30px; }
