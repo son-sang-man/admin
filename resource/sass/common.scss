@@ -417,7 +417,7 @@ body{
 	+ .contentsArea,
 	{
 		margin-top:15px;
-	} 
+	}
 }
 .blit{
 	position:relative;
@@ -823,20 +823,18 @@ table{
 		tr{
 			&:hover,
 			&:focus{
-				th,
 				td{
 					background:#fbfbfb;
 				}
 			}
 			&.add{
-				th,
 				td{
 					background:#f4faff;
 				}
 			}
 			th{
 				border-top:1px solid #d5d5d5;
-				border-left:1px solid #d5d5d5;
+				border-left:none;
 			}
 			td{
 				border-top:1px solid #d5d5d5;
@@ -906,7 +904,7 @@ table{
 					height:34px;
 					border:none;
 				}
-			
+
 			}
 		}
 	}
