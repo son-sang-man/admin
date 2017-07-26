@@ -228,11 +228,58 @@
 <!-- // code -->
 	</div>
 
+	<h2 class="h2_guide">06. 기간 선택</h2>
+	<div class="guide_wrap">
+		<div class="dateArea" data-term="3w">
+			<div class="dateWrap">
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+				~
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+			</div>
+			<div class="dateBtn">
+				<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+				<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+				<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+				<button type="button" class="btn btnWhite" data-term="1y">1년</button>
+			</div>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<!--
+	data-term : date기간 선택
+	ex) 3주 : 3w
+	d : 일, w : 주, m : 월, y : 년
+-->
+<div class="dateArea" data-term="3w"> <!-- 로드시 데이터 기간 선택 -->
+	<div class="dateWrap">
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+		~
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+	</div>
+	<div class="dateBtn">
+		<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+		<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+		<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+		<button type="button" class="btn btnWhite" data-term="1y">1년</button>
+	</div>
+</div>
+</xmp>
+<!-- // code -->
+	</div>
+
 </div>
 
 <script type="text/javascript" src="/coding_list/js/pretty.js"></script>
 <script>
 	ui.init();
+
+	$(".aa").datepicker({
+				onSelect : function(){
+					console.log("aaa")
+				}
+			})
 </script>
 </body>
 </html>

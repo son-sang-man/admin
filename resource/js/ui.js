@@ -1,7 +1,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-25
+* Last Update :2017-07-26
 * Ver : 1.00
 */
 
@@ -241,27 +241,109 @@ var ui = {
 		 * @function Date Picker 셋팅
 		 * jQuery Ui 참조
 		**/
-		init : function(){
-			$( ".datePicker" ).datepicker({
+		startDate : "",
+		endDate : "",
+		setting : function(){
+			$(".datePicker").datepicker({
 				closeText: '닫기 x',
 				prevText: '이전달',
 				nextText: '다음달',
 				currentText: 'TODAY',
 				showOn: "both",
 				showButtonPanel: true,
-				// buttonImage: "/resource/img/ico_datapicker.png",
 				buttonImageOnly: false,
 				buttonText: "<span>날짜 선택</span>",
-				// buttonImageOnly: true,
-				// buttonText: "날짜 선택",
 				changeMonth: true,
 				changeYear: true,
-				// showOtherMonths: true,
 				monthNamesShort: ['1월','2월','3월','4월','5월','6월', '7월','8월','9월','10월','11월','12월'],
 				dayNamesShort: ['일','월','화','수','목','금','토'],
 				dayNamesMin: ['일','월','화','수','목','금','토'],
 				dateFormat : "yy-mm-dd",
+				onSelect : function(selectDate){
+					if($(this).parent().parent().hasClass("dateWrap")){
+						var idx = $(this).parent().index(); // 0 = 시작일, 1 = 종료일
+						var startDate = ui.datePicker.startDate.replace(/-/gi, "");
+						var endDate = ui.datePicker.endDate.replace(/-/gi, "");
+						var selectedDate = selectDate.replace(/-/gi, "");
+						if(idx == 0){
+							if(selectedDate >= endDate){
+								alert("기간 선택이 잘못되었습니다");
+								$(this).val(ui.datePicker.startDate)
+							} else {
+								ui.datePicker.startDate = selectDate;
+							}
+						} else {
+							if(selectedDate <= startDate){
+								alert("기간 선택이 잘못되었습니다");
+								$(this).val(ui.datePicker.endDate)
+							} else {
+								ui.datePicker.endDate = selectDate;
+							}
+						}
+					}
+				}
 			});
+			$(".dateArea").each(function(){
+				var term = $(this).data("term");
+				ui.datePicker.termSetting($(this), term);
+			});
+		},
+		termSetting : function(target, data){
+			var fromDate = new Date()
+			var termNumber =  parseFloat(data.replace(/a-z/gi, ''))
+			var term =  data.replace(/[0-9]/gi, '');
+			var day = fromDate.getDate();
+			var month = fromDate.getMonth() + 1;
+			if(day < 10){
+				day = "0" + day
+			}
+			if(month < 10){
+				month = "0" + month
+			}
+			// ui.datePicker.endDate  = new Date(fromDate.getFullYear(),month,day);
+			ui.datePicker.endDate = fromDate.getFullYear() + "-" + month + "-" + day;
+			switch(term){
+				case "d" : // 일
+					fromDate.setDate(fromDate.getDate() - termNumber);
+				break;
+				case "w" : // 주
+					fromDate.setDate(fromDate.getDate() - (termNumber*7));
+				break;
+				case "m" : // 월
+					fromDate.setMonth(fromDate.getMonth() - termNumber);
+				break;
+				case "y" : // 년
+					fromDate.setYear(fromDate.getFullYear() - termNumber);
+				break;
+			}
+			var day = fromDate.getDate();
+			var month = fromDate.getMonth() + 1;
+			if(day < 10){
+				day = "0" + day
+			}
+			if(month < 10){
+				month = "0" + month
+			}
+			// ui.datePicker.startDate  = new Date(fromDate.getFullYear(),month,day);
+			ui.datePicker.startDate = fromDate.getFullYear() + "-" + month + "-" + day;
+
+			target.find(".dateWrap .dateBox:first-child .datePicker").val(ui.datePicker.startDate);
+			target.find(".dateWrap .dateBox:last-child .datePicker").val(ui.datePicker.endDate);
+		},
+		termEvent : function(){
+			$(document).on({
+				click : function(){
+					var term = $(this).data("term");
+					var $target = $(this).closest(".dateArea");
+					ui.datePicker.termSetting($target, term)
+				}
+			}, ".dateArea .dateBtn button");
+
+
+		},
+		init : function(){
+			ui.datePicker.setting();
+			ui.datePicker.termEvent();
 		}
 	},
 	/**

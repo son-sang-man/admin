@@ -27,12 +27,12 @@
 			<input type="radio" id="radio2" disabled="disabled" />
 			<label for="radio2">Normal Disable</label>
 		</span>
-		
+
 		<span class="radioBox">
 			<input type="radio" id="radio3" checked="checked" />
 			<label for="radio3">Press</label>
 		</span>
-		
+
 		<span class="radioBox">
 			<input type="radio" id="radio4" disabled="disabled" checked="checked"  />
 			<label for="radio4">Disable</label>
@@ -118,21 +118,25 @@
 
 	<h2 class="h2_guide">03. datepicker</h2>
 	<div class="guide_wrap">
-		
+
 		<!-- 단독으로 쓰일경우 -->
 		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
 
 		<br /><br />
 
 		<!-- 기간설정 버튼조합 -->
-		<div class="dateArea">
-			<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
-			~
-			<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
-
-			<button type="button" class="btn btnWhite">1주일</button>
-			<button type="button" class="btn btnWhite">1개월</button>
-			<button type="button" class="btn btnWhite">3개월</button>
+		<div class="dateArea" data-term="3w">
+			<div class="dateWrap">
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+				~
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+			</div>
+			<div class="dateBtn">
+				<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+				<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+				<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+				<button type="button" class="btn btnWhite" data-term="1y">1년</button>
+			</div>
 		</div>
 
 	</div>
@@ -144,13 +148,18 @@
 <span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
 
 <!-- 기간설정 버튼조합 -->
-<div class="dateArea">
-	<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
-	~
-	<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
-	<button type="button" class="btn btnWhite">1주일</button>
-	<button type="button" class="btn btnWhite">1개월</button>
-	<button type="button" class="btn btnWhite">3개월</button>
+<div class="dateArea" data-term="3w">
+	<div class="dateWrap">
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+		~
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택"></span>
+	</div>
+	<div class="dateBtn">
+		<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+		<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+		<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+		<button type="button" class="btn btnWhite" data-term="1y">1년</button>
+	</div>
 </div>
 
 </xmp>

@@ -491,10 +491,17 @@ body{
 	border:1px solid #d5d5d5;
 	height:32px;
 	vertical-align:middle;
-		input {
+	input {
 		height:32px;
 		line-height:32px;
 		border:none;
+	}
+}
+.dateArea{
+	.dateWrap,
+	.dateBtn{
+		display:inline-block;
+		vertical-align:top;
 	}
 }
 .ui-datepicker{
@@ -671,11 +678,10 @@ body{
 		display:none;
 	}
 	.ui-priority-primary,
-.ui-widget-content .ui-priority-primary,
-.ui-widget-header .ui-priority-primary {
-	font-weight:bold;
-}
-
+	.ui-widget-content .ui-priority-primary,
+	.ui-widget-header .ui-priority-primary {
+		font-weight:bold;
+	}
 }
 .ui-datepicker-trigger{
 	display:inline-block;
