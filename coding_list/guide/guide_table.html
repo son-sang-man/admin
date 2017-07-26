@@ -417,7 +417,7 @@
 		<div class="tableTy1 ty1">
 			<table>
 				<colgroup>
-					<col style="width:134px;" />
+					<col style="width:180px;" />
 					<col />
 				</colgroup>
 				<tbody>
@@ -447,7 +447,7 @@
 						<th scope="row">파일첨부</th>
 						<td>
 							<div class="fileBox">
-								<input type="text" class="txt" value="파일선택" disabled="disabled" />
+								<input type="text" class="txt" value="파일선택" readonly="readonly" />
 								<label class="aa">찾아보기</label>
 								<input type="file" class="fileHidden" />
 							</div>
@@ -455,6 +455,10 @@
 								<span><img src="/resource/img/img_thum.gif" /></span>
 							</div>
 						</td>
+					</tr>
+					<tr>
+						<th scope="row"><span class="necessory" title="필수사항">필수사항</span></th>
+						<td>필수사항입니다.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -465,10 +469,10 @@
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
 <!-- table_ty01 -->
-<div class="tableTy1">
+<div class="tableTy1 ty1"> <!-- 중복클래스 .ty1 -->
 	<table>
 		<colgroup>
-			<col style="width:134px;" />
+			<col style="width:180px;" />
 			<col />
 		</colgroup>
 		<tbody>
@@ -498,7 +502,7 @@
 				<th scope="row">파일첨부</th>
 				<td>
 					<div class="fileBox">
-						<input type="text" class="txt" value="파일선택" disabled="disabled" />
+						<input type="text" class="txt" value="파일선택" readonly="readonly" />
 						<label class="aa">찾아보기</label>
 						<input type="file" class="fileHidden" />
 					</div>
@@ -506,6 +510,12 @@
 						<span><img src="/resource/img/img_thum.gif" /></span>
 					</div>
 				</td>
+			</tr>
+			<tr>
+				<th scope="row">
+					<span class="necessory" title="필수사항">필수사항</span>
+				</th>
+				<td>필수사항입니다.</td>
 			</tr>
 		</tbody>
 	</table>
