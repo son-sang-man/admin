@@ -145,15 +145,13 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .ui-datepicker .ui-datepicker-title select:active, .ui-datepicker .ui-datepicker-title select:hover { background-image: url(/resource/img/bg_selectdate_over.png); border: 1px solid #ef8514; }
 .ui-datepicker .ui-datepicker-title select.ui-datepicker-year { margin-right: 5px; }
 .ui-datepicker table { width: 196px; font-size: 14px; color: #333; border-collapse: collapse; margin: 10px auto; }
-.ui-datepicker table td span, .ui-datepicker table td a { display: block; width: 22px; height: 22px; line-height: 21px; text-align: center; margin: auto; text-decoration: none; }
-.ui-datepicker table td span:hover, .ui-datepicker table td span:focus, .ui-datepicker table td a:hover, .ui-datepicker table td a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
+.ui-datepicker table td span, .ui-datepicker table td a { display: block; width: 22px; height: 22px; line-height: 22px; text-align: center; margin: auto; text-decoration: none; }
+.ui-datepicker table td span:hover, .ui-datepicker table td span:focus, .ui-datepicker table td span.ui-state-active, .ui-datepicker table td a:hover, .ui-datepicker table td a:focus, .ui-datepicker table td a.ui-state-active { background: #087ea5; border-radius: 11px; color: #fff !important; }
+.ui-datepicker table td:first-child a { color: #ee1c23; }
+.ui-datepicker table td:nth-of-type(7) a { color: #3463cd; }
 .ui-datepicker table thead tr:first-child th { padding: 0; height: 26px; line-height: 26px; text-align: center; color: #7e8da3; }
 .ui-datepicker table thead tr:first-child th:first-child { color: #ee1c23; }
 .ui-datepicker table thead tr:first-child th:last-child { color: #3462cc; }
-.ui-datepicker table tbody tr td:first-child a { color: #697685; }
-.ui-datepicker table tbody tr td:first-child a:hover, .ui-datepicker table tbody tr td:first-child a:focus { width: 20px; height: 20px; background: #087ea5; border-radius: 10px; color: #fff; }
-.ui-datepicker table tbody tr td:nth-of-type(7) a { color: #326fdf; }
-.ui-datepicker table tbody tr td:nth-of-type(7) a:hover, .ui-datepicker table tbody tr td:nth-of-type(7) a:focus { background: #087ea5; border-radius: 10px; color: #fff; }
 .ui-datepicker .ui-datepicker-buttonpane { display: none; }
 .ui-datepicker .ui-priority-primary, .ui-datepicker .ui-widget-content .ui-priority-primary, .ui-datepicker .ui-widget-header .ui-priority-primary { font-weight: bold; }
 
@@ -202,8 +200,8 @@ table tr .necessory:before { content: "*"; display: inline-block; color: #df3232
 .radioBox + .radioBox { margin-left: 20px; }
 .radioBox input { position: absolute; left: 0; top: 0; visibility: hidden; }
 .radioBox input[type="radio"]:checked + label { background: url(/resource/img/bg_radio_on.png) no-repeat 0 5px; }
-.radioBox input[type="radio"]:disabled + label { background-image: url(/resource/img/bg_radio_disable.png) no-repeat; }
-.radioBox input[type="radio"]:disabled:checked + label { background-image: url(/resource/img/bg_radio_disable_on.png) no-repeat; }
+.radioBox input[type="radio"]:disabled + label { background-image: url(/resource/img/bg_radio_disable.png); }
+.radioBox input[type="radio"]:disabled:checked + label { background-image: url(/resource/img/bg_radio_disable_on.png); }
 .radioBox label { display: block; padding-left: 23px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_radio.png) no-repeat 0 5px; cursor: pointer; }
 .radioBox.blindLable { width: 18px; margin-left: 0; }
 .radioBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
