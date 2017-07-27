@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>KSSN 한국정보통신망</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/layout.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<script>
+		// 인크루드용 개발적용시 삭제
+		$(function(){
+			$("#header").load("/html/inc/layout.html #header > div");
+			$("#footer").load("/html/inc/layout.html #footer > div");
+		})
+	</script>
+</head>
+<body>
+	<div id="skipNavi">
+		<a href="#container">본문 이동</a>
+	</div>
+	<div id="wrap">
+		<!-- header -->
+		<header id="header">
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div class="location">
+				<div>
+					<a href="#">홈</a>
+					<ul>
+						<li> <!-- 하위메뉴 활성화 class="on" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴1111111111111111111111111111111</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li class="last"> <!--  최종 로케이션일 경우 class="last" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contentsTop"><h2 class="title1">발주 품목 목록</h2></div>
+
+			<!-- contents -->
+			<section id="contents">
+				<div class="tableInfo">
+					<dl class="txt">
+						<dt>원가총액 :</dt>
+						<dd><strong class="fontColor5">1,210</strong> USD</dd>
+					</dl>
+					<dl class="txt">
+						<dt>원화총액 :</dt>
+						<dd><strong class="fontColor5">1,210</strong> 원</dd>
+					</dl>
+				</div>
+				<div class="tableTy1" data-scroll="all">
+					<div class="header">
+						<table>
+							<colgroup>
+								<col style="width:40px" />
+								<col style="width:100px" />
+								<col style="width:150px" />
+								<col style="width:90px" />
+								<col style="width:90px" />
+								<col style="width:300px" />
+								<col style="width:50px" />
+								<col style="width:80px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:200px" />
+								<col style="width:17px" />
+							</colgroup>
+							<thead>
+							<tr>
+								<th scope="col">No</th>
+								<th scope="col">주문번호</th>
+								<th scope="col">업체명</th>
+								<th scope="col">발간기관</th>
+								<th scope="col">품목</th>
+								<th scope="col">상품명/상세</th>
+								<th scope="col">수량</th>
+								<th scope="col">언어</th>
+								<th scope="col">제공형태</th>
+								<th scope="col">원가</th>
+								<th scope="col">통화</th>
+								<th scope="col">환율</th>
+								<th scope="col">요율</th>
+								<th scope="col">원화</th>
+								<th scope="col">요청자<br />(ID)</th>
+								<th scope="col" colspan="2">참고사이트</th>
+							</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="body">
+						<table>
+							<colgroup>
+								<col style="width:40px" />
+								<col style="width:100px" />
+								<col style="width:150px" />
+								<col style="width:90px" />
+								<col style="width:90px" />
+								<col style="width:300px" />
+								<col style="width:50px" />
+								<col style="width:80px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:200px" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">17049315</td>
+								<td class="tC">한국가스안전공사가스안전연구원</td>
+								<td class="tC">ASME</td>
+								<td class="tC">ASME</td>
+								<td>[2017 ASME BPVC] II.Material Specification<br />Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등 </td>
+								<td class="tC">9,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">출력본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">9,999</td>
+								<td class="tC">9.99</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">
+									<div>김태리</div>
+									<div>(<span>oooFoooYappy</span>)</div>
+								</td>
+								<td>
+									<a href="#">https://global.ihs.com/doc_detail.cfm?&item_s_key=00469725&item_key_date=830731&input_doc_number=GMW%2014231&input_doc_title=</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">17049315</td>
+								<td class="tC">한국가스안전공사가스안전연구원</td>
+								<td class="tC">ASME</td>
+								<td class="tC">ASME</td>
+								<td>[2017 ASME BPVC] II.Material Specification<br />Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등 </td>
+								<td class="tC">9,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">출력본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">9,999</td>
+								<td class="tC">9.99</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">
+									<div>김태리</div>
+									<div>(<span>oooFoooYappy</span>)</div>
+								</td>
+								<td>
+									TECH
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">17049315</td>
+								<td class="tC">한국가스안전공사가스안전연구원</td>
+								<td class="tC">ASME</td>
+								<td class="tC">ASME</td>
+								<td>[2017 ASME BPVC] II.Material Specification<br />Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등 </td>
+								<td class="tC">9,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">출력본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">9,999</td>
+								<td class="tC">9.99</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">
+									<div>김태리</div>
+									<div>(<span>oooFoooYappy</span>)</div>
+								</td>
+								<td>
+									TECH
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">17049315</td>
+								<td class="tC">한국가스안전공사가스안전연구원</td>
+								<td class="tC">ASME</td>
+								<td class="tC">ASME</td>
+								<td>[2017 ASME BPVC] II.Material Specification<br />Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등 </td>
+								<td class="tC">9,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">출력본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">9,999</td>
+								<td class="tC">9.99</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">
+									<div>김태리</div>
+									<div>(<span>oooFoooYappy</span>)</div>
+								</td>
+								<td>
+									TECH
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">17049315</td>
+								<td class="tC">한국가스안전공사가스안전연구원</td>
+								<td class="tC">ASME</td>
+								<td class="tC">ASME</td>
+								<td>[2017 ASME BPVC] II.Material Specification<br />Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등 </td>
+								<td class="tC">9,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">출력본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">9,999</td>
+								<td class="tC">9.99</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">
+									<div>김태리</div>
+									<div>(<span>oooFoooYappy</span>)</div>
+								</td>
+								<td>
+									TECH
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h3 class="title2">발주 정보</h3>
+				<div class="tableTy1 ty1">
+					<table>
+						<colgroup>
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">발주번호</th>
+							<td class="fontColor5">SP-170289</td>
+							<th scope="row">발주기관</th>
+							<td><input type="text" title="발주기관 입력" style="width:100%" /></td>
+							<th scope="row">발주일</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+							</td>
+							<th scope="row">제공형태</th>
+							<td>
+								<div class="selectBox" data-form="selectBox">
+									<select title="제공형태 분류">
+										<option>파일다운로드</option>
+										<option>원본수입</option>
+										<option>WEB</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지불방법</th>
+							<td>
+								<div class="selectBox" data-form="selectBox">
+									<select title="제공형태 분류">
+										<option>신용카드</option>
+										<option>해외송금</option>
+									</select>
+								</div>
+							</td>
+							<th scope="row">결제금액</th>
+							<td>
+								<div class="selectBox" data-form="selectBox">
+									<select title="제공형태 분류">
+										<option>WON</option>
+										<option>CHF</option>
+										<option>USD</option>
+										<option>EUR</option>
+										<option>JPY</option>
+										<option>GBP</option>
+										<option>AUD</option>
+										<option>CNY</option>
+										<option>NOK</option>
+										<option>MYR</option>
+										<option>DKK</option>
+										<option>SGD</option>
+										<option>INR</option>
+										<option>BRL</option>
+									</select>
+								</div>
+								<input type="text" title="결제금액 입력" style="width:100px" />
+							</td>
+							<th scope="row">송금결제일</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+							</td>
+							<th scope="row">입고예정일</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">송장발행일</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+							</td>
+							<th scope="row">배송추적번호</th>
+							<td colspan="5">
+								<input type="text" title="배송추적번호 입력" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">발주 특이사항</th>
+							<td colspan="7">
+								<textarea></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">송장번호</th>
+							<td>
+								<input type="text" title="송장번호 입력" style="width:100%" />
+							</td>
+							<th scope="row">송장번호</th>
+							<td colspan="5">
+								<div class="fileBox ty1">
+									<input type="text" class="txt" value="파일선택" readonly="readonly" />
+									<label>찾아보기</label>
+									<input type="file" class="fileHidden" />
+								</div>
+								<span class="filename">
+									<a href="#">VOICE_AAMA_카드결제_20170710.pdf</a>
+									<button class="del">첨부파일 삭제</button>
+								</span>
+								<span>
+									<button class="plus">추가</button>
+									<button class="minus">삭제</button>
+								</span>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 페이지 내 스크립트 영역 -->
+	<script>
+		ui.init(); // 퍼블리싱 UI적용 스크립트
+	</script>
+	<!-- // 페이지 내 스크립트 영역 -->
+</body>
+</html>

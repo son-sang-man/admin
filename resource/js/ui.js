@@ -12,13 +12,13 @@ var ui = {
 			// 1 Depth Mouse Event
 			$(document).on({
 				mouseenter : function(){
-					// if($("#gnb > ul > li").find("ul").is(":animated")) return;
+					if($("#gnb > ul > li").find("ul").is(":animated")) return;
 					$(this).addClass("on").attr("title","선택됨").siblings().removeClass("on").removeAttr("title");
-					$(this).find("> ul").slideDown().parent().siblings().find("> ul").slideUp();
+					$(this).find("> ul").slideDown().parent().siblings().find("> ul").hide();
 				},
 				mouseleave : function(){
 					if($(this).find("ul").is(":animated")) return;
-					$(this).removeClass("on").removeAttr("title").find("> ul").slideUp();
+					$(this).removeClass("on").removeAttr("title").find("> ul").hide();
 				}
 			}, "#gnb > ul > li");
 			// 1 Depth KeyBord Event
@@ -26,7 +26,7 @@ var ui = {
 				focusin : function(){
 					if($(this).next("ul").is(":animated")) return;
 					$(this).parent().addClass("on").attr("title","선택됨").siblings().removeClass("on").removeAttr("title");
-					$(this).next("ul").slideDown().parent().siblings().find("> ul").slideUp();
+					$(this).next("ul").slideDown().parent().siblings().find("> ul").hide();
 				}
 			}, "#gnb > ul > li > a");
 			// 2 Depth
@@ -45,7 +45,7 @@ var ui = {
 				focusin : function(){
 					if($(this).next("ul").is(":animated")) return;
 					$(this).parent().addClass("on").attr("title","선택됨").siblings().removeClass("on").removeAttr("title");
-					$(this).next("ul").slideDown().parent().siblings().find("> ul").slideUp();
+					$(this).next("ul").slideDown().parent().siblings().find("> ul").hide();
 				}
 			}, "#gnb > ul > li > ul > li > a");
 		}
@@ -143,7 +143,7 @@ var ui = {
 				if(wrapW < listW){
 					$wrap.css("width",listW + 100);
 				} else {
-					$wrap.css("width","150px");
+					$wrap.css("width","130px");
 				}
 			} else {
 				$wrap = _this.find(".designSelect li").remove();
@@ -335,6 +335,7 @@ var ui = {
 				click : function(){
 					var term = $(this).data("term");
 					var $target = $(this).closest(".dateArea");
+					$(this).addClass("on").siblings().removeClass("on");
 					ui.datePicker.termSetting($target, term)
 				}
 			}, ".dateArea .dateBtn button");

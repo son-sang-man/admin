@@ -67,312 +67,224 @@
 					</ul>
 				</div>
 			</div>
-			<div class="contentsTop"><h2 class="title1">COSD 서식편집 정보</h2></div>
+			<div class="contentsTop"><h2 class="title1">COSD 서식편집 현황</h2></div>
 
 			<!-- contents -->
 			<section id="contents">
-				<div class="tableTy1 ty1">
+				<div class="tableTy1">
 					<table>
 						<colgroup>
-							<col style="width:180px" />
 							<col />
-							<col style="width:180px" />
+							<col style="width:14%" />
+							<col style="width:14%" />
+							<col style="width:14%" />
+							<col style="width:14%" />
+							<col style="width:14%" />
+							<col style="width:14%" />
+						</colgroup>
+						<thead>
+						<tr>
+							<th scope="col">전체</th>
+							<th scope="col">등록</th>
+							<th scope="col">접수</th>
+							<th scope="col">교정표출력</th>
+							<th scope="col">교정/편집</th>
+							<th scope="col">검수완료</th>
+							<th scope="col">입고</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="tC">999,999</td>
+							<td class="tC">999,999</td>
+							<td class="tC">999,999</td>
+							<td class="tC">999,999</td>
+							<td class="tC">999,999</td>
+							<td class="tC">999,999</td>
+							<td class="tC">999,999</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<h3 class="title2">검색</h3>
+				<div class="tableTy2">
+					<table>
+						<colgroup>
+							<col style="width:104px" />
+							<col />
+							<col style="width:104px" />
 							<col />
 						</colgroup>
 						<tbody>
 						<tr>
 							<th scope="row">구분</th>
-							<td>개정</td>
+							<td>
+								<div class="selectBox" data-form="selectBox">
+									<select title="구분 분류">
+										<option>전체</option>
+										<option>제정</option>
+										<option>개정</option>
+										<option>확인</option>
+									</select>
+								</div>
+							</td>
 							<th scope="row">편집단계</th>
-							<td>검수완료</td>
-						</tr>
-						<tr>
-							<th scope="row">신청일</th>
-							<td>2017-07-01</td>
-							<th scope="row">납품기한</th>
-							<td>2017-07-01</td>
-						</tr>
-						<tr>
-							<th scope="row">신청번호</th>
-							<td>COSD-17-1093</td>
-							<th scope="row">신청기관</th>
-							<td>한국전자정보통신산업진흥회연락처</td>
-						</tr>
-						<tr>
-							<th scope="row">고무표준번호</th>
-							<td colspan="3">X ISO/IEC 9798-4</td>
-						</tr>
-						<tr>
-							<th scope="row">표준명</th>
-							<td colspan="3">고무 및 고무 제품－열중량 분석법을 이용한 가황물과 미가황 혼합물의 조성 측정－제1부：부타디엔 고무, 에틸렌－프로필렌 공중합체와 삼원공중합체, 이소부텐－이소프렌 고무,이소프렌 고무 및 스티렌－부타디엔 고무</td>
-						</tr>
-						<tr>
-							<th scope="row">원안첨부파일</th>
-							<td colspan="3">(제정) KS A ISO 10801_나노기술 나노물질 흡입독성시험을 위한 증발, 응축에 의한 금속나노입자 발생방법.docx</td>
-						</tr>
-						<tr>
-							<th scope="row">작업완료파일</th>
-							<td colspan="3">
-								<div class="fileBox">
-									<input type="text" class="txt" value="파일선택" readonly="readonly" title="파일첨부 파일명" />
-									<label>찾아보기</label>
-									<input type="file" class="fileHidden" title="파일첨부" />
+							<td>
+								<div class="selectBox" data-form="selectBox">
+									<select title="편집단계 분류">
+										<option>전체</option>
+										<option>등록</option>
+										<option>접수</option>
+										<option>교정표출력</option>
+										<option>교정/편집</option>
+										<option>검수완료</option>
+										<option>입고</option>
+									</select>
 								</div>
 							</td>
 						</tr>
 						<tr>
-							<th scope="row">담당부서</th>
-							<td>기술표준센터담당자</td>
-							<th scope="row">담당자</th>
-							<td>황기순</td>
-						</tr>
-						<tr>
-							<th scope="row">연락처</th>
-							<td>010-0000-1234</td>
-							<th scope="row">이메일</th>
-							<td>test0707@test.co.kr</td>
-						</tr>
-						<tr>
-							<th scope="row">요청자 메모</th>
-							<td colspan="3">테스트입니다.</td>
-						</tr>
-						<tr>
-							<th scope="row">요청자 메모</th>
-							<td colspan="3">
-								<textarea>안녕하세요 관리자 입니다. 안녕하세요 관리자 입니다.</textarea>
+							<th scope="row">검색</th>
+							<td>
+								<div class="selectBox" data-form="selectBox">
+									<select title="검색어 분류">
+										<option>신청번호</option>
+										<option>신청기관</option>
+										<option>표준번호</option>
+										<option>표준명</option>
+									</select>
+								</div>
+								<input type="text" title="검색어 입력" />
+							</td>
+							<th scope="row">신청일</th>
+							<td>
+								<div class="dateArea" data-term="3w">
+									<div class="dateWrap">
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+										~
+										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+									</div>
+									<div class="dateBtn">
+										<button type="button" class="btn btnWhite" data-term="1w">1주일</button> <!-- 버튼 press 되었을 경우, 클래스 .on -->
+										<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+										<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+									</div>
+								</div>
 							</td>
 						</tr>
 						</tbody>
 					</table>
 				</div>
-				<h3 class="title2">Test</h3>
-				<div class="tableTy1 ty1">
-					<table>
-						<colgroup>
-							<col style="width:180px" />
-							<col />
-							<col style="width:180px" />
-							<col />
-							<col style="width:180px" />
-							<col />
-							<col style="width:180px" />
-							<col />
-						</colgroup>
-						<tbody>
-						<tr>
-							<th scope="row">test</th>
-							<td>TEST TEST TEST TEST TEST TEST</td>
-							<th scope="row">test</th>
-							<td>TEST TEST TEST TEST TEST TEST</td>
-							<th scope="row">test</th>
-							<td>TEST TEST TEST TEST TEST TEST</td>
-							<th scope="row">test</th>
-							<td>TEST TEST TEST TEST TEST TEST</td>
-						</tr>
-						</tbody>
-					</table>
-
+				<div class="btnArea">
+					<a href="#" class="btn btnBlue">검색</a>
+					<a href="#" class="btn btnBlue">재조회</a>
 				</div>
-				<h3 class="title2">COSD 확인진행</h3>
-				<div class="tableTy1 ty1">
-					<table>
-						<colgroup>
-							<col style="width:180px" />
-							<col />
-							<col style="width:180px" />
-							<col />
-						</colgroup>
-						<tbody>
-						<tr>
-							<th scope="row">입고예정일 / 처리자</th>
-							<td>
-								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-								/
-								<input type="text" />
-							</td>
-							<th scope="row">교정완료일 / 교정자</th>
-							<td>
-								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-								/
-								<input type="text" />
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">편집완료일 / 편집자</th>
-							<td>
-								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-								/
-								<input type="text" />
-							</td>
-							<th scope="row">검수완료일 / 검수자</th>
-							<td>
-								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-								/
-								<input type="text" />
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">작업면수(표지포함)</th>
-							<td>
-								<input type="text" /> page
-							</td>
-							<th scope="row">검수완료일 / 검수자</th>
-							<td class="tR">90,000원</td>
-						</tr>
-						<tr>
-							<th scope="row">비고</th>
-							<td class="tR" colspan="3">부속서 부분이 부합화 표준으로 존재하여 삭제여부 검토 요함. 그 부분 KSDT 편집 제외(면수에서도 제외)</td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="contentsArea col2">
-					<div>
-						<h3 class="title2">교정작업</h3>
-						<div class="tableTy1">
-							<table>
-								<colgroup>
-									<col style="width:10%" />
-									<col style="width:30%" />
-									<col style="width:30%" />
-									<col style="width:30%" />
-								</colgroup>
-								<thead>
-								<tr>
-									<th scope="col">구분</th>
-									<th scope="col">교정 시작일</th>
-									<th scope="col">교정 종료일</th>
-									<th scope="col">작업자</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<th scope="row" class="tC">교열</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">초교</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">재교</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">3교</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">4교</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								</tbody>
-							</table>
+				<div class="tableInfo">
+					<h3 class="title2">COSD 서식편집 목록</h3>
+					<div class="fR">
+						<span class="tablePaging">
+							<strong title="현재 리스트">3</strong><em title="전체 리스트">99</em>
+						</span>
+						<div class="selectBox" data-form="selectBox">
+							<select title="검색어 분류" id="select0">
+								<option>20</option>
+								<option>50</option>
+								<option>100</option>
+							</select>
 						</div>
 					</div>
-					<div>
-						<h3 class="title2">편집작업</h3>
-						<div class="tableTy1">
-							<table>
-								<colgroup>
-									<col style="width:10%" />
-									<col style="width:30%" />
-									<col style="width:30%" />
-									<col style="width:30%" />
-								</colgroup>
-								<thead>
-								<tr>
-									<th scope="col">구분</th>
-									<th scope="col">편집 시작일</th>
-									<th scope="col">편집 종료일</th>
-									<th scope="col">작업자</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<th scope="row" class="tC">조판</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">1차</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">2차</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">3차</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								<tr>
-									<th scope="row" class="tC">4차</th>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td>
-										<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
-									</td>
-									<td><input type="text" title="작업자 이름" style="width:100%" /></td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+				</div>
+				<div class="tableTy1">
+					<table>
+						<colgroup>
+							<col style="width:4%" />
+							<col style="width:5%" />
+							<col style="width:5%" />
+							<col style="width:10%" />
+							<col style="width:10%" />
+							<col style="width:10%" />
+							<col />
+							<col style="width:6%" />
+							<col style="width:6%" />
+							<col style="width:5%" />
+							<col style="width:5%" />
+							<col style="width:6%" />
+							<col style="width:5%" />
+						</colgroup>
+						<thead>
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">구분</th>
+							<th scope="col">편집단계</th>
+							<th scope="col">신청번호</th>
+							<th scope="col">신청기관</th>
+							<th scope="col">표준번호</th>
+							<th scope="col">표준명</th>
+							<th scope="col">신청일</th>
+							<th scope="col">납품일</th>
+							<th scope="col">신청원안</th>
+							<th scope="col">완료파일</th>
+							<th scope="col">교정표출력</th>
+							<th scope="col">접수</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="tC">9,999</td>
+							<td class="tC">제정</td>
+							<td class="tC">입고</td>
+							<td class="tC">COSD-17-1098</td>
+							<td class="tC">한국전자정보통신산업진흥회</td>
+							<td class="tC">X ISO/IEC 10118-4_2001</td>
+							<td class="tC">정보 기술 - 보안 기술 - 해쉬 함수 - 제4부:법 연산법을 이용하는 해쉬 함수</td>
+							<td class="tC">2017-07-04</td>
+							<td class="tC">2017-07-04</td>
+							<td class="tC"><button class="btnSmall btnBlue">다운</button></td>
+							<td class="tC"><button class="btnSmall btnBlue">다운</button></td>
+							<td class="tC"><button class="btnSmall btnBlue">출력</button></td>
+							<td class="tC">접수완료</td>
+						</tr>
+						<tr>
+							<td class="tC">9,999</td>
+							<td class="tC">제정</td>
+							<td class="tC">입고</td>
+							<td class="tC">COSD-17-1098</td>
+							<td class="tC">한국전자정보통신산업진흥회</td>
+							<td class="tC">X ISO/IEC 10118-4_2001</td>
+							<td class="tC">정보 기술 - 보안 기술 - 해쉬 함수 - 제4부:법 연산법을 이용하는 해쉬 함수</td>
+							<td class="tC">2017-07-04</td>
+							<td class="tC">2017-07-04</td>
+							<td class="tC"><button class="btnSmall btnBlue">다운</button></td>
+							<td class="tC"><button class="btnSmall btnBlue">다운</button></td>
+							<td class="tC"><button class="btnSmall btnBlue">출력</button></td>
+							<td class="tC"><button class="btnSmall btnBlue">접수</button></td>
+						</tr>
+						<tr class="noData">
+							<td colspan="13">데이터가 없습니다.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnArea tR">
+					<button type="button" class="btn btnBlue">엑셀다운로드</button>
+				</div>
+				<div class="paging">
+					<a href="#" class="first">맨 처음</a>
+					<a href="#" class="previous">이전</a>
+					<span>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<strong href="#" class="on" title="현재 페이지">4</strong> <!-- 현재페이지 class="on" -->
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+					</span>
+					<a href="#" class="next">다음</a>
+					<a href="#" class="end">맨 끝</a>
 				</div>
 			</section>
 			<!-- //contents -->

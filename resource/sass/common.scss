@@ -793,10 +793,14 @@ p{
 			line-height:18px;
 			input{
 				&[type="text"],
-				&input[type="password"],
-				&input[type="tel"],
+				&[type="password"],
+				&[type="tel"],
 				{
 					border:1px solid #d5d5d5;
+					+ .status{
+						line-height:34px;
+						display:inline-block;
+					}
 				}
 			}
 			.dateBox{
@@ -804,7 +808,7 @@ p{
 					&[type="text"]{
 						border:none;
 					}
-				} 
+				}
 			}
 			> a{
 				color:$color2;
@@ -1142,7 +1146,7 @@ p{
 .btnArea{
 	text-align:center;
 }
-.btn{ 
+.btn{
 	display:inline-block;
 	padding:0 19px;
 	height:34px;

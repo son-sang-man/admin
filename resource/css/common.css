@@ -189,7 +189,8 @@ p.necessory:before { content: "*"; display: inline-block; color: #df3232; margin
 .tableTy1 table { width: 100%; }
 .tableTy1 tr th { padding: 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
 .tableTy1 tr td { padding: 8px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; line-height: 18px; }
-.tableTy1 tr td input[type="text"], .tableTy1 tr td inputinput[type="password"], .tableTy1 tr td inputinput[type="tel"] { border: 1px solid #d5d5d5; }
+.tableTy1 tr td input[type="text"], .tableTy1 tr td input[type="password"], .tableTy1 tr td input[type="tel"] { border: 1px solid #d5d5d5; }
+.tableTy1 tr td input[type="text"] + .status, .tableTy1 tr td input[type="password"] + .status, .tableTy1 tr td input[type="tel"] + .status { line-height: 34px; display: inline-block; }
 .tableTy1 tr td .dateBox input[type="text"] { border: none; }
 .tableTy1 tr td > a { color: #7c9dbc; text-decoration: underline; }
 .tableTy1 tr td > a:hover, .tableTy1 tr td > a:focus { text-decoration: underline; }
