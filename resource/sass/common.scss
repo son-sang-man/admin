@@ -879,6 +879,12 @@ p{
 					background:#f4faff;
 				}
 			}
+			&.noData{
+				td{
+					text-align:center;
+					height:50px;
+				}
+			}
 			th{
 				border-top:1px solid #d5d5d5;
 				border-left:none;
@@ -890,11 +896,7 @@ p{
 					border-left:0;
 				}
 			}
-			.noData{
-				text-align:center;
-				height:50px;
-				line-height:50px;
-			}
+			
 		}
 	}
 	// Y Scroll
