@@ -133,6 +133,11 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tableInfo dl.txt dt { display: inline-block; }
 .tableInfo dl.txt dd { display: inline-block; }
 .tableInfo dl.txt dd strong { color: #ee1c23; }
+.tableInfo.ty1 { text-align: right; padding: 0 10px; height: 40px; line-height: 40px; background: #fbfbfb; border: 1px solid #d5d5d5; box-sizing: border-box; }
+.tableInfo.ty1 .txt { position: relative; margin-right: 0; }
+.tableInfo.ty1 .txt dd strong { color: #ee1c23; font-weight: normal; }
+.tableInfo.ty1 .txt:before { content: "/"; display: inline-block; margin: 0 5px; line-height: 40px; }
+.tableInfo.ty1 .txt:first-child:before { display: none; }
 
 /* datepicker */
 .dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; height: 32px; vertical-align: middle; }
@@ -188,7 +193,7 @@ p.necessory:before { content: "*"; display: inline-block; color: #df3232; margin
 /* table */
 .tableTy1 table { width: 100%; }
 .tableTy1 tr th { padding: 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
-.tableTy1 tr td { padding: 8px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; line-height: 18px; }
+.tableTy1 tr td { padding: 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; line-height: 20px; }
 .tableTy1 tr td input[type="text"], .tableTy1 tr td inputinput[type="password"], .tableTy1 tr td inputinput[type="tel"] { border: 1px solid #d5d5d5; }
 .tableTy1 tr td .dateBox input[type="text"] { border: none; }
 .tableTy1 tr td > a { color: #7c9dbc; text-decoration: underline; }
@@ -202,6 +207,7 @@ p.necessory:before { content: "*"; display: inline-block; color: #df3232; margin
 .tableTy1 tbody tr th { border-top: 1px solid #d5d5d5; border-left: none; }
 .tableTy1 tbody tr td { border-top: 1px solid #d5d5d5; color: #666; }
 .tableTy1 tbody tr td:first-child { border-left: 0; }
+.tableTy1 tbody tr .noData { text-align: center; height: 50px; line-height: 50px; }
 .tableTy1.scrollY .body { height: 200px; overflow-y: auto; }
 .tableTy1 + .btnArea { margin-top: 20px; }
 .tableTy1.ty1 tbody tr:hover th, .tableTy1.ty1 tbody tr:focus th { background: #7c8b9a; }
@@ -322,6 +328,8 @@ p.necessory:before { content: "*"; display: inline-block; color: #df3232; margin
 .title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableInfo, .title2 + .contentsArea { margin-top: 15px; }
 
 .tableTy1 + .contentsArea, .tableTy1 + .title2, .tableTy1 + .tableInfo, .tableTy1 + p.necessory { margin-top: 20px; }
+
+.tableTy1 + .tableInfo.ty1 { margin-top: 5px; }
 
 .tableInfo + .btnArea { margin-top: 20px; }
 
