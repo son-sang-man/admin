@@ -183,11 +183,13 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 
 /* table */
 .tableTy1 table { width: 100%; }
-.tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
-.tableTy1 tr td { padding: 13px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
+.tableTy1 tr th { padding: 6px 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
+.tableTy1 tr td { padding: 6px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; line-height: 34px; }
 .tableTy1 tr td input[type="text"], .tableTy1 tr td inputinput[type="password"], .tableTy1 tr td inputinput[type="tel"] { border: 1px solid #d5d5d5; }
 .tableTy1 tr td .dateBox input[type="text"] { border: none; }
-.tableTy1 thead th { text-align: center; }
+.tableTy1 tr td > a { color: #7c9dbc; text-decoration: underline; }
+.tableTy1 tr td > a:hover, .tableTy1 tr td > a:focus { text-decoration: underline; }
+.tableTy1 thead th { line-height: 28px; text-align: center; }
 .tableTy1 thead th:first-child { border-left: 0; }
 .tableTy1 tbody tr:hover td, .tableTy1 tbody tr:focus td { background: #fbfbfb; }
 .tableTy1 tbody tr.add td { background: #f4faff; }
@@ -208,7 +210,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tableTy2 tr td input .dateBox { height: 34px; border: none; }
 .tableTy2 tr td input + .btn { margin-left: 5px; }
 .tableTy2 tr td .selectBox .designSelect { border: none; }
-.tableTy2 tr td .dateBox { border: none; }
+.tableTy2 tr td .dateBox { border: 1px solid #fff; }
 
 .dot { display: inline-block; width: 1px; height: 2px; background: #666; text-align: center; margin: 0 2px; }
 
@@ -257,7 +259,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .btn { display: inline-block; padding: 0 19px; height: 34px; line-height: 34px; box-sizing: border-box; font-size: 15px; font-weight: bold; color: #fff; }
 .btn + .btn { margin-left: 4px; }
 
-.btnSmall { display: inline-block; padding: 0 10px; height: 28px; font-size: 12px; color: #fff; line-height: 28px; }
+.btnSmall { display: inline-block; padding: 0 10px; height: 28px; font-size: 12px; box-sizing: border-box; color: #fff; line-height: 28px; }
 .btnSmall + .btnSmall { margin-left: 4px; }
 
 .btnBlue { background-color: #7c9dbc; border: 1px solid #718fac; }
@@ -270,20 +272,11 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 
 .btnGray { background-color: #f2f2f2; border: 1px solid #bfbfbf; color: #999; }
 
-.btn_ico { background: #fff; border: 1px solid #718fac; color: #7c9dbc; display: inline-block; padding: 0 10px; height: 26px; font-size: 14px; line-height: 26px; }
-.btn_ico + .btn { margin-left: 4px; }
-.btn_ico:hover, .btn_ico:focus { border: 1px solid #ee1c23; color: #ee1c23; transition: all 0.3s; }
-.btn_ico.btnPrint { padding-left: 35px; background: url(/resource/img/btn_print_s.png) no-repeat 10px center; }
-.btn_ico.btnPrint:hover, .btn_ico.btnPrint:focus { background-image: url(/resource/img/btn_print_s_over.png); }
-.btn_ico.btnPdf { padding-left: 30px; background: url(/resource/img/btn_pdf_s.png) no-repeat 10px center; }
-.btn_ico.btnPdf:hover, .btn_ico.btnPdf:focus { background-image: url(/resource/img/btn_pdf_s_over.png); }
+.btnPrint { border: 1px solid #ccd9e5; color: #7c9dbc; padding-left: 35px; background: url(/resource/img/btn_print_s.png) no-repeat 10px center; font-size: 14px; }
+.btnPrint:hover, .btnPrint:focus { border: 1px solid #ee1c23; color: #ee1c23; background-image: url(/resource/img/btn_print_s_over.png); }
 
-.btnPrint { padding-left: 35px; background-image: url(/resource/img/btn_print.png); background-repeat: no-repeat; background-position: 10px center; }
-
-.btnPdf { padding-left: 30px; background-image: url(/resource/img/btn_pdf.png); background-repeat: no-repeat; background-position: 10px center; }
-
-.btnLink { color: #7c9dbc; text-decoration: underline; }
-.btnLink:hover, .btnLink:focus { text-decoration: underline; }
+.btnPdf { border: 1px solid #ccd9e5; color: #7c9dbc; padding-left: 30px; background: url(/resource/img/btn_pdf_s.png) no-repeat 10px center; font-size: 14px; }
+.btnPdf:hover, .btnPdf:focus { border: 1px solid #ee1c23; color: #ee1c23; background-image: url(/resource/img/btn_pdf_s_over.png); }
 
 .popup { position: relative; }
 .popup .popHeader { height: 60px; background: #7d8d9c; }

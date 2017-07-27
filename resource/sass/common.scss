@@ -760,7 +760,7 @@ body{
 	}
 	tr{
 		th {
-			padding:13px 10px;
+			padding:6px 10px;
 			font-size:14px;
 			color:#fff;
 			text-align:left;
@@ -768,13 +768,14 @@ body{
 			background:#7c8b9a;
 		}
 		td {
-			padding:13px 10px;
+			padding:6px 10px;
 			font-size:14px;
 			color:#777;
 			text-align:left;
 			background:#fff;
 			border-bottom:1px solid #d5d5d5;
 			border-left:1px solid #d5d5d5;
+			line-height:34px;
 			input{
 				&[type="text"],
 				&input[type="password"],
@@ -790,10 +791,19 @@ body{
 					}
 				} 
 			}
+			> a{
+				color:$color2;
+				text-decoration:underline;
+				&:hover,
+				&:focus{
+					text-decoration:underline;
+				}
+			}
 		}
 	}
 	thead{
 		th{
+			line-height:28px;
 			text-align:center;
 			&:first-child{
 				border-left:0;
@@ -892,7 +902,7 @@ body{
 				}
 			}
 			.dateBox{
-				border:none;
+				border:1px solid #fff;
 			}
 		}
 	}
@@ -1111,7 +1121,7 @@ body{
 .btnArea{
 	text-align:center;
 }
-.btn{
+.btn{ 
 	display:inline-block;
 	padding:0 19px;
 	height:34px;
@@ -1129,6 +1139,7 @@ body{
 	padding:0 10px;
 	height:28px;
 	font-size:12px;
+	box-sizing:border-box;
 	color:#fff;
 	line-height:28px;
 	+ .btnSmall{
@@ -1169,64 +1180,41 @@ body{
 	border:1px solid #bfbfbf;
 	color:#999;
 }
-
-.btn_ico{
-	background:#fff;
-	border:1px solid #718fac;
+.btnPrint{
+	border:1px solid #ccd9e5;
 	color:$color2;
-	display:inline-block;
-	padding:0 10px;
-	height:26px;
+	padding-left:35px;
+	background:url(#{$img-common}btn_print_s.png) no-repeat 10px center;
 	font-size:14px;
-	line-height:26px;
-	+ .btn{
-		margin-left:4px;
-	}
 	&:hover,
 	&:focus{
-		border:1px solid #ee1c23;
+		border:1px solid $color4;
 		color:$color4;
-		transition:all 0.3s;
+		background-image:url(#{$img-common}btn_print_s_over.png);
 	}
-	&.btnPrint{
-		padding-left:35px;
-		background:url(#{$img-common}btn_print_s.png) no-repeat 10px center;
-		&:hover,
-		&:focus{
-			background-image:url(#{$img-common}btn_print_s_over.png);
-		}
-	}
-	&.btnPdf{
-		padding-left:30px;
-		background:url(#{$img-common}btn_pdf_s.png) no-repeat 10px center;
-		&:hover,
-		&:focus{
-			background-image:url(#{$img-common}btn_pdf_s_over.png);
-		}
-	}
-}
-.btnPrint{
-	padding-left:35px;
-	background-image:url(#{$img-common}btn_print.png);
-	background-repeat:no-repeat;
-	background-position:10px center;
-
 }
 .btnPdf{
-	padding-left:30px;
-	background-image:url(#{$img-common}btn_pdf.png);
-	background-repeat:no-repeat;
-	background-position:10px center;
-}
-.btnLink{
+	border:1px solid #ccd9e5;
 	color:$color2;
-	text-decoration:underline;
+	padding-left:30px;
+	background:url(#{$img-common}btn_pdf_s.png) no-repeat 10px center;
+	font-size:14px;
 	&:hover,
 	&:focus{
-		text-decoration:underline;
+		border:1px solid $color4;
+		color:$color4;
+		background-image:url(#{$img-common}btn_pdf_s_over.png);
 	}
-
 }
+// .btnLink{
+// 	color:$color2;
+// 	text-decoration:underline;
+// 	&:hover,
+// 	&:focus{
+// 		text-decoration:underline;
+// 	}
+
+// }
 .popup{
 	position:relative;
 	.popHeader{
@@ -1236,7 +1224,7 @@ body{
 			padding-left:20px;
 			line-height:60px;
 			font-size:18px;
-			color:#fff;
+			color:#fff
 		}
 	}
 	.popContent{

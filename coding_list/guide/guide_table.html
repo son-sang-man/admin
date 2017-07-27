@@ -242,8 +242,9 @@
 				<span class="tablePaging">
 					<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
 				</span>
-				<button class="btn_ico btnPrint">인쇄</button>
-				<button class="btn_ico btnPdf">엑셀 다운로드</button>
+				<button class="btnSmall btnPrint">인쇄</button>
+				<button class="btnSmall btnPdf">엑셀 다운로드</button>
+				<button class="btnSmall btnBlue">아이콘이 없는 중간사이즈 버튼</button>
 				<div class="selectBox" data-form="selectBox"> 
 					<select title="검색어 분류" id="select0">
 						<option>전체</option>
@@ -282,8 +283,9 @@
 		<span class="tablePaging">
 			<strong title="현재 리스트">3</strong><em title="전체 리스트">23</em>
 		</span>
-		<button class="btn_ico btnPrint">인쇄</button>
-		<button class="btn_ico btnPdf">엑셀 다운로드</button>
+		<button class="btnSmall btnPrint">인쇄</button>
+		<button class="btnSmall btnPdf">엑셀 다운로드</button>
+		<button class="btnSmall btnBlue">아이콘이 없는 중간사이즈 버튼</button>
 		<div class="selectBox" data-form="selectBox"> 
 			<select title="검색어 분류" id="select0">
 				<option>전체</option>
@@ -338,19 +340,19 @@
 					<tr>
 						<td class="tC">
 							<span class="checkBox blindLable">
-								<input type="checkbox" id="cell2" />
-								<label for="cell2">선택</label>
+								<input type="checkbox" id="cell4" />
+								<label for="cell4">선택</label>
 							</span>
 						</td>
-						<td>비철</td>
-						<td class="tC">사용</td>
+						<td><a href="#">텍스트 링크</a></td>
+						<td class="tC"><a href="#">사용</a></td>
 						<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 					</tr>
 					<tr>
 						<td class="tC">
 							<span class="radioBox blindLable"> <!-- 체크박스, 라디오버튼만 나올경우 -->
-								<input type="radio" id="cell1" />
-								<label for="cell1">선택</label>
+								<input type="radio" id="cell3" />
+								<label for="cell3">선택</label>
 							</span>
 						</td>
 						<td>비철</td>
@@ -363,9 +365,11 @@
 						<td class="tC">사용</td>
 						<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 					</tr>
+					<!-- 데이터가 없는 경우 -->
 					<tr>
 						<td colspan="4" class="tC">데이터가 없습니다.</td>
 					</tr>
+					<!-- //데이터가 없는 경우 -->
 				</tbody>
 			</table>
 		</div>
@@ -395,19 +399,19 @@
 			<tr>
 				<td class="tC">
 					<span class="checkBox blindLable">
-						<input type="checkbox" id="cell2" />
-						<label for="cell2">선택</label>
+						<input type="checkbox" id="cell4" />
+						<label for="cell4">선택</label>
 					</span>
 				</td>
-				<td>비철</td>
-				<td class="tC">사용</td>
+				<td><a href="#">텍스트 링크</a></td>
+				<td class="tC"><a href="#">사용</a></td>
 				<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 			</tr>
 			<tr>
 				<td class="tC">
 					<span class="radioBox blindLable"> <!-- 체크박스, 라디오버튼만 나올경우 -->
-						<input type="radio" id="cell1" />
-						<label for="cell1">선택</label>
+						<input type="radio" id="cell3" />
+						<label for="cell3">선택</label>
 					</span>
 				</td>
 				<td>비철</td>
@@ -420,9 +424,11 @@
 				<td class="tC">사용</td>
 				<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 			</tr>
+			<!-- 데이터가 없는 경우 -->
 			<tr>
 				<td colspan="4" class="tC">데이터가 없습니다.</td>
 			</tr>
+			<!-- //데이터가 없는 경우 -->
 		</tbody>
 	</table>
 </div>
@@ -431,10 +437,10 @@
 </div>
 <!-- //code -->
 
-<h2 class="h2_guide">05. 세로형 테이블</h2>
+<h2 class="h2_guide">05. 세로형 테이블 : .tableTy1.ty1</h2>
 	<div class="guide_wrap">
 		<!-- table_ty01 -->
-		<div class="tableTy1 ty1">
+		<div class="tableTy1 ty1"> <!-- 데이터 입력폼 형태일 경우 클래스 .ty1 추가  -->
 			<table>
 				<colgroup>
 					<col style="width:180px;" /> 
@@ -495,10 +501,10 @@
 <div class="d_desc code">
 <xmp class="prettyprint linenums javascript">
 <!-- table_ty01 -->
-<div class="tableTy1 ty1"> <!-- 중복클래스 .ty1 -->
+<div class="tableTy1 ty1"> <!-- 데이터 입력폼 형태일 경우 클래스 .ty1 추가  -->
 	<table>
 		<colgroup>
-			<col style="width:180px;" />
+			<col style="width:180px;" /> 
 			<col />
 		</colgroup>
 		<tbody>
@@ -538,10 +544,14 @@
 				</td>
 			</tr>
 			<tr>
-				<th scope="row">
-					<span class="necessory" title="필수사항">필수사항</span>
-				</th>
+				<th scope="row"><span class="necessory" title="필수사항">필수사항</span></th>
 				<td>필수사항입니다.</td>
+			</tr>
+			<tr>
+				<th scope="row">textarea</th>
+				<td>
+					<textarea>내용</textarea>
+				</td>
 			</tr>
 		</tbody>
 	</table>
