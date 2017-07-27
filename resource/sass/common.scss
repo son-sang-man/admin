@@ -1211,15 +1211,6 @@ body{
 		background-image:url(#{$img-common}btn_pdf_s_over.png);
 	}
 }
-// .btnLink{
-// 	color:$color2;
-// 	text-decoration:underline;
-// 	&:hover,
-// 	&:focus{
-// 		text-decoration:underline;
-// 	}
-
-// }
 .popup{
 	position:relative;
 	.popHeader{
@@ -1381,6 +1372,7 @@ body{
 .title2 + .tableTy1,
 .title2 + .tableTy2,
 .title2 + .tableHeader,
+.title2 + .tablebottom,
 .title2 + .contentsArea
 {
 	margin-top:15px;

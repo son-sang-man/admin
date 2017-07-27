@@ -314,7 +314,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 /* 여백 */
 .tableTy2 + .btnArea { margin-top: 10px; }
 
-.title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableHeader, .title2 + .contentsArea { margin-top: 15px; }
+.title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableHeader, .title2 + .tablebottom, .title2 + .contentsArea { margin-top: 15px; }
 
 .tableTy1 + .contentsArea, .tableTy1 + .title2 { margin-top: 20px; }
 
