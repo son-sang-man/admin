@@ -334,7 +334,6 @@ body{
 .fontColor5{
 	color:$color4 !important;
 }
-
 .fontColor6{
 	color:#2f9fbb !important;
 }
@@ -432,16 +431,12 @@ body{
 	}
 
 }
-.tableInfo,
-.tableBottom{
+.tableInfo{
 	width:100%;
 	display:inline-block;
 	vertical-align:top;
 	> h3{
 		float:left;
-	}
-	.btn_ico{
-		margin-left:1px;
 	}
 	+ .tableTy1{
 		margin-top:15px;
@@ -488,9 +483,14 @@ body{
 		display:inline-block;
 		margin-right:10px;
 		&.txt{
-			dt,
+			dt{
+				display:inline-block;
+			}
 			dd{
 				display:inline-block;
+				strong{
+					color:$color4;
+				}
 			}
 		}
 	}
@@ -775,7 +775,7 @@ p{
 	}
 	tr{
 		th {
-			padding:6px 10px;
+			padding:10px;
 			font-size:14px;
 			color:#fff;
 			text-align:left;
@@ -783,14 +783,14 @@ p{
 			background:#7c8b9a;
 		}
 		td {
-			padding:6px 10px;
+			padding:8px 10px;
 			font-size:14px;
 			color:#777;
 			text-align:left;
 			background:#fff;
 			border-bottom:1px solid #d5d5d5;
 			border-left:1px solid #d5d5d5;
-			
+			line-height:18px;
 			input{
 				&[type="text"],
 				&input[type="password"],
@@ -806,25 +806,26 @@ p{
 					}
 				} 
 			}
-			a{
+			> a{
 				color:$color2;
 				text-decoration:underline;
 				&:hover,
 				&:focus{
 					text-decoration:underline;
 				}
-			}
-			a{
 				span{
 					display:block;
-				}	
+				}
 			}
-			
+			del{
+				color:$color4;
+			}
 		}
 	}
 	thead{
 		th{
-			line-height:28px;
+			padding:10px;
+			line-height:20px;
 			text-align:center;
 			&:first-child{
 				border-left:0;
@@ -879,14 +880,9 @@ p{
 						background:#fff;
 					}
 				}
-				td{
-					height:34px;
-					line-height:34px;
-				}
 			}
 		}
 	}
-
 }
 .tableTy2 {
 	border:1px solid #bcc8d4;
@@ -1403,7 +1399,12 @@ p{
 {
 	margin-top:20px;
 }
-.btnArea + .tableInfo
+
+.tableInfo + .btnArea{
+	margin-top:20px;
+}
+.btnArea + .tableInfo,
+.btnArea + .tableTy1
 {
 	margin-top:30px
 }
