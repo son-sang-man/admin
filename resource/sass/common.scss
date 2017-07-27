@@ -748,6 +748,7 @@ body{
 }
 p{
 	&.necessory{
+		text-align:right;
 		color:$color4;
 		&:before{
 			content:"*";
@@ -757,6 +758,16 @@ p{
 		}
 	}
 }
+
+.necessory{
+	&:before{
+		content:"*";
+		display:inline-block;
+		color:#df3232;
+		margin-right:5px;
+	}
+}
+
 /* table */
 .tableTy1 {
 	table {
@@ -795,7 +806,7 @@ p{
 					}
 				} 
 			}
-			> a{
+			a{
 				color:$color2;
 				text-decoration:underline;
 				&:hover,
@@ -803,6 +814,12 @@ p{
 					text-decoration:underline;
 				}
 			}
+			a{
+				span{
+					display:block;
+				}	
+			}
+			
 		}
 	}
 	thead{

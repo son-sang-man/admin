@@ -179,8 +179,10 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tab .tabContent > div { display: none; }
 .tab .tabContent > div.on { display: block; }
 
-p.necessory { color: #ee1c23; }
+p.necessory { text-align: right; color: #ee1c23; }
 p.necessory:before { content: "*"; display: inline-block; color: #df3232; margin-right: 5px; }
+
+.necessory:before { content: "*"; display: inline-block; color: #df3232; margin-right: 5px; }
 
 /* table */
 .tableTy1 table { width: 100%; }
@@ -188,8 +190,9 @@ p.necessory:before { content: "*"; display: inline-block; color: #df3232; margin
 .tableTy1 tr td { padding: 6px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
 .tableTy1 tr td input[type="text"], .tableTy1 tr td inputinput[type="password"], .tableTy1 tr td inputinput[type="tel"] { border: 1px solid #d5d5d5; }
 .tableTy1 tr td .dateBox input[type="text"] { border: none; }
-.tableTy1 tr td > a { color: #7c9dbc; text-decoration: underline; }
-.tableTy1 tr td > a:hover, .tableTy1 tr td > a:focus { text-decoration: underline; }
+.tableTy1 tr td a { color: #7c9dbc; text-decoration: underline; }
+.tableTy1 tr td a:hover, .tableTy1 tr td a:focus { text-decoration: underline; }
+.tableTy1 tr td a span { display: block; }
 .tableTy1 thead th { line-height: 28px; text-align: center; }
 .tableTy1 thead th:first-child { border-left: 0; }
 .tableTy1 tbody tr:hover td, .tableTy1 tbody tr:focus td { background: #fbfbfb; }
