@@ -1,7 +1,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update :2017-07-26
+* Last Update :2017-07-27
 * Ver : 1.00
 */
 
@@ -338,12 +338,50 @@ var ui = {
 					ui.datePicker.termSetting($target, term)
 				}
 			}, ".dateArea .dateBtn button");
-
-
 		},
 		init : function(){
 			ui.datePicker.setting();
 			ui.datePicker.termEvent();
+		}
+	},
+	table : {
+		setting : function(){
+			$(".tableTy1").each(function(){
+				switch($(this).closest(".tableTy1").data("scroll")){
+					case "horizontal" :
+						$(this).find("> .header").css("overflow","hidden");
+						$(this).find("> .body").css("overflow-x","scroll");
+					break;
+					case "vertical" :
+						$(this).find("> .body").css({
+							"overflow-y" : "scroll",
+							"height" : "400px"
+						});
+					break;
+					case  "all" :
+						$(this).find("> .header").css("overflow","hidden");
+						$(this).find("> .body").css({
+							"overflow-x" : "scroll",
+							"overflow-y" : "scroll",
+							"height" : "400px"
+						});
+					break
+				}
+			});
+		},
+		event : function(){
+			$(".tableTy1 .body").on({
+				"scroll" : function(e){
+					if($(this).closest(".tableTy1").data("scroll") == "horizontal" || $(this).closest(".tableTy1").data("scroll") == "all"){
+						var scrollX = $(this).scrollLeft();
+						$(this).siblings(".header").scrollLeft(scrollX);
+					}
+				}
+			});
+		},
+		init : function(){
+			ui.table.setting();
+			ui.table.event();
 		}
 	},
 	/**
@@ -354,6 +392,7 @@ var ui = {
 		ui.location.init();
 		ui.selectBox.init();
 		ui.datePicker.init();
+		ui.table.init();
 	}
 }
 
