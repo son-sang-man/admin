@@ -233,7 +233,7 @@
 </div>
 <!-- //code -->
 	
-	<h2 class="h2_guide">03. 테이블 상단, 하단영역</h2>
+	<h2 class="h2_guide">03. 테이블 상단 영역</h2>
 	<div class="guide_wrap">
 		<!-- 타이틀과 기능영역이 노출되는 형식 -->
 		<div class="tableInfo">
@@ -259,16 +259,16 @@
 		<div class="tableInfo">
 			<dl class="txt">
 				<dt>원가총액 :</dt>
-				<dd><strong class="fontColor5">1,210</strong> USD</dd>
+				<dd><strong>1,210</strong> USD</dd>
 			</dl>
 			<dl class="txt">
 				<dt>원화총액 :</dt>
-				<dd><strong class="fontColor5">1,210</strong> 원</dd>
+				<dd><strong>1,210</strong> 원</dd>
 			</dl>
 		</div>
 
 		<!-- 테이블 위에 노출되는 텍스트 형식 2 - 우측정렬 -->
-		<p class="necessory tR">표시사항은 필수입력사항입니다.</p>
+		<p class="necessory">표시사항은 필수입력사항입니다.</p>
 
 	</div>
 <!-- code -->
@@ -298,19 +298,48 @@
 <div class="tableInfo">
 	<dl class="txt">
 		<dt>원가총액 :</dt>
-		<dd><strong class="fontColor5">1,210</strong> USD</dd>
+		<dd><strong>1,210</strong> USD</dd>
 	</dl>
 	<dl class="txt">
 		<dt>원화총액 :</dt>
-		<dd><strong class="fontColor5">1,210</strong> 원</dd>
+		<dd><strong>1,210</strong> 원</dd>
 	</dl>
 </div>
 
 <!-- 테이블 위에 노출되는 텍스트 형식 2 - 우측정렬 -->
-<div class="tableInfo tR">
-	<span class="necessory fontColor5">표시사항은 필수입력사항입니다.</span>
-</div>	
+<p class="necessory">표시사항은 필수입력사항입니다.</p>
 
+</xmp>
+</div>
+<!-- //code -->
+
+	<h2 class="h2_guide">03_1. 테이블 하단 영역</h2>
+	<div class="guide_wrap">
+		<div class="tableInfo ty1"> <!-- 테이블 하단 영역 : 클래스 ty1 추가 -->
+			<dl class="txt">
+				<dt>원가총액 :</dt>
+				<dd><strong>1,210</strong> USD</dd>
+			</dl>
+			<dl class="txt">
+				<dt>원화총액 :</dt>
+				<dd><strong>1,210</strong> 원</dd>
+			</dl>
+		</div>
+		
+	</div>
+<!-- code -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="tableInfo ty1"> <!-- 테이블 하단 영역 : 클래스 ty1 추가 -->
+	<dl class="txt">
+		<dt>원가총액 :</dt>
+		<dd><strong>1,210</strong> USD</dd>
+	</dl>
+	<dl class="txt">
+		<dt>원화총액 :</dt>
+		<dd><strong>1,210</strong> 원</dd>
+	</dl>
+</div>
 </xmp>
 </div>
 <!-- //code -->
@@ -363,11 +392,15 @@
 						<td class="tC">사용</td>
 						<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 					</tr>
-					<!-- 데이터가 없는 경우 -->
 					<tr>
-						<td colspan="4" class="tC">데이터가 없습니다.</td>
+						<td class="tC">10</td>
+						<td>비철<br />비철</td>
+						<td class="tC">사용</td>
+						<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 					</tr>
-					<!-- //데이터가 없는 경우 -->
+					<tr>
+						<td colspan="4" class="noData">데이터가 없습니다.</td><!-- 데이터가 없는 경우 클래스 .noData 적용-->
+					</tr>
 				</tbody>
 			</table>
 		</div>
@@ -422,11 +455,9 @@
 				<td class="tC">사용</td>
 				<td class="tC"><span class="btnSmall btnRed">관리</span></td>
 			</tr>
-			<!-- 데이터가 없는 경우 -->
 			<tr>
-				<td colspan="4" class="tC">데이터가 없습니다.</td>
+				<td colspan="4" class="noData">데이터가 없습니다.</td> <!-- 데이터가 없는 경우 클래스 .noData 적용-->
 			</tr>
-			<!-- //데이터가 없는 경우 -->
 		</tbody>
 	</table>
 </div>
@@ -481,7 +512,9 @@
 						</td>
 					</tr>
 					<tr>
-						<th scope="row"><span class="necessory" title="필수사항">필수사항</span></th>
+						<th scope="row">
+							<span class="necessory" title="필수사항">필수사항</span> <!-- 필수항목 클래스 .necessory 적용 -->
+						</th> 
 						<td>필수사항입니다.</td>
 					</tr>
 					<tr>
@@ -542,7 +575,9 @@
 				</td>
 			</tr>
 			<tr>
-				<th scope="row"><span class="necessory" title="필수사항">필수사항</span></th>
+				<th scope="row">
+					<span class="necessory" title="필수사항">필수사항</span> <!-- 필수항목 클래스 .necessory 적용 -->
+				</th> 
 				<td>필수사항입니다.</td>
 			</tr>
 			<tr>
@@ -599,7 +634,7 @@
 									<label for="cell1">선택</label>
 								</span>
 							</td>
-							<td>홍길동</td>
+							<td>홍길동<br />홍길동</td>
 							<td>홍길동</td>
 							<td>진행</td>
 						</tr>
@@ -610,6 +645,12 @@
 									<label for="cell2">선택</label>
 								</span>
 							</td>
+							<td>홍길동</td>
+							<td>홍길동</td>
+							<td>진행</td>
+						</tr>
+						<tr>
+							<td class="tC">1</td>
 							<td>홍길동</td>
 							<td>홍길동</td>
 							<td>진행</td>
