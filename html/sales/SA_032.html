@@ -1,0 +1,873 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>KSSN 한국정보통신망</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/resource/css/layout.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<script>
+		// 인크루드용 개발적용시 삭제
+		$(function(){
+			$("#header").load("/html/inc/layout.html #header > div");
+			$("#footer").load("/html/inc/layout.html #footer > div");
+		})
+	</script>
+</head>
+<body>
+	<div id="skipNavi">
+		<a href="#container">본문 이동</a>
+	</div>
+	<div id="wrap">
+		<!-- header -->
+		<header id="header">
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div class="location">
+				<div>
+					<a href="#">홈</a>
+					<ul>
+						<li> <!-- 하위메뉴 활성화 class="on" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴1111111111111111111111111111111</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li class="last"> <!--  최종 로케이션일 경우 class="last" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contentsTop"><h2 class="title1">발송 내역 상세 정보</h2></div>
+
+			<!-- contents -->
+			<section id="contents">
+				<h3 class="title2">기본정보</h3>
+				<div class="tableTy1 ty1">
+					<table>
+						<colgroup>
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">견적/주문번호</th>
+							<td colspan="3">17054137</td>
+						</tr>
+						<tr>
+							<th scope="row">ID/사업자번호</th>
+							<td>oooFoooYappy / 119-82-06809</td>
+							<th scope="row">요청자</th>
+							<td>김태리</td>
+						</tr>
+						<tr>
+							<th scope="row">업체명</th>
+							<td>한국건설생활환경 시험연구원 인천</td>
+							<th scope="row">이메일</th>
+							<td>ksaAdmin@kssn.net</td>
+						</tr>
+						<tr>
+							<th scope="row">연락처1</th>
+							<td>02-1234-1234</td>
+							<th scope="row">연락처2</th>
+							<td>010-1234-1234</td>
+						</tr>
+						<tr>
+							<th scope="row">대표자명</th>
+							<td>백수현</td>
+							<th scope="row">업태/품목</th>
+							<td>제조업외 / 도서출판외</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사 유형</th>
+							<td>일반업체</td>
+							<th scope="row">단과과세여부</th>
+							<td>N</td>
+						</tr>
+						<tr>
+							<th scope="row">사업장주소</th>
+							<td colspan="3">서울시 금천구 가산디지털1길 92 에이스하이엔드타워 3차 16층</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<h3 class="title2">배송정보</h3>
+				<div class="tableTy1 ty1">
+					<table>
+						<colgroup>
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">받으실분</th>
+							<td>김태리</td>
+							<th scope="row">연락처</th>
+							<td>010-1234-4561</td>
+						</tr>
+						<tr>
+							<th scope="row">받으실 주소</th>
+							<td colspan="3">서울시 금천구 가산디지털1길 92 에이스하이엔드타워 3차 16층</td>
+						</tr>
+						<tr>
+							<th scope="row">배송 요청사항</th>
+							<td colspan="3">16층에서 전화주세요.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="tableHeader">
+					<h3 class="title2">주문품목정보</h3>
+					<div class="fR">
+						<button>일괄 발송</button>
+					</div>
+				</div>
+				<div class="tableTy1" data-scroll="all">
+					<div class="header">
+						<table>
+							<colgroup>
+								<col style="width:40px" />
+								<col style="width:80px" />
+								<col style="width:300px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:50px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:120px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:50px" />
+								<col style="width:17px" />
+							</colgroup>
+							<thead>
+							<tr>
+								<th scope="col">No</th>
+								<th scope="col">품목</th>
+								<th scope="col">상품명</th>
+								<th scope="col">정가<br />(원)</th>
+								<th scope="col">판매가<br />(원)</th>
+								<th scope="col">할인율<br />(%)</th>
+								<th scope="col">수량</th>
+								<th scope="col">총 판매가(원)</th>
+								<th scope="col">언어 </th>
+								<th scope="col">제공형태</th>
+								<th scope="col">원가</th>
+								<th scope="col">통화</th>
+								<th scope="col">환율</th>
+								<th scope="col">요율</th>
+								<th scope="col">발주일</th>
+								<th scope="col">입고예정일</th>
+								<th scope="col">입고일</th>
+								<th scope="col">출고일</th>
+								<th scope="col">발송일 </th>
+								<th scope="col">출고요청 타입</th>
+								<th scope="col">ERP 상품코드</th>
+								<th scope="col">발송방법<br />(발송번호)</th>
+								<th scope="col">처리상태</th>
+								<th scope="col" colspan="2">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">전체 선택</span></label>
+									</span>
+								</th>
+							</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="body">
+						<table>
+							<colgroup>
+								<col style="width:40px" />
+								<col style="width:80px" />
+								<col style="width:300px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:50px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:80px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:120px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:100px" />
+								<col style="width:50px" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="tC">999</td>
+								<td class="tC">ASME</td>
+								<td>
+									<a href="#">
+										<span>[2017 ASME BPVC] II.Material Specification</span>
+										<span>Part A - Ferrous Materials(철강재료) : 배관용 강관/열전도용 강관/관이음쇠/구조용강/볼트용 강제/봉강 및 리베트 등</span>
+									</a>
+								</td>
+								<td class="tR"><del>999,999,999</del></td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">9,999</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">영어</td>
+								<td class="tC">원본</td>
+								<td class="tR">999,999,999</td>
+								<td class="tC">USD</td>
+								<td class="tR">999,999,999</td>
+								<td class="tR">99.99</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>SP-170289</span>)</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">2017-06-27</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">
+									<div>2017-06-27</div>
+									<div>(<span>정아름</span>)</div>
+								</td>
+								<td class="tC">긴급</td>
+								<td class="tC">ASME_BPVC_17</td>
+								<td class="tC">
+									<a href="#">
+										<span>택배</span>
+										<span>610250496175</span>
+									</a>
+								</td>
+								<td class="tC">발송완료</td>
+								<td class="tC">
+									<span class="checkBox">
+										<input type="checkbox" id="check01" />
+										<label for="check01"><span class="blind">선택</span></label>
+									</span>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tableHeader">
+					<dl class="txt">
+						<dt>운송료 :</dt>
+						<dd><strong class="fontColor5">1,210</strong> 원</dd>
+					</dl>
+					<dl class="txt">
+						<dt>합계 :</dt>
+						<dd><strong class="fontColor5">1,210</strong> 원</dd>
+					</dl>
+				</div>
+				<div class="btnArea">
+					<a href="#" class="btn btnBlue">견적서</a>
+					<a href="#" class="btn btnBlue">납품명세서</a>
+				</div>
+				<div class="tableTy1 ty1">
+					<table>
+						<colgorup>
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+							<col style="width:180px" />
+							<col />
+						</colgorup>
+						<tbody>
+						<tr>
+							<th scope="row">발송일</th>
+							<td>
+								<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" readonly="readonly" /></span>
+							</td>
+							<th scope="row">발송방법</th>
+							<td>
+								<div class="selectBox" data-form="selectBox">
+									<select title="발송방법 분류">
+										<option>택배</option>
+										<option>등기</option>
+										<option>직접전달</option>
+										<option>방문수령</option>
+										<option>행낭</option>
+										<option>기타</option>
+									</select>
+								</div>
+							</td>
+							<th>송장번호</th>
+							<td><input type="text" title="송장번호 입력" style="width:100%" /></td>
+						</tr>
+						<tr>
+							<th scope="row">발송 특이사항</th>
+							<td colspan="5">
+								<textarea></textarea>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnArea">
+					<a href="#" class="btn btnBlue">저장</a>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 페이지 내 스크립트 영역 -->
+	<script>
+		ui.init(); // 퍼블리싱 UI적용 스크립트
+	</script>
+	<!-- // 페이지 내 스크립트 영역 -->
+</body>
+</html>
