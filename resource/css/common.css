@@ -295,6 +295,20 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .fileBox input[type="file"] { position: absolute; top: 0px; right: 0px; width: 96px; height: 34px; opacity: 0; }
 .fileBox label { display: inline-block; padding: 0 19px; height: 32px; line-height: 34px; background: #7c9dbc; border: 1px solid #718fac; font-size: 15px; color: #fff; cursor: pointer; }
 .fileBox label:hover, .fileBox label:focus { background: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
+.fileBox.ty1 label { margin-left: -4px; }
+
+.filename { display: inline-block; margin: 0 15px; vertical-align: top; }
+.filename > a { display: inline-block; height: 34px; line-height: 34px; font-size: 13px; color: #718fac; text-decoration: underline; }
+.filename:hover > a, .filename:focus > a { color: #ee1c23; }
+.filename:hover .del, .filename:focus .del { background-image: url(/resource/img/btn_del_over.png); }
+.filename .del { width: 35px; height: 34px; background: url(/resource/img/btn_del.png) no-repeat center; font-size: 0; overflow: hidden; }
+.filename + span { display: inline-block; vertical-align: top; line-height: 32px; }
+
+.plus { width: 22px; height: 22px; background: #718fac url(/resource/img/btn_plus.png) no-repeat; font-size: 0; overflow: hidden; }
+.plus:hover, .plus:focus { background-color: #ff903b; }
+
+.minus { width: 22px; height: 22px; background: #718fac url(/resource/img/btn_minus.png) no-repeat; font-size: 0; overflow: hidden; margin-left: 1px; }
+.minus:hover, .minus:focus { background-color: #ff903b; }
 
 .fileList { margin-top: 10px; }
 .fileList > span { border: 1px solid #d5d5d5; display: inline-block; }
