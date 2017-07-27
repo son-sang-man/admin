@@ -2,7 +2,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update : 2017-07-24
+* Last Update : 2017-07-27
 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, p, p iframe, figure { margin: 0; padding: 0; font-size: inherit; word-break: keep-all; word-break: break-word; }
 
@@ -230,7 +230,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .checkBox input[type="checkbox"]:checked + label { background: url(/resource/img/bg_check_on.png) no-repeat 0 5px; }
 .checkBox input[type="checkbox"]:disabled + label { background-image: url(/resource/img/bg_check_disable.png); }
 .checkBox input[type="checkbox"]:disabled:checked + label { background-image: url(/resource/img/bg_check_disable_on.png); }
-.checkBox label { display: block; padding-left: 23px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; }
+.checkBox label { display: block; padding-left: 23px; font-size: 14px; color: #4c4c4c; background: url(/resource/img/bg_check.png) no-repeat 0 5px; cursor: pointer; min-height: 24px; }
 .checkBox.blindLable { width: 17px; margin-left: 0; }
 .checkBox.blindLable label { padding-left: 15px !important; text-indent: -9999px; overflow: hidden; }
 

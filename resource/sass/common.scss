@@ -5,7 +5,7 @@
 /*
 * Creat : Madive 손상만
 * Creat Date : 2017-07-10
-* Last Update : 2017-07-24
+* Last Update : 2017-07-27
 */
 body,
 div,
@@ -508,7 +508,7 @@ body{
 		line-height:32px;
 		border:none;
 		&[readonly]{
-			background:#fff;	
+			background:#fff;
 		}
 	}
 }
@@ -996,6 +996,7 @@ body{
 		color:#4c4c4c;
 		background:url(#{$img-common}bg_check.png) no-repeat 0 5px;
 		cursor:pointer;
+		min-height:24px;
 	}
 	&.blindLable{
 		width:17px;
