@@ -118,20 +118,20 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .blit { position: relative; font-size: 13px; padding-left: 8px; text-align: left; }
 .blit:before { content: ""; position: absolute; left: 0; top: 5px; width: 3px; height: 3px; background: #666; display: inline-block; }
 
-.tableHeader, .tableBottom { width: 100%; display: inline-block; vertical-align: top; }
-.tableHeader > h3, .tableBottom > h3 { float: left; }
-.tableHeader .btn_ico, .tableBottom .btn_ico { margin-left: 1px; }
-.tableHeader + .tableTy1, .tableBottom + .tableTy1 { margin-top: 15px; }
-.tableHeader .tablePaging, .tableBottom .tablePaging { display: inline-block; font-size: 12px; color: #666; margin-right: 10px; }
-.tableHeader .tablePaging > strong, .tableBottom .tablePaging > strong { font-weight: normal; }
-.tableHeader .tablePaging > strong:after, .tableBottom .tablePaging > strong:after { content: "/"; padding: 0 5px; display: inline-block; color: #666; font-weight: normal; }
-.tableHeader .tablePaging > em, .tableBottom .tablePaging > em { font-weight: normal; }
-.tableHeader .tablePaging > em:after, .tableBottom .tablePaging > em:after { content: "page"; padding-left: 5px; display: inline-block; color: #666; font-weight: normal; }
-.tableHeader .selectBox, .tableBottom .selectBox { margin-left: 1px; }
-.tableHeader .selectBox .designSelect button, .tableBottom .selectBox .designSelect button { height: 26px; line-height: 26px; }
-.tableHeader .selectBox ul, .tableBottom .selectBox ul { top: 26px !important; }
-.tableHeader dl, .tableBottom dl { display: inline-block; margin-right: 10px; }
-.tableHeader dl.txt dt, .tableHeader dl.txt dd, .tableBottom dl.txt dt, .tableBottom dl.txt dd { display: inline-block; }
+.tableInfo, .tableBottom { width: 100%; display: inline-block; vertical-align: top; }
+.tableInfo > h3, .tableBottom > h3 { float: left; }
+.tableInfo .btn_ico, .tableBottom .btn_ico { margin-left: 1px; }
+.tableInfo + .tableTy1, .tableBottom + .tableTy1 { margin-top: 15px; }
+.tableInfo .tablePaging, .tableBottom .tablePaging { display: inline-block; font-size: 12px; color: #666; margin-right: 10px; }
+.tableInfo .tablePaging > strong, .tableBottom .tablePaging > strong { font-weight: normal; }
+.tableInfo .tablePaging > strong:after, .tableBottom .tablePaging > strong:after { content: "/"; padding: 0 5px; display: inline-block; color: #666; font-weight: normal; }
+.tableInfo .tablePaging > em, .tableBottom .tablePaging > em { font-weight: normal; }
+.tableInfo .tablePaging > em:after, .tableBottom .tablePaging > em:after { content: "page"; padding-left: 5px; display: inline-block; color: #666; font-weight: normal; }
+.tableInfo .selectBox, .tableBottom .selectBox { margin-left: 1px; }
+.tableInfo .selectBox .designSelect button, .tableBottom .selectBox .designSelect button { height: 26px; line-height: 26px; }
+.tableInfo .selectBox ul, .tableBottom .selectBox ul { top: 26px !important; }
+.tableInfo dl, .tableBottom dl { display: inline-block; margin-right: 10px; }
+.tableInfo dl.txt dt, .tableInfo dl.txt dd, .tableBottom dl.txt dt, .tableBottom dl.txt dd { display: inline-block; }
 
 /* datepicker */
 .dateBox { position: relative; display: inline-block; border: 1px solid #d5d5d5; height: 32px; vertical-align: middle; }
@@ -179,7 +179,8 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tab .tabContent > div { display: none; }
 .tab .tabContent > div.on { display: block; }
 
-.necessory:before { content: "*"; display: inline-block; color: #df3232; margin-right: 5px; }
+p.necessory { color: #ee1c23; }
+p.necessory:before { content: "*"; display: inline-block; color: #df3232; margin-right: 5px; }
 
 /* table */
 .tableTy1 table { width: 100%; }
@@ -314,8 +315,8 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 /* 여백 */
 .tableTy2 + .btnArea { margin-top: 10px; }
 
-.title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableHeader, .title2 + .contentsArea { margin-top: 15px; }
+.title2 + .tableTy1, .title2 + .tableTy2, .title2 + .tableInfo, .title2 + .contentsArea { margin-top: 15px; }
 
-.tableTy1 + .contentsArea, .tableTy1 + .title2, .tableTy1 + .tableBottom { margin-top: 20px; }
+.tableTy1 + .contentsArea, .tableTy1 + .title2, .tableTy1 + .tableInfo, .tableTy1 + p.necessory { margin-top: 20px; }
 
-.btnArea + .tableHeader { margin-top: 30px; }
+.btnArea + .tableInfo { margin-top: 30px; }

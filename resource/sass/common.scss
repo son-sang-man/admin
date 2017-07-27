@@ -432,7 +432,7 @@ body{
 	}
 
 }
-.tableHeader,
+.tableInfo,
 .tableBottom{
 	width:100%;
 	display:inline-block;
@@ -746,12 +746,15 @@ body{
 		}
 	}
 }
-.necessory{
-	&:before{
-		content:"*";
-		display:inline-block;
-		color:#df3232;
-		margin-right:5px;
+p{
+	&.necessory{
+		color:$color4;
+		&:before{
+			content:"*";
+			display:inline-block;
+			color:#df3232;
+			margin-right:5px;
+		}
 	}
 }
 /* table */
@@ -1371,18 +1374,19 @@ body{
 }
 .title2 + .tableTy1,
 .title2 + .tableTy2,
-.title2 + .tableHeader,
+.title2 + .tableInfo,
 .title2 + .contentsArea
 {
 	margin-top:15px;
 }
 .tableTy1 + .contentsArea,
 .tableTy1 + .title2,
-.tableTy1 + .tableBottom
+.tableTy1 + .tableInfo,
+.tableTy1 + p.necessory
 {
 	margin-top:20px;
 }
-.btnArea + .tableHeader
+.btnArea + .tableInfo
 {
 	margin-top:30px
 }
