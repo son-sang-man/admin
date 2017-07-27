@@ -115,8 +115,8 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 
 .title2 { padding-left: 12px; font-size: 18px; position: relative; color: #7a7a7a; font-weight: bold; overflow: hidden; background: url(/resource/img/bg_title2.png) no-repeat left center; }
 
-.blit { position: relative; padding: 10px 0; font-size: 13px; padding-left: 8px; text-align: left; }
-.blit:before { content: ""; position: absolute; left: 0; top: 18px; width: 3px; height: 3px; background: #666; display: inline-block; }
+.blit { position: relative; font-size: 13px; padding-left: 8px; text-align: left; }
+.blit:before { content: ""; position: absolute; left: 0; top: 5px; width: 3px; height: 3px; background: #666; display: inline-block; }
 
 .tableHeader { width: 100%; display: inline-block; vertical-align: top; }
 .tableHeader > h3 { float: left; }
@@ -185,6 +185,8 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .tableTy1 table { width: 100%; }
 .tableTy1 tr th { padding: 13px 10px; font-size: 14px; color: #fff; text-align: left; border-left: 1px solid #d5d5d5; background: #7c8b9a; }
 .tableTy1 tr td { padding: 13px 10px; font-size: 14px; color: #777; text-align: left; background: #fff; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; }
+.tableTy1 tr td input[type="text"], .tableTy1 tr td inputinput[type="password"], .tableTy1 tr td inputinput[type="tel"] { border: 1px solid #d5d5d5; }
+.tableTy1 tr td .dateBox input[type="text"] { border: none; }
 .tableTy1 thead th { text-align: center; }
 .tableTy1 thead th:first-child { border-left: 0; }
 .tableTy1 tbody tr:hover td, .tableTy1 tbody tr:focus td { background: #fbfbfb; }
@@ -295,6 +297,7 @@ body { font-style: normal; font-size: 14px; font-family: "segoe ui", "malgun got
 .fileBox input[type="file"] { position: absolute; top: 0px; right: 0px; width: 96px; height: 34px; opacity: 0; }
 .fileBox label { display: inline-block; padding: 0 19px; height: 32px; line-height: 34px; background: #7c9dbc; border: 1px solid #718fac; font-size: 15px; color: #fff; cursor: pointer; }
 .fileBox label:hover, .fileBox label:focus { background: #ff903b; border: 1px solid #ff903b; transition: all 0.3s; }
+.fileBox.ty1 input { width: 300px; }
 .fileBox.ty1 label { margin-left: -4px; }
 
 .filename { display: inline-block; margin: 0 15px; vertical-align: top; }
